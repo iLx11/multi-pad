@@ -6,6 +6,7 @@
 #include "stdio.h"
 #include "string.h"
 
-uint8_t parse_json_data(jsmn_parser *p, const char* json_str, jsmntok_t* t);
+uint8_t parse_json_data(jsmn_parser *p);
 
+void jsmn_init_user();
 #endif //LEDEN_JSMN_USER_H

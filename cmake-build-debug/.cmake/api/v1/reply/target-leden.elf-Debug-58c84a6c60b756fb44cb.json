@@ -154,6 +154,14 @@
 			[
 				{
 					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/USER/Json"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/USER/Key"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/Users/WOW/Desktop/leden/JSMN_USER"
 				},
 				{
@@ -248,15 +256,16 @@
 				89,
 				90,
 				92,
-				94,
-				97,
+				95,
+				100,
+				101,
 				102,
-				103,
 				104,
-				106,
+				107,
 				109,
 				111,
-				113
+				113,
+				115
 			]
 		},
 		{
@@ -327,6 +336,14 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/USER/Json"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/USER/Key"
+				},
 				{
 					"backtrace" : 10,
 					"path" : "C:/Users/WOW/Desktop/leden/JSMN_USER"
@@ -512,18 +529,19 @@
 				71,
 				91,
 				93,
-				95,
+				94,
 				96,
+				97,
 				98,
 				99,
-				100,
-				101,
+				103,
 				105,
-				107,
+				106,
 				108,
 				110,
 				112,
-				114
+				114,
+				116
 			]
 		},
 		{
@@ -558,15 +576,16 @@
 				89,
 				90,
 				92,
-				94,
-				97,
+				95,
+				100,
+				101,
 				102,
-				103,
 				104,
-				106,
+				107,
 				109,
 				111,
-				113
+				113,
+				115
 			]
 		},
 		{
@@ -577,7 +596,7 @@
 				19,
 				41,
 				72,
-				115
+				117
 			]
 		}
 	],
@@ -1074,17 +1093,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "JSMN/jsmn_user.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "JSMN/jsmn_user.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "MatrixKeys/MatrixKeys.c",
 			"sourceGroupIndex" : 1
 		},
@@ -1194,6 +1202,28 @@
 		{
 			"backtrace" : 1,
 			"path" : "USB_DEVICE/Target/usbd_conf.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "USER/Json/jsmn_user.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "USER/Json/jsmn_user.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "USER/Key/key_user.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "USER/Key/key_user.h",
 			"sourceGroupIndex" : 0
 		},
 		{

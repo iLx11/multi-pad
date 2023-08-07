@@ -24,16 +24,13 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+#define JSMN_HEADER
+#include "jsmn.h"
 #include "retarget.h"
-
-
-#include "stdio.h"
-#include "string.h"
 #include "oled.h"
-#include "bmp.h"
-#include "MatrixKeys.h"
-#include "usbd_hid.h"
 #include "jsmn_user.h"
+#include "key_user.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,7 +53,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-extern USBD_HandleTypeDef hUsbDeviceFS;
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -68,42 +66,6 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-// hid 发送
-u8 send_buff[8] = {0};
-u8 send_zero_buff[8] = {0, 0, 0, 0, 0, 0, 0, 0};
-
-static const char *json_str = "{\"002\":\"21023034056\"}";
-
-// 按键执行
-void MK_on_keyup(uint8_t row, uint8_t col) {
-    while (USBD_HID_SendReport(&hUsbDeviceFS, send_zero_buff, 8) != USBD_OK);
-    printf("clear key");
-    HAL_Delay(10);
-}
-
-
-void MK_on_keydown(uint8_t row, uint8_t col) {
-    printf("第%d行,第%d列 ---down\n", row, col);
-    if (row + col == 0) {
-        send_buff[0] = 0x01;
-        send_buff[2] = 0x06;
-        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
-        HAL_Delay(10);
-        printf("ctrl + c\n");
-    } else if (col - row == 1) {
-        send_buff[0] = 0x01;
-        send_buff[2] = 0x19;
-        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
-        HAL_Delay(10);
-        printf("ctrl + v\n");
-    } else if (col - row == 2) {
-        send_buff[0] = 0x01;
-        send_buff[2] = 0x04;
-        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
-        HAL_Delay(10);
-        printf("ctrl + a\n");
-    }
-}
 
 /* USER CODE END 0 */
 
@@ -138,7 +100,6 @@ int main(void) {
     /* USER CODE BEGIN 2 */
     // 解析 json 字符串
 
-
     // OLED 显示
     OLED_Init();
     OLED_ColorTurn(0);//0正常显示，1 反色显示
@@ -146,17 +107,18 @@ int main(void) {
     OLED_Refresh();
 
     // 矩阵键盘
-    MK_init();
-    uint16_t state = 0;
+    key_init_user();
+    // json 解析
+    jsmn_init_user();
 
-    u8 res;
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
 
     while (1) {
-        MK_scan(&state);
+        // 键盘扫描
+        key_scan_user();
         OLED_Clear();
         OLED_ShowChinese(0, 0, 0, 16, 1);//中
         OLED_Refresh();

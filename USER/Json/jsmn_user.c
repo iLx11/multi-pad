@@ -1,5 +1,15 @@
 #include "jsmn_user.h"
 
+jsmntok_t t[128];
+jsmn_parser p;
+static const char *json_str = "{\"002\":\"21023034056\"}";
+
+
+void jsmn_init_user() {
+    jsmn_init(&p);
+    parse_json_data(&p);
+}
+
 // 字符键值比对
 static uint8_t json_cmp(const char *json, jsmntok_t *tok, const char *str) {
     if (tok->type == JSMN_STRING && (uint8_t) strlen(str) == tok->end - tok->start &&
@@ -9,7 +19,7 @@ static uint8_t json_cmp(const char *json, jsmntok_t *tok, const char *str) {
 }
 
 // 解析 json 字符
-uint8_t parse_json_data(jsmn_parser *p, const char* json_str, jsmntok_t* t) {
+uint8_t parse_json_data(jsmn_parser *p) {
     int r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
     if (r < 0) printf("parse fail");
     printf("\ntype - start - end - size\n");
