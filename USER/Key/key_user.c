@@ -1,5 +1,5 @@
 #include "key_user.h"
-
+#include "usbd_hid.h"
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 

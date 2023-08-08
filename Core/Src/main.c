@@ -26,6 +26,7 @@
 /* USER CODE BEGIN Includes */
 
 #define JSMN_HEADER
+
 #include "jsmn.h"
 #include "retarget.h"
 #include "jsmn_user.h"
@@ -72,22 +73,21 @@ void SystemClock_Config(void);
 
 /**
   * @brief  The application entry point.
-  * @retval intACAC
+  * @retval int
   */
 int main(void) {
     /* USER CODE BEGIN 1 */
     RetargetInit(&huart1);
 
     /* USER CODE END 1 */
+
     /* MCU Configuration--------------------------------------------------------*/
+
     /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
     HAL_Init();
 
     /* USER CODE BEGIN Init */
-    MX_GPIO_Init();
-    MX_USART1_UART_Init();
-    MX_USB_DEVICE_Init();
-    EC11_EXTI_Init();
+
     /* USER CODE END Init */
 
     /* Configure the system clock */
@@ -98,17 +98,18 @@ int main(void) {
     /* USER CODE END SysInit */
 
     /* Initialize all configured peripherals */
-
+    MX_GPIO_Init();
+    MX_USART1_UART_Init();
+    MX_USB_DEVICE_Init();
     /* USER CODE BEGIN 2 */
-    // ½âÎö json ×Ö·û´®
-
     // OLED ÏÔÊ¾
     oled_init_user();
     // ¾ØÕó¼üÅÌ
     key_init_user();
     // json ½âÎö
     jsmn_init_user();
-
+    // ±àÂëÆ÷
+    EC11_EXTI_Init();
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -121,6 +122,7 @@ int main(void) {
         oled_show_user();
 
         /* USER CODE END WHILE */
+
         /* USER CODE BEGIN 3 */
     }
     /* USER CODE END 3 */
