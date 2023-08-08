@@ -154,6 +154,14 @@
 			[
 				{
 					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/EC11"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/USER/Oled"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/Users/WOW/Desktop/leden/USER/Json"
 				},
 				{
@@ -256,16 +264,18 @@
 				89,
 				90,
 				92,
-				95,
-				100,
-				101,
+				94,
+				97,
 				102,
+				103,
 				104,
-				107,
+				106,
 				109,
 				111,
 				113,
-				115
+				115,
+				117,
+				119
 			]
 		},
 		{
@@ -336,6 +346,14 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/EC11"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/USER/Oled"
+				},
 				{
 					"backtrace" : 10,
 					"path" : "C:/Users/WOW/Desktop/leden/USER/Json"
@@ -529,19 +547,21 @@
 				71,
 				91,
 				93,
-				94,
+				95,
 				96,
-				97,
 				98,
 				99,
-				103,
+				100,
+				101,
 				105,
-				106,
+				107,
 				108,
 				110,
 				112,
 				114,
-				116
+				116,
+				118,
+				120
 			]
 		},
 		{
@@ -576,16 +596,18 @@
 				89,
 				90,
 				92,
-				95,
-				100,
-				101,
+				94,
+				97,
 				102,
+				103,
 				104,
-				107,
+				106,
 				109,
 				111,
 				113,
-				115
+				115,
+				117,
+				119
 			]
 		},
 		{
@@ -596,7 +618,7 @@
 				19,
 				41,
 				72,
-				117
+				121
 			]
 		}
 	],
@@ -1082,6 +1104,17 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "EC11/EC11.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "EC11/EC11.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "JSMN/jsmn.c",
 			"sourceGroupIndex" : 1
 		},
@@ -1224,6 +1257,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "USER/Key/key_user.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "USER/Oled/oled_user.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "USER/Oled/oled_user.h",
 			"sourceGroupIndex" : 0
 		},
 		{

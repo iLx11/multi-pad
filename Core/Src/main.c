@@ -28,9 +28,10 @@
 #define JSMN_HEADER
 #include "jsmn.h"
 #include "retarget.h"
-#include "oled.h"
 #include "jsmn_user.h"
 #include "key_user.h"
+#include "oled_user.h"
+#include "EC11.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -83,7 +84,10 @@ int main(void) {
     HAL_Init();
 
     /* USER CODE BEGIN Init */
-
+    MX_GPIO_Init();
+    MX_USART1_UART_Init();
+    MX_USB_DEVICE_Init();
+    EC11_EXTI_Init();
     /* USER CODE END Init */
 
     /* Configure the system clock */
@@ -94,18 +98,12 @@ int main(void) {
     /* USER CODE END SysInit */
 
     /* Initialize all configured peripherals */
-    MX_GPIO_Init();
-    MX_USART1_UART_Init();
-    MX_USB_DEVICE_Init();
+
     /* USER CODE BEGIN 2 */
     // 解析 json 字符串
 
     // OLED 显示
-    OLED_Init();
-    OLED_ColorTurn(0);//0正常显示，1 反色显示
-    OLED_DisplayTurn(0);//0正常显示 1 屏幕翻转显示
-    OLED_Refresh();
-
+    oled_init_user();
     // 矩阵键盘
     key_init_user();
     // json 解析
@@ -119,9 +117,8 @@ int main(void) {
     while (1) {
         // 键盘扫描
         key_scan_user();
-        OLED_Clear();
-        OLED_ShowChinese(0, 0, 0, 16, 1);//中
-        OLED_Refresh();
+        // oled 显示
+        oled_show_user();
 
         /* USER CODE END WHILE */
         /* USER CODE BEGIN 3 */
