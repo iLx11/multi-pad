@@ -18,7 +18,7 @@ void MX_SPI2_Init(void) {
     // NSS 管脚由硬件还是由软件（SSI） 管理： 内部 NSS 信号有 SSI 位控制
     hspi.Init.NSS = SPI_NSS_SOFT;
     // 定义波特率预分频的之： 波特率预分频值为256
-    hspi.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
+    hspi.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
     // 指定数据传输从 MSB 开始还是 LSB 开始： 数据从 MSB 开始
     hspi.Init.FirstBit = SPI_FIRSTBIT_MSB;
     // CRC 值计算的多项式
@@ -51,12 +51,12 @@ void SPI2_Init(void) {
     SPI2_ReadWriteByte(0xff);//启动传输
 }
 
-//SPI 速度设置函数
-//SpeedSet:
-//SPI_BaudRatePrescaler_2   2分频
-//SPI_BaudRatePrescaler_8   8分频
-//SPI_BaudRatePrescaler_16  16分频
-//SPI_BaudRatePrescaler_256 256分频
+/*SPI 速度设置函数
+SpeedSet:
+SPI_BaudRatePrescaler_2   2分频
+SPI_BaudRatePrescaler_8   8分频
+SPI_BaudRatePrescaler_16  16分频
+SPI_BaudRatePrescaler_256 256分频*/
 
 void SPI2_SetSpeed(uint8_t SPI_BaudRatePrescaler)
 {
@@ -67,9 +67,9 @@ void SPI2_SetSpeed(uint8_t SPI_BaudRatePrescaler)
     __HAL_SPI_ENABLE(&hspi);
 }
 
-//SPIx 读写一个字节
-//TxData:要写入的字节
-//返回值:读取到的字节
+/*SPIx 读写一个字节
+TxData:要写入的字节
+返回值:读取到的字节*/
 uint8_t SPI2_ReadWriteByte(uint8_t TxData) {
     uint8_t RxData;
     uint32_t retry = 0;

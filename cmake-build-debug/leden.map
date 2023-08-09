@@ -985,6 +985,57 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
  .data          0x00000000        0x0 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
  .bss           0x00000000        0x0 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
+ .text          0x00000000        0x0 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .data          0x00000000        0x0 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_ReadSR
+                0x00000000       0x34 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Write_SR
+                0x00000000       0x30 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Write_Enable
+                0x00000000       0x28 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Write_Disable
+                0x00000000       0x28 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_ReadID
+                0x00000000       0x50 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Init
+                0x00000000       0x68 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Read
+                0x00000000       0x58 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Wait_Busy
+                0x00000000        0xe CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Write_Page
+                0x00000000       0x5c CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Write_NoCheck
+                0x00000000       0x3e CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Erase_Chip
+                0x00000000       0x34 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .rodata.W25QXX_Erase_Sector.str1.4
+                0x00000000        0x8 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Erase_Sector
+                0x00000000       0x5c CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_Write
+                0x00000000       0xa4 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_PowerDown
+                0x00000000       0x30 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .text.W25QXX_WAKEUP
+                0x00000000       0x30 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .bss.W25QXX_BUFFER
+                0x00000000     0x1000 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .data.W25QXX_TYPE
+                0x00000000        0x2 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .debug_info    0x00000000      0xceb CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .debug_abbrev  0x00000000      0x218 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .debug_loc     0x00000000      0x44e CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .debug_aranges
+                0x00000000       0x90 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .debug_ranges  0x00000000       0x80 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .debug_line    0x00000000      0x707 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .debug_str     0x00000000      0x47b CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .comment       0x00000000       0x4a CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .debug_frame   0x00000000      0x1b0 CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
+ .ARM.attributes
+                0x00000000       0x2d CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
  .text          0x00000000        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
  .data          0x00000000        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
  .bss           0x00000000        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
@@ -1363,6 +1414,7 @@ LOAD CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
 LOAD CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
 LOAD CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
 LOAD CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
+LOAD CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj
 START GROUP
 LOAD d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a
 LOAD d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a
@@ -1381,7 +1433,7 @@ LOAD d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/b
                 0x08000000                g_pfnVectors
                 0x080001e4                . = ALIGN (0x4)
 
-.text           0x080001e8     0xc940
+.text           0x080001e8     0xc938
                 0x080001e8                . = ALIGN (0x4)
  *(.text)
  .text          0x080001e8       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -1943,527 +1995,526 @@ LOAD d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/b
                 0x08005f60      0x138 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
                 0x08005f60                OLED_Init
  .text.MX_SPI2_Init
-                0x08006098       0x3c CMakeFiles/leden.elf.dir/SPI/spi.c.obj
+                0x08006098       0x38 CMakeFiles/leden.elf.dir/SPI/spi.c.obj
                 0x08006098                MX_SPI2_Init
  .text.SPI2_ReadWriteByte
-                0x080060d4       0x70 CMakeFiles/leden.elf.dir/SPI/spi.c.obj
-                0x080060d4                SPI2_ReadWriteByte
+                0x080060d0       0x70 CMakeFiles/leden.elf.dir/SPI/spi.c.obj
+                0x080060d0                SPI2_ReadWriteByte
  .text.SPI2_Init
-                0x08006144       0x74 CMakeFiles/leden.elf.dir/SPI/spi.c.obj
-                0x08006144                SPI2_Init
+                0x08006140       0x74 CMakeFiles/leden.elf.dir/SPI/spi.c.obj
+                0x08006140                SPI2_Init
  .text.MX_USB_DEVICE_Init
-                0x080061b8       0x40 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj
-                0x080061b8                MX_USB_DEVICE_Init
+                0x080061b4       0x40 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj
+                0x080061b4                MX_USB_DEVICE_Init
  .text.USBD_FS_DeviceDescriptor
-                0x080061f8        0xc CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x080061f8                USBD_FS_DeviceDescriptor
+                0x080061f4        0xc CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080061f4                USBD_FS_DeviceDescriptor
  .text.USBD_FS_LangIDStrDescriptor
-                0x08006204        0xc CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006204                USBD_FS_LangIDStrDescriptor
+                0x08006200        0xc CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006200                USBD_FS_LangIDStrDescriptor
  .text.IntToUnicode
-                0x08006210       0x46 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
- *fill*         0x08006256        0x2 
+                0x0800620c       0x46 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ *fill*         0x08006252        0x2 
  .text.Get_SerialNum
-                0x08006258       0x38 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006254       0x38 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
  .text.USBD_FS_SerialStrDescriptor
-                0x08006290       0x14 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006290                USBD_FS_SerialStrDescriptor
+                0x0800628c       0x14 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x0800628c                USBD_FS_SerialStrDescriptor
  .text.USBD_FS_ProductStrDescriptor
-                0x080062a4       0x24 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x080062a4                USBD_FS_ProductStrDescriptor
+                0x080062a0       0x24 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080062a0                USBD_FS_ProductStrDescriptor
  .text.USBD_FS_ManufacturerStrDescriptor
-                0x080062c8       0x1c CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x080062c8                USBD_FS_ManufacturerStrDescriptor
+                0x080062c4       0x1c CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080062c4                USBD_FS_ManufacturerStrDescriptor
  .text.USBD_FS_ConfigStrDescriptor
-                0x080062e4       0x24 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x080062e4                USBD_FS_ConfigStrDescriptor
+                0x080062e0       0x24 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x080062e0                USBD_FS_ConfigStrDescriptor
  .text.USBD_FS_InterfaceStrDescriptor
-                0x08006308       0x24 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
-                0x08006308                USBD_FS_InterfaceStrDescriptor
+                0x08006304       0x24 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+                0x08006304                USBD_FS_InterfaceStrDescriptor
  .text.USBD_Get_USB_Status
-                0x0800632c       0x14 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006328       0x14 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
  .text.HAL_PCD_MspInit
-                0x08006340       0x40 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006340                HAL_PCD_MspInit
+                0x0800633c       0x40 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800633c                HAL_PCD_MspInit
  .text.HAL_PCD_SetupStageCallback
-                0x08006380       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006380                HAL_PCD_SetupStageCallback
+                0x0800637c       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800637c                HAL_PCD_SetupStageCallback
  .text.HAL_PCD_DataOutStageCallback
-                0x08006390       0x18 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006390                HAL_PCD_DataOutStageCallback
+                0x0800638c       0x18 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800638c                HAL_PCD_DataOutStageCallback
  .text.HAL_PCD_DataInStageCallback
-                0x080063a8       0x16 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080063a8                HAL_PCD_DataInStageCallback
+                0x080063a4       0x16 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080063a4                HAL_PCD_DataInStageCallback
  .text.HAL_PCD_SOFCallback
-                0x080063be        0xc CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080063be                HAL_PCD_SOFCallback
+                0x080063ba        0xc CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080063ba                HAL_PCD_SOFCallback
  .text.HAL_PCD_ResetCallback
-                0x080063ca       0x24 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080063ca                HAL_PCD_ResetCallback
- *fill*         0x080063ee        0x2 
+                0x080063c6       0x24 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080063c6                HAL_PCD_ResetCallback
+ *fill*         0x080063ea        0x2 
  .text.HAL_PCD_SuspendCallback
-                0x080063f0       0x20 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080063f0                HAL_PCD_SuspendCallback
+                0x080063ec       0x20 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080063ec                HAL_PCD_SuspendCallback
  .text.HAL_PCD_ResumeCallback
-                0x08006410        0xc CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006410                HAL_PCD_ResumeCallback
+                0x0800640c        0xc CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800640c                HAL_PCD_ResumeCallback
  .text.USBD_LL_Init
-                0x0800641c       0x68 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x0800641c                USBD_LL_Init
+                0x08006418       0x68 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006418                USBD_LL_Init
  .text.USBD_LL_Start
-                0x08006484       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006484                USBD_LL_Start
+                0x08006480       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006480                USBD_LL_Start
  .text.USBD_LL_OpenEP
-                0x08006494       0x16 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006494                USBD_LL_OpenEP
+                0x08006490       0x16 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006490                USBD_LL_OpenEP
  .text.USBD_LL_CloseEP
-                0x080064aa       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080064aa                USBD_LL_CloseEP
+                0x080064a6       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080064a6                USBD_LL_CloseEP
  .text.USBD_LL_StallEP
-                0x080064ba       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080064ba                USBD_LL_StallEP
+                0x080064b6       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080064b6                USBD_LL_StallEP
  .text.USBD_LL_ClearStallEP
-                0x080064ca       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080064ca                USBD_LL_ClearStallEP
+                0x080064c6       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080064c6                USBD_LL_ClearStallEP
  .text.USBD_LL_IsStallEP
-                0x080064da       0x2e CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x080064da                USBD_LL_IsStallEP
+                0x080064d6       0x2e CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x080064d6                USBD_LL_IsStallEP
  .text.USBD_LL_SetUSBAddress
-                0x08006508       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006508                USBD_LL_SetUSBAddress
+                0x08006504       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006504                USBD_LL_SetUSBAddress
  .text.USBD_LL_Transmit
-                0x08006518       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006518                USBD_LL_Transmit
+                0x08006514       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006514                USBD_LL_Transmit
  .text.USBD_LL_PrepareReceive
-                0x08006528       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006528                USBD_LL_PrepareReceive
+                0x08006524       0x10 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006524                USBD_LL_PrepareReceive
  .text.USBD_static_malloc
-                0x08006538        0x8 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006538                USBD_static_malloc
+                0x08006534        0x8 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x08006534                USBD_static_malloc
  .text.USBD_static_free
-                0x08006540        0x2 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006540                USBD_static_free
+                0x0800653c        0x2 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800653c                USBD_static_free
  .text.HAL_PCDEx_SetConnectionState
-                0x08006542        0x2 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
-                0x08006542                HAL_PCDEx_SetConnectionState
+                0x0800653e        0x2 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+                0x0800653e                HAL_PCDEx_SetConnectionState
  .text.json_cmp
-                0x08006544       0x3c CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
+                0x08006540       0x3c CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
  .text.parse_json_data
-                0x08006580       0xbc CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
-                0x08006580                parse_json_data
+                0x0800657c       0xbc CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
+                0x0800657c                parse_json_data
  .text.jsmn_init_user
-                0x0800663c       0x18 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
-                0x0800663c                jsmn_init_user
+                0x08006638       0x18 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
+                0x08006638                jsmn_init_user
  .text.key_init_user
-                0x08006654        0x8 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
-                0x08006654                key_init_user
+                0x08006650        0x8 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
+                0x08006650                key_init_user
  .text.key_scan_user
-                0x0800665c       0x10 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
-                0x0800665c                key_scan_user
+                0x08006658       0x10 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
+                0x08006658                key_scan_user
  .text.MK_on_keyup
-                0x0800666c       0x2c CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
-                0x0800666c                MK_on_keyup
+                0x08006668       0x2c CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
+                0x08006668                MK_on_keyup
  .text.MK_on_keydown
-                0x08006698       0xa8 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
-                0x08006698                MK_on_keydown
+                0x08006694       0xa8 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
+                0x08006694                MK_on_keydown
  .text.oled_init_user
-                0x08006740       0x18 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
-                0x08006740                oled_init_user
+                0x0800673c       0x18 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
+                0x0800673c                oled_init_user
  .text.oled_show_user
-                0x08006758       0x22 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
-                0x08006758                oled_show_user
- *fill*         0x0800677a        0x2 
- .text.__errno  0x0800677c        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
-                0x0800677c                __errno
+                0x08006754       0x22 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
+                0x08006754                oled_show_user
+ *fill*         0x08006776        0x2 
+ .text.__errno  0x08006778        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-errno.o)
+                0x08006778                __errno
  .text.__libc_init_array
-                0x08006788       0x48 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
-                0x08006788                __libc_init_array
- .text.memset   0x080067d0       0xa4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
-                0x080067d0                memset
- .text.printf   0x08006874       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-printf.o)
-                0x08006874                printf
- .text._puts_r  0x0800689c       0x9c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-puts.o)
-                0x0800689c                _puts_r
- .text.puts     0x08006938       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-puts.o)
-                0x08006938                puts
- .text.setvbuf  0x08006948      0x1b0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
-                0x08006948                setvbuf
- .text.strlen   0x08006af8       0x5c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
-                0x08006af8                strlen
- .text.strncmp  0x08006b54       0x7c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strncmp.o)
-                0x08006b54                strncmp
+                0x08006784       0x48 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-init.o)
+                0x08006784                __libc_init_array
+ .text.memset   0x080067cc       0xa4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memset.o)
+                0x080067cc                memset
+ .text.printf   0x08006870       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-printf.o)
+                0x08006870                printf
+ .text._puts_r  0x08006898       0x9c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-puts.o)
+                0x08006898                _puts_r
+ .text.puts     0x08006934       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-puts.o)
+                0x08006934                puts
+ .text.setvbuf  0x08006944      0x1b0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-setvbuf.o)
+                0x08006944                setvbuf
+ .text.strlen   0x08006af4       0x5c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strlen-stub.o)
+                0x08006af4                strlen
+ .text.strncmp  0x08006b50       0x7c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strncmp.o)
+                0x08006b50                strncmp
  .text._vfprintf_r
-                0x08006bd0     0x1b58 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
-                0x08006bd0                _vfprintf_r
+                0x08006bcc     0x1b58 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x08006bcc                _vfprintf_r
  .text.__sbprintf
-                0x08008728       0x84 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x08008724       0x84 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
  .text.__swsetup_r
-                0x080087ac       0xd4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wsetup.o)
-                0x080087ac                __swsetup_r
+                0x080087a8       0xd4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wsetup.o)
+                0x080087a8                __swsetup_r
  .text.startup.register_fini
-                0x08008880       0x14 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x08008894        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
-                0x08008894                atexit
- .text.quorem   0x080088a0      0x12c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
- *fill*         0x080089cc        0x4 
- .text._dtoa_r  0x080089d0      0xecc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
-                0x080089d0                _dtoa_r
+                0x0800887c       0x14 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08008890        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-atexit.o)
+                0x08008890                atexit
+ .text.quorem   0x0800889c      0x12c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
+ .text._dtoa_r  0x080089c8      0xecc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
+                0x080089c8                _dtoa_r
  .text.__sflush_r
-                0x0800989c      0x124 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
-                0x0800989c                __sflush_r
+                0x08009894      0x124 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+                0x08009894                __sflush_r
  .text._fflush_r
-                0x080099c0       0x5c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
-                0x080099c0                _fflush_r
+                0x080099b8       0x5c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fflush.o)
+                0x080099b8                _fflush_r
  .text._cleanup_r
-                0x08009a1c        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
-                0x08009a1c                _cleanup_r
- .text.__sinit  0x08009a28      0x10c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
-                0x08009a28                __sinit
+                0x08009a14        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x08009a14                _cleanup_r
+ .text.__sinit  0x08009a20      0x10c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x08009a20                __sinit
  .text.__sfp_lock_acquire
-                0x08009b34        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
-                0x08009b34                __sfp_lock_acquire
+                0x08009b2c        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x08009b2c                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x08009b40        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
-                0x08009b40                __sfp_lock_release
+                0x08009b38        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-findfp.o)
+                0x08009b38                __sfp_lock_release
  .text.__libc_fini_array
-                0x08009b4c       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
-                0x08009b4c                __libc_fini_array
+                0x08009b44       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fini.o)
+                0x08009b44                __libc_fini_array
  .text._malloc_trim_r
-                0x08009b78       0xa0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
-                0x08009b78                _malloc_trim_r
- .text._free_r  0x08009c18      0x200 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
-                0x08009c18                _free_r
+                0x08009b70       0xa0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+                0x08009b70                _malloc_trim_r
+ .text._free_r  0x08009c10      0x200 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-freer.o)
+                0x08009c10                _free_r
  .text.__sfvwrite_r
-                0x08009e18      0x2f0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
-                0x08009e18                __sfvwrite_r
+                0x08009e10      0x2f0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fvwrite.o)
+                0x08009e10                __sfvwrite_r
  .text._fwalk_reent
-                0x0800a108       0x48 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
-                0x0800a108                _fwalk_reent
+                0x0800a100       0x48 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fwalk.o)
+                0x0800a100                _fwalk_reent
  .text._localeconv_r
-                0x0800a150        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
-                0x0800a150                _localeconv_r
+                0x0800a148        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-localeconv.o)
+                0x0800a148                _localeconv_r
  .text.__retarget_lock_init_recursive
-                0x0800a158        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x0800a158                __retarget_lock_init_recursive
+                0x0800a150        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x0800a150                __retarget_lock_init_recursive
  .text.__retarget_lock_close_recursive
-                0x0800a15c        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x0800a15c                __retarget_lock_close_recursive
+                0x0800a154        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x0800a154                __retarget_lock_close_recursive
  .text.__retarget_lock_acquire_recursive
-                0x0800a160        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x0800a160                __retarget_lock_acquire_recursive
+                0x0800a158        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x0800a158                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0800a164        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
-                0x0800a164                __retarget_lock_release_recursive
+                0x0800a15c        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lock.o)
+                0x0800a15c                __retarget_lock_release_recursive
  .text.__smakebuf_r
-                0x0800a168       0xe0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
-                0x0800a168                __smakebuf_r
+                0x0800a160       0xe0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
+                0x0800a160                __smakebuf_r
  .text.__swhatbuf_r
-                0x0800a248       0x60 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
-                0x0800a248                __swhatbuf_r
- .text.malloc   0x0800a2a8       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
-                0x0800a2a8                malloc
+                0x0800a240       0x60 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-makebuf.o)
+                0x0800a240                __swhatbuf_r
+ .text.malloc   0x0800a2a0       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-malloc.o)
+                0x0800a2a0                malloc
  .text._malloc_r
-                0x0800a2b8      0x558 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
-                0x0800a2b8                _malloc_r
- .text.memchr   0x0800a810       0x90 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
-                0x0800a810                memchr
- .text.memmove  0x0800a8a0       0xf8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memmove.o)
-                0x0800a8a0                memmove
+                0x0800a2b0      0x558 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mallocr.o)
+                0x0800a2b0                _malloc_r
+ .text.memchr   0x0800a808       0x90 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memchr-stub.o)
+                0x0800a808                memchr
+ .text.memmove  0x0800a898       0xf8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-memmove.o)
+                0x0800a898                memmove
  .text.__malloc_lock
-                0x0800a998        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
-                0x0800a998                __malloc_lock
+                0x0800a990        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+                0x0800a990                __malloc_lock
  .text.__malloc_unlock
-                0x0800a9a4        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
-                0x0800a9a4                __malloc_unlock
- .text._Balloc  0x0800a9b0       0x4c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800a9b0                _Balloc
- .text._Bfree   0x0800a9fc       0x14 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800a9fc                _Bfree
+                0x0800a99c        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mlock.o)
+                0x0800a99c                __malloc_unlock
+ .text._Balloc  0x0800a9a8       0x4c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800a9a8                _Balloc
+ .text._Bfree   0x0800a9f4       0x14 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800a9f4                _Bfree
  .text.__multadd
-                0x0800aa10       0xa4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800aa10                __multadd
+                0x0800aa08       0xa4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800aa08                __multadd
  .text.__hi0bits
-                0x0800aab4       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800aab4                __hi0bits
+                0x0800aaac       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800aaac                __hi0bits
  .text.__lo0bits
-                0x0800aaf4       0x58 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800aaf4                __lo0bits
- .text.__i2b    0x0800ab4c       0x5c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800ab4c                __i2b
+                0x0800aaec       0x58 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800aaec                __lo0bits
+ .text.__i2b    0x0800ab44       0x5c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800ab44                __i2b
  .text.__multiply
-                0x0800aba8      0x15c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800aba8                __multiply
+                0x0800aba0      0x15c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800aba0                __multiply
  .text.__pow5mult
-                0x0800ad04       0xb8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800ad04                __pow5mult
+                0x0800acfc       0xb8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800acfc                __pow5mult
  .text.__lshift
-                0x0800adbc       0xec d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800adbc                __lshift
- .text.__mcmp   0x0800aea8       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800aea8                __mcmp
- .text.__mdiff  0x0800aee8      0x14c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800aee8                __mdiff
- .text.__d2b    0x0800b034       0xc4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800b034                __d2b
+                0x0800adb4       0xec d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800adb4                __lshift
+ .text.__mcmp   0x0800aea0       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800aea0                __mcmp
+ .text.__mdiff  0x0800aee0      0x14c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800aee0                __mdiff
+ .text.__d2b    0x0800b02c       0xc4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800b02c                __d2b
  .text._realloc_r
-                0x0800b0f8      0x3dc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
-                0x0800b0f8                _realloc_r
- .text.frexp    0x0800b4d4       0x70 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-s_frexp.o)
-                0x0800b4d4                frexp
- .text._sbrk_r  0x0800b544       0x24 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
-                0x0800b544                _sbrk_r
- .text.__sread  0x0800b568       0x24 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
-                0x0800b568                __sread
+                0x0800b0f0      0x3dc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-reallocr.o)
+                0x0800b0f0                _realloc_r
+ .text.frexp    0x0800b4cc       0x70 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-s_frexp.o)
+                0x0800b4cc                frexp
+ .text._sbrk_r  0x0800b53c       0x24 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-sbrkr.o)
+                0x0800b53c                _sbrk_r
+ .text.__sread  0x0800b560       0x24 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x0800b560                __sread
  .text.__swrite
-                0x0800b58c       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
-                0x0800b58c                __swrite
- .text.__sseek  0x0800b5cc       0x20 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
-                0x0800b5cc                __sseek
+                0x0800b584       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x0800b584                __swrite
+ .text.__sseek  0x0800b5c4       0x20 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x0800b5c4                __sseek
  .text.__sclose
-                0x0800b5ec        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
-                0x0800b5ec                __sclose
- .text.strncpy  0x0800b5f4       0x68 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strncpy.o)
-                0x0800b5f4                strncpy
+                0x0800b5e4        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-stdio.o)
+                0x0800b5e4                __sclose
+ .text.strncpy  0x0800b5ec       0x68 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-strncpy.o)
+                0x0800b5ec                strncpy
  .text.__sprint_r.part.0
-                0x0800b65c       0x78 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800b654       0x78 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .text.__sprint_r
-                0x0800b6d4       0x14 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
-                0x0800b6d4                __sprint_r
+                0x0800b6cc       0x14 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800b6cc                __sprint_r
  .text._vfiprintf_r
-                0x0800b6e8      0xd98 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
-                0x0800b6e8                _vfiprintf_r
+                0x0800b6e0      0xd98 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800b6e0                _vfiprintf_r
  .text.__sbprintf
-                0x0800c480       0x84 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800c478       0x84 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .text._write_r
-                0x0800c504       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
-                0x0800c504                _write_r
+                0x0800c4fc       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-writer.o)
+                0x0800c4fc                _write_r
  .text.__register_exitproc
-                0x0800c530       0x8c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
-                0x0800c530                __register_exitproc
+                0x0800c528       0x8c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__atexit.o)
+                0x0800c528                __register_exitproc
  .text.__assert_func
-                0x0800c5bc       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
-                0x0800c5bc                __assert_func
+                0x0800c5b4       0x40 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
+                0x0800c5b4                __assert_func
  .text._calloc_r
-                0x0800c5fc       0x78 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-callocr.o)
-                0x0800c5fc                _calloc_r
+                0x0800c5f4       0x78 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-callocr.o)
+                0x0800c5f4                _calloc_r
  .text._close_r
-                0x0800c674       0x24 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
-                0x0800c674                _close_r
+                0x0800c66c       0x24 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-closer.o)
+                0x0800c66c                _close_r
  .text._fclose_r
-                0x0800c698       0xcc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
-                0x0800c698                _fclose_r
+                0x0800c690       0xcc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fclose.o)
+                0x0800c690                _fclose_r
  .text.fiprintf
-                0x0800c764       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
-                0x0800c764                fiprintf
+                0x0800c75c       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fiprintf.o)
+                0x0800c75c                fiprintf
  .text.__fputwc
-                0x0800c78c       0xa0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
-                0x0800c78c                __fputwc
+                0x0800c784       0xa0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
+                0x0800c784                __fputwc
  .text._fputwc_r
-                0x0800c82c       0x68 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
-                0x0800c82c                _fputwc_r
+                0x0800c824       0x68 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fputwc.o)
+                0x0800c824                _fputwc_r
  .text._fstat_r
-                0x0800c894       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
-                0x0800c894                _fstat_r
+                0x0800c88c       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-fstatr.o)
+                0x0800c88c                _fstat_r
  .text._isatty_r
-                0x0800c8bc       0x24 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-isattyr.o)
-                0x0800c8bc                _isatty_r
+                0x0800c8b4       0x24 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-isattyr.o)
+                0x0800c8b4                _isatty_r
  .text.__locale_mb_cur_max
-                0x0800c8e0        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
-                0x0800c8e0                __locale_mb_cur_max
+                0x0800c8d8        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
+                0x0800c8d8                __locale_mb_cur_max
  .text._lseek_r
-                0x0800c8ec       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
-                0x0800c8ec                _lseek_r
+                0x0800c8e4       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-lseekr.o)
+                0x0800c8e4                _lseek_r
  .text.__ascii_mbtowc
-                0x0800c918       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
-                0x0800c918                __ascii_mbtowc
- .text._read_r  0x0800c944       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
-                0x0800c944                _read_r
+                0x0800c910       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mbtowc_r.o)
+                0x0800c910                __ascii_mbtowc
+ .text._read_r  0x0800c93c       0x2c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-readr.o)
+                0x0800c93c                _read_r
  .text.__swbuf_r
-                0x0800c970       0xb0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wbuf.o)
-                0x0800c970                __swbuf_r
+                0x0800c968       0xb0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wbuf.o)
+                0x0800c968                __swbuf_r
  .text._wcrtomb_r
-                0x0800ca20       0x3c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wcrtomb.o)
-                0x0800ca20                _wcrtomb_r
+                0x0800ca18       0x3c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wcrtomb.o)
+                0x0800ca18                _wcrtomb_r
  .text.__ascii_wctomb
-                0x0800ca5c       0x1c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wctomb_r.o)
-                0x0800ca5c                __ascii_wctomb
- .text.abort    0x0800ca78       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-abort.o)
-                0x0800ca78                abort
- .text.raise    0x0800ca88       0x5c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signal.o)
-                0x0800ca88                raise
- .text._kill_r  0x0800cae4       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
-                0x0800cae4                _kill_r
+                0x0800ca54       0x1c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-wctomb_r.o)
+                0x0800ca54                __ascii_wctomb
+ .text.abort    0x0800ca70       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-abort.o)
+                0x0800ca70                abort
+ .text.raise    0x0800ca80       0x5c d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signal.o)
+                0x0800ca80                raise
+ .text._kill_r  0x0800cadc       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
+                0x0800cadc                _kill_r
  .text._getpid_r
-                0x0800cb0c        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
-                0x0800cb0c                _getpid_r
+                0x0800cb04        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-signalr.o)
+                0x0800cb04                _getpid_r
  *(.glue_7)
- .glue_7        0x0800cb10        0x0 linker stubs
+ .glue_7        0x0800cb08        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800cb10        0x0 linker stubs
+ .glue_7t       0x0800cb08        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800cb10        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x0800cb08        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x0800cb10        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
-                0x0800cb10                _init
- .init          0x0800cb14        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x0800cb08        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
+                0x0800cb08                _init
+ .init          0x0800cb0c        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x0800cb1c        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
-                0x0800cb1c                _fini
- .fini          0x0800cb20        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
-                0x0800cb28                . = ALIGN (0x4)
-                0x0800cb28                _etext = .
+ .fini          0x0800cb14        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crti.o
+                0x0800cb14                _fini
+ .fini          0x0800cb18        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
+                0x0800cb20                . = ALIGN (0x4)
+                0x0800cb20                _etext = .
 
-.vfp11_veneer   0x0800cb28        0x0
- .vfp11_veneer  0x0800cb28        0x0 linker stubs
+.vfp11_veneer   0x0800cb20        0x0
+ .vfp11_veneer  0x0800cb20        0x0 linker stubs
 
-.v4_bx          0x0800cb28        0x0
- .v4_bx         0x0800cb28        0x0 linker stubs
+.v4_bx          0x0800cb20        0x0
+ .v4_bx         0x0800cb20        0x0 linker stubs
 
-.iplt           0x0800cb28        0x0
- .iplt          0x0800cb28        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x0800cb20        0x0
+ .iplt          0x0800cb20        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x0800cb28      0x980
-                0x0800cb28                . = ALIGN (0x4)
+.rodata         0x0800cb20      0x980
+                0x0800cb20                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x0800cb28       0x10 CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x0800cb28                AHBPrescTable
+                0x0800cb20       0x10 CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0800cb20                AHBPrescTable
  .rodata.APBPrescTable
-                0x0800cb38        0x8 CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj
-                0x0800cb38                APBPrescTable
+                0x0800cb30        0x8 CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0800cb30                APBPrescTable
  .rodata.aPLLMULFactorTable.1
-                0x0800cb40       0x10 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0800cb38       0x10 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .rodata.aPredivFactorTable.0
-                0x0800cb50        0x2 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x0800cb52        0x2 
+                0x0800cb48        0x2 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x0800cb4a        0x2 
  .rodata.HAL_GPIO_EXTI_Callback.str1.4
-                0x0800cb54       0x30 CMakeFiles/leden.elf.dir/EC11/EC11.c.obj
- .rodata.Hzk1   0x0800cb84      0x160 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
-                0x0800cb84                Hzk1
- .rodata.Hzk2   0x0800cce4       0x48 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
-                0x0800cce4                Hzk2
- .rodata.Hzk3   0x0800cd2c       0x80 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
-                0x0800cd2c                Hzk3
- .rodata.Hzk4   0x0800cdac      0x200 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
-                0x0800cdac                Hzk4
+                0x0800cb4c       0x30 CMakeFiles/leden.elf.dir/EC11/EC11.c.obj
+ .rodata.Hzk1   0x0800cb7c      0x160 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
+                0x0800cb7c                Hzk1
+ .rodata.Hzk2   0x0800ccdc       0x48 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
+                0x0800ccdc                Hzk2
+ .rodata.Hzk3   0x0800cd24       0x80 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
+                0x0800cd24                Hzk3
+ .rodata.Hzk4   0x0800cda4      0x200 CMakeFiles/leden.elf.dir/OLED/oled.c.obj
+                0x0800cda4                Hzk4
  .rodata.USBD_FS_ProductStrDescriptor.str1.4
-                0x0800cfac       0x16 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
- *fill*         0x0800cfc2        0x2 
+                0x0800cfa4       0x16 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ *fill*         0x0800cfba        0x2 
  .rodata.USBD_FS_ManufacturerStrDescriptor.str1.4
-                0x0800cfc4       0x13 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
- *fill*         0x0800cfd7        0x1 
+                0x0800cfbc       0x13 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ *fill*         0x0800cfcf        0x1 
  .rodata.USBD_FS_ConfigStrDescriptor.str1.4
-                0x0800cfd8        0xb CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
- *fill*         0x0800cfe3        0x1 
+                0x0800cfd0        0xb CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ *fill*         0x0800cfdb        0x1 
  .rodata.USBD_FS_InterfaceStrDescriptor.str1.4
-                0x0800cfe4        0xe CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
- *fill*         0x0800cff2        0x2 
+                0x0800cfdc        0xe CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ *fill*         0x0800cfea        0x2 
  .rodata.parse_json_data.str1.4
-                0x0800cff4       0x67 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
- *fill*         0x0800d05b        0x1 
+                0x0800cfec       0x67 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
+ *fill*         0x0800d053        0x1 
  .rodata.MK_on_keyup.str1.4
-                0x0800d05c        0xa CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
- *fill*         0x0800d066        0x2 
+                0x0800d054        0xa CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
+ *fill*         0x0800d05e        0x2 
  .rodata.MK_on_keydown.str1.4
-                0x0800d068       0x39 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
- *fill*         0x0800d0a1        0x3 
+                0x0800d060       0x39 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
+ *fill*         0x0800d099        0x3 
  .rodata._global_impure_ptr
-                0x0800d0a4        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
-                0x0800d0a4                _global_impure_ptr
+                0x0800d09c        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-impure.o)
+                0x0800d09c                _global_impure_ptr
  .rodata._puts_r.str1.4
-                0x0800d0a8        0x2 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-puts.o)
- *fill*         0x0800d0aa        0x2 
+                0x0800d0a0        0x2 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-puts.o)
+ *fill*         0x0800d0a2        0x2 
  .rodata._vfprintf_r.str1.4
-                0x0800d0ac       0x42 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
- *fill*         0x0800d0ee        0x2 
+                0x0800d0a4       0x42 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+ *fill*         0x0800d0e6        0x2 
  .rodata.blanks.1
-                0x0800d0f0       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x0800d0e8       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
  .rodata.zeroes.0
-                0x0800d100       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
+                0x0800d0f8       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfprintf.o)
  .rodata._dtoa_r.str1.4
-                0x0800d110       0xa2 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
+                0x0800d108       0xa2 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-dtoa.o)
                                  0xa6 (size before relaxing)
- *fill*         0x0800d1b2        0x2 
+ *fill*         0x0800d1aa        0x2 
  .rodata.__multadd.str1.4
-                0x0800d1b4       0x7f d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800d1ac       0x7f d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
                                  0x93 (size before relaxing)
- *fill*         0x0800d233        0x5 
+ *fill*         0x0800d22b        0x5 
  .rodata.__mprec_bigtens
-                0x0800d238       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800d238                __mprec_bigtens
+                0x0800d230       0x28 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800d230                __mprec_bigtens
  .rodata.__mprec_tens
-                0x0800d260       0xc8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
-                0x0800d260                __mprec_tens
- .rodata.p05.0  0x0800d328        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800d258       0xc8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
+                0x0800d258                __mprec_tens
+ .rodata.p05.0  0x0800d320        0xc d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-mprec.o)
  .rodata._vfiprintf_r.str1.4
-                0x0800d334       0x2f d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800d32c       0x2f d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.blanks.1
-                0x0800d334       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800d32c       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.zeroes.0
-                0x0800d344       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
+                0x0800d33c       0x10 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-vfiprintf.o)
  .rodata.__assert_func.str1.4
-                0x0800d354       0x3f d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
+                0x0800d34c       0x3f d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-assert.o)
                                  0x43 (size before relaxing)
- *fill*         0x0800d393        0x1 
+ *fill*         0x0800d38b        0x1 
  .rodata._setlocale_r.str1.4
-                0x0800d394        0xa d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
+                0x0800d38c        0xa d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
                                   0xd (size before relaxing)
- *fill*         0x0800d39e        0x2 
+ *fill*         0x0800d396        0x2 
  .rodata.str1.4
-                0x0800d3a0        0x2 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
- *fill*         0x0800d3a2        0x2 
+                0x0800d398        0x2 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-locale.o)
+ *fill*         0x0800d39a        0x2 
  .rodata._ctype_
-                0x0800d3a4      0x101 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-ctype_.o)
-                0x0800d3a4                _ctype_
-                0x0800d4a8                . = ALIGN (0x4)
- *fill*         0x0800d4a5        0x3 
+                0x0800d39c      0x101 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-ctype_.o)
+                0x0800d39c                _ctype_
+                0x0800d4a0                . = ALIGN (0x4)
+ *fill*         0x0800d49d        0x3 
 
-.ARM.extab      0x0800d4a8        0x0
-                0x0800d4a8                . = ALIGN (0x4)
+.ARM.extab      0x0800d4a0        0x0
+                0x0800d4a0                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800d4a8                . = ALIGN (0x4)
+                0x0800d4a0                . = ALIGN (0x4)
 
-.ARM            0x0800d4a8        0x8
-                0x0800d4a8                . = ALIGN (0x4)
-                0x0800d4a8                __exidx_start = .
+.ARM            0x0800d4a0        0x8
+                0x0800d4a0                . = ALIGN (0x4)
+                0x0800d4a0                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0800d4a8        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x0800d4b0                __exidx_end = .
-                0x0800d4b0                . = ALIGN (0x4)
+ .ARM.exidx     0x0800d4a0        0x8 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x0800d4a8                __exidx_end = .
+                0x0800d4a8                . = ALIGN (0x4)
 
-.rel.dyn        0x0800d4b0        0x0
- .rel.iplt      0x0800d4b0        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x0800d4a8        0x0
+ .rel.iplt      0x0800d4a8        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.preinit_array  0x0800d4b0        0x0
-                0x0800d4b0                . = ALIGN (0x4)
-                0x0800d4b0                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800d4a8        0x0
+                0x0800d4a8                . = ALIGN (0x4)
+                0x0800d4a8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800d4b0                PROVIDE (__preinit_array_end = .)
-                0x0800d4b0                . = ALIGN (0x4)
+                0x0800d4a8                PROVIDE (__preinit_array_end = .)
+                0x0800d4a8                . = ALIGN (0x4)
 
-.init_array     0x0800d4b0        0x8
-                0x0800d4b0                . = ALIGN (0x4)
-                0x0800d4b0                PROVIDE (__init_array_start = .)
+.init_array     0x0800d4a8        0x8
+                0x0800d4a8                . = ALIGN (0x4)
+                0x0800d4a8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x0800d4b0        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
+                0x0800d4a8        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x0800d4b4        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x0800d4b8                PROVIDE (__init_array_end = .)
-                0x0800d4b8                . = ALIGN (0x4)
+ .init_array    0x0800d4ac        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800d4b0                PROVIDE (__init_array_end = .)
+                0x0800d4b0                . = ALIGN (0x4)
 
-.fini_array     0x0800d4b8        0x4
-                0x0800d4b8                . = ALIGN (0x4)
-                0x0800d4b8                PROVIDE (__fini_array_start = .)
+.fini_array     0x0800d4b0        0x4
+                0x0800d4b0                . = ALIGN (0x4)
+                0x0800d4b0                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800d4b8        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x0800d4bc                PROVIDE (__fini_array_end = .)
-                0x0800d4bc                . = ALIGN (0x4)
-                0x0800d4bc                _sidata = LOADADDR (.data)
+ .fini_array    0x0800d4b0        0x4 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800d4b4                PROVIDE (__fini_array_end = .)
+                0x0800d4b4                . = ALIGN (0x4)
+                0x0800d4b4                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0xb08 load address 0x0800d4bc
+.data           0x20000000      0xb08 load address 0x0800d4b4
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -2542,11 +2593,11 @@ LOAD d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/b
                 0x20000b08                . = ALIGN (0x4)
                 0x20000b08                _edata = .
 
-.igot.plt       0x20000b08        0x0 load address 0x0800dfc4
+.igot.plt       0x20000b08        0x0 load address 0x0800dfbc
  .igot.plt      0x20000b08        0x0 d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x20000b08                . = ALIGN (0x4)
 
-.bss            0x20000b08     0x1338 load address 0x0800dfc4
+.bss            0x20000b08     0x1338 load address 0x0800dfbc
                 0x20000b08                _sbss = .
                 0x20000b08                __bss_start__ = _sbss
  *(.bss)
@@ -2628,7 +2679,7 @@ LOAD d:/ra/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/b
                 0x20001e40                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20001e40     0x1000 load address 0x0800dfc4
+                0x20001e40     0x1000 load address 0x0800dfbc
                 0x20001e40                . = ALIGN (0x8)
                 [!provide]                PROVIDE (end = .)
                 0x20001e40                PROVIDE (_end = .)

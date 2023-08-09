@@ -1,18 +1,8 @@
 #ifndef __FLASH_H
 #define __FLASH_H
 #include "stm32f1xx.h"
-//////////////////////////////////////////////////////////////////////////////////
-//本程序只供学习使用，未经作者许可，不得用于其它任何用途
-//ALIENTEK战舰STM32开发板
-//W25Q64 代码
-//正点原子@ALIENTEK
-//技术论坛:www.openedv.com
-//修改日期:2012/9/9
-//版本：V1.0
-//版权所有，盗版必究。
-//Copyright(C) 广州市星翼电子科技有限公司 2009-2019
-//All rights reserved
-//////////////////////////////////////////////////////////////////////////////////
+#include "stm32f1xx_hal_spi.h"
+#include <stdio.h>
 
 //W25X系列/Q系列芯片列表
 //W25Q80  ID  0XEF13
@@ -35,7 +25,8 @@
 
 extern uint16_t W25QXX_TYPE;					//定义W25QXX芯片型号
 
-#define	W25QXX_CS 		PBout(12)  		//W25QXX的片选信号
+#define	W25QXX_CS_SET 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET);  		//W25QXX的片选信号
+#define	W25QXX_CS_RESET 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET);  		//W25QXX的片选信号
 
 ////////////////////////////////////////////////////////////////////////////
 

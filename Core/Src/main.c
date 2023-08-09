@@ -34,6 +34,7 @@
 #include "oled_user.h"
 #include "EC11.h"
 #include "spi.h"
+#include "w25qxx.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
