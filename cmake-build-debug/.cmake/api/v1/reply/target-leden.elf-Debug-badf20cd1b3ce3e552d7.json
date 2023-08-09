@@ -154,6 +154,10 @@
 			[
 				{
 					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/SPI"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/Users/WOW/Desktop/leden/EC11"
 				},
 				{
@@ -245,7 +249,6 @@
 				12,
 				13,
 				14,
-				73,
 				74,
 				75,
 				76,
@@ -263,19 +266,22 @@
 				88,
 				89,
 				90,
+				91,
 				92,
 				94,
-				97,
-				102,
-				103,
+				96,
+				99,
 				104,
+				105,
 				106,
-				109,
+				108,
 				111,
 				113,
 				115,
 				117,
-				119
+				119,
+				121,
+				123
 			]
 		},
 		{
@@ -346,6 +352,10 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/WOW/Desktop/leden/SPI"
+				},
 				{
 					"backtrace" : 10,
 					"path" : "C:/Users/WOW/Desktop/leden/EC11"
@@ -545,23 +555,25 @@
 				69,
 				70,
 				71,
-				91,
+				72,
 				93,
 				95,
-				96,
+				97,
 				98,
-				99,
 				100,
 				101,
-				105,
+				102,
+				103,
 				107,
-				108,
+				109,
 				110,
 				112,
 				114,
 				116,
 				118,
-				120
+				120,
+				122,
+				124
 			]
 		},
 		{
@@ -577,7 +589,6 @@
 				12,
 				13,
 				14,
-				73,
 				74,
 				75,
 				76,
@@ -595,19 +606,22 @@
 				88,
 				89,
 				90,
+				91,
 				92,
 				94,
-				97,
-				102,
-				103,
+				96,
+				99,
 				104,
+				105,
 				106,
-				109,
+				108,
 				111,
 				113,
 				115,
 				117,
-				119
+				119,
+				121,
+				123
 			]
 		},
 		{
@@ -617,8 +631,8 @@
 				15,
 				19,
 				41,
-				72,
-				121
+				73,
+				125
 			]
 		}
 	],
@@ -926,6 +940,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"path" : "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h",
 			"sourceGroupIndex" : 0
 		},
@@ -1080,6 +1099,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c",
 			"sourceGroupIndex" : 1
 		},
@@ -1202,6 +1227,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "OLED/oledfont.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "SPI/spi.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "SPI/spi.h",
 			"sourceGroupIndex" : 0
 		},
 		{

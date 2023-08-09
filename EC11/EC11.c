@@ -1,6 +1,7 @@
 #include "EC11.h"
 #include "stdio.h"
 #include "usart.h"
+#include "stm32f1xx_hal.h"
 
 /*
     端点接的IO口设置：均采用上拉输入（不接信号时是低电平，用来检测是否有高电平信号输入）
@@ -14,9 +15,6 @@
 volatile uint16_t angel_count = 0;//角度累加
 volatile uint8_t encoder_direct_flag = 0;//可能的旋转标志。
 volatile uint16_t total_angel = once_angel * real_point;//一圈
-uint8_t refreshScreen = 1;//刷新屏幕标志位
-uint8_t next_menu_flag = 0;
-
 
 void EC11_EXTI_Init() {
     GPIO_InitTypeDef GPIO_InitStruct;
@@ -52,7 +50,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
             angel_count = angel_count > total_angel ? 0 : angel_count;
             printf("顺时针\n当前度数为：%d\r\n", get_angel());
             encoder_direct_flag = 0;
-            refreshScreen = 1;
         }
     } else if (GPIO_Pin == EC11_B_PIN) {
         //B先于A触发下降沿，且A是高电平，第一次可能是顺时针
@@ -65,7 +62,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
             angel_count -= once_angel;
             printf("逆时针\n当前度数为：%d\r\n", get_angel());
             encoder_direct_flag = 0;
-            refreshScreen = 1;
         }
     }
 }

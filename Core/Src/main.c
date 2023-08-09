@@ -33,6 +33,7 @@
 #include "key_user.h"
 #include "oled_user.h"
 #include "EC11.h"
+#include "spi.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -110,6 +111,8 @@ int main(void) {
     jsmn_init_user();
     // ±àÂëÆ÷
     EC11_EXTI_Init();
+    // SPI
+    SPI2_Init();
     /* USER CODE END 2 */
 
     /* Infinite loop */
