@@ -21,19 +21,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BACKUP/norflash.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKUP/norflash.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKUP/spi1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKUP/spi1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKUP/spi111.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BACKUP/spi111.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FLASH/norflash.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FLASH/norflash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SPI/spi.c" beforeDir="false" afterPath="$PROJECT_DIR$/SPI/spi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/W25QXX/w25qxx.c" beforeDir="false" afterPath="$PROJECT_DIR$/W25QXX/w25qxx.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/W25QXX/w25qxx.h" beforeDir="false" afterPath="$PROJECT_DIR$/W25QXX/w25qxx.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-91505acff78024fd7d56.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-08-09T08-25-39-0692.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-leden.elf-Debug-badf20cd1b3ce3e552d7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPI/spi.h" beforeDir="false" afterPath="$PROJECT_DIR$/SPI/spi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W25QXX/w25qxx.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/w25qxx.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W25QXX/w25qxx.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/w25qxx.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b2380cad5a137e2ea23d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-08-09T09-45-50-0207.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-leden.elf-Debug-7c67f0a50d60cc2e8d20.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/SPI/spi.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/SPI/spi.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/W25QXX/w25qxx.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
@@ -73,7 +85,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src",
+    "last_opened_file_path": "C:/Users/WOW/Desktop/leden/SPI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,10 +96,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\WOW\Desktop\leden\SPI" />
+      <recent name="C:\Users\WOW\Desktop\leden\W25QXX" />
+      <recent name="C:\Users\WOW\Desktop\leden\BACKUP" />
       <recent name="C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src" />
       <recent name="C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Inc" />
-      <recent name="C:\Users\WOW\Desktop\leden" />
-      <recent name="C:\Users\WOW\Desktop\leden\Jsmn" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\WOW\Desktop\leden\SPI" />
@@ -104,10 +117,10 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="OpenOCD Download &amp; Run.leden">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+  <component name="RunManager" selected="CMake Application.leden.elf">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="leden.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="leden" TARGET_NAME="leden.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="leden" RUN_TARGET_NAME="leden.elf">
@@ -117,7 +130,6 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.leden.elf" />
-      <item itemvalue="OpenOCD Download &amp; Run.leden" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -135,7 +147,8 @@
       <workItem from="1691138162287" duration="80000" />
       <workItem from="1691138311107" duration="183000" />
       <workItem from="1691138612516" duration="24432000" />
-      <workItem from="1691371718621" duration="70576000" />
+      <workItem from="1691371718621" duration="71714000" />
+      <workItem from="1691629227115" duration="10942000" />
     </task>
     <servers />
   </component>

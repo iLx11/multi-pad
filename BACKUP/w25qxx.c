@@ -1,6 +1,5 @@
 #include "w25qxx.h"
 #include "usart.h"
-#include "spi.h"
 
 
 uint16_t W25QXX_TYPE = W25Q128;  //д╛хойгW25Q128

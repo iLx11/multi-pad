@@ -34,7 +34,7 @@
 #include "oled_user.h"
 #include "EC11.h"
 #include "spi.h"
-#include "w25qxx.h"
+#include "norflash.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -113,7 +113,12 @@ int main(void) {
     // ±‡¬Î∆˜
     EC11_EXTI_Init();
     // SPI
-    SPI2_Init();
+    spi2_init();
+    // flash
+    norflash_init();
+    printf("%d", norflash_read_id());
+
+
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -123,7 +128,7 @@ int main(void) {
         // º¸≈Ã…®√Ë
         key_scan_user();
         // oled œ‘ æ
-        oled_show_user();
+        oled_show_user ();
 
         /* USER CODE END WHILE */
 

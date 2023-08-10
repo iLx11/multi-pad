@@ -1,6 +1,7 @@
 #include "oled_user.h"
 #include "oled.h"
-
+#include "norflash.h"
+//#include "w25qxx.h"
 void oled_init_user() {
     OLED_Init();
     OLED_ColorTurn(0);//0正常显示，1 反色显示
@@ -10,6 +11,7 @@ void oled_init_user() {
 
 void oled_show_user() {
     OLED_Clear();
+//    OLED_ShowNum(32,32,W25QXX_ReadID(),9,16,1);
     OLED_ShowChinese(0, 0, 0, 16, 1);//中
     OLED_Refresh();
 }

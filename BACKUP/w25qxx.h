@@ -3,6 +3,7 @@
 #include "stm32f1xx.h"
 #include "stm32f1xx_hal_spi.h"
 #include <stdio.h>
+#include "spi111.h"
 
 //W25X系列/Q系列芯片列表
 //W25Q80  ID  0XEF13
