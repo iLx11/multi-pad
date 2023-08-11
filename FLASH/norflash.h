@@ -1,23 +1,3 @@
-/**
- ****************************************************************************************************
- * @file        norflash.h
- * @author      正点原子团队(ALIENTEK)
- * @version     V1.0
- * @date        2023-04-23
- * @brief       NOR Flash驱动代码
- * @license     Copyright (c) 2020-2032, 广州市星翼电子科技有限公司
- ****************************************************************************************************
- * @attention
- * 
- * 实验平台:正点原子 M100Z-M3最小系统板STM32F103版
- * 在线视频:www.yuanzige.com
- * 技术论坛:www.openedv.com
- * 公司网址:www.alientek.com
- * 购买地址:openedv.taobao.com
- * 
- ****************************************************************************************************
- */
-
 #ifndef __NORFLASH_H
 #define __NORFLASH_H
 
@@ -85,5 +65,6 @@ void norflash_read(uint8_t *pbuf, uint32_t addr, uint16_t datalen);     /* 读NOR
 void norflash_write(uint8_t *pbuf, uint32_t addr, uint16_t datalen);    /* 写NOR Flash */
 void norflash_erase_chip(void);                                         /* 擦除整个NOR Flash芯片 */
 void norflash_erase_sector(uint32_t saddr);                             /* 擦除NOR Flash一个扇区 */
+void norflash_wakeup(void);
 
 #endif

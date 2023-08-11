@@ -1,5 +1,5 @@
 #include "key_user.h"
-#include "usbd_hid.h"
+
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 
@@ -7,8 +7,10 @@ extern USBD_HandleTypeDef hUsbDeviceFS;
 uint8_t send_buff[8] = {0};
 uint8_t send_zero_buff[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
+
 // ¼üÅÌ³õÊ¼×´Ì¬
 static uint16_t state = 0xffff;
+
 
 // ¼üÅÌ³õÊ¼»¯
 void key_init_user() {
@@ -26,6 +28,7 @@ void MK_on_keyup(uint8_t row, uint8_t col) {
     printf("clear key");
     HAL_Delay(10);
 }
+
 
 
 void MK_on_keydown(uint8_t row, uint8_t col) {
@@ -50,3 +53,5 @@ void MK_on_keydown(uint8_t row, uint8_t col) {
         printf("ctrl + a\n");
     }
 }
+
+
