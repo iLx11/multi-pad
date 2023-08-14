@@ -2,16 +2,25 @@
 
 jsmntok_t t[128];
 jsmn_parser p;
-static const char *json_str = "{\"002\":\"21023034056\",\"202\":\"2102303405asdfaskldfjaskldfjasklfjaskl;djf6\"}";
+static const char *json_str = "{\"002\":\"001023034056\",\"001\":\"00102303405asdfaskldfjaskldfjasklfjaskl;djf6\"}";
 
 // 解析后的键值数组
-static char* key_value_array[200] = {0};
+char key_value_array[20][300];
 
+// 数字转字符串
 static char *num_to_string(uint8_t num, char *str);
+
+// 不同的解析 json 字符串的功能函数
+static void parse_json_normal_key(uint8_t key_value_index);
+static void parse_json_comp_key(uint8_t key_value_index);
+
+// 根据功能解析 json 值的函数指针数组
+void (* parse_by_function[4])(uint8_t) = { parse_json_normal_key, parse_json_comp_key};
+
 
 void jsmn_init_user() {
     jsmn_init(&p);
-    parse_json_data(&p);
+    parse_json_data(&p, 0);
 }
 
 // 字符键值比对
@@ -24,7 +33,7 @@ static int json_cmp(const char *json, jsmntok_t *tok, const char *str) {
 }
 
 // 解析 json 字符并按键值存入数组
-uint8_t parse_json_data(jsmn_parser *p) {
+uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
     uint8_t r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
     if (r < 0) printf("parse fail");
 /*    printf("\ntype - start - end - size\n");
@@ -33,33 +42,54 @@ uint8_t parse_json_data(jsmn_parser *p) {
     }*/
     // 根据键取字符串
     if (r < 1 && t[0].type != JSMN_OBJECT) return 1;
-    for (uint8_t i = 0; i < 10; i++) {
-        for (uint8_t j = 0; j < 20; j++) {
-            // jsno 字符的键
-            char json_key_str[4] = {0};
-            // 数字转字符串
-            char key_num_str[3] = {0};
-            num_to_string(i, key_num_str);
-            strncat(json_key_str, key_num_str, 1);
-            num_to_string(j, key_num_str);
-            if (j < 10) strncat(json_key_str, "0", 2);
-            strcat(json_key_str, num_to_string(j, key_num_str));
+    for (uint8_t j = 0; j < 20; j++) {
+        // jsno 字符的键
+        char json_key_str[4] = {0};
+        // 数字转字符串
+        char key_num_str[3] = {0};
+        num_to_string(layer, key_num_str);
+        strncat(json_key_str, key_num_str, 1);
+        num_to_string(j, key_num_str);
+        if (j < 10) strncat(json_key_str, "0", 2);
+        strcat(json_key_str, num_to_string(j, key_num_str));
 
-            for (uint8_t s = 0; s < r; s++) {
-                if (json_cmp(json_str, &t[s], json_key_str) == 0) {
-                    // 取出 json 字符中键对应的值
-                    char json_value_str[300] = {0};
-                    memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
-                    s += 1;
-                    printf("json_key_str -> %s", json_value_str);
-                    memcpy((*key_value_array + i) + j, json_value_str, strlen(json_value_str));
-                    printf("%s", (*key_value_array + i));
-                }
+        for (uint8_t s = 0; s < r; s++) {
+            if (json_cmp(json_str, &t[s], json_key_str) == 0) {
+                // 取出 json 字符中键对应的值
+                char json_value_str[250] = {0};
+                memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
+                s += 1;
+                printf("json_key_str -> %s\n", json_value_str);
+                strncat(key_value_array[j], json_value_str, sizeof(json_key_str) / sizeof(json_key_str[0]));
+                printf("%s", *(key_value_array + j));
             }
         }
     }
     return 0;
 }
+
+/********************************************************************************
+* 解析 json 字符值的功能位，并根据功能执行
+********************************************************************************/
+void parse_json_value(uint8_t key_value_index) {
+    uint8_t function_index = key_value_array[key_value_index][0] - 0x30;
+    (* parse_by_function[function_index])(key_value_index);
+}
+
+/********************************************************************************
+* 解析不同功能的字符串
+********************************************************************************/
+// 解析 json 字符（普通键值）
+static void parse_json_normal_key(uint8_t key_value_index) {
+    printf("json_parse_success -> %s", key_value_array[key_value_index]);
+}
+
+// 解析 json 字符（组合键值）
+static void parse_json_comp_key(uint8_t key_value_index) {
+
+}
+
+
 
 /********************************************************************************
 * 数字转字符
@@ -85,17 +115,4 @@ static char *num_to_string(uint8_t num, char *str) {
         str[j] = str[j] - str[i - 1 - j];
     }
     return str;
-}
-/********************************************************************************
-* 解析不同功能的字符串
-********************************************************************************/
-// 解析 json 字符（普通键值）
-static void parse_json_normal_key(const char *json_str_key, const char *json_str_value) {
-    uint8_t aa = json_str_key[0] - 0x30;
-    printf("aa = %d", aa);
-}
-
-// 解析 json 字符（组合键值）
-static void parse_json_comp_key() {
-
 }

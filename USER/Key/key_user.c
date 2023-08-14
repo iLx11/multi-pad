@@ -33,6 +33,8 @@ void MK_on_keyup(uint8_t row, uint8_t col) {
 
 void MK_on_keydown(uint8_t row, uint8_t col) {
     printf("第%d行,第%d列 ---down\n", row, col);
+    uint8_t key_value = (col * 4) + row;
+    parse_json_value(key_value);
     if (row + col == 0) {
         send_buff[0] = 0x01;
         send_buff[2] = 0x06;

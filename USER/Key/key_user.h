@@ -4,7 +4,6 @@
 #include "MatrixKeys.h"
 #include "usbd_hid.h"
 #include "stdio.h"
-#include "usbd_hid.h"
 #include "jsmn_user.h"
 
 void key_init_user();

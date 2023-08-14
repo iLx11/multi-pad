@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="leden"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/WOW/Desktop/leden/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="leden.elf">
+				<Option output="C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/WOW/Desktop/leden/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xE"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/FATFS"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/FLASH"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/SPI"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/EC11"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Oled"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Json"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Key"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/JSMN_USER"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/OLED"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/MatrixKeys"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/JSMN"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Core/Inc"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Core/Src"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USB_DEVICE/App"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USB_DEVICE/Target"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf"/>
+					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="leden.elf/fast">
+				<Option output="C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/WOW/Desktop/leden/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xE"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/FATFS"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/FLASH"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/SPI"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/EC11"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Oled"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Json"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Key"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/JSMN_USER"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/OLED"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/MatrixKeys"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/JSMN"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Core/Inc"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Core/Src"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USB_DEVICE/App"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USB_DEVICE/Target"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf/fast"/>
+					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/WOW/Desktop/leden/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/WOW/Desktop/leden/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Inc/gpio.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Inc/main.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Inc/stm32f1xx_hal_conf.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Inc/stm32f1xx_it.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Inc/usart.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/gpio.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/main.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/retarget.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/retarget.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/stm32f1xx_hal_msp.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/stm32f1xx_it.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/syscalls.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/sysmem.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/system_stm32f1xx.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Src/usart.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Core/Startup/startup_stm32f103vetx.s">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/LICENSE.txt">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/EC11/EC11.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/EC11/EC11.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/diskio.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/diskio.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ff.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ff.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ffconf.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ffsystem.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ffunicode.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FLASH/norflash.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/FLASH/norflash.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/JSMN/jsmn.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/JSMN/jsmn.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/MatrixKeys/MatrixKeys.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/MatrixKeys/MatrixKeys.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc/usbd_hid.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED/bmp.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED/oled.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED/oled.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED/oledfont.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/SPI/spi.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/SPI/spi.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/STM32F103VETX_FLASH.ld">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usb_device.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usb_device.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usbd_desc.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usbd_desc.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/Target/usbd_conf.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/Target/usbd_conf.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Json/jsmn_user.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Json/jsmn_user.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Key/key_user.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Key/key_user.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Oled/oled_user.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Oled/oled_user.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
