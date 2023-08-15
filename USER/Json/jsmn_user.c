@@ -2,20 +2,27 @@
 
 jsmntok_t t[128];
 jsmn_parser p;
-static const char *json_str = "{\"002\":\"001023034056\",\"001\":\"00102303405asdfaskldfjaskldfjasklfjaskl;djf6\"}";
+static const char *json_str = "{\"002\":\"12023\",\"001\":\"00004\"}";
+
+extern uint8_t send_buff[8];
 
 // 解析后的键值数组
-char key_value_array[20][300];
+char key_value_array[20][300] = {0};
 
 // 数字转字符串
 static char *num_to_string(uint8_t num, char *str);
 
+// 字符串转数字
+static uint8_t string_to_num(uint8_t key_value_index, uint8_t start, uint8_t end);
+
+
 // 不同的解析 json 字符串的功能函数
 static void parse_json_normal_key(uint8_t key_value_index);
+
 static void parse_json_comp_key(uint8_t key_value_index);
 
 // 根据功能解析 json 值的函数指针数组
-void (* parse_by_function[4])(uint8_t) = { parse_json_normal_key, parse_json_comp_key};
+void (*parse_by_function[4])(uint8_t) = {parse_json_normal_key, parse_json_comp_key};
 
 
 void jsmn_init_user() {
@@ -59,9 +66,9 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
                 char json_value_str[250] = {0};
                 memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
                 s += 1;
-                printf("json_key_str -> %s\n", json_value_str);
-                strncat(key_value_array[j], json_value_str, sizeof(json_key_str) / sizeof(json_key_str[0]));
-                printf("%s", *(key_value_array + j));
+//                printf("json_key_str -> %s\n", json_value_str);
+                strcat(key_value_array[j], json_value_str);
+                printf("key_value_array[%d] - >%s\n", j, *(key_value_array + j));
             }
         }
     }
@@ -73,7 +80,10 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
 ********************************************************************************/
 void parse_json_value(uint8_t key_value_index) {
     uint8_t function_index = key_value_array[key_value_index][0] - 0x30;
-    (* parse_by_function[function_index])(key_value_index);
+    printf("function_index -> %d\n", function_index);
+    if (function_index > 10 || function_index < 0) return;
+    printf("parse_function_running.....\n");
+    (*parse_by_function[function_index])(key_value_index);
 }
 
 /********************************************************************************
@@ -81,18 +91,20 @@ void parse_json_value(uint8_t key_value_index) {
 ********************************************************************************/
 // 解析 json 字符（普通键值）
 static void parse_json_normal_key(uint8_t key_value_index) {
-    printf("json_parse_success -> %s", key_value_array[key_value_index]);
+    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
+    send_buff[2] = string_to_num(key_value_index, 2, 4);
 }
 
 // 解析 json 字符（组合键值）
 static void parse_json_comp_key(uint8_t key_value_index) {
-
+    printf("json_parse_comp_success -> %s\n", key_value_array[key_value_index]);
+    send_buff[1] = string_to_num(key_value_index, 1, 1);
+    send_buff[2] = string_to_num(key_value_index, 2, 4);
 }
 
 
-
 /********************************************************************************
-* 数字转字符
+* 数字转字符串
 ********************************************************************************/
 static char *num_to_string(uint8_t num, char *str) {
     uint8_t i = 0;
@@ -115,4 +127,17 @@ static char *num_to_string(uint8_t num, char *str) {
         str[j] = str[j] - str[i - 1 - j];
     }
     return str;
+}
+
+/********************************************************************************
+* 字符串转数字
+********************************************************************************/
+static uint8_t string_to_num(uint8_t key_value_index, uint8_t start, uint8_t end) {
+    if (start > end) return -1;
+    uint8_t final_num = 0;
+    do {
+        final_num += key_value_array[key_value_index][start] - 0x30;
+        final_num *= 10;
+    } while (((start ++) < end));
+    return final_num / 10;
 }

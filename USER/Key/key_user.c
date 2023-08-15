@@ -7,6 +7,8 @@ extern USBD_HandleTypeDef hUsbDeviceFS;
 uint8_t send_buff[8] = {0};
 uint8_t send_zero_buff[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
+// 特殊按键表
+uint8_t special_key_code[8] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 
 // 键盘初始状态
 static uint16_t state = 0xffff;
@@ -35,25 +37,9 @@ void MK_on_keydown(uint8_t row, uint8_t col) {
     printf("第%d行,第%d列 ---down\n", row, col);
     uint8_t key_value = (col * 4) + row;
     parse_json_value(key_value);
-    if (row + col == 0) {
-        send_buff[0] = 0x01;
-        send_buff[2] = 0x06;
-        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
-        HAL_Delay(10);
-        printf("ctrl + c\n");
-    } else if (col - row == 1) {
-        send_buff[0] = 0x01;
-        send_buff[2] = 0x19;
-        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
-        HAL_Delay(10);
-        printf("ctrl + v\n");
-    } else if (col - row == 2) {
-        send_buff[0] = 0x01;
-        send_buff[2] = 0x04;
-        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
-        HAL_Delay(10);
-        printf("ctrl + a\n");
-    }
+    printf("send_buff -> %d", send_buff[2]);
+    while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
+    printf("clear key");
 }
 
 
