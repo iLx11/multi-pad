@@ -33,9 +33,7 @@
 #include "key_user.h"
 #include "oled_user.h"
 #include "EC11.h"
-#include "spi.h"
-#include "norflash.h"
-#include "ff.h"
+#include "fatfs_user.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,8 +56,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-FATFS fsObject;
-u8 TEXT_Buffer[FF_MAX_SS];
+#define SIZE sizeof(BMP1)
+
 
 /* USER CODE END PV */
 
@@ -114,17 +112,9 @@ int main(void) {
     jsmn_init_user();
     // 编码器
     EC11_EXTI_Init();
-    // SPI
-    SPI2_Init();
-    // flash
-    norflash_init();
-    printf("%d", norflash_read_id());
+    // 文件系统
+    file_sys_init();
 
-    FRESULT res;
-    res = f_mount(&fsObject, "0:", 1);//挂载  ·返回十三代表不存在文件系统
-    printf("f_mount=%d\n", res);
-    res = f_mkfs("0:", 0, TEXT_Buffer, sizeof (TEXT_Buffer));
-    printf("f_mkfs=%d\n", res);
 
     /* USER CODE END 2 */
 
