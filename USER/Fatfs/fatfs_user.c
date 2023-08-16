@@ -87,7 +87,6 @@ static FRESULT file_sys_read() {
      */
     res = f_read(&Fil, file_read_buff, f_size(&Fil), &br);
     printf("f_read=%d bW=%d\n", res, br);
-
     return res;
 }
 

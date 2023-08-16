@@ -2,9 +2,10 @@
 
 jsmntok_t t[128];
 jsmn_parser p;
-static const char *json_str = "{\"002\":\"12023\",\"001\":\"00004\"}";
+static const char *json_str = "{\"002\":\"1202015\",\"001\":\"00004\"}";
 
 extern uint8_t send_buff[8];
+extern uint8_t special_key_code[8];
 
 // 解析后的键值数组
 char key_value_array[20][300] = {0};
@@ -24,6 +25,9 @@ static void parse_json_comp_key(uint8_t key_value_index);
 // 根据功能解析 json 值的函数指针数组
 void (*parse_by_function[4])(uint8_t) = {parse_json_normal_key, parse_json_comp_key};
 
+
+static uint8_t
+special_key_parse(uint8_t key_value_index, uint8_t special_key_start, uint8_t special_key_count, uint8_t func);
 
 void jsmn_init_user() {
     jsmn_init(&p);
@@ -98,8 +102,25 @@ static void parse_json_normal_key(uint8_t key_value_index) {
 // 解析 json 字符（组合键值）
 static void parse_json_comp_key(uint8_t key_value_index) {
     printf("json_parse_comp_success -> %s\n", key_value_array[key_value_index]);
-    send_buff[1] = string_to_num(key_value_index, 1, 1);
-    send_buff[2] = string_to_num(key_value_index, 2, 4);
+    uint8_t special_key_count = key_value_array[key_value_index][1] - 0x30;
+    send_buff[0] = special_key_parse(key_value_index, 1, special_key_count, 1);
+    send_buff[2] = string_to_num(key_value_index, special_key_count + 2, special_key_count + 4);
+}
+
+// 解析特殊按键
+static uint8_t
+special_key_parse(uint8_t key_value_index, uint8_t special_key_start, uint8_t special_key_count, uint8_t func) {
+    uint8_t result = 0;
+    if (func == 1) {
+        uint8_t edge = special_key_start + special_key_count;
+        while (special_key_start < edge) {
+            result += special_key_code[key_value_array[key_value_index][special_key_start++] - 0x30];
+        }
+        printf("special_result -> %d", result);
+    } else {
+        printf("to do");
+    }
+    return 0x00 + result;
 }
 
 
@@ -134,10 +155,11 @@ static char *num_to_string(uint8_t num, char *str) {
 ********************************************************************************/
 static uint8_t string_to_num(uint8_t key_value_index, uint8_t start, uint8_t end) {
     if (start > end) return -1;
-    uint8_t final_num = 0;
+    uint8_t final_num = 0x00;
     do {
         final_num += key_value_array[key_value_index][start] - 0x30;
         final_num *= 10;
-    } while (((start ++) < end));
+    } while (((start++) < end));
+    printf("\nfinal_num -> %d\n", final_num);
     return final_num / 10;
 }
