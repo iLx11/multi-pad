@@ -10,5 +10,5 @@ void key_init_user();
 
 void key_scan_user();
 
-
+void send_hid_code(uint8_t func);
 #endif //LEDEN_KEY_USER_H

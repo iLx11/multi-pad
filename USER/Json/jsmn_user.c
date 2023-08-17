@@ -16,7 +16,6 @@ static char *num_to_string(uint8_t num, char *str);
 // 字符串转数字
 static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t end);
 
-
 // 不同的解析 json 字符串的功能函数
 static void parse_json_normal_key(uint8_t key_value_index);
 
@@ -24,7 +23,6 @@ static void parse_json_comp_key(uint8_t key_value_index);
 
 // 根据功能解析 json 值的函数指针数组
 void (*parse_by_function[4])(uint8_t) = {parse_json_normal_key, parse_json_comp_key};
-
 
 static uint8_t
 special_key_parse(uint8_t key_value_index, uint8_t special_key_start, uint8_t special_key_count, uint8_t func);
@@ -34,7 +32,9 @@ void jsmn_init_user() {
     parse_json_data(&p, 0);
 }
 
-// 字符键值比对
+/********************************************************************************
+* 字符键值比对
+********************************************************************************/
 static int json_cmp(const char *json, jsmntok_t *tok, const char *str) {
     if ((tok->type == JSMN_STRING) &&
         ((int) strlen(str) == tok->end - tok->start) &&
@@ -43,7 +43,9 @@ static int json_cmp(const char *json, jsmntok_t *tok, const char *str) {
     return -1;
 }
 
-// 解析 json 字符并按键值存入数组
+/********************************************************************************
+* 解析 json 字符并按键值存入数组
+********************************************************************************/
 uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
     uint8_t r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
     if (r < 0) printf("parse fail");
@@ -54,6 +56,7 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
     // 根据键取字符串
     if (r < 1 && t[0].type != JSMN_OBJECT) return 1;
     for (uint8_t j = 0; j < 20; j++) {
+        // sprintf 函数执行速度还未测试
         // jsno 字符的键
         char json_key_str[4] = {0};
         // 数字转字符串
@@ -91,43 +94,58 @@ void parse_json_value(uint8_t key_value_index) {
 }
 
 /********************************************************************************
-* 解析不同功能的字符串
+* ------ 解析不同功能的字符串 ------ start
 ********************************************************************************/
-// 解析 json 字符（普通键值）
+/********************************************************************************
+* 解析 json 字符（普通键值）
+********************************************************************************/
 static void parse_json_normal_key(uint8_t key_value_index) {
     printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
-    send_buff[2] = string_to_num_hex(key_value_index, 2, 4);
+    uint8_t normal_key_count = key_value_array[key_value_index][1] - 0x30;
+    do {
+        for (uint8_t i = 2; i < 8; i++) {
+            if(normal_key_count == 0) break;
+            send_buff[i] = string_to_num_hex(key_value_index, 2 * (i - 1), 2 * i - 1);
+            normal_key_count--;
+        }
+        send_hid_code(1);
+    } while ((normal_key_count - 6) > 0);
 }
 
-// 解析 json 字符（组合键值）
+/********************************************************************************
+* 解析 json 字符（组合键值）
+********************************************************************************/
 static void parse_json_comp_key(uint8_t key_value_index) {
     printf("json_parse_comp_success -> %s\n", key_value_array[key_value_index]);
-    uint8_t special_key_count = key_value_array[key_value_index][1] - 0x30;
-    do {
-        send_buff[0] = special_key_parse(key_value_index, 1, special_key_count, 1);
-        for (uint8_t i = 2; i < 8; i++) {
-            send_buff[i] = string_to_num_hex(key_value_index, special_key_count + 1 + i, special_key_count + 2 + i);
-        }
-    } while ((key_value_array[key_value_index][special_key_count + 2] - 6) > 0);
-
+    uint8_t special_key_count = key_value_array[key_value_index][3] - 0x30;
+    send_buff[0] = string_to_num_hex(key_value_index, 1, 2);
+    for (uint8_t i = 0; i < special_key_count; i++)
+        send_buff[i + 2] = string_to_num_hex(key_value_index, 4 + (i * 2), 5 + (i * 2));
+    send_hid_code(1);
 }
 
-// 解析特殊按键
-static uint8_t
-special_key_parse(uint8_t key_value_index, uint8_t special_key_start, uint8_t special_key_count, uint8_t func) {
+
+
+/********************************************************************************
+* ------ 解析不同功能的字符串 ------ end
+********************************************************************************/
+
+
+/********************************************************************************
+* ------ 工具函数 ------ start
+********************************************************************************/
+
+/********************************************************************************
+* 字符串转十六进制数字
+********************************************************************************/
+static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t end) {
     uint8_t result = 0x00;
-    if (func == 1) {
-        uint8_t edge = special_key_start + special_key_count;
-        while (special_key_start < edge) {
-            result += special_key_code[key_value_array[key_value_index][special_key_start++] - 0x30];
-        }
-        printf("special_result -> %d", result);
-    } else {
-        printf("to do");
-    }
-    return 0x00 + result;
+    result += ((key_value_array[key_value_index][start] - 0x30) * 16);
+    result += (key_value_array[key_value_index][end] >= 0x41 && key_value_array[key_value_index][end] <= 0x46) ?
+              (0x0A + key_value_array[key_value_index][end] - 0x41) :
+              key_value_array[key_value_index][end] - 0x30;
+    printf("result -> %d", result);
 }
-
 
 /********************************************************************************
 * 数字转字符串
@@ -154,15 +172,6 @@ static char *num_to_string(uint8_t num, char *str) {
     }
     return str;
 }
-
 /********************************************************************************
-* 字符串转十六进制数字
+* ------ 工具函数 ------ end
 ********************************************************************************/
-static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t end) {
-    uint8_t result = 0x00;
-    result += ((key_value_array[key_value_index][start] - 0x30) * 16);
-    result += (key_value_array[key_value_index][end] >= 0x41 && key_value_array[key_value_index][end] <= 0x46) ?
-              (0x0A + key_value_array[key_value_index][end] - 0x41) :
-              key_value_array[key_value_index][end] - 0x30;
-    printf("result -> %d", result);
-}
