@@ -14,7 +14,7 @@ char key_value_array[20][300] = {0};
 static char *num_to_string(uint8_t num, char *str);
 
 // 字符串转数字
-static uint8_t string_to_num(uint8_t key_value_index, uint8_t start, uint8_t end);
+static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t end);
 
 
 // 不同的解析 json 字符串的功能函数
@@ -96,21 +96,26 @@ void parse_json_value(uint8_t key_value_index) {
 // 解析 json 字符（普通键值）
 static void parse_json_normal_key(uint8_t key_value_index) {
     printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
-    send_buff[2] = string_to_num(key_value_index, 2, 4);
+    send_buff[2] = string_to_num_hex(key_value_index, 2, 4);
 }
 
 // 解析 json 字符（组合键值）
 static void parse_json_comp_key(uint8_t key_value_index) {
     printf("json_parse_comp_success -> %s\n", key_value_array[key_value_index]);
     uint8_t special_key_count = key_value_array[key_value_index][1] - 0x30;
-    send_buff[0] = special_key_parse(key_value_index, 1, special_key_count, 1);
-    send_buff[2] = string_to_num(key_value_index, special_key_count + 2, special_key_count + 4);
+    do {
+        send_buff[0] = special_key_parse(key_value_index, 1, special_key_count, 1);
+        for (uint8_t i = 2; i < 8; i++) {
+            send_buff[i] = string_to_num_hex(key_value_index, special_key_count + 1 + i, special_key_count + 2 + i);
+        }
+    } while ((key_value_array[key_value_index][special_key_count + 2] - 6) > 0);
+
 }
 
 // 解析特殊按键
 static uint8_t
 special_key_parse(uint8_t key_value_index, uint8_t special_key_start, uint8_t special_key_count, uint8_t func) {
-    uint8_t result = 0;
+    uint8_t result = 0x00;
     if (func == 1) {
         uint8_t edge = special_key_start + special_key_count;
         while (special_key_start < edge) {
@@ -151,15 +156,13 @@ static char *num_to_string(uint8_t num, char *str) {
 }
 
 /********************************************************************************
-* 字符串转数字
+* 字符串转十六进制数字
 ********************************************************************************/
-static uint8_t string_to_num(uint8_t key_value_index, uint8_t start, uint8_t end) {
-    if (start > end) return -1;
-    uint8_t final_num = 0x00;
-    do {
-        final_num += key_value_array[key_value_index][start] - 0x30;
-        final_num *= 10;
-    } while (((start++) < end));
-    printf("\nfinal_num -> %d\n", final_num);
-    return final_num / 10;
+static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t end) {
+    uint8_t result = 0x00;
+    result += ((key_value_array[key_value_index][start] - 0x30) * 16);
+    result += (key_value_array[key_value_index][end] >= 0x41 && key_value_array[key_value_index][end] <= 0x46) ?
+              (0x0A + key_value_array[key_value_index][end] - 0x41) :
+              key_value_array[key_value_index][end] - 0x30;
+    printf("result -> %d", result);
 }

@@ -952,6 +952,30 @@ JSMN/jsmn.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/JSMN/jsmn.c.s
 .PHONY : JSMN/jsmn.c.s
 
+MALLOC/malloc.obj: MALLOC/malloc.c.obj
+.PHONY : MALLOC/malloc.obj
+
+# target to build an object file
+MALLOC/malloc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/MALLOC/malloc.c.obj
+.PHONY : MALLOC/malloc.c.obj
+
+MALLOC/malloc.i: MALLOC/malloc.c.i
+.PHONY : MALLOC/malloc.i
+
+# target to preprocess a source file
+MALLOC/malloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/MALLOC/malloc.c.i
+.PHONY : MALLOC/malloc.c.i
+
+MALLOC/malloc.s: MALLOC/malloc.c.s
+.PHONY : MALLOC/malloc.s
+
+# target to generate assembly for a file
+MALLOC/malloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/MALLOC/malloc.c.s
+.PHONY : MALLOC/malloc.c.s
+
 MatrixKeys/MatrixKeys.obj: MatrixKeys/MatrixKeys.c.obj
 .PHONY : MatrixKeys/MatrixKeys.obj
 
@@ -1192,6 +1216,30 @@ USB_DEVICE/Target/usbd_conf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.s
 .PHONY : USB_DEVICE/Target/usbd_conf.c.s
 
+USER/Fatfs/fatfs_user.obj: USER/Fatfs/fatfs_user.c.obj
+.PHONY : USER/Fatfs/fatfs_user.obj
+
+# target to build an object file
+USER/Fatfs/fatfs_user.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Fatfs/fatfs_user.c.obj
+.PHONY : USER/Fatfs/fatfs_user.c.obj
+
+USER/Fatfs/fatfs_user.i: USER/Fatfs/fatfs_user.c.i
+.PHONY : USER/Fatfs/fatfs_user.i
+
+# target to preprocess a source file
+USER/Fatfs/fatfs_user.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Fatfs/fatfs_user.c.i
+.PHONY : USER/Fatfs/fatfs_user.c.i
+
+USER/Fatfs/fatfs_user.s: USER/Fatfs/fatfs_user.c.s
+.PHONY : USER/Fatfs/fatfs_user.s
+
+# target to generate assembly for a file
+USER/Fatfs/fatfs_user.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Fatfs/fatfs_user.c.s
+.PHONY : USER/Fatfs/fatfs_user.c.s
+
 USER/Json/jsmn_user.obj: USER/Json/jsmn_user.c.obj
 .PHONY : USER/Json/jsmn_user.obj
 
@@ -1376,6 +1424,9 @@ help:
 	@echo ... JSMN/jsmn.obj
 	@echo ... JSMN/jsmn.i
 	@echo ... JSMN/jsmn.s
+	@echo ... MALLOC/malloc.obj
+	@echo ... MALLOC/malloc.i
+	@echo ... MALLOC/malloc.s
 	@echo ... MatrixKeys/MatrixKeys.obj
 	@echo ... MatrixKeys/MatrixKeys.i
 	@echo ... MatrixKeys/MatrixKeys.s
@@ -1406,6 +1457,9 @@ help:
 	@echo ... USB_DEVICE/Target/usbd_conf.obj
 	@echo ... USB_DEVICE/Target/usbd_conf.i
 	@echo ... USB_DEVICE/Target/usbd_conf.s
+	@echo ... USER/Fatfs/fatfs_user.obj
+	@echo ... USER/Fatfs/fatfs_user.i
+	@echo ... USER/Fatfs/fatfs_user.s
 	@echo ... USER/Json/jsmn_user.obj
 	@echo ... USER/Json/jsmn_user.i
 	@echo ... USER/Json/jsmn_user.s

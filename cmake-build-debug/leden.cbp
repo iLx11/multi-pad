@@ -27,10 +27,12 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/MALLC"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/FATFS"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/FLASH"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/SPI"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/EC11"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Fatfs"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Oled"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Json"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Key"/>
@@ -72,10 +74,12 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/MALLC"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/FATFS"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/FLASH"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/SPI"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/EC11"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Fatfs"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Oled"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Json"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Key"/>
@@ -443,6 +447,12 @@
 		<Unit filename="C:/Users/WOW/Desktop/leden/JSMN/jsmn.h">
 			<Option target="leden.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/MALLOC/malloc.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/MALLOC/malloc.h">
+			<Option target="leden.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/MatrixKeys/MatrixKeys.c">
 			<Option target="leden.elf"/>
 		</Unit>
@@ -513,6 +523,12 @@
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/Target/usbd_conf.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Fatfs/fatfs_user.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Fatfs/fatfs_user.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Json/jsmn_user.c">
