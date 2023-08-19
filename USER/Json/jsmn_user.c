@@ -1,14 +1,14 @@
 #include "jsmn_user.h"
+#include "fatfs_user.h"
+
+extern uint8_t json_str[];
+extern uint8_t send_buff[8];
 
 jsmntok_t t[128];
 jsmn_parser p;
-static const char *json_str = "{\"002\":\"1202015\",\"001\":\"00004\"}";
-
-extern uint8_t send_buff[8];
-extern uint8_t special_key_code[8];
 
 // 解析后的键值数组
-char key_value_array[20][300] = {0};
+char key_value_array[20][200] = {0};
 
 // 数字转字符串
 static char *num_to_string(uint8_t num, char *str);
@@ -24,12 +24,13 @@ static void parse_json_comp_key(uint8_t key_value_index);
 // 根据功能解析 json 值的函数指针数组
 void (*parse_by_function[4])(uint8_t) = {parse_json_normal_key, parse_json_comp_key};
 
-static uint8_t
-special_key_parse(uint8_t key_value_index, uint8_t special_key_start, uint8_t special_key_count, uint8_t func);
-
+// json 解析初始化
 void jsmn_init_user() {
     jsmn_init(&p);
     parse_json_data(&p, 0);
+
+    parse_json_value(1);
+    parse_json_value(2);
 }
 
 /********************************************************************************
@@ -70,7 +71,7 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
         for (uint8_t s = 0; s < r; s++) {
             if (json_cmp(json_str, &t[s], json_key_str) == 0) {
                 // 取出 json 字符中键对应的值
-                char json_value_str[250] = {0};
+                char json_value_str[200] = {0};
                 memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
                 s += 1;
 //                printf("json_key_str -> %s\n", json_value_str);
@@ -122,6 +123,19 @@ static void parse_json_comp_key(uint8_t key_value_index) {
     for (uint8_t i = 0; i < special_key_count; i++)
         send_buff[i + 2] = string_to_num_hex(key_value_index, 4 + (i * 2), 5 + (i * 2));
     send_hid_code(1);
+}
+
+/********************************************************************************
+* 解析 json （组合组合）
+********************************************************************************/
+static void parse_json_compp_key(uint8_t key_value_index) {
+    uint8_t compp_key_count = key_value_array[key_value_index][1] - 0x30;
+    while(compp_key_count --) {
+        send_buff[0] = string_to_num_hex(key_value_index, 2, 3);
+        uint8_t key_count = key_value_array[key_value_index][4] - 0x30;
+        while(key_count --) {
+        }
+    }
 }
 
 

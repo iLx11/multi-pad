@@ -8,6 +8,7 @@
     <file url="file://$PROJECT_DIR$/SPI/spi.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/SPI/stm32f1xx_hal_spi.c" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SPI/stm32f1xx_hal_spi.h" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/USER/Fatfs/fatfs_user.c" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

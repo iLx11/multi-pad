@@ -1,10 +1,11 @@
 #include "fatfs_user.h"
 #include "stm32f1xx.h"
+#include "jsmn_user.h"
 #include <stdio.h>
 
 uint8_t TEXT_Buffer[4096];
 // 写入缓存数组
-const uint8_t file_write_buff[] = "hello world!!!!";
+const uint8_t json_str[] = "{\"002\":\"020410\",\"001\":\"101106\"}";
 // 读取缓存数组
 uint8_t file_read_buff[4096] = {0};
 FATFS fsObject;//每个设备挂载都需要一个
@@ -28,6 +29,7 @@ static FRESULT file_sys_write();
 // 文件读取
 static FRESULT file_sys_read();
 
+// 文件系统初始化
 void file_sys_init() {
     // SPI
     SPI2_Init();
@@ -44,14 +46,18 @@ void file_sys_init() {
         // 读取
         if (file_sys_write() == FR_OK) {
             if (file_sys_read() == FR_OK) {
-                printf("\n内容：%s", file_read_buff);
+                printf("\n内容：%s", json_str);
             }
         }
         f_close(&Fil);
     }
 }
-
-// 文件系统挂载
+/********************************************************************************
+* ------ 文件系统 API ------ start
+********************************************************************************/
+/********************************************************************************
+* 文件系统挂载
+********************************************************************************/
 static void file_sys_mount() {
     // 挂载文件系统
     res = f_mount(&fsObject, "0:", 1);
@@ -63,20 +69,26 @@ static void file_sys_mount() {
     }
 }
 
-// 文件系统取消挂载
+/********************************************************************************
+* 文件系统取消挂载
+********************************************************************************/
 static void file_sys_unmount() {
     f_mount(NULL, "0:", 1);                                    //取消挂载
     f_mount(&fsObject, "0:", 1);
 }
 
-// 文件写入
+/********************************************************************************
+* 文件写入
+********************************************************************************/
 static FRESULT file_sys_write() {
-    res = f_write(&Fil, file_write_buff, sizeof(file_write_buff), &bw);        //写内容
+    res = f_write(&Fil, json_str, sizeof(json_str), &bw);        //写内容
     printf("f_write=%d bW=%d\n", res, bw);
     return res;
 }
 
-// 文件读取
+/********************************************************************************
+* 文件读取
+********************************************************************************/
 static FRESULT file_sys_read() {
     /* 移动打开的文件对象的文件读/写指针到 0
      * ofs: 距文件顶部的字节偏移量
@@ -87,6 +99,12 @@ static FRESULT file_sys_read() {
      */
     res = f_read(&Fil, file_read_buff, f_size(&Fil), &br);
     printf("f_read=%d bW=%d\n", res, br);
+    if(res == FR_OK) {
+        // json 解析
+        jsmn_init_user();
+    }
     return res;
 }
-
+/********************************************************************************
+* ------ 文件系统 API ------ end
+********************************************************************************/

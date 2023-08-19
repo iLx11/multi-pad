@@ -7,8 +7,6 @@ extern USBD_HandleTypeDef hUsbDeviceFS;
 uint8_t send_buff[8] = {0};
 uint8_t send_zero_buff[8] = {0, 0, 0, 0, 0, 0, 0, 0};
 
-// 特殊按键表
-uint8_t special_key_code[8] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 
 // 键盘初始状态
 static uint16_t state = 0xffff;
