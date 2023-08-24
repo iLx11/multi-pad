@@ -33,7 +33,8 @@
 #include "key_user.h"
 #include "oled_user.h"
 #include "EC11.h"
-#include "fatfs_user.h"
+
+//#include "fatfs_user.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -69,8 +70,6 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
-
 /* USER CODE END 0 */
 
 /**
@@ -113,7 +112,7 @@ int main(void) {
     // 编码器
     EC11_EXTI_Init();
     // 文件系统
-    file_sys_init();
+//    file_sys_init();
 
 
     /* USER CODE END 2 */
@@ -126,6 +125,9 @@ int main(void) {
         key_scan_user();
         // oled 显示
         oled_show_user();
+//        send_buff[2] = 0x04;
+//        send_buff[3] = 0x05;
+//        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
 
         /* USER CODE END WHILE */
 

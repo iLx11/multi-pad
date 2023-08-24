@@ -32,16 +32,21 @@ void MK_on_keyup(uint8_t row, uint8_t col) {
 void MK_on_keydown(uint8_t row, uint8_t col) {
     printf("第%d行,第%d列 ---down\n", row, col);
     uint8_t key_value = (col * 4) + row;
-    parse_json_value(key_value);
-    printf("send_buff -> %d", send_buff[2]);
+//    parse_json_value(key_value);
+//    printf("send_buff -> %d", send_buff[2]);
+    send_buff[2] = 0x05;
+    send_buff[3] = 0x06;
+//    while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
+    send_hid_code(1);
     /*send_hid_code(1);
+     *
     printf("clear key");*/
 }
 
 // 发送 hid 码
 void send_hid_code(uint8_t func) {
-    if (func == 1) while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
-    else if (func == 0) while (USBD_HID_SendReport(&hUsbDeviceFS, send_zero_buff, 8) != USBD_OK);
+    if (func == 1) { while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);}
+    else if (func == 0) { while (USBD_HID_SendReport(&hUsbDeviceFS, send_zero_buff, 8) != USBD_OK);}
 }
 
 

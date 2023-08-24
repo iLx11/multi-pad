@@ -3,7 +3,7 @@
 #include <errno.h>
 #include <sys/time.h>
 #include <sys/times.h>
-#include <retarget.h>
+#include "retarget.h"
 #include <stdint.h>
 
 #if !defined(OS_USE_SEMIHOSTING)

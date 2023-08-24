@@ -3,7 +3,7 @@
 
 #include "spi.h"
 #include "norflash.h"
-#include "ff.h"
+//#include "ff.h"
 
 void file_sys_init();
 

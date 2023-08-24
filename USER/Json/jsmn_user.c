@@ -1,7 +1,7 @@
 #include "jsmn_user.h"
-#include "fatfs_user.h"
+//#include "fatfs_user.h"
 
-extern uint8_t json_str[];
+uint8_t json_str[] = "{\"002\":\"020410\",\"001\":\"101106\"}";
 extern uint8_t send_buff[8];
 
 jsmntok_t t[128];
