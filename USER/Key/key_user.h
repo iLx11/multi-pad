@@ -2,7 +2,7 @@
 #define LEDEN_KEY_USER_H
 
 #include "MatrixKeys.h"
-#include "usbd_hid.h"
+#include "usbd_customhid.h"
 #include "stdio.h"
 #include "jsmn_user.h"
 

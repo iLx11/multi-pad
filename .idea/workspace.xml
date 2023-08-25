@@ -20,25 +20,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="PARSE_JSON_MODIFY">
-      <change afterPath="$PROJECT_DIR$/Config/daplick.cfg" afterDir="false" />
+    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="HID_TEST">
       <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/.idea.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/.idea.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/norflash.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/norflash.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/norflash.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/norflash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/spi1.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/spi1.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/spi111.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi111.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/w25qxx.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/w25qxx.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/w25qxx.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/w25qxx.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/gpio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/gpio.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
@@ -47,8 +33,6 @@
       <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/usart.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/retarget.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/retarget.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/retarget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/retarget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_hal_msp.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
@@ -74,21 +58,8 @@
       <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/mpu_armv8.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Include/mpu_armv8.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/tz_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Include/tz_context.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EC11/EC11.c" beforeDir="false" afterPath="$PROJECT_DIR$/EC11/EC11.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EC11/EC11.h" beforeDir="false" afterPath="$PROJECT_DIR$/EC11/EC11.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/diskio.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/diskio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/diskio.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/diskio.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/ff.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ff.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/ff.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ff.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/ffconf.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ffconf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/ffsystem.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ffsystem.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/ffunicode.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ffunicode.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FLASH/norflash.c" beforeDir="false" afterPath="$PROJECT_DIR$/FLASH/norflash.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FLASH/norflash.h" beforeDir="false" afterPath="$PROJECT_DIR$/FLASH/norflash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc/usbd_hid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc/usbd_hid.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc/usbd_hid.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h" afterDir="false" />
@@ -96,36 +67,21 @@
       <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED/bmp.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED/bmp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED/oled.c" beforeDir="false" afterPath="$PROJECT_DIR$/OLED/oled.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED/oled.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED/oled.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED/oledfont.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED/oledfont.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPI/spi.c" beforeDir="false" afterPath="$PROJECT_DIR$/SPI/spi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPI/spi.h" beforeDir="false" afterPath="$PROJECT_DIR$/SPI/spi.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usb_device.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usb_device.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usb_device.h" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usb_device.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_desc.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_desc.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_desc.h" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_desc.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Fatfs/fatfs_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/Fatfs(nouse)/fatfs_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Fatfs/fatfs_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/Fatfs(nouse)/fatfs_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER/Key/key_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.map" afterDir="false" />
@@ -156,31 +112,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/WOW/Desktop/leden/USER/Fatfs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CPPToolchains",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src" />
+      <recent name="C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Inc" />
       <recent name="C:\Users\WOW\Desktop\leden\USER\Fatfs" />
       <recent name="C:\Users\WOW\Desktop\leden\FATFS" />
       <recent name="C:\Users\WOW\Desktop\leden\SPI" />
-      <recent name="C:\Users\WOW\Desktop\leden\W25QXX" />
-      <recent name="C:\Users\WOW\Desktop\leden\BACKUP" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\WOW\Desktop\leden\SPI" />
@@ -282,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692263253160</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="HID_TEST">
+      <option name="closed" value="true" />
+      <created>1692869438755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692869438755</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +264,8 @@
     <MESSAGE value="&quot;KEY_PARSE_COMP&quot;" />
     <MESSAGE value="JSON_RULE_ADD" />
     <MESSAGE value="PARSE_JSON_MODIFY" />
-    <option name="LAST_COMMIT_MESSAGE" value="PARSE_JSON_MODIFY" />
+    <MESSAGE value="HID_TEST" />
+    <option name="LAST_COMMIT_MESSAGE" value="HID_TEST" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
