@@ -12,8 +12,8 @@ uint8_t send_mouse_buff[5] = {0};
 uint8_t send_mouse_zero_buff[5] = {0x02, 0, 0, 0, 0};
 
 // 鼠标
-uint8_t send_media_buff[2] = {0};
-uint8_t send_media_zero_buff[5] = {0x03, 0x00};
+uint8_t send_media_buff[5] = {0};
+uint8_t send_media_zero_buff[5] = {0x03, 0x00, 0x00, 0x00, 0x00};
 uint8_t mouse_step = 30;
 // 键盘初始状态
 static uint16_t state = 0xffff;
@@ -37,21 +37,20 @@ void MK_on_keyup(uint8_t row, uint8_t col) {
 }
 
 void MK_on_keydown(uint8_t row, uint8_t col) {
-    printf("第%d行,第%d列 ---down\n", row, col);
     uint8_t key_value = (col * 4) + row;
     printf("key_value -> %d\n", key_value);
     send_media_buff[0] = 0x03;
     switch (key_value) {
         case 3: {
-           send_media_buff[1] = 0x08;
+           send_media_buff[1] = 0x01;
             break;
         }
         case 7: {
-            send_media_buff[1] = 0x10;
+            send_media_buff[1] = 0x02;
             break;
         }
         case 11: {
-            send_media_buff[1] = 0x20;
+            send_media_buff[1] = 0x04;
             break;
         }
         default:
@@ -109,20 +108,20 @@ void MK_on_keydown(uint8_t row, uint8_t col) {
 void send_hid_code(uint8_t func) {
     if (func == 1) { while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_key_buff, 9) != USBD_OK); }
     else if (func == 2) { while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_mouse_buff, 5) != USBD_OK); }
-    else if (func == 3) { while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_media_buff, 2) != USBD_OK); }
+    else if (func == 3) { while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_media_buff, 5) != USBD_OK); }
     else if (func == 0) {
-        for(uint8_t i = 0; i < sizeof (send_key_buff); i ++) {
+        /*for(uint8_t i = 0; i < sizeof (send_key_buff); i ++) {
             send_key_buff[i] &= 0x00;
         }
         for(uint8_t i = 0; i < sizeof (send_mouse_buff); i ++) {
             send_mouse_buff[i] &= 0x00;
-        }
+        }*/
         for(uint8_t i = 0; i < sizeof (send_media_buff); i ++) {
             send_media_buff[i] &= 0x00;
         }
-        while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_key_zero_buff, 9) != USBD_OK);
-        while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_mouse_zero_buff, 5) != USBD_OK);
-        while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_media_zero_buff, 2) != USBD_OK);
+        /*while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_key_zero_buff, 9) != USBD_OK);
+        while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_mouse_zero_buff, 5) != USBD_OK);*/
+        while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_media_zero_buff, 5) != USBD_OK);
     }
 }
 
