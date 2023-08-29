@@ -22,8 +22,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="HID_REPORT_TEST">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_custom_hid_if.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_custom_hid_if.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
@@ -56,24 +57,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CPPToolchains",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src" />

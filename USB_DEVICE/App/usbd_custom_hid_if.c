@@ -123,6 +123,7 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[USBD_CUSTOM_HID_REPORT_DES
         0x19, 0x00, // USAGE_MINIMUM (Reserved (no event indicated))
         0x29, 0x65, // USAGE_MAXIMUM (Keyboard Application)
         0x81, 0x00, // INPUT (Data,Ary,Abs)
+
         0xc0, // END_COLLECTION
 
         // 鼠标
@@ -201,6 +202,8 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[USBD_CUSTOM_HID_REPORT_DES
         0x95, 0x10,        //   Report Count (16)
         0x81, 0x03,        //   Input (Const,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
         0xC0,              // End Collection
+
+
 
 };
 
@@ -284,6 +287,16 @@ static int8_t CUSTOM_HID_DeInit_FS(void)
 static int8_t CUSTOM_HID_OutEvent_FS(uint8_t event_idx, uint8_t state)
 {
   /* USER CODE BEGIN 6 */
+    char log[250];
+    uint8_t i;
+    uint8_t len = USBD_GetRxCount(&hUsbDeviceFS, CUSTOM_HID_EPOUT_ADDR);  // 第一参数是USB句柄，第二个参数的是接收的末端地址；要获取发送的数据长度的话就把第二个参数改为发送末端地址即可
+    USBD_CUSTOM_HID_HandleTypeDef *hhid;                                  // 定义一个指向USBD_CUSTOM_HID_HandleTypeDef结构体的指针
+    hhid = (USBD_CUSTOM_HID_HandleTypeDef *)hUsbDeviceFS.pClassData;      // 得到USB接收数据的储存地址
+    for(i = 0; i < len; i++)
+    {
+        sprintf(log + (i*2), "%02x", hhid->Report_buf[i]);
+    }
+    printf("%s\n", log);
   return (USBD_OK);
   /* USER CODE END 6 */
 }
