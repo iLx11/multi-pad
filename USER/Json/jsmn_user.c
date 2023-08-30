@@ -1,7 +1,7 @@
 #include "jsmn_user.h"
 //#include "fatfs_user.h"
 
-char json_str[] = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\"}";
+char json_str[] = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"101104\"}";
 extern buff_struct buff_point_array[3];
 
 jsmntok_t t[128];
@@ -98,17 +98,17 @@ void parse_json_value(uint8_t key_value_index) {
 * ½âÎö json ×Ö·û£¨ÆÕÍ¨¼üÖµ£©
 ********************************************************************************/
 static void parse_json_normal_key(uint8_t key_value_index) {
-    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
+//    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
     uint8_t normal_key_count = string_to_num_hex(key_value_index, 1, 2);
     uint8_t cycle_count = 0;
-    printf("normal_key_count -> %d\n", normal_key_count);
+//    printf("normal_key_count -> %d\n", normal_key_count);
     do {
         buff_point_array[0].send_buff_point[0] = 0x01;
+        uint8_t cycle_start = cycle_count == 0 ? 0 : cycle_count * 6 * 2;
         for (uint8_t i = 3; i < 9; i++) {
             if (normal_key_count == 0x00) break;
-            uint8_t cycle_start = cycle_count == 0 ? 0 : cycle_count * 6 * 2;
             buff_point_array[0].send_buff_point[i] = string_to_num_hex(key_value_index, ((2 * (i - 2) + 1) + cycle_start), ((2 * (i - 2) + 2) + cycle_start));
-            printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i, buff_point_array[0].send_buff_point[i]);
+//            printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i, buff_point_array[0].send_buff_point[i]);
             normal_key_count --;
         }
         send_hid_code(0);
@@ -123,11 +123,13 @@ static void parse_json_normal_key(uint8_t key_value_index) {
 static void parse_json_comp_key(uint8_t key_value_index) {
     printf("json_parse_comp_success -> %s\n", key_value_array[key_value_index]);
     uint8_t special_key_count = key_value_array[key_value_index][3] - 0x30;
+    if(special_key_count > 6) return;
     buff_point_array[0].send_buff_point[0] = 0x01;
     buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
+//    printf("special_key -> %d", buff_point_array[0].send_buff_point[1]);
     for (uint8_t i = 0; i < special_key_count; i++)
-        buff_point_array[0].send_buff_point[i + 2] = string_to_num_hex(key_value_index, 4 + (i * 2), 5 + (i * 2));
-    send_hid_code(1);
+        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, 4 + (i * 2), 5 + (i * 2));
+    send_hid_code(0);
 }
 
 /********************************************************************************
