@@ -134,3 +134,8 @@
 144	368	7150062128074809	leden.elf	179ef21a459e229b
 3	154	7150070413024506	CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj	8b812080fd58008e
 154	390	7150070414755440	leden.elf	179ef21a459e229b
+14	1757	7150627818192822	CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj	e5fb606274586cce
+4	1765	7150627818282844	CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj	8b812080fd58008e
+1765	3127	7150627827561497	leden.elf	179ef21a459e229b
+3	161	7150629908575393	CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj	e5fb606274586cce
+161	390	7150629910255766	leden.elf	179ef21a459e229b

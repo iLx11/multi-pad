@@ -172,7 +172,7 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[USBD_CUSTOM_HID_REPORT_DES
         0xc0,
         0xc0,
 
-        // 媒体案件
+        // 媒体按键
         0x05, 0x0C,        // Usage Page (Consumer)
         0x09, 0x01,        // Usage (Consumer Control)
         0xA1, 0x01,        // Collection (Application)

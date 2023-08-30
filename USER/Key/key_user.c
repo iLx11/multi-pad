@@ -10,14 +10,31 @@ uint8_t send_key_zero_buff[9] = {0x01, 0, 0, 0, 0, 0, 0, 0, 0};
 // 鼠标
 uint8_t send_mouse_buff[5] = {0};
 uint8_t send_mouse_zero_buff[5] = {0x02, 0, 0, 0, 0};
-
-// 鼠标
+// 媒体
 uint8_t send_media_buff[5] = {0};
 uint8_t send_media_zero_buff[5] = {0x03, 0x00, 0x00, 0x00, 0x00};
 uint8_t mouse_step = 30;
+// 当前的 buff
+uint8_t cur_buff = 0;
+
+
+// 缓冲数组指针结构体
+typedef struct {
+    uint8_t *send_buff_point;
+    uint8_t *zero_buff_point;
+    uint8_t buff_size;
+} buff_struct;
+
+buff_struct buff_point_array[3] = {
+        {.send_buff_point = send_key_buff, .zero_buff_point = send_key_zero_buff, .buff_size = 9},
+        {.send_buff_point = send_mouse_buff, .zero_buff_point = send_mouse_zero_buff, .buff_size = 5},
+        {.send_buff_point = send_media_buff, .zero_buff_point = send_media_zero_buff, .buff_size = 5}
+};
 // 键盘初始状态
 static uint16_t state = 0xffff;
 
+// 发送 hid 重置
+void hid_buff_reset(uint8_t func);
 
 // 键盘初始化
 void key_init_user() {
@@ -31,7 +48,7 @@ void key_scan_user() {
 
 // 按键执行
 void MK_on_keyup(uint8_t row, uint8_t col) {
-    send_hid_code(0);
+    hid_buff_reset(cur_buff);
     printf("clear key");
     HAL_Delay(10);
 }
@@ -39,90 +56,41 @@ void MK_on_keyup(uint8_t row, uint8_t col) {
 void MK_on_keydown(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * 4) + row;
     printf("key_value -> %d\n", key_value);
+    parse_json_value(key_value);
     send_media_buff[0] = 0x03;
-    switch (key_value) {
+    /*switch (key_value) {
         case 3: {
-           send_media_buff[1] = 0x01;
+            buff_point_array[2].send_buff_point[1] = 0x01;
             break;
         }
         case 7: {
-            send_media_buff[1] = 0x02;
+            buff_point_array[2].send_buff_point[1] = 0x02;
             break;
         }
         case 11: {
-            send_media_buff[1] = 0x04;
+            buff_point_array[2].send_buff_point[1] = 0x04;
             break;
         }
         default:
             break;
     }
-/*    send_mouse_buff[0] = 0x02;
-    uint8_t X = 0, Y = 0, SCROLL = 0;
-    switch (key_value) {
-        case 0:
-            send_mouse_buff[1] = 0x01;
-            break;
-        case 4:
-            send_mouse_buff[1] = 0x02;
-            break;
-        case 8:
-            send_mouse_buff[1] = 0x04;
-            break;
-        case 2: {
-            SCROLL += mouse_step;
-            send_mouse_buff[4] = SCROLL;
-            break;
-        }
-        case 6: {
-            SCROLL -= mouse_step;
-            send_mouse_buff[4] = SCROLL;
-            break;
-        }
-        case 1: {
-            X += mouse_step;
-            send_mouse_buff[2] = X;
-            break;
-        }
-        case 5: {
-            Y += mouse_step;
-            send_mouse_buff[3] = Y;
-            break;
-        }
-        case 9: {
-            Y -= mouse_step;
-            send_mouse_buff[3] = Y;
-            break;
-        }
-        case 13: {
-            X -= mouse_step;
-            send_mouse_buff[2] = X;
-            break;
-        }
-        default:
-            break;
-    }*/
-    send_hid_code(3);
+    send_hid_code(2);*/
 }
 
 // 发送 hid 码
 void send_hid_code(uint8_t func) {
-    if (func == 1) { while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_key_buff, 9) != USBD_OK); }
-    else if (func == 2) { while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_mouse_buff, 5) != USBD_OK); }
-    else if (func == 3) { while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_media_buff, 5) != USBD_OK); }
-    else if (func == 0) {
-        /*for(uint8_t i = 0; i < sizeof (send_key_buff); i ++) {
-            send_key_buff[i] &= 0x00;
-        }
-        for(uint8_t i = 0; i < sizeof (send_mouse_buff); i ++) {
-            send_mouse_buff[i] &= 0x00;
-        }*/
-        for(uint8_t i = 0; i < sizeof (send_media_buff); i ++) {
-            send_media_buff[i] &= 0x00;
-        }
-        /*while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_key_zero_buff, 9) != USBD_OK);
-        while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_mouse_zero_buff, 5) != USBD_OK);*/
-        while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, send_media_zero_buff, 5) != USBD_OK);
+    cur_buff = func;
+    while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[func].send_buff_point,
+                                      buff_point_array[func].buff_size) != USBD_OK);
+}
+
+// 发送 hid 重置
+void hid_buff_reset(uint8_t func) {
+    for (uint8_t i = 0; i < buff_point_array[func].buff_size; i++) {
+        buff_point_array[func].send_buff_point[i] &= 0x00;
     }
+    while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[func].zero_buff_point,
+                                      buff_point_array[func].buff_size) != USBD_OK);
 }
 
 
