@@ -1,8 +1,8 @@
 #include "jsmn_user.h"
 //#include "fatfs_user.h"
 
-uint8_t json_str[] = "{\"002\":\"020410\",\"001\":\"101106\"}";
-extern uint8_t send_buff[8];
+char json_str[] = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\"}";
+extern buff_struct buff_point_array[3];
 
 jsmntok_t t[128];
 jsmn_parser p;
@@ -28,9 +28,6 @@ void (*parse_by_function[4])(uint8_t) = {parse_json_normal_key, parse_json_comp_
 void jsmn_init_user() {
     jsmn_init(&p);
     parse_json_data(&p, 0);
-
-    parse_json_value(1);
-    parse_json_value(2);
 }
 
 /********************************************************************************
@@ -102,15 +99,22 @@ void parse_json_value(uint8_t key_value_index) {
 ********************************************************************************/
 static void parse_json_normal_key(uint8_t key_value_index) {
     printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
-    uint8_t normal_key_count = key_value_array[key_value_index][1] - 0x30;
+    uint8_t normal_key_count = string_to_num_hex(key_value_index, 1, 2);
+    uint8_t cycle_count = 0;
+    printf("normal_key_count -> %d\n", normal_key_count);
     do {
-        for (uint8_t i = 2; i < 8; i++) {
-            if(normal_key_count == 0) break;
-            send_buff[i] = string_to_num_hex(key_value_index, 2 * (i - 1), 2 * i - 1);
-            normal_key_count--;
+        buff_point_array[0].send_buff_point[0] = 0x01;
+        for (uint8_t i = 3; i < 9; i++) {
+            if (normal_key_count == 0x00) break;
+            uint8_t cycle_start = cycle_count == 0 ? 0 : cycle_count * 6 * 2;
+            buff_point_array[0].send_buff_point[i] = string_to_num_hex(key_value_index, ((2 * (i - 2) + 1) + cycle_start), ((2 * (i - 2) + 2) + cycle_start));
+            printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i, buff_point_array[0].send_buff_point[i]);
+            normal_key_count --;
         }
-        send_hid_code(1);
-    } while ((normal_key_count - 6) > 0);
+        send_hid_code(0);
+        hid_buff_reset();
+        cycle_count ++;
+    } while (normal_key_count > 0);
 }
 
 /********************************************************************************
@@ -119,9 +123,10 @@ static void parse_json_normal_key(uint8_t key_value_index) {
 static void parse_json_comp_key(uint8_t key_value_index) {
     printf("json_parse_comp_success -> %s\n", key_value_array[key_value_index]);
     uint8_t special_key_count = key_value_array[key_value_index][3] - 0x30;
-    send_buff[0] = string_to_num_hex(key_value_index, 1, 2);
+    buff_point_array[0].send_buff_point[0] = 0x01;
+    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
     for (uint8_t i = 0; i < special_key_count; i++)
-        send_buff[i + 2] = string_to_num_hex(key_value_index, 4 + (i * 2), 5 + (i * 2));
+        buff_point_array[0].send_buff_point[i + 2] = string_to_num_hex(key_value_index, 4 + (i * 2), 5 + (i * 2));
     send_hid_code(1);
 }
 
@@ -130,10 +135,12 @@ static void parse_json_comp_key(uint8_t key_value_index) {
 ********************************************************************************/
 static void parse_json_compp_key(uint8_t key_value_index) {
     uint8_t compp_key_count = key_value_array[key_value_index][1] - 0x30;
-    while(compp_key_count --) {
-        send_buff[0] = string_to_num_hex(key_value_index, 2, 3);
+    buff_point_array[0].send_buff_point[0] = 0x01;
+
+    while (compp_key_count--) {
+        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, 2, 3);
         uint8_t key_count = key_value_array[key_value_index][4] - 0x30;
-        while(key_count --) {
+        while (key_count--) {
         }
     }
 }
@@ -158,6 +165,7 @@ static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t
     result += (key_value_array[key_value_index][end] >= 0x41 && key_value_array[key_value_index][end] <= 0x46) ?
               (0x0A + key_value_array[key_value_index][end] - 0x41) :
               key_value_array[key_value_index][end] - 0x30;
+    return result;
     printf("result -> %d", result);
 }
 

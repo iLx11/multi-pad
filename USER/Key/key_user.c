@@ -17,14 +17,6 @@ uint8_t mouse_step = 30;
 // 当前的 buff
 uint8_t cur_buff = 0;
 
-
-// 缓冲数组指针结构体
-typedef struct {
-    uint8_t *send_buff_point;
-    uint8_t *zero_buff_point;
-    uint8_t buff_size;
-} buff_struct;
-
 buff_struct buff_point_array[3] = {
         {.send_buff_point = send_key_buff, .zero_buff_point = send_key_zero_buff, .buff_size = 9},
         {.send_buff_point = send_mouse_buff, .zero_buff_point = send_mouse_zero_buff, .buff_size = 5},
@@ -32,9 +24,6 @@ buff_struct buff_point_array[3] = {
 };
 // 键盘初始状态
 static uint16_t state = 0xffff;
-
-// 发送 hid 重置
-void hid_buff_reset(uint8_t func);
 
 // 键盘初始化
 void key_init_user() {
@@ -48,7 +37,7 @@ void key_scan_user() {
 
 // 按键执行
 void MK_on_keyup(uint8_t row, uint8_t col) {
-    hid_buff_reset(cur_buff);
+    hid_buff_reset();
     printf("clear key");
     HAL_Delay(10);
 }
@@ -85,12 +74,13 @@ void send_hid_code(uint8_t func) {
 }
 
 // 发送 hid 重置
-void hid_buff_reset(uint8_t func) {
-    for (uint8_t i = 0; i < buff_point_array[func].buff_size; i++) {
-        buff_point_array[func].send_buff_point[i] &= 0x00;
+void hid_buff_reset() {
+    for (uint8_t i = 0; i < buff_point_array[cur_buff].buff_size; i++) {
+        buff_point_array[cur_buff].send_buff_point[i] &= 0x00;
     }
-    while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[func].zero_buff_point,
-                                      buff_point_array[func].buff_size) != USBD_OK);
+    while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[cur_buff].zero_buff_point,
+                                      buff_point_array[cur_buff].buff_size) != USBD_OK);
+    printf("reset ok\n");
 }
 
 

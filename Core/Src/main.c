@@ -109,7 +109,7 @@ int main(void)
     // 矩阵键盘
     key_init_user();
     // json 解析
-    //jsmn_init_user();
+    jsmn_init_user();
     // 编码器
     EC11_EXTI_Init();
     // 文件系统
