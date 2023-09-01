@@ -1,7 +1,7 @@
 #include "jsmn_user.h"
 //#include "fatfs_user.h"
 
-char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204079993080706\"}";
+char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\"}";
 extern buff_struct buff_point_array[3];
 
 jsmntok_t t[128];
@@ -147,15 +147,12 @@ static void parse_json_compp_key(uint8_t key_value_index) {
     uint8_t start = 2;
     while (compp_key_count--) {
         buff_point_array[0].send_buff_point[0] = 0x01;
-        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start, start + 1);
-        uint8_t key_count = key_value_array[key_value_index][start + 2] - 0x30;
-        start += 3;
+        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
+        uint8_t key_count = key_value_array[key_value_index][start ++] - 0x30;
         if (key_count > 6) return;
-        for (uint8_t i = 0; i < key_count; i++) {
-            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start, start + 1);
-            printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i, buff_point_array[0].send_buff_point[i]);
-            start += 2;
-        }
+        for (uint8_t i = 0; i < key_count; i++)
+            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start ++, start ++);
+//            printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i, buff_point_array[0].send_buff_point[i]);
         send_hid_code(0);
         hid_buff_reset();
     }
@@ -165,42 +162,35 @@ static void parse_json_compp_key(uint8_t key_value_index) {
 * 解析 json (普通延迟按键）
 ********************************************************************************/
 static void parse_json_delay_key(uint8_t key_value_index) {
-    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
+//    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
     uint8_t delay_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
     buff_point_array[0].send_buff_point[0] = 0x01;
     uint8_t normal_key_count = key_value_array[key_value_index][start++] - 0x30;
     if (normal_key_count > 6) return;
-    for (uint8_t i = 0; i < normal_key_count; i++) {
-        printf("start -> %d\n", start);
-        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start, start + 1);
-        printf("start -> %d\n", start);
-        printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i + 3, buff_point_array[0].send_buff_point[i + 3]);
-
-        start += 2;
-    }
+    for (uint8_t i = 0; i < normal_key_count; i++)
+        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start++, start++);
     send_hid_code(0);
     hid_buff_reset();
     while (delay_key_count--) {
         buff_point_array[0].send_buff_point[0] = 0x01;
-        uint8_t delay_time =
-                (key_value_array[key_value_index][start++] - 0x30) * 100 +
-                (key_value_array[key_value_index][start++] - 0x30) * 10 +
-                (key_value_array[key_value_index][start++] - 0x30);
+        uint16_t delay_time = (key_value_array[key_value_index][start++] - 0x30) * 1000;
+        delay_time += string_to_num_hex(key_value_index, start++, start++);
         HAL_Delay(delay_time);
         normal_key_count = key_value_array[key_value_index][start++] - 0x30;
-        printf("normal_key_count -> %d\n", normal_key_count);
         if (normal_key_count > 6) return;
-        printf("start -> %d\n", start);
-        for (uint8_t i = 0; i < normal_key_count; i++) {
-            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start, start + 1);
-            printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i + 3,
-                   buff_point_array[0].send_buff_point[i + 3]);
-            start += 2;
-        }
+        for (uint8_t i = 0; i < normal_key_count; i++)
+            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start++, start++);
         send_hid_code(0);
         hid_buff_reset();
     }
+}
+
+/********************************************************************************
+* 解析 json (组合延迟按键）
+********************************************************************************/
+static void parse_json_comp_delay_key() {
+
 }
 
 
@@ -217,14 +207,22 @@ static void parse_json_delay_key(uint8_t key_value_index) {
 * 字符串转十六进制数字
 ********************************************************************************/
 static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t end) {
-    printf("string_to_num -> start  -> %d\n", start);
-    printf("string_to_num -> end  -> %d\n", end);
     uint8_t result = 0x00;
     result += ((key_value_array[key_value_index][start] - 0x30) * 16);
     result += (key_value_array[key_value_index][end] >= 0x41 && key_value_array[key_value_index][end] <= 0x46) ?
               (0x0A + key_value_array[key_value_index][end] - 0x41) :
               key_value_array[key_value_index][end] - 0x30;
-    printf("result -> %d\n", result);
+    /*if (end - start < 2) {
+
+    } else {
+        do {
+            (key_value_array[key_value_index][end] >= 0x41 && key_value_array[key_value_index][end] <= 0x46) ?
+            (result += (0x0A + key_value_array[key_value_index][end] - 0x41) * 16) :
+            (result += (key_value_array[key_value_index][end] - 0x30) * 16);
+            result *= 10;
+        } while (start++ != end);
+        printf("result -> %d\n", result);
+    }*/
     return result;
 }
 
