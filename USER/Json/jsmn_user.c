@@ -1,7 +1,7 @@
 #include "jsmn_user.h"
 //#include "fatfs_user.h"
 
-char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\",\"004\":\"42011040000110623001119\"}";
+char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\",\"004\":\"42011040000110623001119\",\"005\":\"502203040\"}";
 extern buff_struct buff_point_array[3];
 
 jsmntok_t t[128];
@@ -189,7 +189,20 @@ static void parse_json_comp_delay_key(uint8_t key_value_index) {
 static void parse_json_mouse_func(uint8_t key_value_index) {
     buff_point_array[1].send_buff_point[0] = 0x02;
     buff_point_array[1].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
+    buff_point_array[1].send_buff_point[2] = string_to_num_hex(key_value_index, 3, 4);
+    buff_point_array[1].send_buff_point[3] = string_to_num_hex(key_value_index, 5, 6);
+    buff_point_array[1].send_buff_point[4] = string_to_num_hex(key_value_index, 7, 8);
+    printf("mouse_key\n");
+    send_hid_code(1);
+    hid_buff_reset();
 }
+/********************************************************************************
+* 媒体功能
+********************************************************************************/
+static void parse_json_media_func(uint8_t key_value_index) {
+
+}
+
 /********************************************************************************
 * 设置与发送缓冲数组
 ********************************************************************************/
@@ -208,7 +221,6 @@ static void hid_buff_set_send(uint8_t* start, uint8_t key_value_index) {
 static void get_execute_delay(uint8_t* start, uint8_t key_value_index) {
     uint16_t delay_time = (key_value_array[key_value_index][(*start)++] - 0x30) * 1000;
     delay_time += string_to_num_hex(key_value_index, (*start)++, (*start)++);
-    printf("delay_time -> %d", delay_time);
     HAL_Delay(delay_time);
 }
 /********************************************************************************
