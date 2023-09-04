@@ -38,7 +38,6 @@ void key_scan_user() {
 // °´¼üÖ´ÐÐ
 void MK_on_keyup(uint8_t row, uint8_t col) {
     hid_buff_reset();
-    printf("clear key");
     HAL_Delay(10);
 }
 

@@ -1,7 +1,7 @@
 #include "jsmn_user.h"
 //#include "fatfs_user.h"
 
-char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\"}";
+char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\",\"004\":\"42011040000110623001119\"}";
 extern buff_struct buff_point_array[3];
 
 jsmntok_t t[128];
@@ -25,9 +25,17 @@ static void parse_json_compp_key(uint8_t key_value_index);
 
 static void parse_json_delay_key(uint8_t key_value_index);
 
+static void parse_json_comp_delay_key(uint8_t key_value_index);
+
+static void hid_buff_set_send(uint8_t* start, uint8_t key_value_index);
+
+static void get_execute_delay(uint8_t* start, uint8_t key_value_index);
+
+static void parse_json_mouse_func(uint8_t key_value_index);
+
 // 根据功能解析 json 值的函数指针数组
-void (*parse_by_function[4])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_compp_key,
-                                         parse_json_delay_key};
+void (*parse_by_function[6])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_compp_key,
+                                         parse_json_delay_key, parse_json_comp_delay_key, parse_json_mouse_func};
 
 // json 解析初始化
 void jsmn_init_user() {
@@ -99,6 +107,7 @@ void parse_json_value(uint8_t key_value_index) {
 /********************************************************************************
 * ------ 解析不同功能的字符串 ------ start
 ********************************************************************************/
+
 /********************************************************************************
 * 解析 json 字符（普通键值）
 ********************************************************************************/
@@ -128,15 +137,9 @@ static void parse_json_normal_key(uint8_t key_value_index) {
 * 解析 json 字符（组合键值）
 ********************************************************************************/
 static void parse_json_comp_key(uint8_t key_value_index) {
-    printf("json_parse_comp_success -> %s\n", key_value_array[key_value_index]);
-    uint8_t special_key_count = key_value_array[key_value_index][3] - 0x30;
-    if (special_key_count > 6) return;
-    buff_point_array[0].send_buff_point[0] = 0x01;
-    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
-//    printf("special_key -> %d", buff_point_array[0].send_buff_point[1]);
-    for (uint8_t i = 0; i < special_key_count; i++)
-        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, 4 + (i * 2), 5 + (i * 2));
-    send_hid_code(0);
+    uint8_t start = 1;
+    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
+    hid_buff_set_send(&start, key_value_index);
 }
 
 /********************************************************************************
@@ -146,15 +149,8 @@ static void parse_json_compp_key(uint8_t key_value_index) {
     uint8_t compp_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
     while (compp_key_count--) {
-        buff_point_array[0].send_buff_point[0] = 0x01;
         buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
-        uint8_t key_count = key_value_array[key_value_index][start ++] - 0x30;
-        if (key_count > 6) return;
-        for (uint8_t i = 0; i < key_count; i++)
-            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start ++, start ++);
-//            printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i, buff_point_array[0].send_buff_point[i]);
-        send_hid_code(0);
-        hid_buff_reset();
+        hid_buff_set_send(&start, key_value_index);
     }
 }
 
@@ -165,35 +161,56 @@ static void parse_json_delay_key(uint8_t key_value_index) {
 //    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
     uint8_t delay_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
-    buff_point_array[0].send_buff_point[0] = 0x01;
-    uint8_t normal_key_count = key_value_array[key_value_index][start++] - 0x30;
-    if (normal_key_count > 6) return;
-    for (uint8_t i = 0; i < normal_key_count; i++)
-        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start++, start++);
-    send_hid_code(0);
-    hid_buff_reset();
+    hid_buff_set_send(&start, key_value_index);
     while (delay_key_count--) {
-        buff_point_array[0].send_buff_point[0] = 0x01;
-        uint16_t delay_time = (key_value_array[key_value_index][start++] - 0x30) * 1000;
-        delay_time += string_to_num_hex(key_value_index, start++, start++);
-        HAL_Delay(delay_time);
-        normal_key_count = key_value_array[key_value_index][start++] - 0x30;
-        if (normal_key_count > 6) return;
-        for (uint8_t i = 0; i < normal_key_count; i++)
-            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start++, start++);
-        send_hid_code(0);
-        hid_buff_reset();
+        get_execute_delay(&start, key_value_index);
+        hid_buff_set_send(&start, key_value_index);
     }
 }
 
 /********************************************************************************
 * 解析 json (组合延迟按键）
 ********************************************************************************/
-static void parse_json_comp_delay_key() {
-
+static void parse_json_comp_delay_key(uint8_t key_value_index) {
+    uint8_t delay_key_count = key_value_array[key_value_index][1] - 0x30;
+    uint8_t start = 2;
+    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
+    hid_buff_set_send(&start, key_value_index);
+    while(delay_key_count --) {
+        get_execute_delay(&start, key_value_index);
+        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
+        hid_buff_set_send(&start, key_value_index);
+    }
 }
 
-
+/********************************************************************************
+* 解析json (鼠标功能）
+********************************************************************************/
+static void parse_json_mouse_func(uint8_t key_value_index) {
+    buff_point_array[1].send_buff_point[0] = 0x02;
+    buff_point_array[1].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
+}
+/********************************************************************************
+* 设置与发送缓冲数组
+********************************************************************************/
+static void hid_buff_set_send(uint8_t* start, uint8_t key_value_index) {
+    buff_point_array[0].send_buff_point[0] = 0x01;
+    uint8_t normal_key_count = key_value_array[key_value_index][(*start)++] - 0x30;
+    if (normal_key_count > 6) return;
+    for (uint8_t i = 0; i < normal_key_count; i++)
+        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, (*start)++, (*start)++);
+    send_hid_code(0);
+    hid_buff_reset();
+}
+/********************************************************************************
+* 获取与执行延迟
+********************************************************************************/
+static void get_execute_delay(uint8_t* start, uint8_t key_value_index) {
+    uint16_t delay_time = (key_value_array[key_value_index][(*start)++] - 0x30) * 1000;
+    delay_time += string_to_num_hex(key_value_index, (*start)++, (*start)++);
+    printf("delay_time -> %d", delay_time);
+    HAL_Delay(delay_time);
+}
 /********************************************************************************
 * ------ 解析不同功能的字符串 ------ end
 ********************************************************************************/
