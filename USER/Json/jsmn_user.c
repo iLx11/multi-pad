@@ -1,7 +1,7 @@
 #include "jsmn_user.h"
 //#include "fatfs_user.h"
 
-char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\",\"004\":\"42011040000110623001119\",\"005\":\"502203040\"}";
+char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\",\"004\":\"42011040000110623001119\",\"005\":\"500020030040\",\"006\":\"60100\"}";
 extern buff_struct buff_point_array[3];
 
 jsmntok_t t[128];
@@ -33,9 +33,11 @@ static void get_execute_delay(uint8_t* start, uint8_t key_value_index);
 
 static void parse_json_mouse_func(uint8_t key_value_index);
 
+static void parse_json_media_func(uint8_t key_value_index);
+
 // 根据功能解析 json 值的函数指针数组
-void (*parse_by_function[6])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_compp_key,
-                                         parse_json_delay_key, parse_json_comp_delay_key, parse_json_mouse_func};
+void (*parse_by_function[7])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_compp_key,
+                                         parse_json_delay_key, parse_json_comp_delay_key, parse_json_mouse_func, parse_json_media_func};
 
 // json 解析初始化
 void jsmn_init_user() {
@@ -189,10 +191,11 @@ static void parse_json_comp_delay_key(uint8_t key_value_index) {
 static void parse_json_mouse_func(uint8_t key_value_index) {
     buff_point_array[1].send_buff_point[0] = 0x02;
     buff_point_array[1].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
-    buff_point_array[1].send_buff_point[2] = string_to_num_hex(key_value_index, 3, 4);
-    buff_point_array[1].send_buff_point[3] = string_to_num_hex(key_value_index, 5, 6);
-    buff_point_array[1].send_buff_point[4] = string_to_num_hex(key_value_index, 7, 8);
-    printf("mouse_key\n");
+    char sign;
+    for(uint8_t i = 2, start = 3; i < 5; i ++) {
+        sign = key_value_array[key_value_index][start ++] - 0x30 == 1 ? 1 : -1;
+        buff_point_array[1].send_buff_point[i] = string_to_num_hex(key_value_index, start ++, start ++) * sign;
+    }
     send_hid_code(1);
     hid_buff_reset();
 }
@@ -200,7 +203,11 @@ static void parse_json_mouse_func(uint8_t key_value_index) {
 * 媒体功能
 ********************************************************************************/
 static void parse_json_media_func(uint8_t key_value_index) {
-
+    buff_point_array[2].send_buff_point[0] = 0x03;
+    buff_point_array[2].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
+    buff_point_array[2].send_buff_point[2] = string_to_num_hex(key_value_index, 3, 4);
+    send_hid_code(2);
+    hid_buff_reset();
 }
 
 /********************************************************************************
