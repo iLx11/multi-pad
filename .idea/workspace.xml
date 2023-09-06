@@ -20,13 +20,41 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="MOUSE_PARSE_EXECUTE">
+    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="MEDIA_PARSE_EXECUTE">
+      <change afterPath="$PROJECT_DIR$/FLASH/SPI1/spi1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FLASH/SPI1/spi1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SPI2/spi2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SPI2/spi2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USER/Flash/flash_user.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/USER/Flash/flash_user.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON字符生成规则.md" beforeDir="false" afterPath="$PROJECT_DIR$/JSON字符生成规则.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/spi1.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi_backup_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/spi1.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi_backup_1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/Fatfs(nouse)/fatfs_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/Fatfs(nouse)/fatfs_user.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FLASH/norflash.c" beforeDir="false" afterPath="$PROJECT_DIR$/FLASH/norflash.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED/bmp.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/bmp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED/oled.c" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED/oled.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED/oledfont.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oledfont.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPI/spi.c" beforeDir="false" afterPath="$PROJECT_DIR$/SOFT_SPI/spi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPI/spi.h" beforeDir="false" afterPath="$PROJECT_DIR$/SOFT_SPI/spi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d5f434aea2cae1b05608.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-08-24T09-38-37-0955.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-leden.elf-Debug-a2cf35e684c24610eb71.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/EC11/EC11.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/EC11/EC11.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
@@ -99,6 +127,11 @@
     </option>
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.leden">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="leden.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="leden" TARGET_NAME="leden.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="leden" RUN_TARGET_NAME="leden.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -130,7 +163,8 @@
       <workItem from="1691748871023" duration="95363000" />
       <workItem from="1692338128604" duration="20204000" />
       <workItem from="1693361740912" duration="62529000" />
-      <workItem from="1693787759222" duration="40704000" />
+      <workItem from="1693787759222" duration="51287000" />
+      <workItem from="1693970620661" duration="12444000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;FLASH_MODIFY&quot;">
       <option name="closed" value="true" />
@@ -260,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693823121496</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="MEDIA_PARSE_EXECUTE">
+      <option name="closed" value="true" />
+      <created>1693910587381</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1693910587381</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +330,8 @@
     <MESSAGE value="DELAY_PARSE_EXECUTE" />
     <MESSAGE value="DELAY_COMP_PARSE_EXECUTE" />
     <MESSAGE value="MOUSE_PARSE_EXECUTE" />
-    <option name="LAST_COMMIT_MESSAGE" value="MOUSE_PARSE_EXECUTE" />
+    <MESSAGE value="MEDIA_PARSE_EXECUTE" />
+    <option name="LAST_COMMIT_MESSAGE" value="MEDIA_PARSE_EXECUTE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

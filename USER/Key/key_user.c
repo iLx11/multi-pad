@@ -46,23 +46,6 @@ void MK_on_keydown(uint8_t row, uint8_t col) {
     printf("key_value -> %d\n", key_value);
     parse_json_value(key_value);
     send_media_buff[0] = 0x03;
-    /*switch (key_value) {
-        case 3: {
-            buff_point_array[2].send_buff_point[1] = 0x01;
-            break;
-        }
-        case 7: {
-            buff_point_array[2].send_buff_point[1] = 0x02;
-            break;
-        }
-        case 11: {
-            buff_point_array[2].send_buff_point[1] = 0x04;
-            break;
-        }
-        default:
-            break;
-    }
-    send_hid_code(2);*/
 }
 
 // ·¢ËÍ hid Âë

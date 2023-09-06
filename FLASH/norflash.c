@@ -1,5 +1,5 @@
 #include "norflash.h"
-#include "spi.h"
+#include "SPI1/spi1.h"
 
 uint16_t g_norflash_type;
 
@@ -24,8 +24,8 @@ void norflash_init(void) {
     NORFLASH_CS(1);
 
     /* 配置SPI接口 */
-    SPI2_Init();
-    spi2_set_speed(SPI_BAUDRATEPRESCALER_2);
+    SPI1_Init();
+    spi1_set_speed(SPI_BAUDRATEPRESCALER_2);
 
     g_norflash_type = norflash_read_id();                   /* 读取NOR Flash芯片ID */
     if (g_norflash_type == W25Q256)                         /* W25Q256需使能4字节地址模式 */
@@ -38,7 +38,7 @@ void norflash_init(void) {
             norflash_write_sr(3, temp);                     /* 写状态寄存器3 */
 
             NORFLASH_CS(0);                                 /* 使能NOR Flash片选 */
-            spi2_read_write_byte(NORFLASH_Enable4ByteAddr); /* 使能4字节地址模式 */
+            spi1_read_write_byte(NORFLASH_Enable4ByteAddr); /* 使能4字节地址模式 */
             NORFLASH_CS(1);                                 /* 失能NOR Flash片选 */
         }
     }
@@ -61,7 +61,7 @@ static void norflash_wait_busy(void) {
  */
 void norflash_write_enable(void) {
     NORFLASH_CS(0);                             /* 使能NOR Flash片选 */
-    spi2_read_write_byte(NORFLASH_WriteEnable); /* 发送写使能命令 */
+    spi1_read_write_byte(NORFLASH_WriteEnable); /* 发送写使能命令 */
     NORFLASH_CS(1);                             /* 失能NOR Flash片选 */
 }
 
@@ -74,11 +74,11 @@ void norflash_write_enable(void) {
 static void norflash_send_address(uint32_t address) {
     if (g_norflash_type == W25Q256)                     /* 只有W25Q256支持4字节地址模式 */
     {
-        spi2_read_write_byte((uint8_t) (address >> 24)); /* 发送bit31~bit24地址 */
+        spi1_read_write_byte((uint8_t) (address >> 24)); /* 发送bit31~bit24地址 */
     }
-    spi2_read_write_byte((uint8_t) (address >> 16));     /* 发送bit23~bit16地址 */
-    spi2_read_write_byte((uint8_t) (address >> 8));      /* 发送bit15~ bit8地址 */
-    spi2_read_write_byte((uint8_t) address);             /* 发送 bit7~ bit0地址 */
+    spi1_read_write_byte((uint8_t) (address >> 16));     /* 发送bit23~bit16地址 */
+    spi1_read_write_byte((uint8_t) (address >> 8));      /* 发送bit15~ bit8地址 */
+    spi1_read_write_byte((uint8_t) address);             /* 发送 bit7~ bit0地址 */
 }
 
 /**
@@ -125,8 +125,8 @@ uint8_t norflash_read_sr(uint8_t regno) {
     }
 
     NORFLASH_CS(0);                             /* 使能NOR Flash片选 */
-    spi2_read_write_byte(command);              /* 发送读寄存器命令 */
-    byte = spi2_read_write_byte(0xFF);          /* 读取一个字节 */
+    spi1_read_write_byte(command);              /* 发送读寄存器命令 */
+    byte = spi1_read_write_byte(0xFF);          /* 读取一个字节 */
     NORFLASH_CS(1);                             /* 失能NOR Flash片选 */
 
     return byte;
@@ -175,8 +175,8 @@ void norflash_write_sr(uint8_t regno, uint8_t sr) {
     }
 
     NORFLASH_CS(0);                             /* 使能NOR Flash片选 */
-    spi2_read_write_byte(command);              /* 发送读寄存器命令 */
-    spi2_read_write_byte(sr);                   /* 写入一个字节 */
+    spi1_read_write_byte(command);              /* 发送读寄存器命令 */
+    spi1_read_write_byte(sr);                   /* 写入一个字节 */
     NORFLASH_CS(1);                             /* 失能NOR Flash片选 */
 }
 
@@ -190,12 +190,12 @@ uint16_t norflash_read_id(void) {
     uint16_t deviceid;
 
     NORFLASH_CS(0);                                     /* 使能NOR Flash片选 */
-    spi2_read_write_byte(NORFLASH_ManufactDeviceID);    /* 发送读ID命令 */
-    spi2_read_write_byte(0);                            /* 写入一个字节 */
-    spi2_read_write_byte(0);
-    spi2_read_write_byte(0);
-    deviceid = spi2_read_write_byte(0xFF) << 8;         /* 读取高8位字节 */
-    deviceid |= spi2_read_write_byte(0xFF);             /* 读取低8位字节 */
+    spi1_read_write_byte(NORFLASH_ManufactDeviceID);    /* 发送读ID命令 */
+    spi1_read_write_byte(0);                            /* 写入一个字节 */
+    spi1_read_write_byte(0);
+    spi1_read_write_byte(0);
+    deviceid = spi1_read_write_byte(0xFF) << 8;         /* 读取高8位字节 */
+    deviceid |= spi1_read_write_byte(0xFF);             /* 读取低8位字节 */
     NORFLASH_CS(1);                                     /* 失能NOR Flash片选 */
 
     return deviceid;
@@ -213,11 +213,11 @@ void norflash_read(uint8_t *pbuf, uint32_t addr, uint16_t datalen) {
     uint16_t i;
 
     NORFLASH_CS(0);                             /* 使能NOR Flash片选 */
-    spi2_read_write_byte(NORFLASH_ReadData);    /* 发送读取命令 */
+    spi1_read_write_byte(NORFLASH_ReadData);    /* 发送读取命令 */
     norflash_send_address(addr);                /* 发送地址 */
     for (i = 0; i < datalen; i++)                   /* 循环读取 */
     {
-        pbuf[i] = spi2_read_write_byte(0xFF);
+        pbuf[i] = spi1_read_write_byte(0xFF);
     }
     NORFLASH_CS(1);                             /* 失能NOR Flash片选 */
 }
@@ -236,11 +236,11 @@ static void norflash_write_page(uint8_t *pbuf, uint32_t addr, uint16_t datalen) 
     norflash_write_enable();                    /* NOR Flash写使能 */
 
     NORFLASH_CS(0);                             /* 使能NOR Flash片选 */
-    spi2_read_write_byte(NORFLASH_PageProgram); /* 发送写页命令 */
+    spi1_read_write_byte(NORFLASH_PageProgram); /* 发送写页命令 */
     norflash_send_address(addr);                /* 发送地址 */
     for (i = 0; i < datalen; i++)               /* 循环写入 */
     {
-        spi2_read_write_byte(pbuf[i]);
+        spi1_read_write_byte(pbuf[i]);
     }
     NORFLASH_CS(1);                             /* 失能NOR Flash片选 */
 
@@ -377,7 +377,7 @@ void norflash_erase_chip(void) {
     norflash_write_enable();                    /* NOR Flash写使能 */
     norflash_wait_busy();                       /* 等待NOR Flash空闲 */
     NORFLASH_CS(0);                             /* 使能NOR Flash片选 */
-    spi2_read_write_byte(NORFLASH_ChipErase);   /* 发送擦除芯片命令 */
+    spi1_read_write_byte(NORFLASH_ChipErase);   /* 发送擦除芯片命令 */
     NORFLASH_CS(1);                             /* 失能NOR Flash片选 */
     norflash_wait_busy();                       /* 等待芯片擦除结束 */
 }
@@ -394,7 +394,7 @@ void norflash_erase_sector(uint32_t saddr) {
     norflash_wait_busy();                       /* 等待NOR Flash空闲 */
 
     NORFLASH_CS(0);                             /* 使能NOR Flash片选 */
-    spi2_read_write_byte(NORFLASH_SectorErase); /* 发送擦除扇区命令 */
+    spi1_read_write_byte(NORFLASH_SectorErase); /* 发送擦除扇区命令 */
     norflash_send_address(saddr);               /* 发送地址 */
     NORFLASH_CS(1);                             /* 失能NOR Flash片选 */
     norflash_wait_busy();                       /* 等待扇区擦除完成 */
@@ -403,6 +403,6 @@ void norflash_erase_sector(uint32_t saddr) {
 // 唤醒
 void norflash_wakeup(void) {
     NORFLASH_CS(0);
-    spi2_read_write_byte(NORFLASH_ReleasePowerDown);
+    spi1_read_write_byte(NORFLASH_ReleasePowerDown);
     NORFLASH_CS(1);
 }

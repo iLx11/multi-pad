@@ -49,11 +49,11 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(FLASH SPI EC11 USER/Oled USER/Json USER/Key JSMN_USER OLED MatrixKeys JSMN Core/Inc Drivers/STM32F1xx_HAL_Driver/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include USB_DEVICE/App USB_DEVICE/Target Middlewares/ST/STM32_USB_Device_Library/Core/Inc Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc)
+include_directories(USER/Flash FLASH SPI2 EC11 USER/Oled USER/Json USER/Key JSMN_USER OLED_42 MatrixKeys JSMN Core/Inc Drivers/STM32F1xx_HAL_Driver/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include USB_DEVICE/App USB_DEVICE/Target Middlewares/ST/STM32_USB_Device_Library/Core/Inc Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE)
 
-file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "OLED/*.*" "MatrixKeys/*.*" "JSMN/*.*" "JSMN_USER/*.*" "USER/*.*" "EC11/*.*" "SPI/*.*" "FLASH/*.*")
+file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "OLED_42/*.*" "MatrixKeys/*.*" "JSMN/*.*" "JSMN_USER/*.*" "USER/*.*" "EC11/*.*" "SPI2/*.*" "FLASH/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103VETX_FLASH.ld)
 

@@ -1,7 +1,7 @@
 #ifndef LEDEN_FATFS_USER_H
 #define LEDEN_FATFS_USER_H
 
-#include "spi.h"
+#include "spi2.h"
 #include "norflash.h"
 //#include "ff.h"
 

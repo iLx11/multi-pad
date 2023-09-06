@@ -33,6 +33,7 @@
 #include "key_user.h"
 #include "oled_user.h"
 #include "EC11.h"
+#include "flash_user.h"
 
 //#include "fatfs_user.h"
 /* USER CODE END Includes */
@@ -46,7 +47,6 @@
 /* USER CODE BEGIN PD */
 
 
-#define u8 unsigned char
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -105,7 +105,7 @@ int main(void)
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
     // OLED 显示
-    oled_init_user();
+//    oled_init_user();
     // 矩阵键盘
     key_init_user();
     // json 解析
@@ -114,7 +114,8 @@ int main(void)
     EC11_EXTI_Init();
     // 文件系统
 //    file_sys_init();
-
+    // flash
+    flash_user_init();
 
   /* USER CODE END 2 */
 
@@ -125,7 +126,7 @@ int main(void)
         // 键盘扫描
         key_scan_user();
         // oled 显示
-        oled_show_user();
+//        oled_show_user();
 //        send_buff[2] = 0x04;
 //        send_buff[3] = 0x05;
 //        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
