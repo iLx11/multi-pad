@@ -42,10 +42,9 @@ void MK_on_keyup(uint8_t row, uint8_t col) {
 }
 
 void MK_on_keydown(uint8_t row, uint8_t col) {
-    uint8_t key_value = (col * 4) + row;
+    uint8_t key_value = (col * ROW_NUM) + row;
     printf("key_value -> %d\n", key_value);
     parse_json_value(key_value);
-    send_media_buff[0] = 0x03;
 }
 
 // ·¢ËÍ hid Âë

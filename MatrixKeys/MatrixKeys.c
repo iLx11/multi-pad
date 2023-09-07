@@ -3,7 +3,7 @@
 #include "system_stm32f1xx.h"
 
 // 定义状态记录,记录所有的
-static uint16_t key_state = 0xffff;
+static uint32_t key_state = 0xfffff;
 /*************第一行*************/
 //第一行第一列（0，0），1向右移动0（0*4+0）
 //第一行第二列（0，1），1向右移动1位（0*4+1）
@@ -15,21 +15,21 @@ static uint16_t key_state = 0xffff;
 //第一行第二行（N-1，1），1向右移动1位（N-1*4+1）
 //第一行第三行（N-1，3），1向右移动1位（N-1*4+1）
 //第一行第四行（N-1，4），1向右移动1位（N-1*4+1）
-#define IS_KEY_UP(row, col) 	((key_state >> (row * ROW_NUM + col)) & 0x01) == KEY_UP
-#define IS_KEY_DOWN(row, col) ((key_state >> (row * ROW_NUM + col)) & 0x01) == KEY_DOWN
+#define IS_KEY_UP(row, col) 	((key_state >> (row * COL_NUM + col)) & 0x01) == KEY_UP
+#define IS_KEY_DOWN(row, col) ((key_state >> (row * COL_NUM + col)) & 0x01) == KEY_DOWN
 //高电平按下
 //#define SET_KEY_UP(row, col)		key_state &= ~(1 << (row * ROW_NUM + col))
 //#define SET_KEY_DOWN(row, col)	key_state |= (1 << (row * ROW_NUM + col))
 
 
 ////低电平按下
-#define SET_KEY_UP(row, col)		key_state |= (1 << (row * ROW_NUM + col))
-#define SET_KEY_DOWN(row, col)	key_state &= ~(1 << (row * ROW_NUM + col))
+#define SET_KEY_UP(row, col)		key_state |= (1 << (row * COL_NUM + col))
+#define SET_KEY_DOWN(row, col)	key_state &= ~(1 << (row * COL_NUM + col))
 
 void KEY_INIT(){
     // ROW 推挽输出
     GPIO_InitTypeDef GPIO_InitStruct = {0};
-    __HAL_RCC_GPIOE_CLK_ENABLE();
+    __HAL_RCC_GPIOD_CLK_ENABLE();
     GPIO_InitStruct.Pin = ROW1_PIN|ROW2_PIN|ROW3_PIN|ROW4_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
@@ -37,15 +37,15 @@ void KEY_INIT(){
 
 
 	  // COL 列设置下拉输入
-    __HAL_RCC_GPIOB_CLK_ENABLE();
-    GPIO_InitStruct.Pin = COL1_PIN|COL2_PIN|COL3_PIN|COL4_PIN;
+    __HAL_RCC_GPIOD_CLK_ENABLE();
+    GPIO_InitStruct.Pin = COL1_PIN|COL2_PIN|COL3_PIN|COL4_PIN|COL5_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
     GPIO_InitStruct.Pull=GPIO_PULLUP;
 
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(COL_GPIO, &GPIO_InitStruct);
 
-   // HAL_GPIO_WritePin(COL_GPIO, COL1_PIN|COL2_PIN|COL3_PIN|COL4_PIN, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(COL_GPIO, COL1_PIN|COL2_PIN|COL3_PIN|COL4_PIN|COL5_PIN, GPIO_PIN_SET);
 }
 
 
@@ -54,6 +54,7 @@ static uint8_t COL_STATE(uint8_t col) {
     if(col == 1) return COL2;
     if(col == 2) return COL3;
     if(col == 3) return COL4;
+    if(col == 4) return COL5;
 }
 
 static void ROW_OUT(uint8_t row) {

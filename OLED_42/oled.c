@@ -1,4 +1,5 @@
 #include "oled.h"
+#include <stdio.h>
 
 u8 OLED_GRAM[88][5];
 void OLED_42_CS_ALL_OFF(){
@@ -189,7 +190,6 @@ void OLED_42_ShowPicture(u8 x,u8 y,u8 sizex,u8 sizey,u8 BMP[],u8 mode,u8 index)
 }
 
 
-#include <stdio.h>
 //OLEDµÄ³õÊ¼»¯
 void OLED_42_Init(void)
 {
@@ -212,7 +212,10 @@ void OLED_42_Init(void)
     /***********CS1************/
     __HAL_RCC_GPIOE_CLK_ENABLE();
     GPIO_InitStruct.Pin = OLED_42_SPI_CS0_PIN|OLED_42_SPI_CS1_PIN|OLED_42_SPI_CS2_PIN|OLED_42_SPI_CS3_PIN|OLED_42_SPI_CS4_PIN|OLED_42_SPI_CS5_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+
     HAL_GPIO_Init(OLED_42_SPI_CS_GROUP_1_GPIO, &GPIO_InitStruct);
+    //HAL_GPIO_WritePin(OLED_42_SPI_CS_GROUP_1_GPIO, OLED_42_SPI_CS1_PIN, GPIO_PIN_RESET);
     /***********CS1************/
     __HAL_RCC_GPIOE_CLK_ENABLE();
     GPIO_InitStruct.Pin = OLED_42_SPI_CS6_PIN|OLED_42_SPI_CS7_PIN|OLED_42_SPI_CS8_PIN|OLED_42_SPI_CS9_PIN|OLED_42_SPI_CS10_PIN|OLED_42_SPI_CS11_PIN;
@@ -225,7 +228,9 @@ void OLED_42_Init(void)
     __HAL_RCC_GPIOD_CLK_ENABLE();
     GPIO_InitStruct.Pin = OLED_42_SPI_CS16_PIN|OLED_42_SPI_CS17_PIN|OLED_42_SPI_CS18_PIN|OLED_42_SPI_CS19_PIN;
     HAL_GPIO_Init(OLED_42_SPI_CS_GROUP_2_GPIO, &GPIO_InitStruct);
+
     SPI2_Init();
+
     OLED_42_RES_Clr();
      HAL_Delay(200);
     OLED_42_RES_Set();

@@ -20,38 +20,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="MEDIA_PARSE_EXECUTE">
-      <change afterPath="$PROJECT_DIR$/FLASH/SPI1/spi1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FLASH/SPI1/spi1.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SPI2/spi2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SPI2/spi2.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER/Flash/flash_user.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USER/Flash/flash_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="HARDWARE_SPI_ADD">
+      <change afterPath="$PROJECT_DIR$/OLED_96/oled_96.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OLED_96/oled_96.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/spi1.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi_backup_1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BACKUP/spi1.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi_backup_1.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/Fatfs(nouse)/fatfs_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/Fatfs(nouse)/fatfs_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FLASH/norflash.c" beforeDir="false" afterPath="$PROJECT_DIR$/FLASH/norflash.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED/bmp.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/bmp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED/oled.c" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED/oled.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED/oledfont.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oledfont.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPI/spi.c" beforeDir="false" afterPath="$PROJECT_DIR$/SOFT_SPI/spi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPI/spi.h" beforeDir="false" afterPath="$PROJECT_DIR$/SOFT_SPI/spi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_42/bmp.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/bmp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_42/oled.c" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPI2/spi2.c" beforeDir="false" afterPath="$PROJECT_DIR$/SPI2/spi2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d5f434aea2cae1b05608.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-08-24T09-38-37-0955.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-leden.elf-Debug-a2cf35e684c24610eb71.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/EC11/EC11.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/EC11/EC11.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
@@ -164,7 +151,7 @@
       <workItem from="1692338128604" duration="20204000" />
       <workItem from="1693361740912" duration="62529000" />
       <workItem from="1693787759222" duration="51287000" />
-      <workItem from="1693970620661" duration="12444000" />
+      <workItem from="1693970620661" duration="29658000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;FLASH_MODIFY&quot;">
       <option name="closed" value="true" />
@@ -302,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693910587381</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="HARDWARE_SPI_ADD">
+      <option name="closed" value="true" />
+      <created>1693994014342</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1693994014342</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +326,8 @@
     <MESSAGE value="DELAY_COMP_PARSE_EXECUTE" />
     <MESSAGE value="MOUSE_PARSE_EXECUTE" />
     <MESSAGE value="MEDIA_PARSE_EXECUTE" />
-    <option name="LAST_COMMIT_MESSAGE" value="MEDIA_PARSE_EXECUTE" />
+    <MESSAGE value="HARDWARE_SPI_ADD" />
+    <option name="LAST_COMMIT_MESSAGE" value="HARDWARE_SPI_ADD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

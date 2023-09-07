@@ -104,8 +104,6 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-    // OLED 显示
-//    oled_init_user();
     // 矩阵键盘
     key_init_user();
     // json 解析
@@ -114,9 +112,10 @@ int main(void)
     EC11_EXTI_Init();
     // 文件系统
 //    file_sys_init();
+    // OLED 显示
+    oled_init_user();
     // flash
-    flash_user_init();
-
+    flash_init_user();
   /* USER CODE END 2 */
 
   /* Infinite loop */

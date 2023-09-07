@@ -6,7 +6,7 @@ SPI_HandleTypeDef handle_spi2;
 // 初始化 SPI
 void SPI2_Init(void) {
     // 设置 SPI2
-    handle_spi2.Instance = OLED_42_SPI;
+    handle_spi2.Instance = SPI2;
     // 设置SPI工作模式:设置为主SPI
     handle_spi2.Init.Mode = SPI_MODE_MASTER;
     // 设置全双工或是半双工的数据模式
@@ -25,7 +25,7 @@ void SPI2_Init(void) {
     handle_spi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
     // CRC 值计算的多项式
     handle_spi2.Init.CRCCalculation = 7;
-    // 根据指定参数初始化外设 SPIX 寄存器
+    // 根据指定参数初始化外设 SPIX 寄存器d
     HAL_SPI_Init(&handle_spi2);
 }
 
