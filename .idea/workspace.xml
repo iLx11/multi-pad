@@ -20,32 +20,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="HARDWARE_SPI_ADD">
-      <change afterPath="$PROJECT_DIR$/OLED_96/oled_96.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OLED_96/oled_96.h" afterDir="false" />
+    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="DEMO_NEW">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED_42/bmp.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/bmp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OLED_42/oled.c" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPI2/spi2.c" beforeDir="false" afterPath="$PROJECT_DIR$/SPI2/spi2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SOFT_SPI/spi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SOFT_SPI/spi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +130,7 @@
       <workItem from="1692338128604" duration="20204000" />
       <workItem from="1693361740912" duration="62529000" />
       <workItem from="1693787759222" duration="51287000" />
-      <workItem from="1693970620661" duration="29658000" />
+      <workItem from="1693970620661" duration="30101000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;FLASH_MODIFY&quot;">
       <option name="closed" value="true" />
@@ -297,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693994014342</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="DEMO_NEW">
+      <option name="closed" value="true" />
+      <created>1694067675777</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1694067675777</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +314,8 @@
     <MESSAGE value="MOUSE_PARSE_EXECUTE" />
     <MESSAGE value="MEDIA_PARSE_EXECUTE" />
     <MESSAGE value="HARDWARE_SPI_ADD" />
-    <option name="LAST_COMMIT_MESSAGE" value="HARDWARE_SPI_ADD" />
+    <MESSAGE value="DEMO_NEW" />
+    <option name="LAST_COMMIT_MESSAGE" value="DEMO_NEW" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
