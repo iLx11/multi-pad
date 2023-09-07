@@ -32,7 +32,7 @@
 #include "jsmn_user.h"
 #include "key_user.h"
 #include "oled_user.h"
-#include "EC11.h"
+#include "encoder_user.h"
 #include "flash_user.h"
 
 //#include "fatfs_user.h"
@@ -109,13 +109,14 @@ int main(void)
     // json 解析
     jsmn_init_user();
     // 编码器
-    EC11_EXTI_Init();
+    encode_init_user();
     // 文件系统
 //    file_sys_init();
-    // OLED 显示
-    oled_init_user();
     // flash
     flash_init_user();
+    // OLED 显示
+    oled_init_user();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */

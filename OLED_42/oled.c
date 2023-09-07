@@ -1,6 +1,7 @@
 #include "oled.h"
 #include <stdio.h>
 
+
 u8 OLED_GRAM[88][5];
 void OLED_42_CS_ALL_OFF(){
     for (int i=0;i<OLED_NUM;i++){
@@ -232,7 +233,7 @@ void OLED_42_Init(void)
     SPI2_Init();
 
     OLED_42_RES_Clr();
-     HAL_Delay(200);
+    HAL_Delay(200);
     OLED_42_RES_Set();
 
     OLED_42_WR_Byte_ALL(0xAE,OLED_CMD); /*display off*/
@@ -266,4 +267,3 @@ void OLED_42_Init(void)
     OLED_42_Clear();
     OLED_42_WR_Byte_ALL(0xAF,OLED_CMD); /*display ON*/
 }
-

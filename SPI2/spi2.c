@@ -10,7 +10,7 @@ void SPI2_Init(void) {
     // 设置SPI工作模式:设置为主SPI
     handle_spi2.Init.Mode = SPI_MODE_MASTER;
     // 设置全双工或是半双工的数据模式
-    handle_spi2.Init.Direction = SPI_DIRECTION_1LINE;
+    handle_spi2.Init.Direction = SPI_DIRECTION_2LINES;
     // 设置 SPI 的数据大小，发送8位帧结构
     handle_spi2.Init.DataSize = SPI_DATASIZE_8BIT;
     // 串行同步时钟空闲状态为高电平
@@ -23,8 +23,10 @@ void SPI2_Init(void) {
     handle_spi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
     // 指定数据传输从 MSB 开始还是 LSB 开始： 数据从 MSB 开始
     handle_spi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
+    handle_spi2.Init.TIMode = SPI_TIMODE_DISABLE;
+    handle_spi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
     // CRC 值计算的多项式
-    handle_spi2.Init.CRCCalculation = 7;
+    handle_spi2.Init.CRCPolynomial = 10;
     // 根据指定参数初始化外设 SPIX 寄存器d
     HAL_SPI_Init(&handle_spi2);
 }
@@ -35,6 +37,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi) {
     if (hspi->Instance == SPI2) {
         // 时钟使能
         __HAL_RCC_SPI2_CLK_ENABLE();
+
         __HAL_RCC_GPIOB_CLK_ENABLE();
         /** SPI2 GPIO Configuration
             PB13     ------> SPI2_SCK
@@ -50,11 +53,6 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi) {
         // 时钟使能
         __HAL_RCC_SPI1_CLK_ENABLE();
         __HAL_RCC_GPIOA_CLK_ENABLE();
-        /** SPI2 GPIO Configuration
-            PB13     ------> SPI2_SCK
-            PB14     ------> SPI2_MISO
-            PB15     ------> SPI2_MOSI
-        */
         GPIO_InitStruct.Pin = GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7;
         GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
         GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
