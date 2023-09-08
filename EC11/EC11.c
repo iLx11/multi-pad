@@ -19,7 +19,11 @@ volatile uint16_t total_angel = once_angel * real_point;//一圈
 void EC11_EXTI_Init() {
     GPIO_InitTypeDef GPIO_InitStruct;
     __HAL_RCC_GPIOC_CLK_ENABLE();
-    GPIO_InitStruct.Pin = EC11_A_PIN | EC11_B_PIN;
+    GPIO_InitStruct.Pin = EC11_A0_PIN | EC11_B0_PIN |
+                          EC11_A1_PIN | EC11_B1_PIN |
+                          EC11_A2_PIN | EC11_B2_PIN |
+                          EC11_A3_PIN | EC11_B3_PIN |
+                          EC11_A4_PIN | EC11_B4_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
@@ -27,46 +31,179 @@ void EC11_EXTI_Init() {
 
     // 使能外部中断中断线
     // 抢占优先级 2， 子优先级 1
-    HAL_NVIC_SetPriority(EXTI9_5_IRQn, 2, 1);
+    HAL_NVIC_SetPriority(EXTI0_IRQn, 2, 1);
     // 使能外部中断通道
-    HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+    HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 
     HAL_NVIC_SetPriority(EXTI1_IRQn, 2, 1);
     HAL_NVIC_EnableIRQ(EXTI1_IRQn);
 
+    HAL_NVIC_SetPriority(EXTI9_5_IRQn, 2, 1);
+    HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+
+    HAL_NVIC_SetPriority(EXTI15_10_IRQn, 2, 1);
+    HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+
 }
 
+
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-    if (GPIO_Pin == EC11_A_PIN) {
+    printf("GPIO_PIN -> %d\n", GPIO_Pin);
+    if (GPIO_Pin == EC11_A0_PIN) {
+        printf("EC11_B0_STATE -> %d\n", EC11_B0_STATE);
+
         // 处理外部中断引脚为GPIO_PIN_0的情况
-        if (EC11_B_STATE == HIGH) {
+        if (EC11_B0_STATE == HIGH) {
             //可能逆时针
             encoder_direct_flag = 1;
         }
         //第一次和第二次转都是逆时针
-        if (encoder_direct_flag == 2 && EC11_B_STATE == LOW) {
+        if (encoder_direct_flag == 2 && EC11_B0_STATE == LOW) {
             angel_count += once_angel;
             //保证angel_count++之后结果不能大于360度,故先进行判断
             angel_count = angel_count > total_angel ? 0 : angel_count;
-            printf("顺时针\n当前度数为：%d\r\n", get_angel());
+            printf("EC0-> 顺时针\n当前度数为：%d\r\n", get_angel());
             encoder_direct_flag = 0;
         }
-    } else if (GPIO_Pin == EC11_B_PIN) {
+    }
+    if (GPIO_Pin == EC11_B0_PIN) {
+        printf("EC11_B0_STATE -> %d\n", EC11_B0_STATE);
+
         //B先于A触发下降沿，且A是高电平，第一次可能是顺时针
-        if (EC11_A_STATE == HIGH) {
+        if (EC11_A0_STATE == HIGH) {
             encoder_direct_flag = 2;
         }
         //第一次和第二次转都是逆时针
-        if (encoder_direct_flag == 1 && EC11_A_STATE == LOW) {
+        if (encoder_direct_flag == 1 && EC11_A0_STATE == LOW) {
             angel_count = angel_count < (once_angel - 1) ? total_angel + once_angel : angel_count;
             angel_count -= once_angel;
-            printf("逆时针\n当前度数为：%d\r\n", get_angel());
+            printf("EC0-> 逆时针\n当前度数为：%d\r\n", get_angel());
+            encoder_direct_flag = 0;
+        }
+    }
+
+    if (GPIO_Pin == 32) {
+        printf("EC11_B1_STATE -> %d\n", EC11_B1_STATE);
+        // 处理外部中断引脚为GPIO_PIN_0的情况
+        if (EC11_B1_STATE == HIGH) {
+
+            //可能逆时针
+            encoder_direct_flag = 1;
+        }
+        //第一次和第二次转都是逆时针
+        if (encoder_direct_flag == 2 && EC11_B1_STATE == LOW) {
+            printf("EC11_B1_STATE low\n");
+            angel_count += once_angel;
+            //保证angel_count++之后结果不能大于360度,故先进行判断
+            angel_count = angel_count > total_angel ? 0 : angel_count;
+            printf("EC1-> 顺时针\n当前度数为：%d\r\n", get_angel());
+            encoder_direct_flag = 0;
+        }
+    }
+    if (GPIO_Pin == 64) {
+        printf("EC11_B1_STATE -> %d\n", EC11_B1_STATE);
+        //B先于A触发下降沿，且A是高电平，第一次可能是顺时针
+        if (EC11_A1_STATE == HIGH) {
+            encoder_direct_flag = 2;
+        }
+        //第一次和第二次转都是逆时针
+        if (encoder_direct_flag == 1 && EC11_A1_STATE == LOW) {
+            angel_count = angel_count < (once_angel - 1) ? total_angel + once_angel : angel_count;
+            angel_count -= once_angel;
+            printf("EC1-> 逆时针\n当前度数为：%d\r\n", get_angel());
+            encoder_direct_flag = 0;
+        }
+    }
+
+    if (GPIO_Pin == EC11_A2_PIN) {
+        // 处理外部中断引脚为GPIO_PIN_0的情况
+        if (EC11_B2_STATE == HIGH) {
+            //可能逆时针
+            encoder_direct_flag = 1;
+        }
+        //第一次和第二次转都是逆时针
+        if (encoder_direct_flag == 2 && EC11_B2_STATE == LOW) {
+            angel_count += once_angel;
+            //保证angel_count++之后结果不能大于360度,故先进行判断
+            angel_count = angel_count > total_angel ? 0 : angel_count;
+            printf("EC2-> 顺时针\n当前度数为：%d\r\n", get_angel());
+            encoder_direct_flag = 0;
+        }
+    }
+    if (GPIO_Pin == EC11_B2_PIN) {
+        //B先于A触发下降沿，且A是高电平，第一次可能是顺时针
+        if (EC11_A2_STATE == HIGH) {
+            encoder_direct_flag = 2;
+        }
+        //第一次和第二次转都是逆时针
+        if (encoder_direct_flag == 1 && EC11_A2_STATE == LOW) {
+            angel_count = angel_count < (once_angel - 1) ? total_angel + once_angel : angel_count;
+            angel_count -= once_angel;
+            printf("EC2-> 逆时针\n当前度数为：%d\r\n", get_angel());
+            encoder_direct_flag = 0;
+        }
+    }
+
+    if (GPIO_Pin == EC11_A3_PIN) {
+        // 处理外部中断引脚为GPIO_PIN_0的情况
+        if (EC11_B3_STATE == HIGH) {
+            //可能逆时针
+            encoder_direct_flag = 1;
+        }
+        //第一次和第二次转都是逆时针
+        if (encoder_direct_flag == 2 && EC11_B3_STATE == LOW) {
+            angel_count += once_angel;
+            //保证angel_count++之后结果不能大于360度,故先进行判断
+            angel_count = angel_count > total_angel ? 0 : angel_count;
+            printf("EC3-> 顺时针\n当前度数为：%d\r\n", get_angel());
+            encoder_direct_flag = 0;
+        }
+    }
+    if (GPIO_Pin == EC11_B3_PIN) {
+        //B先于A触发下降沿，且A是高电平，第一次可能是顺时针
+        if (EC11_A3_STATE == HIGH) {
+            encoder_direct_flag = 2;
+        }
+        //第一次和第二次转都是逆时针
+        if (encoder_direct_flag == 1 && EC11_A3_STATE == LOW) {
+            angel_count = angel_count < (once_angel - 1) ? total_angel + once_angel : angel_count;
+            angel_count -= once_angel;
+            printf("EC3-> 逆时针\n当前度数为：%d\r\n", get_angel());
+            encoder_direct_flag = 0;
+        }
+    }
+
+    if (GPIO_Pin == EC11_A4_PIN) {
+        // 处理外部中断引脚为GPIO_PIN_0的情况
+        if (EC11_B4_STATE == HIGH) {
+            //可能逆时针
+            encoder_direct_flag = 1;
+        }
+        //第一次和第二次转都是逆时针
+        if (encoder_direct_flag == 2 && EC11_B4_STATE == LOW) {
+            angel_count += once_angel;
+            //保证angel_count++之后结果不能大于360度,故先进行判断
+            angel_count = angel_count > total_angel ? 0 : angel_count;
+            printf("EC4-> 顺时针\n当前度数为：%d\r\n", get_angel());
+            encoder_direct_flag = 0;
+        }
+    }
+    if (GPIO_Pin == EC11_B4_PIN) {
+        //B先于A触发下降沿，且A是高电平，第一次可能是顺时针
+        if (EC11_A4_STATE == HIGH) {
+            encoder_direct_flag = 2;
+        }
+        //第一次和第二次转都是逆时针
+        if (encoder_direct_flag == 1 && EC11_A4_STATE == LOW) {
+            angel_count = angel_count < (once_angel - 1) ? total_angel + once_angel : angel_count;
+            angel_count -= once_angel;
+            printf("EC4-> 逆时针\n当前度数为：%d\r\n", get_angel());
             encoder_direct_flag = 0;
         }
     }
 }
 
-uint16_t get_angel(void) {
 
+uint16_t get_angel(void) {
     return angel_count;
 }

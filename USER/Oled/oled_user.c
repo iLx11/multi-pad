@@ -97,7 +97,7 @@ void Menu2(void) {
 
 void oled_init_user() {
     OLED_42_Init();
-//    OLED_92_Init();
+    OLED_92_Init();
 //    OLED_42_ShowPicture(0,0,72,42,BMP0,1,1);
     printf("OLED_42_Init -> %d\n");
     Menu1();

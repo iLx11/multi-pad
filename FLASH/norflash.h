@@ -4,8 +4,8 @@
 #include "stm32f1xx.h"
 
 /* 引脚定义 */
-#define NORFLASH_CS_GPIO_PORT           GPIOB
-#define NORFLASH_CS_GPIO_PIN            GPIO_PIN_12
+#define NORFLASH_CS_GPIO_PORT           GPIOA
+#define NORFLASH_CS_GPIO_PIN            GPIO_PIN_4
 #define NORFLASH_CS_GPIO_CLK_ENABLE()   do { __HAL_RCC_GPIOB_CLK_ENABLE(); } while (0)
 
 /* IO操作 */

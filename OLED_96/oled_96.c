@@ -216,5 +216,5 @@ void OLED_92_Init(void) {
 
     OLED_92_Clear();
     OLED_92_WR_Byte_ALL(0xAF, OLED_CMD);
-    OLED_92_CS_ALL_OFF();
+   // OLED_92_CS_ALL_OFF();
 }

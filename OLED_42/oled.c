@@ -266,4 +266,5 @@ void OLED_42_Init(void)
     OLED_42_WR_Byte_ALL(0x11,OLED_CMD); /*set higher column address*/
     OLED_42_Clear();
     OLED_42_WR_Byte_ALL(0xAF,OLED_CMD); /*display ON*/
+  //  OLED_42_CS_ALL_OFF();
 }

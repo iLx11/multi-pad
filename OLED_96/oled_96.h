@@ -2,6 +2,7 @@
 #define LEDEN_OLED_96_H
 #include "stdlib.h"
 #include "stm32f1xx_hal.h"
+#include "spi3.h"
 
 #ifndef u8
 #define u8 uint8_t
