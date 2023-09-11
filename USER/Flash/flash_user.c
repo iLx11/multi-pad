@@ -13,8 +13,6 @@ void StorePhoto(uint8_t folderIndex, uint8_t photoIndexInFolder, uint8_t *photoD
     norflash_write_enable(); // Ω‚À¯Flash
     norflash_write(photoData, sector * SECTOR_SIZE, photoSize);
 //    W25QXX_Write_Disable();
-
-
 }
 void ReadPhoto(uint8_t folderIndex, uint8_t photoIndex, uint8_t *photoData,uint16_t photoSize) {
     uint32_t sector = (folderIndex * NUM_PHOTOS_PER_FOLDER + photoIndex);

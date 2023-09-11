@@ -216,7 +216,7 @@ static void parse_json_media_func(uint8_t key_value_index) {
 }
 
 /********************************************************************************
-* 菜单功能
+* 菜单切换功能
 ********************************************************************************/
 static void parse_json_menu_func(uint8_t key_value_index) {
     uint8_t menu_func = key_value_array[key_value_index][1] - 0x30;

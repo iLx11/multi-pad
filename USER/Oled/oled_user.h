@@ -7,29 +7,22 @@
 
 #define SIZE_42 sizeof(BMP1)
 #define SIZE_96 sizeof(BMP20)
-#define oled_42_l 72
-#define oled_42_h 40
-#define oled_42_x	0
-#define oled_42_y 0
+#define oled_42_l   72
+#define oled_42_h   40
+#define oled_42_x    0
+#define oled_42_y    0
+#define OLED_42_NUM 20
 
-#define oled_96_l 128
-#define oled_96_h 64
-#define oled_96_x	0
-#define oled_96_y 0
-#define PIC_NUM 25
-void Menu_init(void);
-void Menu1(void);
-void Menu2(void);
-void Menu3(void);
-void Menu4(void);
-void Menu5(void);
-void Menu6(void);
-void Menu7(void);
-void Menu8(void);
-void Menu9(void);
-void Menu10(void);
+#define oled_96_l  128
+#define oled_96_h   64
+#define oled_96_x    0
+#define oled_96_y    0
+#define OLED_96_NUM  5
 
 void oled_init_user();
 
 void oled_show_user();
+
+void load_show_menu(uint8_t menu_index);
+
 #endif //LEDEN_OLED_USER_H

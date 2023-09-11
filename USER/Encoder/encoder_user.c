@@ -1,6 +1,4 @@
 #include "encoder_user.h"
-#include "oled_96.h"
-#include "oled_user.h"
 
 uint8_t menu_index = 0;
 uint16_t cur_time = 0;
@@ -8,17 +6,16 @@ uint8_t change_flag = 0;
 
 static void keyboard_menu_change();
 
-// 函数重载
-void HAL_IncTick(void) {
-    cur_time > 6000 ? cur_time = 0 : cur_time++;
-    if (cur_time > 500 && change_flag == 1) {
-        keyboard_menu_change();
-        change_flag = 0;
-    }
+// 初始化
+void encoder_init_user() {
+    EC11_EXTI_Init();
 }
-
-uint32_t HAL_GetTick(void) {
-    return cur_time;
+/********************************************************************************
+* 编码器中断回调并解析
+********************************************************************************/
+void encoder_callback(u_int8_t encoder_index) {
+//    printf("encoder_index -> %d\r", encoder_index + 20);
+    parse_json_value(encoder_index + 20);
 }
 
 /********************************************************************************
@@ -31,19 +28,25 @@ void debounce_func(uint8_t encoder_index) {
 }
 
 /********************************************************************************
-* 菜单更改
+* 菜单层级实质切换
 ********************************************************************************/
 static void keyboard_menu_change() {
     printf("menu_index -> %d\r", menu_index);
-    if (menu_index % 2 == 0) Menu1();
-    else Menu2();
+    if (menu_index % 2 == 0) load_show_menu(0);
+    else load_show_menu(1);
 }
 
-void encoder_init_user() {
-    EC11_EXTI_Init();
+/********************************************************************************
+* 函数重载防抖后执行菜单切换
+********************************************************************************/
+void HAL_IncTick(void) {
+    cur_time > 6000 ? cur_time = 0 : cur_time++;
+    if (cur_time > 500 && change_flag == 1) {
+        keyboard_menu_change();
+        change_flag = 0;
+    }
 }
 
-void encoder_callback(u_int8_t encoder_index) {
-//    printf("encoder_index -> %d\r", encoder_index + 20);
-    parse_json_value(encoder_index + 20);
+uint32_t HAL_GetTick(void) {
+    return cur_time;
 }
