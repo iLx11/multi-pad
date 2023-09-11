@@ -231,7 +231,6 @@ void EXTI9_5_IRQHandler(void) {
 }
 
 void EXTI15_10_IRQHandler(void) {
-
     HAL_GPIO_EXTI_IRQHandler(EC11_A3_PIN);
     HAL_GPIO_EXTI_IRQHandler(EC11_B3_PIN);
 

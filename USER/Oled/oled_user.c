@@ -30,30 +30,27 @@ u8 buffer22[SIZE_96];
 u8 buffer23[SIZE_96];
 u8 buffer24[SIZE_96];
 
-u8* pbuffer[PIC_NUM]=
+u8 *pbuffer[PIC_NUM] =
         {
-                buffer0,buffer1,buffer2,buffer3,buffer4,buffer5,buffer6,buffer7,
-                buffer8,buffer9,buffer10,buffer11,buffer12,buffer13,buffer14,
-                buffer15,buffer16,buffer17,buffer18,buffer19,buffer20,buffer21,
-                buffer22,buffer23,buffer24
+                buffer0, buffer1, buffer2, buffer3, buffer4, buffer5, buffer6, buffer7,
+                buffer8, buffer9, buffer10, buffer11, buffer12, buffer13, buffer14,
+                buffer15, buffer16, buffer17, buffer18, buffer19, buffer20, buffer21,
+                buffer22, buffer23, buffer24
         };
 
 void load_meun(uint8_t folderIndex) {
-    for(int i=0; i<PIC_NUM; i++) {
-        if(i<20)
-        {
-            ReadPhoto(folderIndex,i,pbuffer[i],SIZE_42);
-        }
-        else
-        {
-            ReadPhoto(folderIndex,i,pbuffer[i],SIZE_96);
+    for (int i = 0; i < PIC_NUM; i++) {
+        if (i < 20) {
+            ReadPhoto(folderIndex, i, pbuffer[i], SIZE_42);
+        } else {
+            ReadPhoto(folderIndex, i, pbuffer[i], SIZE_96);
         }
 
     }
 
 
-
 }
+
 void Menu_init(void) {
 //    W25QXX_Init();
 //    for(int i=0; i<PIC_NUM; i++) {
@@ -71,28 +68,26 @@ void Menu_init(void) {
     // load_meun(0);
     // ReadPhoto(0,1,buffer2,SIZE);
 }
-void OLED_ShowPicture(){
-    for(int i=0; i<PIC_NUM; i++) {
-        if(i<20)
-        {
-            OLED_42_ShowPicture(oled_42_x,oled_42_y,oled_42_l,oled_42_h,pbuffer[i],1,i);
-        }
-        else
-        {
-            OLED_92_ShowPicture(oled_96_x,oled_96_y,oled_96_l,oled_96_h,pbuffer[i],1,i-20);
+
+void OLED_ShowPicture() {
+    for (int i = 0; i < PIC_NUM; i++) {
+        if (i < 20) {
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h, pbuffer[i], 1, i);
+        } else {
+            OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h, pbuffer[i], 1, i - 20);
         }
     }
 
 }
+
 void Menu1(void) {
     load_meun(0);
     OLED_ShowPicture();
-
 }
+
 void Menu2(void) {
     load_meun(1);
     OLED_ShowPicture();
-
 }
 
 void oled_init_user() {

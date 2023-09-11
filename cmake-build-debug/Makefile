@@ -808,101 +808,29 @@ EC11/EC11.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/EC11/EC11.c.s
 .PHONY : EC11/EC11.c.s
 
-FATFS/diskio.obj: FATFS/diskio.c.obj
-.PHONY : FATFS/diskio.obj
+FLASH/SPI1/spi1.obj: FLASH/SPI1/spi1.c.obj
+.PHONY : FLASH/SPI1/spi1.obj
 
 # target to build an object file
-FATFS/diskio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/diskio.c.obj
-.PHONY : FATFS/diskio.c.obj
+FLASH/SPI1/spi1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj
+.PHONY : FLASH/SPI1/spi1.c.obj
 
-FATFS/diskio.i: FATFS/diskio.c.i
-.PHONY : FATFS/diskio.i
-
-# target to preprocess a source file
-FATFS/diskio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/diskio.c.i
-.PHONY : FATFS/diskio.c.i
-
-FATFS/diskio.s: FATFS/diskio.c.s
-.PHONY : FATFS/diskio.s
-
-# target to generate assembly for a file
-FATFS/diskio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/diskio.c.s
-.PHONY : FATFS/diskio.c.s
-
-FATFS/ff.obj: FATFS/ff.c.obj
-.PHONY : FATFS/ff.obj
-
-# target to build an object file
-FATFS/ff.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ff.c.obj
-.PHONY : FATFS/ff.c.obj
-
-FATFS/ff.i: FATFS/ff.c.i
-.PHONY : FATFS/ff.i
+FLASH/SPI1/spi1.i: FLASH/SPI1/spi1.c.i
+.PHONY : FLASH/SPI1/spi1.i
 
 # target to preprocess a source file
-FATFS/ff.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ff.c.i
-.PHONY : FATFS/ff.c.i
+FLASH/SPI1/spi1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.i
+.PHONY : FLASH/SPI1/spi1.c.i
 
-FATFS/ff.s: FATFS/ff.c.s
-.PHONY : FATFS/ff.s
-
-# target to generate assembly for a file
-FATFS/ff.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ff.c.s
-.PHONY : FATFS/ff.c.s
-
-FATFS/ffsystem.obj: FATFS/ffsystem.c.obj
-.PHONY : FATFS/ffsystem.obj
-
-# target to build an object file
-FATFS/ffsystem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ffsystem.c.obj
-.PHONY : FATFS/ffsystem.c.obj
-
-FATFS/ffsystem.i: FATFS/ffsystem.c.i
-.PHONY : FATFS/ffsystem.i
-
-# target to preprocess a source file
-FATFS/ffsystem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ffsystem.c.i
-.PHONY : FATFS/ffsystem.c.i
-
-FATFS/ffsystem.s: FATFS/ffsystem.c.s
-.PHONY : FATFS/ffsystem.s
+FLASH/SPI1/spi1.s: FLASH/SPI1/spi1.c.s
+.PHONY : FLASH/SPI1/spi1.s
 
 # target to generate assembly for a file
-FATFS/ffsystem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ffsystem.c.s
-.PHONY : FATFS/ffsystem.c.s
-
-FATFS/ffunicode.obj: FATFS/ffunicode.c.obj
-.PHONY : FATFS/ffunicode.obj
-
-# target to build an object file
-FATFS/ffunicode.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ffunicode.c.obj
-.PHONY : FATFS/ffunicode.c.obj
-
-FATFS/ffunicode.i: FATFS/ffunicode.c.i
-.PHONY : FATFS/ffunicode.i
-
-# target to preprocess a source file
-FATFS/ffunicode.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ffunicode.c.i
-.PHONY : FATFS/ffunicode.c.i
-
-FATFS/ffunicode.s: FATFS/ffunicode.c.s
-.PHONY : FATFS/ffunicode.s
-
-# target to generate assembly for a file
-FATFS/ffunicode.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FATFS/ffunicode.c.s
-.PHONY : FATFS/ffunicode.c.s
+FLASH/SPI1/spi1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.s
+.PHONY : FLASH/SPI1/spi1.c.s
 
 FLASH/norflash.obj: FLASH/norflash.c.obj
 .PHONY : FLASH/norflash.obj
@@ -952,30 +880,6 @@ JSMN/jsmn.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/JSMN/jsmn.c.s
 .PHONY : JSMN/jsmn.c.s
 
-MALLOC/malloc.obj: MALLOC/malloc.c.obj
-.PHONY : MALLOC/malloc.obj
-
-# target to build an object file
-MALLOC/malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/MALLOC/malloc.c.obj
-.PHONY : MALLOC/malloc.c.obj
-
-MALLOC/malloc.i: MALLOC/malloc.c.i
-.PHONY : MALLOC/malloc.i
-
-# target to preprocess a source file
-MALLOC/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/MALLOC/malloc.c.i
-.PHONY : MALLOC/malloc.c.i
-
-MALLOC/malloc.s: MALLOC/malloc.c.s
-.PHONY : MALLOC/malloc.s
-
-# target to generate assembly for a file
-MALLOC/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/MALLOC/malloc.c.s
-.PHONY : MALLOC/malloc.c.s
-
 MatrixKeys/MatrixKeys.obj: MatrixKeys/MatrixKeys.c.obj
 .PHONY : MatrixKeys/MatrixKeys.obj
 
@@ -1000,29 +904,29 @@ MatrixKeys/MatrixKeys.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.s
 .PHONY : MatrixKeys/MatrixKeys.c.s
 
-Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.obj: Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.obj
-.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.obj
+Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.obj: Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.obj
 
 # target to build an object file
-Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.obj
-.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.obj
+Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj
 
-Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.i: Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.i
-.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.i
+Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.i: Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.i
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.i
 
 # target to preprocess a source file
-Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.i
-.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.i
+Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.i
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.i
 
-Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.s: Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.s
-.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.s
+Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.s: Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.s
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.s
 
 # target to generate assembly for a file
-Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.s
-.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c.s
+Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.s
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.s
 
 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.obj: Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
 .PHONY : Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.obj
@@ -1096,53 +1000,101 @@ Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s
 .PHONY : Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s
 
-OLED/oled.obj: OLED/oled.c.obj
-.PHONY : OLED/oled.obj
+OLED_42/oled.obj: OLED_42/oled.c.obj
+.PHONY : OLED_42/oled.obj
 
 # target to build an object file
-OLED/oled.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED/oled.c.obj
-.PHONY : OLED/oled.c.obj
+OLED_42/oled.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj
+.PHONY : OLED_42/oled.c.obj
 
-OLED/oled.i: OLED/oled.c.i
-.PHONY : OLED/oled.i
+OLED_42/oled.i: OLED_42/oled.c.i
+.PHONY : OLED_42/oled.i
 
 # target to preprocess a source file
-OLED/oled.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED/oled.c.i
-.PHONY : OLED/oled.c.i
+OLED_42/oled.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_42/oled.c.i
+.PHONY : OLED_42/oled.c.i
 
-OLED/oled.s: OLED/oled.c.s
-.PHONY : OLED/oled.s
+OLED_42/oled.s: OLED_42/oled.c.s
+.PHONY : OLED_42/oled.s
 
 # target to generate assembly for a file
-OLED/oled.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED/oled.c.s
-.PHONY : OLED/oled.c.s
+OLED_42/oled.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_42/oled.c.s
+.PHONY : OLED_42/oled.c.s
 
-SPI/spi.obj: SPI/spi.c.obj
-.PHONY : SPI/spi.obj
+OLED_96/SPI3/spi3.obj: OLED_96/SPI3/spi3.c.obj
+.PHONY : OLED_96/SPI3/spi3.obj
 
 # target to build an object file
-SPI/spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/SPI/spi.c.obj
-.PHONY : SPI/spi.c.obj
+OLED_96/SPI3/spi3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj
+.PHONY : OLED_96/SPI3/spi3.c.obj
 
-SPI/spi.i: SPI/spi.c.i
-.PHONY : SPI/spi.i
+OLED_96/SPI3/spi3.i: OLED_96/SPI3/spi3.c.i
+.PHONY : OLED_96/SPI3/spi3.i
 
 # target to preprocess a source file
-SPI/spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/SPI/spi.c.i
-.PHONY : SPI/spi.c.i
+OLED_96/SPI3/spi3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.i
+.PHONY : OLED_96/SPI3/spi3.c.i
 
-SPI/spi.s: SPI/spi.c.s
-.PHONY : SPI/spi.s
+OLED_96/SPI3/spi3.s: OLED_96/SPI3/spi3.c.s
+.PHONY : OLED_96/SPI3/spi3.s
 
 # target to generate assembly for a file
-SPI/spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/SPI/spi.c.s
-.PHONY : SPI/spi.c.s
+OLED_96/SPI3/spi3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.s
+.PHONY : OLED_96/SPI3/spi3.c.s
+
+OLED_96/oled_96.obj: OLED_96/oled_96.c.obj
+.PHONY : OLED_96/oled_96.obj
+
+# target to build an object file
+OLED_96/oled_96.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj
+.PHONY : OLED_96/oled_96.c.obj
+
+OLED_96/oled_96.i: OLED_96/oled_96.c.i
+.PHONY : OLED_96/oled_96.i
+
+# target to preprocess a source file
+OLED_96/oled_96.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.i
+.PHONY : OLED_96/oled_96.c.i
+
+OLED_96/oled_96.s: OLED_96/oled_96.c.s
+.PHONY : OLED_96/oled_96.s
+
+# target to generate assembly for a file
+OLED_96/oled_96.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.s
+.PHONY : OLED_96/oled_96.c.s
+
+SPI2/spi2.obj: SPI2/spi2.c.obj
+.PHONY : SPI2/spi2.obj
+
+# target to build an object file
+SPI2/spi2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj
+.PHONY : SPI2/spi2.c.obj
+
+SPI2/spi2.i: SPI2/spi2.c.i
+.PHONY : SPI2/spi2.i
+
+# target to preprocess a source file
+SPI2/spi2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/SPI2/spi2.c.i
+.PHONY : SPI2/spi2.c.i
+
+SPI2/spi2.s: SPI2/spi2.c.s
+.PHONY : SPI2/spi2.s
+
+# target to generate assembly for a file
+SPI2/spi2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/SPI2/spi2.c.s
+.PHONY : SPI2/spi2.c.s
 
 USB_DEVICE/App/usb_device.obj: USB_DEVICE/App/usb_device.c.obj
 .PHONY : USB_DEVICE/App/usb_device.obj
@@ -1167,6 +1119,30 @@ USB_DEVICE/App/usb_device.s: USB_DEVICE/App/usb_device.c.s
 USB_DEVICE/App/usb_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.s
 .PHONY : USB_DEVICE/App/usb_device.c.s
+
+USB_DEVICE/App/usbd_custom_hid_if.obj: USB_DEVICE/App/usbd_custom_hid_if.c.obj
+.PHONY : USB_DEVICE/App/usbd_custom_hid_if.obj
+
+# target to build an object file
+USB_DEVICE/App/usbd_custom_hid_if.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj
+.PHONY : USB_DEVICE/App/usbd_custom_hid_if.c.obj
+
+USB_DEVICE/App/usbd_custom_hid_if.i: USB_DEVICE/App/usbd_custom_hid_if.c.i
+.PHONY : USB_DEVICE/App/usbd_custom_hid_if.i
+
+# target to preprocess a source file
+USB_DEVICE/App/usbd_custom_hid_if.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.i
+.PHONY : USB_DEVICE/App/usbd_custom_hid_if.c.i
+
+USB_DEVICE/App/usbd_custom_hid_if.s: USB_DEVICE/App/usbd_custom_hid_if.c.s
+.PHONY : USB_DEVICE/App/usbd_custom_hid_if.s
+
+# target to generate assembly for a file
+USB_DEVICE/App/usbd_custom_hid_if.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.s
+.PHONY : USB_DEVICE/App/usbd_custom_hid_if.c.s
 
 USB_DEVICE/App/usbd_desc.obj: USB_DEVICE/App/usbd_desc.c.obj
 .PHONY : USB_DEVICE/App/usbd_desc.obj
@@ -1216,29 +1192,53 @@ USB_DEVICE/Target/usbd_conf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.s
 .PHONY : USB_DEVICE/Target/usbd_conf.c.s
 
-USER/Fatfs/fatfs_user.obj: USER/Fatfs/fatfs_user.c.obj
-.PHONY : USER/Fatfs/fatfs_user.obj
+USER/Encoder/encoder_user.obj: USER/Encoder/encoder_user.c.obj
+.PHONY : USER/Encoder/encoder_user.obj
 
 # target to build an object file
-USER/Fatfs/fatfs_user.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Fatfs/fatfs_user.c.obj
-.PHONY : USER/Fatfs/fatfs_user.c.obj
+USER/Encoder/encoder_user.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj
+.PHONY : USER/Encoder/encoder_user.c.obj
 
-USER/Fatfs/fatfs_user.i: USER/Fatfs/fatfs_user.c.i
-.PHONY : USER/Fatfs/fatfs_user.i
+USER/Encoder/encoder_user.i: USER/Encoder/encoder_user.c.i
+.PHONY : USER/Encoder/encoder_user.i
 
 # target to preprocess a source file
-USER/Fatfs/fatfs_user.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Fatfs/fatfs_user.c.i
-.PHONY : USER/Fatfs/fatfs_user.c.i
+USER/Encoder/encoder_user.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.i
+.PHONY : USER/Encoder/encoder_user.c.i
 
-USER/Fatfs/fatfs_user.s: USER/Fatfs/fatfs_user.c.s
-.PHONY : USER/Fatfs/fatfs_user.s
+USER/Encoder/encoder_user.s: USER/Encoder/encoder_user.c.s
+.PHONY : USER/Encoder/encoder_user.s
 
 # target to generate assembly for a file
-USER/Fatfs/fatfs_user.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Fatfs/fatfs_user.c.s
-.PHONY : USER/Fatfs/fatfs_user.c.s
+USER/Encoder/encoder_user.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.s
+.PHONY : USER/Encoder/encoder_user.c.s
+
+USER/Flash/flash_user.obj: USER/Flash/flash_user.c.obj
+.PHONY : USER/Flash/flash_user.obj
+
+# target to build an object file
+USER/Flash/flash_user.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj
+.PHONY : USER/Flash/flash_user.c.obj
+
+USER/Flash/flash_user.i: USER/Flash/flash_user.c.i
+.PHONY : USER/Flash/flash_user.i
+
+# target to preprocess a source file
+USER/Flash/flash_user.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.i
+.PHONY : USER/Flash/flash_user.c.i
+
+USER/Flash/flash_user.s: USER/Flash/flash_user.c.s
+.PHONY : USER/Flash/flash_user.s
+
+# target to generate assembly for a file
+USER/Flash/flash_user.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.s
+.PHONY : USER/Flash/flash_user.c.s
 
 USER/Json/jsmn_user.obj: USER/Json/jsmn_user.c.obj
 .PHONY : USER/Json/jsmn_user.obj
@@ -1311,6 +1311,30 @@ USER/Oled/oled_user.s: USER/Oled/oled_user.c.s
 USER/Oled/oled_user.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.s
 .PHONY : USER/Oled/oled_user.c.s
+
+USER/Usb/usb_user.obj: USER/Usb/usb_user.c.obj
+.PHONY : USER/Usb/usb_user.obj
+
+# target to build an object file
+USER/Usb/usb_user.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj
+.PHONY : USER/Usb/usb_user.c.obj
+
+USER/Usb/usb_user.i: USER/Usb/usb_user.c.i
+.PHONY : USER/Usb/usb_user.i
+
+# target to preprocess a source file
+USER/Usb/usb_user.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.i
+.PHONY : USER/Usb/usb_user.c.i
+
+USER/Usb/usb_user.s: USER/Usb/usb_user.c.s
+.PHONY : USER/Usb/usb_user.s
+
+# target to generate assembly for a file
+USER/Usb/usb_user.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.s
+.PHONY : USER/Usb/usb_user.c.s
 
 # Help Target
 help:
@@ -1406,33 +1430,21 @@ help:
 	@echo ... EC11/EC11.obj
 	@echo ... EC11/EC11.i
 	@echo ... EC11/EC11.s
-	@echo ... FATFS/diskio.obj
-	@echo ... FATFS/diskio.i
-	@echo ... FATFS/diskio.s
-	@echo ... FATFS/ff.obj
-	@echo ... FATFS/ff.i
-	@echo ... FATFS/ff.s
-	@echo ... FATFS/ffsystem.obj
-	@echo ... FATFS/ffsystem.i
-	@echo ... FATFS/ffsystem.s
-	@echo ... FATFS/ffunicode.obj
-	@echo ... FATFS/ffunicode.i
-	@echo ... FATFS/ffunicode.s
+	@echo ... FLASH/SPI1/spi1.obj
+	@echo ... FLASH/SPI1/spi1.i
+	@echo ... FLASH/SPI1/spi1.s
 	@echo ... FLASH/norflash.obj
 	@echo ... FLASH/norflash.i
 	@echo ... FLASH/norflash.s
 	@echo ... JSMN/jsmn.obj
 	@echo ... JSMN/jsmn.i
 	@echo ... JSMN/jsmn.s
-	@echo ... MALLOC/malloc.obj
-	@echo ... MALLOC/malloc.i
-	@echo ... MALLOC/malloc.s
 	@echo ... MatrixKeys/MatrixKeys.obj
 	@echo ... MatrixKeys/MatrixKeys.i
 	@echo ... MatrixKeys/MatrixKeys.s
-	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.obj
-	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.i
-	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.s
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.obj
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.i
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.s
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.obj
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.i
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.s
@@ -1442,24 +1454,36 @@ help:
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.obj
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.i
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.s
-	@echo ... OLED/oled.obj
-	@echo ... OLED/oled.i
-	@echo ... OLED/oled.s
-	@echo ... SPI/spi.obj
-	@echo ... SPI/spi.i
-	@echo ... SPI/spi.s
+	@echo ... OLED_42/oled.obj
+	@echo ... OLED_42/oled.i
+	@echo ... OLED_42/oled.s
+	@echo ... OLED_96/SPI3/spi3.obj
+	@echo ... OLED_96/SPI3/spi3.i
+	@echo ... OLED_96/SPI3/spi3.s
+	@echo ... OLED_96/oled_96.obj
+	@echo ... OLED_96/oled_96.i
+	@echo ... OLED_96/oled_96.s
+	@echo ... SPI2/spi2.obj
+	@echo ... SPI2/spi2.i
+	@echo ... SPI2/spi2.s
 	@echo ... USB_DEVICE/App/usb_device.obj
 	@echo ... USB_DEVICE/App/usb_device.i
 	@echo ... USB_DEVICE/App/usb_device.s
+	@echo ... USB_DEVICE/App/usbd_custom_hid_if.obj
+	@echo ... USB_DEVICE/App/usbd_custom_hid_if.i
+	@echo ... USB_DEVICE/App/usbd_custom_hid_if.s
 	@echo ... USB_DEVICE/App/usbd_desc.obj
 	@echo ... USB_DEVICE/App/usbd_desc.i
 	@echo ... USB_DEVICE/App/usbd_desc.s
 	@echo ... USB_DEVICE/Target/usbd_conf.obj
 	@echo ... USB_DEVICE/Target/usbd_conf.i
 	@echo ... USB_DEVICE/Target/usbd_conf.s
-	@echo ... USER/Fatfs/fatfs_user.obj
-	@echo ... USER/Fatfs/fatfs_user.i
-	@echo ... USER/Fatfs/fatfs_user.s
+	@echo ... USER/Encoder/encoder_user.obj
+	@echo ... USER/Encoder/encoder_user.i
+	@echo ... USER/Encoder/encoder_user.s
+	@echo ... USER/Flash/flash_user.obj
+	@echo ... USER/Flash/flash_user.i
+	@echo ... USER/Flash/flash_user.s
 	@echo ... USER/Json/jsmn_user.obj
 	@echo ... USER/Json/jsmn_user.i
 	@echo ... USER/Json/jsmn_user.s
@@ -1469,6 +1493,9 @@ help:
 	@echo ... USER/Oled/oled_user.obj
 	@echo ... USER/Oled/oled_user.i
 	@echo ... USER/Oled/oled_user.s
+	@echo ... USER/Usb/usb_user.obj
+	@echo ... USER/Usb/usb_user.i
+	@echo ... USER/Usb/usb_user.s
 .PHONY : help
 
 

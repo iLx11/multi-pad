@@ -11,10 +11,10 @@
 				<Option working_dir="C:/Users/WOW/Desktop/leden/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="leden.elf">
@@ -27,21 +27,23 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/MALLC"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/FATFS"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Usb"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/OLED_96/SPI3"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Encoder"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/OLED_96"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/FLASH/SPI1"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Flash"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/FLASH"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/SPI"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/SPI2"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/EC11"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/USER/Fatfs"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Oled"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Json"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Key"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/JSMN_USER"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/OLED"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/OLED_42"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/MatrixKeys"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/JSMN"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Core/Inc"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/Core/Src"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
@@ -49,7 +51,7 @@
 					<Add directory="C:/Users/WOW/Desktop/leden/USB_DEVICE/App"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USB_DEVICE/Target"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
 					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -58,10 +60,10 @@
 					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf"/>
-					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf"/>
+					<CompileFile command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="leden.elf/fast">
@@ -74,21 +76,23 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/MALLC"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/FATFS"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Usb"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/OLED_96/SPI3"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Encoder"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/OLED_96"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/FLASH/SPI1"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/USER/Flash"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/FLASH"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/SPI"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/SPI2"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/EC11"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/USER/Fatfs"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Oled"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Json"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USER/Key"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/JSMN_USER"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/OLED"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/OLED_42"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/MatrixKeys"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/JSMN"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Core/Inc"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/Core/Src"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
@@ -96,7 +100,7 @@
 					<Add directory="C:/Users/WOW/Desktop/leden/USB_DEVICE/App"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/USB_DEVICE/Target"/>
 					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
-					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+					<Add directory="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
 					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -105,30 +109,30 @@
 					<Add directory="d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf/fast"/>
-					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf/fast"/>
+					<CompileFile command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/WOW/Desktop/leden/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/WOW/Desktop/leden/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/msys2/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/WOW/Desktop/leden/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -414,25 +418,10 @@
 		<Unit filename="C:/Users/WOW/Desktop/leden/EC11/EC11.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/diskio.c">
+		<Unit filename="C:/Users/WOW/Desktop/leden/FLASH/SPI1/spi1.c">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/diskio.h">
-			<Option target="leden.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ff.c">
-			<Option target="leden.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ff.h">
-			<Option target="leden.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ffconf.h">
-			<Option target="leden.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ffsystem.c">
-			<Option target="leden.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/FATFS/ffunicode.c">
+		<Unit filename="C:/Users/WOW/Desktop/leden/FLASH/SPI1/spi1.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/FLASH/norflash.c">
@@ -447,22 +436,16 @@
 		<Unit filename="C:/Users/WOW/Desktop/leden/JSMN/jsmn.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/MALLOC/malloc.c">
-			<Option target="leden.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/MALLOC/malloc.h">
-			<Option target="leden.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/MatrixKeys/MatrixKeys.c">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/MatrixKeys/MatrixKeys.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc/usbd_hid.h">
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.c">
+		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h">
@@ -486,22 +469,37 @@
 		<Unit filename="C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/OLED/bmp.h">
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_42/bmp.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/OLED/oled.c">
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_42/oled.c">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/OLED/oled.h">
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_42/oled.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/OLED/oledfont.h">
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_42/oledfont.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/SPI/spi.c">
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_96/SPI3/spi3.c">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/SPI/spi.h">
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_96/SPI3/spi3.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_96/oled_96.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_96/oled_96.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/OLED_96/oledfont.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/SPI2/spi2.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/SPI2/spi2.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/STM32F103VETX_FLASH.ld">
@@ -511,6 +509,12 @@
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usb_device.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usbd_custom_hid_if.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usbd_custom_hid_if.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usbd_desc.c">
@@ -525,10 +529,16 @@
 		<Unit filename="C:/Users/WOW/Desktop/leden/USB_DEVICE/Target/usbd_conf.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Fatfs/fatfs_user.c">
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Encoder/encoder_user.c">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Fatfs/fatfs_user.h">
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Encoder/encoder_user.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Flash/flash_user.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Flash/flash_user.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Json/jsmn_user.c">
@@ -547,6 +557,12 @@
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Oled/oled_user.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Usb/usb_user.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/WOW/Desktop/leden/USER/Usb/usb_user.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/WOW/Desktop/leden/CMakeLists.txt">

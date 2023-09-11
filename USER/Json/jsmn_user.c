@@ -1,14 +1,15 @@
 #include "jsmn_user.h"
 //#include "fatfs_user.h"
 
-char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\",\"004\":\"42011040000110623001119\",\"005\":\"500020030040\",\"006\":\"60100\"}";
+char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"31204072203080706\",\"004\":\"42011040000110623001119\",\"005\":\"500020030040\",\"006\":\"60100\",\"020\":\"700\",\"021\":\"710\",\"022\":\"60100\",\"023\":\"60200\",\"024\":\"00A04100410041007100810\",\"025\":\"00A04100410041007100810\",\"026\":\"00A04100410041007100810\",\"027\":\"00A04100410041007100810\",\"028\":\"00A04100410041007100810\",\"029\":\"00A04100410041007100810\"}";
+// hid 发送缓冲数组指针结构体
 extern buff_struct buff_point_array[3];
 
 jsmntok_t t[128];
 jsmn_parser p;
 
 // 解析后的键值数组
-char key_value_array[20][200] = {0};
+char key_value_array[30][200] = {0};
 
 // 数字转字符串
 static char *num_to_string(uint8_t num, char *str);
@@ -27,17 +28,20 @@ static void parse_json_delay_key(uint8_t key_value_index);
 
 static void parse_json_comp_delay_key(uint8_t key_value_index);
 
-static void hid_buff_set_send(uint8_t* start, uint8_t key_value_index);
+static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index);
 
-static void get_execute_delay(uint8_t* start, uint8_t key_value_index);
+static void get_execute_delay(uint8_t *start, uint8_t key_value_index);
 
 static void parse_json_mouse_func(uint8_t key_value_index);
 
 static void parse_json_media_func(uint8_t key_value_index);
 
+static void parse_json_menu_func(uint8_t key_value_index);
+
 // 根据功能解析 json 值的函数指针数组
-void (*parse_by_function[7])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_compp_key,
-                                         parse_json_delay_key, parse_json_comp_delay_key, parse_json_mouse_func, parse_json_media_func};
+void (*parse_by_function[8])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_compp_key,
+                                         parse_json_delay_key, parse_json_comp_delay_key, parse_json_mouse_func,
+                                         parse_json_media_func, parse_json_menu_func};
 
 // json 解析初始化
 void jsmn_init_user() {
@@ -68,7 +72,7 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
     }*/
     // 根据键取字符串
     if (r < 1 && t[0].type != JSMN_OBJECT) return 1;
-    for (uint8_t j = 0; j < 20; j++) {
+    for (uint8_t j = 0; j < 30; j++) {
         // sprintf 函数执行速度还未测试
         // jsno 字符的键
         char json_key_str[4] = {0};
@@ -140,7 +144,7 @@ static void parse_json_normal_key(uint8_t key_value_index) {
 ********************************************************************************/
 static void parse_json_comp_key(uint8_t key_value_index) {
     uint8_t start = 1;
-    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
+    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
     hid_buff_set_send(&start, key_value_index);
 }
 
@@ -151,7 +155,7 @@ static void parse_json_compp_key(uint8_t key_value_index) {
     uint8_t compp_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
     while (compp_key_count--) {
-        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
+        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
         hid_buff_set_send(&start, key_value_index);
     }
 }
@@ -176,11 +180,11 @@ static void parse_json_delay_key(uint8_t key_value_index) {
 static void parse_json_comp_delay_key(uint8_t key_value_index) {
     uint8_t delay_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
-    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
+    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
     hid_buff_set_send(&start, key_value_index);
-    while(delay_key_count --) {
+    while (delay_key_count--) {
         get_execute_delay(&start, key_value_index);
-        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start ++, start ++);
+        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
         hid_buff_set_send(&start, key_value_index);
     }
 }
@@ -192,13 +196,14 @@ static void parse_json_mouse_func(uint8_t key_value_index) {
     buff_point_array[1].send_buff_point[0] = 0x02;
     buff_point_array[1].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
     char sign;
-    for(uint8_t i = 2, start = 3; i < 5; i ++) {
-        sign = key_value_array[key_value_index][start ++] - 0x30 == 1 ? 1 : -1;
-        buff_point_array[1].send_buff_point[i] = string_to_num_hex(key_value_index, start ++, start ++) * sign;
+    for (uint8_t i = 2, start = 3; i < 5; i++) {
+        sign = key_value_array[key_value_index][start++] - 0x30 == 1 ? 1 : -1;
+        buff_point_array[1].send_buff_point[i] = string_to_num_hex(key_value_index, start++, start++) * sign;
     }
     send_hid_code(1);
     hid_buff_reset();
 }
+
 /********************************************************************************
 * 媒体功能
 ********************************************************************************/
@@ -211,9 +216,23 @@ static void parse_json_media_func(uint8_t key_value_index) {
 }
 
 /********************************************************************************
+* 菜单功能
+********************************************************************************/
+static void parse_json_menu_func(uint8_t key_value_index) {
+    uint8_t menu_func = key_value_array[key_value_index][1] - 0x30;
+    if (menu_func == 0)
+        menu_index <= 0 ? menu_index = 9 : menu_index--;
+    else if (menu_func == 1)
+        menu_index >= 9 ? menu_index = 0 : menu_index++;
+    else
+        menu_index = key_value_array[key_value_index][2] - 0x30;
+    debounce_func(key_value_index);
+}
+
+/********************************************************************************
 * 设置与发送缓冲数组
 ********************************************************************************/
-static void hid_buff_set_send(uint8_t* start, uint8_t key_value_index) {
+static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index) {
     buff_point_array[0].send_buff_point[0] = 0x01;
     uint8_t normal_key_count = key_value_array[key_value_index][(*start)++] - 0x30;
     if (normal_key_count > 6) return;
@@ -222,10 +241,11 @@ static void hid_buff_set_send(uint8_t* start, uint8_t key_value_index) {
     send_hid_code(0);
     hid_buff_reset();
 }
+
 /********************************************************************************
 * 获取与执行延迟
 ********************************************************************************/
-static void get_execute_delay(uint8_t* start, uint8_t key_value_index) {
+static void get_execute_delay(uint8_t *start, uint8_t key_value_index) {
     uint16_t delay_time = (key_value_array[key_value_index][(*start)++] - 0x30) * 1000;
     delay_time += string_to_num_hex(key_value_index, (*start)++, (*start)++);
     HAL_Delay(delay_time);
@@ -248,17 +268,6 @@ static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t
     result += (key_value_array[key_value_index][end] >= 0x41 && key_value_array[key_value_index][end] <= 0x46) ?
               (0x0A + key_value_array[key_value_index][end] - 0x41) :
               key_value_array[key_value_index][end] - 0x30;
-    /*if (end - start < 2) {
-
-    } else {
-        do {
-            (key_value_array[key_value_index][end] >= 0x41 && key_value_array[key_value_index][end] <= 0x46) ?
-            (result += (0x0A + key_value_array[key_value_index][end] - 0x41) * 16) :
-            (result += (key_value_array[key_value_index][end] - 0x30) * 16);
-            result *= 10;
-        } while (start++ != end);
-        printf("result -> %d\n", result);
-    }*/
     return result;
 }
 

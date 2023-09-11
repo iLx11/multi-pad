@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader">{
-  &quot;useNewFormat&quot;: true
-}</component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -20,29 +20,181 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="042_SHOW_SPI2">
-      <change afterPath="$PROJECT_DIR$/OLED_96/SPI3/spi3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OLED_96/SPI3/spi3.h" afterDir="false" />
+    <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/OLED_96/oledfont.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea/.idea.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/.idea.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/leden.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/leden.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/norflash.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/norflash.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/norflash.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/norflash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/spi111.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi111.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/spi111.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi111.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/spi_backup_1.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi_backup_1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/spi_backup_1.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/spi_backup_1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/w25qxx.c" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/w25qxx.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKUP/w25qxx.h" beforeDir="false" afterPath="$PROJECT_DIR$/BACKUP/w25qxx.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists_template.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/retarget.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/retarget.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/retarget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/retarget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/syscalls.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/syscalls.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/sysmem.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/sysmem.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/system_stm32f1xx.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/system_stm32f1xx.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Startup/startup_stm32f103vetx.s" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Startup/startup_stm32f103vetx.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EC11/EC11.c" beforeDir="false" afterPath="$PROJECT_DIR$/EC11/EC11.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EC11/EC11.h" beforeDir="false" afterPath="$PROJECT_DIR$/EC11/EC11.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/diskio.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/diskio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/diskio.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/diskio.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/ff.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ff.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/ff.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ff.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/ffconf.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ffconf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/ffsystem.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ffsystem.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/ffunicode.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/ffunicode.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FLASH/norflash.c" beforeDir="false" afterPath="$PROJECT_DIR$/FLASH/norflash.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FLASH/norflash.h" beforeDir="false" afterPath="$PROJECT_DIR$/FLASH/norflash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSMN/jsmn.h" beforeDir="false" afterPath="$PROJECT_DIR$/JSMN/jsmn.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON字符生成规则.md" beforeDir="false" afterPath="$PROJECT_DIR$/JSON字符生成规则.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_42/bmp.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/bmp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OLED_42/oled.c" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_42/oled.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_42/oledfont.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oledfont.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OLED_96/oled_96.c" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_96/oled_96.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OLED_96/oled_96.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_96/oled_96.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPI2/spi2.c" beforeDir="false" afterPath="$PROJECT_DIR$/SPI2/spi2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM32F103VETX_FLASH.ld" beforeDir="false" afterPath="$PROJECT_DIR$/STM32F103VETX_FLASH.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Encoder/encoder_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Encoder/encoder_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Encoder/encoder_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Encoder/encoder_user.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-38a08331fba0ca040824.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-5f999563c8bbbb7b544a.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/EC11/EC11.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/EC11/EC11.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/OLED/oled.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/SPI/spi.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.map" afterDir="false" />
@@ -62,58 +214,38 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectApplicationVersion">
-    <option name="ide" value="CLion" />
-    <option name="majorVersion" value="2023" />
-    <option name="minorVersion" value="1.4" />
-  </component>
-  <component name="ProjectId" id="2TQG1H3CJ1nlionxutCaQTojbI8" />
+  <component name="ProjectId" id="2VEIA3BePm8JqS5H7IrVj8yYrsR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/WOW/Desktop/leden/OLED_96",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src" />
-      <recent name="C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Inc" />
-      <recent name="C:\Users\WOW\Desktop\leden\USER\Fatfs" />
-      <recent name="C:\Users\WOW\Desktop\leden\FATFS" />
-      <recent name="C:\Users\WOW\Desktop\leden\SPI" />
+      <recent name="C:\Users\WOW\Desktop\leden\OLED_96" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\WOW\Desktop\leden\SPI" />
-      <recent name="C:\Users\WOW\Desktop\leden\USER\Json" />
-      <recent name="C:\Users\WOW\Desktop\leden\JSMN" />
-      <recent name="C:\Users\WOW\Desktop\leden\JSMN_USER" />
-      <recent name="C:\Users\WOW\Desktop\leden" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="com.jetbrains.cidr.embedded.openocd.conf.type" />
-      </set>
-    </option>
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.leden">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="leden.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="leden" TARGET_NAME="leden.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="leden" RUN_TARGET_NAME="leden.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -127,197 +259,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b3dc91e4-071d-4cca-bd6e-61e847106c3a" name="Changes" comment="" />
-      <created>1690967673463</created>
+      <changelist id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="" />
+      <created>1694394666420</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1690967673463</updated>
-      <workItem from="1690967697614" duration="47523000" />
-      <workItem from="1691136287459" duration="327000" />
-      <workItem from="1691137193196" duration="830000" />
-      <workItem from="1691138035985" duration="111000" />
-      <workItem from="1691138162287" duration="80000" />
-      <workItem from="1691138311107" duration="183000" />
-      <workItem from="1691138612516" duration="24432000" />
-      <workItem from="1691371718621" duration="71714000" />
-      <workItem from="1691629227115" duration="48605000" />
-      <workItem from="1691748811936" duration="51000" />
-      <workItem from="1691748871023" duration="95363000" />
-      <workItem from="1692338128604" duration="20204000" />
-      <workItem from="1693361740912" duration="62529000" />
-      <workItem from="1693787759222" duration="51287000" />
-      <workItem from="1693970620661" duration="47519000" />
-      <workItem from="1694137677649" duration="17493000" />
+      <updated>1694394666420</updated>
+      <workItem from="1694394668023" duration="14151000" />
     </task>
-    <task id="LOCAL-00001" summary="&quot;FLASH_MODIFY&quot;">
-      <option name="closed" value="true" />
-      <created>1691650997926</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1691650997926</updated>
-    </task>
-    <task id="LOCAL-00002" summary="&quot;FILE_SYS_ADD&quot;">
-      <option name="closed" value="true" />
-      <created>1692168867813</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1692168867814</updated>
-    </task>
-    <task id="LOCAL-00003" summary="&quot;KEY_PARSE_COMP&quot;">
-      <option name="closed" value="true" />
-      <created>1692176686574</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1692176686574</updated>
-    </task>
-    <task id="LOCAL-00004" summary="&quot;KEY_PARSE_COMP&quot;">
-      <option name="closed" value="true" />
-      <created>1692176703872</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1692176703872</updated>
-    </task>
-    <task id="LOCAL-00005" summary="JSON_RULE_ADD">
-      <option name="closed" value="true" />
-      <created>1692252818096</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1692252818096</updated>
-    </task>
-    <task id="LOCAL-00006" summary="PARSE_JSON_MODIFY">
-      <option name="closed" value="true" />
-      <created>1692263253159</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1692263253160</updated>
-    </task>
-    <task id="LOCAL-00007" summary="HID_TEST">
-      <option name="closed" value="true" />
-      <created>1692869438755</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1692869438755</updated>
-    </task>
-    <task id="LOCAL-00008" summary="HID_REPORT_TEST">
-      <option name="closed" value="true" />
-      <created>1692959409164</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1692959409165</updated>
-    </task>
-    <task id="LOCAL-00009" summary="HID_TRANSMIT_AND_FUNCTION">
-      <option name="closed" value="true" />
-      <created>1693304202080</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1693304202080</updated>
-    </task>
-    <task id="LOCAL-00010" summary="KEY_USER_MODIFY">
-      <option name="closed" value="true" />
-      <created>1693361535459</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1693361535459</updated>
-    </task>
-    <task id="LOCAL-00011" summary="NORMAL_KEY_PARSE_EXECUTE">
-      <option name="closed" value="true" />
-      <created>1693386233159</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1693386233159</updated>
-    </task>
-    <task id="LOCAL-00012" summary="SPECIAL_KEY_PARSE_EXECUTE">
-      <option name="closed" value="true" />
-      <created>1693389307617</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1693389307617</updated>
-    </task>
-    <task id="LOCAL-00013" summary="ADD_DELAY">
-      <option name="closed" value="true" />
-      <created>1693478118538</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1693478118538</updated>
-    </task>
-    <task id="LOCAL-00014" summary="DELAY_PARSE_EXECUTE">
-      <option name="closed" value="true" />
-      <created>1693539413349</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1693539413349</updated>
-    </task>
-    <task id="LOCAL-00015" summary="DELAY_COMP_PARSE_EXECUTE">
-      <option name="closed" value="true" />
-      <created>1693815939311</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1693815939311</updated>
-    </task>
-    <task id="LOCAL-00016" summary="MOUSE_PARSE_EXECUTE">
-      <option name="closed" value="true" />
-      <created>1693823121496</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1693823121496</updated>
-    </task>
-    <task id="LOCAL-00017" summary="MEDIA_PARSE_EXECUTE">
-      <option name="closed" value="true" />
-      <created>1693910587381</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1693910587381</updated>
-    </task>
-    <task id="LOCAL-00018" summary="HARDWARE_SPI_ADD">
-      <option name="closed" value="true" />
-      <created>1693994014342</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1693994014342</updated>
-    </task>
-    <task id="LOCAL-00019" summary="DEMO_NEW">
-      <option name="closed" value="true" />
-      <created>1694067675777</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1694067675777</updated>
-    </task>
-    <task id="LOCAL-00020" summary="DEMO_NEW">
-      <option name="closed" value="true" />
-      <created>1694068022927</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1694068022927</updated>
-    </task>
-    <task id="LOCAL-00021" summary="042_SHOW_SPI2">
-      <option name="closed" value="true" />
-      <created>1694073484412</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1694073484412</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,47 +276,5 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticFoundErrors value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="&quot;FLASH_MODIFY&quot;" />
-    <MESSAGE value="&quot;FILE_SYS_ADD&quot;" />
-    <MESSAGE value="&quot;KEY_PARSE_COMP&quot;" />
-    <MESSAGE value="JSON_RULE_ADD" />
-    <MESSAGE value="PARSE_JSON_MODIFY" />
-    <MESSAGE value="HID_TEST" />
-    <MESSAGE value="HID_REPORT_TEST" />
-    <MESSAGE value="HID_TRANSMIT_AND_FUNCTION" />
-    <MESSAGE value="KEY_USER_MODIFY" />
-    <MESSAGE value="NORMAL_KEY_PARSE_EXECUTE" />
-    <MESSAGE value="SPECIAL_KEY_PARSE_EXECUTE" />
-    <MESSAGE value="ADD_DELAY" />
-    <MESSAGE value="DELAY_PARSE_EXECUTE" />
-    <MESSAGE value="DELAY_COMP_PARSE_EXECUTE" />
-    <MESSAGE value="MOUSE_PARSE_EXECUTE" />
-    <MESSAGE value="MEDIA_PARSE_EXECUTE" />
-    <MESSAGE value="HARDWARE_SPI_ADD" />
-    <MESSAGE value="DEMO_NEW" />
-    <MESSAGE value="042_SHOW_SPI2" />
-    <option name="LAST_COMMIT_MESSAGE" value="042_SHOW_SPI2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/JSMN/jsmn.h</url>
-          <line>268</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand>
-      <path>
-        <item name="leden" type="b2602c69:ProjectViewProjectNode" />
-        <item name="dir{file://C:/Users/WOW/Desktop/leden}" type="462c0819:PsiDirectoryNode" />
-      </path>
-    </expand>
-    <select />
   </component>
 </project>

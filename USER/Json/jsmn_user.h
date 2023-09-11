@@ -5,9 +5,10 @@
 #include "jsmn.h"
 #include "stdio.h"
 #include "string.h"
-#include "key_user.h"
+#include "usb_user.h"
+#include "encoder_user.h"
 
-
+extern uint8_t menu_index;
 
 uint8_t parse_json_data(jsmn_parser *p, uint8_t layer);
 

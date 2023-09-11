@@ -1,4 +1,5 @@
 #include "oled_96.h"
+#include "oledfont.h"
 
 u8 OLED_92_GRAM[144][8];
 
@@ -22,6 +23,7 @@ void OLED_92_CS_SINGLE(u8 index, u8 mode) {
     }
 
 }
+
 //void OLED_WR_Byte(u8 dat,u8 cmd)
 //{
 //    u8 i;
@@ -121,6 +123,42 @@ void OLED_92_DrawPoint(u8 x, u8 y, u8 t) {
     }
 }
 
+//在指定位置显示一个字符,包括部分字符
+//x:0~127
+//y:0~63
+//size1:选择字体 6x8/6x12/8x16/12x24
+//mode:0,反色显示;1,正常显示
+/*void OLED_ShowChar(u8 x, u8 y, u8 chr, u8 size1, u8 mode, u8 index) {
+    u8 i, m, temp, size2, chr1;
+    u8 x0 = x, y0 = y;
+    if (size1 == 8)size2 = 6;
+    else size2 = (size1 / 8 + ((size1 % 8) ? 1 : 0)) * (size1 / 2);  //得到字体一个字符对应点阵集所占的字节数
+    chr1 = chr - ' ';  //计算偏移后的值
+    for (i = 0; i < size2; i++) {
+        if (size1 == 8) { temp = asc2_0806[chr1][i]; } //调用0806字体
+        else if (size1 == 12) { temp = asc2_1206[chr1][i]; } //调用1206字体
+        else if (size1 == 16) { temp = asc2_1608[chr1][i]; } //调用1608字体
+        else if (size1 == 24) { temp = asc2_2412[chr1][i]; } //调用2412字体
+        else return;
+        for (m = 0; m < 8; m++) {
+            if (temp & 0x01) OLED_92_DrawPoint(x, y, mode);
+            else OLED_92_DrawPoint(x, y, !mode);
+            temp >>= 1;
+            y++;
+        }
+        x++;
+        if ((size1 != 8) && ((x - x0) == size1 / 2)) {
+            x = x0;
+            y0 = y0 + 8;
+        }
+        y = y0;
+    }
+    OLED_92_Refresh_Single(index);
+
+    OLED_92_Clear();
+
+}*/
+
 
 //x,y：起点坐标
 //sizex,sizey,图片长宽
@@ -216,5 +254,5 @@ void OLED_92_Init(void) {
 
     OLED_92_Clear();
     OLED_92_WR_Byte_ALL(0xAF, OLED_CMD);
-   // OLED_92_CS_ALL_OFF();
+    // OLED_92_CS_ALL_OFF();
 }
