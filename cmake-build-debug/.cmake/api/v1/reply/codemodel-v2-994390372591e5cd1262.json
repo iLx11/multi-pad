@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "leden.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-leden.elf-Debug-a018f5b5e153dfc84b7e.json",
+					"jsonFile" : "target-leden.elf-Debug-54e11215182871e71bbd.json",
 					"name" : "leden.elf",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug",
-		"source" : "D:/Users/Administrator/Desktop/HARDWARE/leden"
+		"build" : "C:/Users/WOW/Desktop/leden/cmake-build-debug",
+		"source" : "C:/Users/WOW/Desktop/leden"
 	},
 	"version" : 
 	{

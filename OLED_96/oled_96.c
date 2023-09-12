@@ -1,5 +1,5 @@
 #include "oled_96.h"
-#include "oledfont.h"
+//#include "oledfont.h"
 
 u8 OLED_92_GRAM[144][8];
 

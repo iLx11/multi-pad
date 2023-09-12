@@ -81,7 +81,7 @@ void OLED_WR_Byte(u8 dat,u8 mode);
 
 void OLED_92_Refresh(void);
 void OLED_92_Clear(void);
-void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 size1,u8 mode, u8 index);
+//void OLED_ShowChar(u8 x,u8 y,u8 chr,u8 size1,u8 mode, u8 index);
 
 void OLED_92_ShowPicture(u8 x,u8 y,u8 sizex,u8 sizey,u8 BMP[],u8 mode,u8 index);
 void OLED_92_Init(void);

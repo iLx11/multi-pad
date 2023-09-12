@@ -1,6 +1,9 @@
 #include "oled_user.h"
 #include "oled.h"
 #include "flash_user.h"
+#include "encoder_user.h"
+
+extern uint8_t menu_change_lock;
 
 void load_menu_from_flash(uint8_t folderIndex);
 
@@ -27,18 +30,20 @@ void oled_init_user() {
 * 菜单读取后显示
 ********************************************************************************/
 void load_show_menu(uint8_t menu_index) {
+    menu_change_lock = 1;
     load_menu_from_flash(menu_index);
     OLED_ShowPicture(menu_index);
+    menu_change_lock = 0;
 }
 
 /********************************************************************************
 * 从 flash 加载图片
 ********************************************************************************/
 void load_menu_from_flash(uint8_t folderIndex) {
-    for (int i = 0; i < OLED_42_NUM; i++) {
-        ReadPhoto(folderIndex, i, oled_42_array[i], SIZE_42);
-        if (i < OLED_96_NUM)
-            ReadPhoto(folderIndex + OLED_42_NUM, i, oled_96_array[i], SIZE_96);
+    for (int i = 0; i < 20; i++) {
+         ReadPhoto(folderIndex, i, oled_42_array[i], SIZE_42);
+         if (i < OLED_96_NUM)
+             ReadPhoto(folderIndex , i + OLED_42_NUM, oled_96_array[i], SIZE_96);
     }
 }
 
@@ -47,7 +52,8 @@ void load_menu_from_flash(uint8_t folderIndex) {
 ********************************************************************************/
 void OLED_ShowPicture(uint8_t menu_index) {
     for (int i = 0; i < OLED_42_NUM; i++) {
-        OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h, oled_42_array[random_refresh[menu_index % 3][i]], 1, i);
+        OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                            oled_42_array[random_refresh[menu_index % 3][i]], 1, random_refresh[menu_index % 3][i]);
         if (i < OLED_96_NUM)
             OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h, oled_96_array[i], 1, i);
     }

@@ -1,8 +1,13 @@
 #include "encoder_user.h"
+#include "oled_user.h"
+#include "numbmp.h"
 
 uint8_t menu_index = 0;
 uint16_t cur_time = 0;
 uint8_t change_flag = 0;
+uint8_t menu_change_lock = 0;
+
+extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
 
 static void keyboard_menu_change();
 
@@ -22,9 +27,12 @@ void encoder_callback(u_int8_t encoder_index) {
 * ·À¶¶º¯Êý
 ********************************************************************************/
 void debounce_func(uint8_t encoder_index) {
-    cur_time = 0;
-    change_flag = 1;
-    //OLED_ShowChar(10, 10, menu_index + 0x30, 24, 1, (encoder_index - 20) / 2);
+    if(menu_change_lock == 0) {
+        cur_time = 0;
+        change_flag = 1;
+//    OLED_ShowChar(10, 10, menu_index + 0x30, 24, 1, (encoder_index - 20) / 2);
+        OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h, num_bmp[menu_index], 1, (encoder_index - 20) / 2);
+    }
 }
 
 /********************************************************************************
@@ -41,7 +49,7 @@ static void keyboard_menu_change() {
 ********************************************************************************/
 void HAL_IncTick(void) {
     cur_time > 6000 ? cur_time = 0 : cur_time++;
-    if (cur_time > 500 && change_flag == 1) {
+    if (cur_time > 300 && change_flag == 1) {
         keyboard_menu_change();
         change_flag = 0;
     }
