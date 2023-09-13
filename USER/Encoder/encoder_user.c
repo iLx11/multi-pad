@@ -7,6 +7,8 @@ uint16_t cur_time = 0;
 uint8_t change_flag = 0;
 uint8_t menu_change_lock = 0;
 
+uint8_t cur_menu = 0;
+
 extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
 
 static void keyboard_menu_change();
@@ -40,8 +42,8 @@ void debounce_func(uint8_t encoder_index) {
 ********************************************************************************/
 static void keyboard_menu_change() {
     printf("menu_index -> %d\r", menu_index);
-    if (menu_index % 2 == 0) load_show_menu(0);
-    else load_show_menu(1);
+    cur_menu == 0 ? (cur_menu = 1) : (cur_menu = 0);
+    load_show_menu(cur_menu);
 }
 
 /********************************************************************************

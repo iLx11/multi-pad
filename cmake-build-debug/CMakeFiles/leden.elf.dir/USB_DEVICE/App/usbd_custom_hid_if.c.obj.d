@@ -74,4 +74,11 @@ CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: \
  C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd_ex.h \
  C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_core.h \
  C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
- C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h
+ C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h \
+ C:\Users\WOW\Desktop\leden\USER\Oled/oled_user.h \
+ C:\Users\WOW\Desktop\leden\OLED_42/oled.h \
+ C:\Users\WOW\Desktop\leden\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
+ C:\Users\WOW\Desktop\leden\SPI2/spi2.h \
+ C:\Users\WOW\Desktop\leden\OLED_42/bmp.h \
+ C:\Users\WOW\Desktop\leden\OLED_96/oled_96.h \
+ C:\Users\WOW\Desktop\leden\OLED_96\SPI3/spi3.h
