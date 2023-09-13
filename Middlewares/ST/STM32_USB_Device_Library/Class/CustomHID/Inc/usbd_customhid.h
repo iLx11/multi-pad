@@ -47,7 +47,14 @@ extern "C" {
 #define CUSTOM_HID_EPOUT_ADDR                0x01U
 #define CUSTOM_HID_EPOUT_SIZE                0x40U
 
-#define USB_CUSTOM_HID_CONFIG_DESC_SIZ       41U
+// ----------------------------  ADD  --------------------------------------------------
+#define CUSTOM_HID_FUNC_EPIN_ADDR                 0x82U
+#define CUSTOM_HID_FUNC_EPIN_SIZE                 0x09U
+
+#define CUSTOM_HID_FUNC_EPOUT_ADDR                0x02U
+#define CUSTOM_HID_FUNC_EPOUT_SIZE                0x09U
+
+#define USB_CUSTOM_HID_CONFIG_DESC_SIZ       73U
 #define USB_CUSTOM_HID_DESC_SIZ              9U
 
 #ifndef CUSTOM_HID_HS_BINTERVAL
@@ -141,7 +148,9 @@ uint8_t USBD_CUSTOM_HID_SendReport(USBD_HandleTypeDef *pdev,
                                    uint8_t *report,
                                    uint16_t len);
 
-
+uint8_t USBD_CUSTOM_HID_FUNC_SendReport(USBD_HandleTypeDef  *pdev,
+                                        uint8_t *report,
+                                        uint16_t len);
 
 uint8_t  USBD_CUSTOM_HID_RegisterInterface(USBD_HandleTypeDef   *pdev,
                                            USBD_CUSTOM_HID_ItfTypeDef *fops);

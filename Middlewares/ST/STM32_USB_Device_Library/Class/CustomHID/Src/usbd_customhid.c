@@ -106,6 +106,128 @@ static uint8_t  USBD_CUSTOM_HID_DataIn(USBD_HandleTypeDef *pdev, uint8_t epnum);
 
 static uint8_t  USBD_CUSTOM_HID_DataOut(USBD_HandleTypeDef *pdev, uint8_t epnum);
 static uint8_t  USBD_CUSTOM_HID_EP0_RxReady(USBD_HandleTypeDef  *pdev);
+
+
+// ------------------------------------------- ADD  ---------------------------------------------------
+__ALIGN_BEGIN static uint8_t HID_FUNC_ReportDesc[USBD_CUSTOM_HID_FUNC_REPORT_DESC_SIZE] __ALIGN_END =
+        {
+                // 键盘
+                0x05, 0x01, // USAGE_PAGE (Generic Desktop) //63
+                0x09, 0x06, // USAGE (Keyboard)
+                0xa1, 0x01, // COLLECTION (Application)
+                0x05, 0x07, // USAGE_PAGE (Keyboard)
+                0x85, 0x01, // REPORT_ID(1)
+                0x19, 0xe0, // USAGE_MINIMUM (Keyboard LeftControl)
+                0x29, 0xe7, // USAGE_MAXIMUM (Keyboard Right GUI)
+                0x15, 0x00, // LOGICAL_MINIMUM (0)
+                0x25, 0x01, // LOGICAL_MAXIMUM (1)
+                0x75, 0x01, // REPORT_SIZE (1)
+                0x95, 0x08, // REPORT_COUNT (8)
+                0x81, 0x02, // INPUT (Data,Var,Abs)
+                0x95, 0x01, // REPORT_COUNT (1)
+                0x75, 0x08, // REPORT_SIZE (8)
+                0x81, 0x03, // INPUT (Cnst,Var,Abs)
+                0x95, 0x05, // REPORT_COUNT (5)
+                0x75, 0x01, // REPORT_SIZE (1)
+                0x05, 0x08, // USAGE_PAGE (LEDs)
+                0x19, 0x01, // USAGE_MINIMUM (Num Lock)
+                0x29, 0x05, // USAGE_MAXIMUM (Kana)
+                0x91, 0x02, // OUTPUT (Data,Var,Abs)
+                0x95, 0x01, // REPORT_COUNT (1)
+                0x75, 0x03, // REPORT_SIZE (3)
+                0x91, 0x03, // OUTPUT (Cnst,Var,Abs)
+                0x95, 0x06, // REPORT_COUNT (6)
+                0x75, 0x08, // REPORT_SIZE (8)
+                0x15, 0x00, // LOGICAL_MINIMUM (0)
+                0x25, 0x65, // LOGICAL_MAXIMUM (101)
+                0x05, 0x07, // USAGE_PAGE (Keyboard)
+                0x19, 0x00, // USAGE_MINIMUM (Reserved (no event indicated))
+                0x29, 0x65, // USAGE_MAXIMUM (Keyboard Application)
+                0x81, 0x00, // INPUT (Data,Ary,Abs)
+
+                0xc0, // END_COLLECTION
+
+                // 鼠标
+                0x05, 0x01,
+                // 鼠
+                0x09, 0x02,
+                0xa1, 0x01,
+                // 标
+                0x09, 0x01,
+                // 物理
+                0xa1, 0x00,
+                // ID
+                0x85, 0x02,
+                // 鼠标按键
+                0x05, 0x09,
+                // 三个按键
+                0x19, 0x01,
+                0x29, 0x03,
+                0x15, 0x00,
+                0x25, 0x01,
+                // count
+                0x95, 0x03,
+                // size
+                0x75, 0x01,
+                // input
+                0x81, 0x02,
+                0x95, 0x05,
+                0x75, 0x01,
+                // input
+                0x81, 0x03,
+                // generic desktop
+                0x05, 0x01,
+                // x
+                0x09, 0x30,
+                // y
+                0x09, 0x31,
+                // wheel
+                0x09, 0x38,
+                // LMIN -127
+                0x15, 0x81,
+                // LMAX 127
+                0x25, 0x7f,
+                0x95, 0x03,
+                0x75, 0x08,
+                0x81, 0x06,
+                0xc0,
+                0xc0,
+
+                // 媒体按键
+                0x05, 0x0C,        // Usage Page (Consumer)
+                0x09, 0x01,        // Usage (Consumer Control)
+                0xA1, 0x01,        // Collection (Application)
+                0x85, 0x03,        //   Report ID (3)
+                0x09, 0xEA,        //   Usage (Volume Decrement)
+                0x09, 0xE9,        //   Usage (Volume Increment)
+                0x09, 0xE2,        //   Usage (Mute)
+                0x09, 0xCD,        //   Usage (Play/Pause)
+                0x09, 0xB5,        //   Usage (Scan Next Track)
+                0x09, 0xB6,        //   Usage (Scan Previous Track)
+                0x09, 0xB7,        //   Usage (Stop)
+                0x0A, 0x94, 0x01,  //   Usage (AL Local Machine Browser)
+                0x0A, 0x92, 0x01,  //   Usage (AL Calculator)
+                0x0A, 0x83, 0x01,  //   Usage (AL Consumer Control Configuration)
+                0x0A, 0x8A, 0x01,  //   Usage (AL Email Reader)
+                0x0A, 0x23, 0x02,  //   Usage (AC Home)
+                0x0A, 0x24, 0x02,  //   Usage (AC Back)
+                0x0A, 0x25, 0x02,  //   Usage (AC Forward)
+                0x0A, 0x01, 0x02,  //   Usage (AC New)
+                0x0A, 0x02, 0x02,  //   Usage (AC Open)
+                0x15, 0x00,        //   Logical Minimum (0)
+                0x25, 0x01,        //   Logical Maximum (1)
+                0x95, 0x10,        //   Report Count (16)
+                0x75, 0x01,        //   Report Size (1)
+                0x81, 0x02,        //   Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
+                0x75, 0x01,        //   Report Size (1)
+                0x95, 0x10,        //   Report Count (16)
+                0x81, 0x03,        //   Input (Const,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
+                0xC0,              // End Collection
+
+
+        };
+
+
 /**
   * @}
   */
@@ -137,10 +259,12 @@ __ALIGN_BEGIN static uint8_t USBD_CUSTOM_HID_CfgFSDesc[USB_CUSTOM_HID_CONFIG_DES
 {
   0x09, /* bLength: Configuration Descriptor size */
   USB_DESC_TYPE_CONFIGURATION, /* bDescriptorType: Configuration */
-  USB_CUSTOM_HID_CONFIG_DESC_SIZ,
+  // 0x40 -> 0x49 modify 增加第二个接口的 hid 描述符的长度
+  0x49,
   /* wTotalLength: Bytes returned */
   0x00,
-  0x01,         /*bNumInterfaces: 1 interface*/
+  // 0x01 -> 0x02 modify 设置两个接口
+  0x02,         /*bNumInterfaces: 1 interface*/
   0x01,         /*bConfigurationValue: Configuration value*/
   0x00,         /*iConfiguration: Index of string descriptor describing
   the configuration*/
@@ -156,7 +280,7 @@ __ALIGN_BEGIN static uint8_t USBD_CUSTOM_HID_CfgFSDesc[USB_CUSTOM_HID_CONFIG_DES
   0x02,         /*bNumEndpoints*/
   0x03,         /*bInterfaceClass: CUSTOM_HID*/
   0x00,         /*bInterfaceSubClass : 1=BOOT, 0=no boot*/
-  0x01,         /*nInterfaceProtocol : 0=none, 1=keyboard, 2=mouse*/
+  0x00,         /*nInterfaceProtocol : 0=none, 1=keyboard, 2=mouse*/
   0,            /*iInterface: Index of string descriptor*/
   /******************** Descriptor of CUSTOM_HID *************************/
   /* 18 */
@@ -189,6 +313,56 @@ __ALIGN_BEGIN static uint8_t USBD_CUSTOM_HID_CfgFSDesc[USB_CUSTOM_HID_CONFIG_DES
   0x00,
   CUSTOM_HID_FS_BINTERVAL,  /* bInterval: Polling Interval */
   /* 41 */
+        /************** 第二个接口描述符 ************************************************************************/
+  0x09,         /*bLength: 长度，接口描述符的长度为9字节 */
+  USB_DESC_TYPE_INTERFACE,/*bDescriptorType: 接口描述符的类型*/
+        // 0x00 -> 0x01 接口编号
+  0x01,         /*bInterfaceNumber: 该接口的编号*/
+  0x00,         /*bAlternateSetting: 该接口的备用编号*/
+  0x02,         /*bNumEndpoints: 该接口所使用的端点数*/
+  0x03,         /*bInterfaceClass: 该接口所使用的类为HID*/
+  0x00,         /*bInterfaceSubClass : 该接口所用的子类 1=BOOT, 0=no boot*/
+  0x01,         /*nInterfaceProtocol : 该接口使用的协议 0=none, 1=keyboard, 2=mouse*/
+  1,//0,            /*iInterface: 该接口字符串的索引*/
+#if 1
+                /******************** HID描述符 *************************/
+                /* 50 */
+  0x09,         /*bLength: HID描述符的长度为9字节*/
+  CUSTOM_HID_DESCRIPTOR_TYPE, /*bDescriptorType: HID的描述符类型*/
+  0x11,         /*bCUSTOM_HIDUSTOM_HID: HID协议的版本*/
+  0x01,
+  0x00,         /*bCountryCode: 国家代号*/
+  0x01,         /*bNumDescriptors: 下级描述符的数量*/
+  0x22,         /*bDescriptorType: 下级描述符的类型*/
+  USBD_CUSTOM_HID_FUNC_REPORT_DESC_SIZE,/*wItemLength: 下一集描述符的长度*/
+  0x00,
+#endif
+                /******************** 输入端点描述符 ********************/
+                /* 59 */
+  0x07,          /*bLength: 端点描述符的长度为7字节*/
+  USB_DESC_TYPE_ENDPOINT, /*bDescriptorType: 端点描述符的类型*/
+  CUSTOM_HID_FUNC_EPIN_ADDR,//CUSTOM_HID_EPIN_ADDR, /*bEndpointAddress: 该端点(输入)的地址,D7:0(OUT),1(IN),D6~D4:保留,D3~D0:端点号*/
+  0x03, /*bmAttributes: 端点的属性为为中断端点. D0~D1表示传输类型:0(控制传输),
+			1(等时传输),2(批量传输),3(中断传输) 非等时传输端点:D2~D7:保留为0 等时传输端点：
+			D2~D3表示同步的类型:0(无同步),1(异步),2(适配),3(同步) D4~D5表示用途:0(数据端点),
+			1(反馈端点),2(暗含反馈的数据端点),3(保留)，D6~D7:保留,*/
+  CUSTOM_HID_FUNC_EPIN_SIZE, /*wMaxPacketSize: 该端点支持的最大包长度 */
+  0x00,
+  0x5,//0x20,          /*bInterval: 轮询间隔*/
+                /* 66 */
+                /******************** 输出端点描述符 ********************/
+  0x07,	         /* bLength: 端点描述符的长度为7字节 */
+  USB_DESC_TYPE_ENDPOINT,	/* bDescriptorType: 端点描述符的类型 */
+  CUSTOM_HID_FUNC_EPOUT_ADDR,//CUSTOM_HID_EPOUT_ADDR,  /*bEndpointAddress: 该端点(输入)的地址,D7:0(OUT),1(IN),D6~D4:保留,D3~D0:端点号*/
+  0x03,	/* bmAttributes: 端点的属性为为中断端点. D0~D1表示传输类型:0(控制传输),1(等时传输),
+			2(批量传输),3(中断传输) 非等时传输端点:D2~D7:保留为0 等时传输端点：
+			D2~D3表示同步的类型:0(无同步),1(异步),2(适配),3(同步) D4~D5表示用途:0(数据端点),
+			1(反馈端点),2(暗含反馈的数据端点),3(保留)，D6~D7:保留 */
+  CUSTOM_HID_FUNC_EPOUT_SIZE,	/* wMaxPacketSize: 该端点支持的最大包长度  */
+  0x00,
+  0x5,//0x20,	/* bInterval: 轮询间隔 */
+                /* 73 */
+
 };
 
 /* USB CUSTOM_HID device HS Configuration Descriptor */
@@ -365,12 +539,23 @@ static uint8_t  USBD_CUSTOM_HID_Init(USBD_HandleTypeDef *pdev,
                  CUSTOM_HID_EPIN_SIZE);
 
   pdev->ep_in[CUSTOM_HID_EPIN_ADDR & 0xFU].is_used = 1U;
+    // ----------------  modify  ------------------------------------------
+
+    USBD_LL_OpenEP(pdev, CUSTOM_HID_FUNC_EPIN_ADDR, USBD_EP_TYPE_INTR,  //KEYBOARD
+                   CUSTOM_HID_FUNC_EPIN_SIZE);
+    pdev->ep_in[CUSTOM_HID_FUNC_EPIN_ADDR & 0xFU].is_used = 1U;
 
   /* Open EP OUT */
   USBD_LL_OpenEP(pdev, CUSTOM_HID_EPOUT_ADDR, USBD_EP_TYPE_INTR,
                  CUSTOM_HID_EPOUT_SIZE);
 
   pdev->ep_out[CUSTOM_HID_EPOUT_ADDR & 0xFU].is_used = 1U;
+    // ----------------  modify  ------------------------------------------
+
+    USBD_LL_OpenEP(pdev, CUSTOM_HID_FUNC_EPOUT_ADDR, USBD_EP_TYPE_INTR,
+                   CUSTOM_HID_FUNC_EPOUT_SIZE);
+    pdev->ep_out[CUSTOM_HID_FUNC_EPOUT_ADDR & 0xFU].is_used = 1U;
+
 
   pdev->pClassData = USBD_malloc(sizeof(USBD_CUSTOM_HID_HandleTypeDef));
 
@@ -488,8 +673,15 @@ static uint8_t  USBD_CUSTOM_HID_Setup(USBD_HandleTypeDef *pdev,
         case USB_REQ_GET_DESCRIPTOR:
           if (req->wValue >> 8 == CUSTOM_HID_REPORT_DESC)
           {
-            len = MIN(USBD_CUSTOM_HID_REPORT_DESC_SIZE, req->wLength);
-            pbuf = ((USBD_CUSTOM_HID_ItfTypeDef *)pdev->pUserData)->pReport;
+              // --------------------- MODIFY ------------------------------------
+              if(req->wIndex == 0) {
+                  len = MIN(USBD_CUSTOM_HID_REPORT_DESC_SIZE, req->wLength);
+                  pbuf = ((USBD_CUSTOM_HID_ItfTypeDef *)pdev->pUserData)->pReport;
+              }
+              if(req->wIndex == 1) {
+                  len = MIN(USBD_CUSTOM_HID_FUNC_REPORT_DESC_SIZE, req->wLength);
+                  pbuf = HID_FUNC_ReportDesc;
+              }
           }
           else
           {
@@ -568,6 +760,28 @@ uint8_t USBD_CUSTOM_HID_SendReport(USBD_HandleTypeDef  *pdev,
     }
   }
   return USBD_OK;
+}
+
+// --------------------------- ADD  -----------------------------------------------------------------------------
+uint8_t USBD_CUSTOM_HID_FUNC_SendReport(USBD_HandleTypeDef  *pdev,
+                                   uint8_t *report,
+                                   uint16_t len)
+{
+    USBD_CUSTOM_HID_HandleTypeDef     *hhid = (USBD_CUSTOM_HID_HandleTypeDef *)pdev->pClassData;
+
+    if (pdev->dev_state == USBD_STATE_CONFIGURED)
+    {
+        if (hhid->state == CUSTOM_HID_IDLE)
+        {
+            hhid->state = CUSTOM_HID_BUSY;
+            USBD_LL_Transmit(pdev, CUSTOM_HID_FUNC_EPIN_ADDR, report, len);
+        }
+        else
+        {
+            return USBD_BUSY;
+        }
+    }
+    return USBD_OK;
 }
 
 /**
