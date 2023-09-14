@@ -154,103 +154,103 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Usb"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Usb"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/OLED_96/SPI3"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_96/SPI3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Encoder"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Encoder"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/OLED_96"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_96"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/FLASH/SPI1"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/FLASH/SPI1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Flash"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Flash"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/FLASH"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/FLASH"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/SPI2"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/SPI2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/EC11"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/EC11"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Oled"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Oled"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Json"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Json"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Key"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Key"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/JSMN_USER"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/JSMN_USER"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/OLED_42"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_42"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/MatrixKeys"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/MatrixKeys"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/JSMN"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/JSMN"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USB_DEVICE/App"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USB_DEVICE/App"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USB_DEVICE/Target"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USB_DEVICE/Target"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
 				}
 			],
 			"language" : "C",
@@ -386,103 +386,103 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Usb"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Usb"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/OLED_96/SPI3"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_96/SPI3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Encoder"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Encoder"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/OLED_96"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_96"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/FLASH/SPI1"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/FLASH/SPI1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Flash"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Flash"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/FLASH"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/FLASH"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/SPI2"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/SPI2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/EC11"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/EC11"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Oled"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Oled"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Json"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Json"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USER/Key"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Key"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/JSMN_USER"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/JSMN_USER"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/OLED_42"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_42"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/MatrixKeys"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/MatrixKeys"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/JSMN"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/JSMN"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Drivers/CMSIS/Include"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USB_DEVICE/App"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USB_DEVICE/App"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/USB_DEVICE/Target"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/USB_DEVICE/Target"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
 				}
 			],
 			"language" : "ASM",
@@ -507,7 +507,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.map",
+				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug/leden.map",
 				"role" : "flags"
 			},
 			{
@@ -532,7 +532,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "C:/Users/WOW/Desktop/leden/STM32F103VETX_FLASH.ld",
+				"fragment" : "D:/Users/Administrator/Desktop/HARDWARE/leden/STM32F103VETX_FLASH.ld",
 				"role" : "flags"
 			}
 		],

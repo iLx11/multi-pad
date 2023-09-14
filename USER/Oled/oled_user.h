@@ -25,6 +25,8 @@ void oled_show_user();
 
 void load_show_menu(uint8_t menu_index);
 
-void screen_effect(uint8_t row, uint8_t col, uint8_t mode, uint8_t direction);
+void screen_effect(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat);
+
+void menu_storage(void);
 
 #endif //LEDEN_OLED_USER_H

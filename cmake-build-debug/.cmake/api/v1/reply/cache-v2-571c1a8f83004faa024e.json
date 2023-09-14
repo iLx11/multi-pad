@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/WOW/Desktop/leden/cmake-build-debug"
+			"value" : "d:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -259,7 +259,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/RA/CLion/CLion 2023.1.4/bin/cmake/win/x64/bin/cmake.exe"
+			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -271,7 +271,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/RA/CLion/CLion 2023.1.4/bin/cmake/win/x64/bin/cpack.exe"
+			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -283,7 +283,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/RA/CLion/CLion 2023.1.4/bin/cmake/win/x64/bin/ctest.exe"
+			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -295,10 +295,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "STRING",
 			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe"
 		},
 		{
@@ -423,10 +423,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
+			"type" : "STRING",
 			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe"
 		},
 		{
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/dlltool.exe"
+			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/mingw/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/WOW/Desktop/leden/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/WOW/Desktop/leden"
+			"value" : "D:/Users/Administrator/Desktop/HARDWARE/leden"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -823,7 +823,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CLion/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe"
+			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1023,7 +1023,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/RA/CLion/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25"
+			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1415,7 +1415,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/WOW/Desktop/leden/cmake-build-debug"
+			"value" : "D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug"
 		},
 		{
 			"name" : "leden_IS_TOP_LEVEL",
@@ -1439,7 +1439,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/WOW/Desktop/leden"
+			"value" : "D:/Users/Administrator/Desktop/HARDWARE/leden"
 		}
 	],
 	"kind" : "cache",
