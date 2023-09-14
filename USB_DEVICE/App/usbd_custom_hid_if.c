@@ -197,14 +197,20 @@ static int8_t CUSTOM_HID_OutEvent_FS(uint8_t event_idx, uint8_t state)
     uint8_t len = USBD_GetRxCount(&hUsbDeviceFS, CUSTOM_HID_EPOUT_ADDR);  // 第一参数是USB句柄，第二个参数的是接收的末端地址；要获取发送的数据长度的话就把第二个参数改为发送末端地址即可
     USBD_CUSTOM_HID_HandleTypeDef *hhid;                                  // 定义一个指向USBD_CUSTOM_HID_HandleTypeDef结构体的指针
     hhid = (USBD_CUSTOM_HID_HandleTypeDef *)hUsbDeviceFS.pClassData;      // 得到USB接收数据的储存地址
-    load_show_menu(1);
-    load_show_menu(0);
-    for(i = 0; i < len; i++)
+    /*for(i = 0; i < len; i++)
     {
         sprintf(log + (i*2), "%02x", hhid->Report_buf[i]);
+    }*/
+    printf("\n\rString -> :\n\r");
+    for(i = 0; i < len; i ++) {
+        printf("%c", hhid->Report_buf[i]);
+        sprintf(log + (i*2), "%02x", hhid->Report_buf[i]);
     }
-    printf("%s\n", log);
-  return (USBD_OK);
+    printf("\n\r");
+    printf("\n\rHex -> :\n\r");
+    printf("%s", log);
+    printf("\n\r-------------------------------------------------------\n\r");
+    return (USBD_OK);
   /* USER CODE END 6 */
 }
 

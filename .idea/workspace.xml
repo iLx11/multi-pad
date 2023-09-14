@@ -20,19 +20,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="USB_DESC_MODIFY_BEFORE">
+    <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="USB_TWO_INTERFACE_ADD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_42/bmp.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/bmp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_42/oled.c" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_42/oled.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_42/oled.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OLED_96/numbmp.h" beforeDir="false" afterPath="$PROJECT_DIR$/OLED_96/numbmp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_custom_hid_if.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_custom_hid_if.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Usb/usb_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Usb/usb_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
@@ -106,7 +106,7 @@
       <workItem from="1694506827576" duration="7531000" />
       <workItem from="1694575502763" duration="892000" />
       <workItem from="1694576411318" duration="207000" />
-      <workItem from="1694589203043" duration="4839000" />
+      <workItem from="1694589203043" duration="38177000" />
     </task>
     <task id="LOCAL-00001" summary="ENCODER_MENU_EXECUTE">
       <option name="closed" value="true" />
@@ -132,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694592409522</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="USB_TWO_INTERFACE_ADD">
+      <option name="closed" value="true" />
+      <created>1694594771220</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694594771220</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +156,7 @@
     <MESSAGE value="ENCODER_MENU_EXECUTE" />
     <MESSAGE value="OLED_MENU_EXECUTE_DONE" />
     <MESSAGE value="USB_DESC_MODIFY_BEFORE" />
-    <option name="LAST_COMMIT_MESSAGE" value="USB_DESC_MODIFY_BEFORE" />
+    <MESSAGE value="USB_TWO_INTERFACE_ADD" />
+    <option name="LAST_COMMIT_MESSAGE" value="USB_TWO_INTERFACE_ADD" />
   </component>
 </project>

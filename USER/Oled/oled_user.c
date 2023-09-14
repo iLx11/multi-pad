@@ -2,6 +2,7 @@
 #include "oled.h"
 #include "flash_user.h"
 #include "encoder_user.h"
+#include "MatrixKeys.h"
 
 extern uint8_t menu_change_lock;
 
@@ -41,9 +42,9 @@ void load_show_menu(uint8_t menu_index) {
 ********************************************************************************/
 void load_menu_from_flash(uint8_t folderIndex) {
     for (int i = 0; i < 20; i++) {
-         ReadPhoto(folderIndex, i, oled_42_array[i], SIZE_42);
-         if (i < OLED_96_NUM)
-             ReadPhoto(folderIndex , i + OLED_42_NUM, oled_96_array[i], SIZE_96);
+        ReadPhoto(folderIndex, i, oled_42_array[i], SIZE_42);
+        if (i < OLED_96_NUM)
+            ReadPhoto(folderIndex, i + OLED_42_NUM, oled_96_array[i], SIZE_96);
     }
 }
 
@@ -56,6 +57,62 @@ void OLED_ShowPicture(uint8_t menu_index) {
                             oled_42_array[random_refresh[menu_index % 3][i]], 1, random_refresh[menu_index % 3][i]);
         if (i < OLED_96_NUM)
             OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h, oled_96_array[i], 1, i);
+    }
+}
+
+/********************************************************************************
+* ÆÁÄ»¶¯Ð§
+********************************************************************************/
+void screen_effect(uint8_t row, uint8_t col, uint8_t mode, uint8_t direction) {
+    uint8_t screen_index;
+    /*if (mode == 0) {
+        OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                            white_background, 1, screen_index);
+    } else if (mode == 1) {
+        OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                            black_background, 1, screen_index);
+    }*/
+
+    uint8_t level = 0, left = col - 1, top = row - 1, right = COL_NUM - (COL_NUM - col) + 1, bottom = ROW_NUM - (ROW_NUM - row) + 1;
+    uint8_t pre = 0;
+    for(; level < 4; level ++) {
+        if(left >= 0 && left < COL_NUM) {
+            screen_index = (left * ROW_NUM) + row;
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                white_background, 1, screen_index);
+            HAL_Delay(200);
+            if(pre != 0)
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                oled_42_array[pre], 1, pre);
+            pre = left--;
+        }
+        if(top >= 0 && top < ROW_NUM) {
+            screen_index = (col * ROW_NUM) + top;
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                white_background, 1, screen_index);
+            HAL_Delay(200);
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                oled_42_array[pre], 1, pre);
+            pre = top--;
+        }
+        if(right >= 0 && right < COL_NUM) {
+            screen_index = (right * ROW_NUM) + row;
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                white_background, 1, screen_index);
+            HAL_Delay(200);
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                oled_42_array[pre], 1, pre);
+            pre = right ++;
+        }
+        if(bottom >= 0 && bottom < ROW_NUM) {
+            screen_index = (col * ROW_NUM) + bottom;
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                white_background, 1, screen_index);
+            HAL_Delay(200);
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                oled_42_array[pre], 1, pre);
+            pre = bottom ++;
+        }
     }
 }
 

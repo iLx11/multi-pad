@@ -116,26 +116,30 @@ typedef struct {
 
 static CS_42_PinInfo oled_42_cs_pins[OLED_NUM] =
         {
-                {OLED_42_CS_0}, //OLED_CS0
-                {OLED_42_CS_1}, //OLED_CS1
-                {OLED_42_CS_2}, //OLED_CS2
-                {OLED_42_CS_3}, //OLED_CS3
                 {OLED_42_CS_4}, //OLED_CS4
-                {OLED_42_CS_5}, //OLED_CS5
-                {OLED_42_CS_6}, //OLED_CS6
-                {OLED_42_CS_7}, //OLED_CS7
-                {OLED_42_CS_8}, //OLED_CS8
                 {OLED_42_CS_9}, //OLED_CS9
-                {OLED_42_CS_10}, //OLED_CS10
-                {OLED_42_CS_11}, //OLED_CS11
-                {OLED_42_CS_12}, //OLED_CS12
-                {OLED_42_CS_13}, //OLED_CS13
                 {OLED_42_CS_14}, //OLED_CS14
-                {OLED_42_CS_15}, //OLED_CS15
-                {OLED_42_CS_16}, //OLED_CS16
-                {OLED_42_CS_17}, //OLED_CS17
-                {OLED_42_CS_18}, //OLED_CS18
                 {OLED_42_CS_19}, //OLED_CS19
+
+                {OLED_42_CS_3}, //OLED_CS3
+                {OLED_42_CS_8}, //OLED_CS8
+                {OLED_42_CS_13}, //OLED_CS13
+                {OLED_42_CS_18}, //OLED_CS18
+
+                {OLED_42_CS_2}, //OLED_CS2
+                {OLED_42_CS_7}, //OLED_CS7
+                {OLED_42_CS_12}, //OLED_CS12
+                {OLED_42_CS_17}, //OLED_CS17
+
+                {OLED_42_CS_1}, //OLED_CS1
+                {OLED_42_CS_6}, //OLED_CS6
+                {OLED_42_CS_11}, //OLED_CS11
+                {OLED_42_CS_16}, //OLED_CS16
+
+                {OLED_42_CS_0}, //OLED_CS0
+                {OLED_42_CS_5}, //OLED_CS5
+                {OLED_42_CS_10}, //OLED_CS10
+                {OLED_42_CS_15}, //OLED_CS15
         };
 
 
@@ -161,6 +165,8 @@ void OLED_42_DrawPoint(u8 x, u8 y, u8 t);
 void OLED_42_ShowPicture(u8 x, u8 y, u8 sizex, u8 sizey, u8 BMP[], u8 mode, u8 index);
 
 void OLED_42_Init(void);
+
+void empty_background(uint8_t index, uint8_t mode);
 
 #endif
 
