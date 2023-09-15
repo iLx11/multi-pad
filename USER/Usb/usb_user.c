@@ -25,23 +25,37 @@ buff_struct buff_point_array[3] = {
 uint8_t photo_42_array[20][360] = {0x00};
 uint8_t photo_96_array[5][1024] = {0x00};
 
+uint16_t photo_array_index = 0;
+uint16_t photo_position = 0;
+
+static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end);
+
 
 /********************************************************************************
 * 接收 hid 发送的数据
 ********************************************************************************/
 void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t len) {
-    char hex_string_array[300];
-    printf("\n\rString -> \n\r");
+    char hex_string_array[128];
+//    printf("\n\rString -> \n\r");
     for (uint8_t i = 0; i < len; i++) {
-        printf("%c", hid_handle->Report_buf[i]);
+//        printf("%c", hid_handle->Report_buf[i]);
         sprintf(hex_string_array + (i * 2), "%02x", hid_handle->Report_buf[i]);
     }
-    printf("\r\n-------------------------------------------------------------------\r\n");
+/*    printf("\r\n-------------------------------------------------------------------\r\n");
     printf("\n\rHex -> \n\r");
-    printf("%s", hex_string_array);
-    for (uint8_t i = 0; i < 200; i++) {
-        printf("sdfs");
+    printf("%s", hex_string_array);*/
+    printf("\r\nhex_string_array -> %c\n\r", hex_string_array[0]);
+    for (uint8_t i = 0; i < 128;) {
+        if(photo_position >= 360) break;
+        photo_42_array[photo_array_index][photo_position++] = string_to_num_hex(hex_string_array, i++, i++);
     }
+    if (photo_position >= 360) {
+        for(uint8_t i = 0; i < 64; i ++) {
+            printf("photo_42_array[0][%d] -> %d ", i, photo_42_array[photo_array_index][i]);
+        }
+        photo_position = 0;
+    }
+
 }
 
 // 字符转十六进制
@@ -49,12 +63,12 @@ static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, ui
     uint8_t result = 0x00;
     // 小写
     if (hex_string_array[start] >= '0' && hex_string_array[start] <= '9')
-        result += hex_string_array[start] - 0x30 * 16;
+        result += (hex_string_array[start] - 0x30) * 16;
     else if (hex_string_array[start] >= 'a' && hex_string_array[start] <= 'f')
         result += (0x0A + hex_string_array[start] - 0x61) * 16;
 
     if (hex_string_array[end] >= '0' && hex_string_array[end] <= '9') {
-        result += hex_string_array[start] - 0x30;
+        result += hex_string_array[end] - 0x30;
         return result;
     } else if (hex_string_array[end] >= 'a' && hex_string_array[end] <= 'f') {
         result += (0x0A + hex_string_array[end] - 0x61);
@@ -62,14 +76,14 @@ static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, ui
     }
     // 大写
     if (hex_string_array[start] >= '0' && hex_string_array[start] <= '9')
-        result += hex_string_array[start] - 0x30 * 16;
+        result += (hex_string_array[start] - 0x30) * 16;
     else if (hex_string_array[start] >= 'A' && hex_string_array[start] <= 'F') {
         result += (0x0A + hex_string_array[start] - 0x41) * 16;
     }
-    if (hex_string_array[start] >= '0' && hex_string_array[start] <= '9')
-        result += hex_string_array[start] - 0x30 * 16;
-    else if (hex_string_array[start] >= 'A' && hex_string_array[start] <= 'F') {
-        result += (0x0A + hex_string_array[start] - 0x41);
+    if (hex_string_array[end] >= '0' && hex_string_array[end] <= '9')
+        result += hex_string_array[end] - 0x30;
+    else if (hex_string_array[end] >= 'A' && hex_string_array[end] <= 'F') {
+        result += (0x0A + hex_string_array[end] - 0x41);
     }
     return result;
 }

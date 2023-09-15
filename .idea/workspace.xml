@@ -22,16 +22,8 @@
   <component name="ChangeListManager">
     <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="USB_TWO_INTERFACE_ADD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_custom_hid_if.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_custom_hid_if.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Encoder/encoder_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Encoder/encoder_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Oled/oled_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Oled/oled_user.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER/Usb/usb_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Usb/usb_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Usb/usb_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Usb/usb_user.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-09-14T12-32-18-0132.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
@@ -205,9 +197,9 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.leden">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="leden.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="leden" TARGET_NAME="leden.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="leden" RUN_TARGET_NAME="leden.elf">
