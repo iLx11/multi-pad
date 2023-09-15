@@ -43,7 +43,10 @@ void debounce_func(uint8_t encoder_index) {
 static void keyboard_menu_change() {
     printf("menu_index -> %d\r", menu_index);
     cur_menu == 0 ? (cur_menu = 1) : (cur_menu = 0);
+    // 加载图片并显示
     load_show_menu(cur_menu);
+    // 加载当前层级的命令
+
 }
 
 /********************************************************************************

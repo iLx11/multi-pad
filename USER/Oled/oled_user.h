@@ -2,11 +2,11 @@
 #define LEDEN_OLED_USER_H
 
 #include "oled.h"
-#include "bmp.h"
+//#include "bmp.h"
 #include "oled_96.h"
 
-#define SIZE_42 sizeof(BMP1)
-#define SIZE_96 sizeof(BMP20)
+#define SIZE_42   1024
+#define SIZE_96    360
 #define oled_42_l   72
 #define oled_42_h   40
 #define oled_42_x    0
@@ -27,6 +27,6 @@ void load_show_menu(uint8_t menu_index);
 
 void screen_effect(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat);
 
-void menu_storage(void);
+void screen_effect_two(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat);
 
 #endif //LEDEN_OLED_USER_H

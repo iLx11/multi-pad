@@ -14,4 +14,7 @@ typedef struct {
 void send_hid_code(uint8_t func);
 // ·¢ËÍ hid ÖØÖÃ
 void hid_buff_reset();
+
+void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef* hhid, uint8_t len);
+
 #endif //LEDEN_USB_USER_H
