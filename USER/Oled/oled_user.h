@@ -5,8 +5,8 @@
 //#include "bmp.h"
 #include "oled_96.h"
 
-#define SIZE_42   1024
-#define SIZE_96    360
+#define SIZE_42    360
+#define SIZE_96    999
 #define oled_42_l   72
 #define oled_42_h   40
 #define oled_42_x    0

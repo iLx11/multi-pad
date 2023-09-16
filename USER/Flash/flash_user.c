@@ -10,8 +10,8 @@
 // 假设保存照片大小的数组
 //uint16_t flash_folder[NUM_FOLDERS][NUM_PHOTOS_PER_FOLDER];
 
-extern uint8_t photo_42_array[20][360];
-extern uint8_t photo_96_array[5][1024];
+extern uint8_t oled_42_array[OLED_42_NUM][SIZE_42];
+extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
 
 // 初始化
 void flash_init_user() {
@@ -22,11 +22,11 @@ void flash_init_user() {
 /********************************************************************************
 * 图片写入 flash 存储
 ********************************************************************************/
-void menu_storage() {
+void menu_photo_folder_storage(uint8_t folder_index) {
     for (int i = 0; i < OLED_42_NUM; i++) {
-            storage_to_flash(1, i, photo_42_array[i], SIZE_42);
+            storage_to_flash(folder_index, i, oled_42_array[i], SIZE_42);
         if(i < OLED_96_NUM)
-            storage_to_flash(1, i + 20, photo_96_array[i], SIZE_96);
+            storage_to_flash(folder_index, i + 20, oled_96_array[i], SIZE_96);
     }
 }
 

@@ -1,4 +1,8 @@
 #include "usb_user.h"
+#include "oled.h"
+#include "oled_user.h"
+#include "flash_user.h"
+#include "usbd_customhid.h"
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 
@@ -12,6 +16,7 @@ uint8_t send_mouse_zero_buff[5] = {0x02, 0, 0, 0, 0};
 // 媒体
 uint8_t send_media_buff[5] = {0};
 uint8_t send_media_zero_buff[5] = {0x03, 0x00, 0x00, 0x00, 0x00};
+
 // 当前的 buff
 uint8_t cur_buff = 0;
 
@@ -22,70 +27,85 @@ buff_struct buff_point_array[3] = {
 };
 
 // 图片数组
-uint8_t photo_42_array[20][360] = {0x00};
-uint8_t photo_96_array[5][1024] = {0x00};
+extern uint8_t oled_42_array[OLED_42_NUM][SIZE_42];
+extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
+// 键值长度记录数组
+extern uint16_t key_setting_length[10];
 
-uint16_t photo_array_index = 0;
-uint16_t photo_position = 0;
+// 键盘命令
+extern char json_str[1024];
+
+uint8_t folder_index = 0;
+uint8_t file_array_index = 0;
+uint16_t file_position = 0;
+uint8_t photo_file_flag = 0;
 
 static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end);
+static uint8_t char_to_hex(char hex_char);
 
 
 /********************************************************************************
 * 接收 hid 发送的数据
 ********************************************************************************/
 void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t len) {
-    char hex_string_array[128];
-//    printf("\n\rString -> \n\r");
-    for (uint8_t i = 0; i < len; i++) {
-//        printf("%c", hid_handle->Report_buf[i]);
-        sprintf(hex_string_array + (i * 2), "%02x", hid_handle->Report_buf[i]);
+    if(hid_handle->Report_buf[0] == '1' && hid_handle->Report_buf[1] == '2' && hid_handle->Report_buf[2] == '3') {
+//        USBD_CUSTOM_HID_SendReport();
     }
-/*    printf("\r\n-------------------------------------------------------------------\r\n");
-    printf("\n\rHex -> \n\r");
-    printf("%s", hex_string_array);*/
-    printf("\r\nhex_string_array -> %c\n\r", hex_string_array[0]);
-    for (uint8_t i = 0; i < 128;) {
-        if(photo_position >= 360) break;
-        photo_42_array[photo_array_index][photo_position++] = string_to_num_hex(hex_string_array, i++, i++);
-    }
-    if (photo_position >= 360) {
-        for(uint8_t i = 0; i < 64; i ++) {
-            printf("photo_42_array[0][%d] -> %d ", i, photo_42_array[photo_array_index][i]);
+    // 根据文件数写入
+    // 图片写入
+    if (file_array_index < (OLED_42_NUM + OLED_96_NUM)) {
+        char hex_string_array[128];
+
+        for (uint8_t i = 0; i < len; i++) {
+            sprintf(hex_string_array + (i * 2), "%02x", hid_handle->Report_buf[i]);
         }
-        photo_position = 0;
-    }
+        // 将16进制的字符串图片数组转为数值并写入图片数组
+        for (uint8_t i = 0; i < 128;) {
+            if (file_array_index < OLED_42_NUM && file_position >= 360) break;
+            if (file_array_index >= OLED_42_NUM && file_position >= 999) break;
+            if (file_array_index < OLED_42_NUM)
+                oled_42_array[file_array_index][file_position++] = string_to_num_hex(hex_string_array, i++, i++);
+            else if (file_array_index >= OLED_42_NUM) {
+                oled_96_array[file_array_index - OLED_42_NUM][file_position++] = string_to_num_hex(hex_string_array,
+                                                                                                   i++, i++);
+            }
+        }
 
-}
+        if (file_array_index < OLED_42_NUM && file_position >= 360) {
+            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                                oled_42_array[file_array_index], 1, file_array_index);
+            // 一张图片传完
+            file_position = 0;
+            // 下一张图片
+            file_array_index += 1;
+        } else if (file_array_index >= OLED_42_NUM && file_position >= 999) {
+            OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h,
+                                oled_96_array[file_array_index - OLED_42_NUM], 1, file_array_index - OLED_42_NUM);
+            file_position = 0;
+            file_array_index += 1;
+        }
+    } else {
+        printf("file_array_index -> %d\n\r", file_array_index);
+        // 所有图片传完
+        if (file_array_index == (OLED_42_NUM + OLED_96_NUM) && photo_file_flag == 0) {
+            photo_file_flag = 1;
+            printf("photo_array_done\n\r");
+            // 将一个层级的图片存入 flash
+            menu_photo_folder_storage(folder_index);
+        }
+//        printf("hid_handle->Report_buf -> %s\n\r", hid_handle->Report_buf);
+        if(hid_handle->Report_buf[0] == '#' && hid_handle->Report_buf[1] == '$' && hid_handle->Report_buf[2] == '%') {
+            printf("key_done\n\r");
+            key_setting_length[folder_index] = file_position;
+            file_position = 0;
+            folder_index ++;
+            // 重置字符串数组
 
-// 字符转十六进制
-static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end) {
-    uint8_t result = 0x00;
-    // 小写
-    if (hex_string_array[start] >= '0' && hex_string_array[start] <= '9')
-        result += (hex_string_array[start] - 0x30) * 16;
-    else if (hex_string_array[start] >= 'a' && hex_string_array[start] <= 'f')
-        result += (0x0A + hex_string_array[start] - 0x61) * 16;
-
-    if (hex_string_array[end] >= '0' && hex_string_array[end] <= '9') {
-        result += hex_string_array[end] - 0x30;
-        return result;
-    } else if (hex_string_array[end] >= 'a' && hex_string_array[end] <= 'f') {
-        result += (0x0A + hex_string_array[end] - 0x61);
-        return result;
+        }
+        strncat(json_str, (char *)hid_handle->Report_buf, 64);
+        printf("json_str -> %s", json_str);
+        file_position += 64;
     }
-    // 大写
-    if (hex_string_array[start] >= '0' && hex_string_array[start] <= '9')
-        result += (hex_string_array[start] - 0x30) * 16;
-    else if (hex_string_array[start] >= 'A' && hex_string_array[start] <= 'F') {
-        result += (0x0A + hex_string_array[start] - 0x41) * 16;
-    }
-    if (hex_string_array[end] >= '0' && hex_string_array[end] <= '9')
-        result += hex_string_array[end] - 0x30;
-    else if (hex_string_array[end] >= 'A' && hex_string_array[end] <= 'F') {
-        result += (0x0A + hex_string_array[end] - 0x41);
-    }
-    return result;
 }
 
 /********************************************************************************
@@ -107,4 +127,22 @@ void hid_buff_reset() {
     while (USBD_CUSTOM_HID_FUNC_SendReport(&hUsbDeviceFS, buff_point_array[cur_buff].zero_buff_point,
                                            buff_point_array[cur_buff].buff_size) != USBD_OK);
     printf("reset ok\n");
+}
+
+/********************************************************************************
+* 字符转十六进制
+********************************************************************************/
+static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end) {
+    return char_to_hex(hex_string_array[start]) * 16 + char_to_hex(hex_string_array[end]);
+}
+static uint8_t char_to_hex(char hex_char) {
+    uint8_t result = 0x00;
+    if (hex_char >= '0' && hex_char <= '9')
+        result += (hex_char - 0x30);
+    else if (hex_char >= 'a' && hex_char <= 'f')
+        result += (0x0A + hex_char - 0x61);
+    else if (hex_char >= 'A' && hex_char <= 'F') {
+        result += (0x0A + hex_char - 0x41);
+    }
+    return result;
 }

@@ -11,7 +11,7 @@ void read_from_flash(uint8_t folder_index, uint8_t photoIndex, uint8_t *photo_da
 
 void flash_init_user();
 
-void menu_storage();
+void menu_photo_folder_storage(uint8_t folder_index);
 
 
 #endif //LEDEN_FLASH_H

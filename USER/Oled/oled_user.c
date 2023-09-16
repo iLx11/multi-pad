@@ -103,8 +103,10 @@ void screen_effect(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat) {
     }
     OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
                         oled_42_array[pre], 1, pre);
-    screen_effect(row, col, mode, repeat-1);
-    HAL_Delay(40);
+    if(repeat != 0) {
+        HAL_Delay(40);
+        screen_effect(row, col, mode, repeat-1);
+    }
 }
 
 /********************************************************************************

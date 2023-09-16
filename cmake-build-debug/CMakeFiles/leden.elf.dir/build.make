@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\RA\CLION\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "D:\RA\CLion\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\RA\CLION\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "D:\RA\CLion\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Users\Administrator\Desktop\HARDWARE\leden
+CMAKE_SOURCE_DIR = C:\Users\WOW\Desktop\leden
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\WOW\Desktop\leden\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/leden.elf.dir/depend.make
@@ -69,717 +69,717 @@ include CMakeFiles/leden.elf.dir/progress.make
 include CMakeFiles/leden.elf.dir/flags.make
 
 CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/gpio.c
+CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/gpio.c
 CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\gpio.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\gpio.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\gpio.c
 
 CMakeFiles/leden.elf.dir/Core/Src/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/gpio.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\gpio.c > CMakeFiles\leden.elf.dir\Core\Src\gpio.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\gpio.c > CMakeFiles\leden.elf.dir\Core\Src\gpio.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/gpio.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\gpio.c -o CMakeFiles\leden.elf.dir\Core\Src\gpio.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\gpio.c -o CMakeFiles\leden.elf.dir\Core\Src\gpio.c.s
 
 CMakeFiles/leden.elf.dir/Core/Src/main.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/main.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/main.c
+CMakeFiles/leden.elf.dir/Core/Src/main.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/main.c
 CMakeFiles/leden.elf.dir/Core/Src/main.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/leden.elf.dir/Core/Src/main.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\main.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/leden.elf.dir/Core/Src/main.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\main.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\main.c
 
 CMakeFiles/leden.elf.dir/Core/Src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/main.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\main.c > CMakeFiles\leden.elf.dir\Core\Src\main.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\main.c > CMakeFiles\leden.elf.dir\Core\Src\main.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/main.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\main.c -o CMakeFiles\leden.elf.dir\Core\Src\main.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\main.c -o CMakeFiles\leden.elf.dir\Core\Src\main.c.s
 
 CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/retarget.c
+CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/retarget.c
 CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\retarget.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\retarget.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\retarget.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/retarget.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\retarget.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\retarget.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\retarget.c
 
 CMakeFiles/leden.elf.dir/Core/Src/retarget.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/retarget.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\retarget.c > CMakeFiles\leden.elf.dir\Core\Src\retarget.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\retarget.c > CMakeFiles\leden.elf.dir\Core\Src\retarget.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/retarget.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/retarget.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\retarget.c -o CMakeFiles\leden.elf.dir\Core\Src\retarget.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\retarget.c -o CMakeFiles\leden.elf.dir\Core\Src\retarget.c.s
 
 CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/stm32f1xx_hal_msp.c
+CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\stm32f1xx_hal_msp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_hal_msp.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_hal_msp.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_hal_msp.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_hal_msp.c.s
 
 CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/stm32f1xx_it.c
+CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/stm32f1xx_it.c
 CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_it.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\stm32f1xx_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_it.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\stm32f1xx_it.c > CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_it.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\stm32f1xx_it.c > CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_it.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\stm32f1xx_it.c -o CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_it.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\stm32f1xx_it.c -o CMakeFiles\leden.elf.dir\Core\Src\stm32f1xx_it.c.s
 
 CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/syscalls.c
+CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/syscalls.c
 CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\syscalls.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\syscalls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\syscalls.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\syscalls.c
 
 CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\syscalls.c > CMakeFiles\leden.elf.dir\Core\Src\syscalls.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\syscalls.c > CMakeFiles\leden.elf.dir\Core\Src\syscalls.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\syscalls.c -o CMakeFiles\leden.elf.dir\Core\Src\syscalls.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\syscalls.c -o CMakeFiles\leden.elf.dir\Core\Src\syscalls.c.s
 
 CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/sysmem.c
+CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/sysmem.c
 CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\sysmem.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\sysmem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\sysmem.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\sysmem.c
 
 CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\sysmem.c > CMakeFiles\leden.elf.dir\Core\Src\sysmem.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\sysmem.c > CMakeFiles\leden.elf.dir\Core\Src\sysmem.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\sysmem.c -o CMakeFiles\leden.elf.dir\Core\Src\sysmem.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\sysmem.c -o CMakeFiles\leden.elf.dir\Core\Src\sysmem.c.s
 
 CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/system_stm32f1xx.c
+CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/system_stm32f1xx.c
 CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\system_stm32f1xx.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\system_stm32f1xx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\system_stm32f1xx.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\system_stm32f1xx.c > CMakeFiles\leden.elf.dir\Core\Src\system_stm32f1xx.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\system_stm32f1xx.c > CMakeFiles\leden.elf.dir\Core\Src\system_stm32f1xx.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/system_stm32f1xx.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\system_stm32f1xx.c -o CMakeFiles\leden.elf.dir\Core\Src\system_stm32f1xx.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\system_stm32f1xx.c -o CMakeFiles\leden.elf.dir\Core\Src\system_stm32f1xx.c.s
 
 CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Src/usart.c
+CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj: C:/Users/WOW/Desktop/leden/Core/Src/usart.c
 CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\usart.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\leden.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\leden.elf.dir\Core\Src\usart.c.obj -c C:\Users\WOW\Desktop\leden\Core\Src\usart.c
 
 CMakeFiles/leden.elf.dir/Core/Src/usart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Core/Src/usart.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\usart.c > CMakeFiles\leden.elf.dir\Core\Src\usart.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Src\usart.c > CMakeFiles\leden.elf.dir\Core\Src\usart.c.i
 
 CMakeFiles/leden.elf.dir/Core/Src/usart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Core/Src/usart.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Src\usart.c -o CMakeFiles\leden.elf.dir\Core\Src\usart.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Src\usart.c -o CMakeFiles\leden.elf.dir\Core\Src\usart.c.s
 
 CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Core/Startup/startup_stm32f103vetx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM object CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\leden.elf.dir\Core\Startup\startup_stm32f103vetx.s.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Startup\startup_stm32f103vetx.s
+CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.obj: C:/Users/WOW/Desktop/leden/Core/Startup/startup_stm32f103vetx.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM object CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\leden.elf.dir\Core\Startup\startup_stm32f103vetx.s.obj -c C:\Users\WOW\Desktop\leden\Core\Startup\startup_stm32f103vetx.s
 
 CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Startup\startup_stm32f103vetx.s > CMakeFiles\leden.elf.dir\Core\Startup\startup_stm32f103vetx.s.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E C:\Users\WOW\Desktop\leden\Core\Startup\startup_stm32f103vetx.s > CMakeFiles\leden.elf.dir\Core\Startup\startup_stm32f103vetx.s.i
 
 CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/leden.elf.dir/Core/Startup/startup_stm32f103vetx.s.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Core\Startup\startup_stm32f103vetx.s -o CMakeFiles\leden.elf.dir\Core\Startup\startup_stm32f103vetx.s.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S C:\Users\WOW\Desktop\leden\Core\Startup\startup_stm32f103vetx.s -o CMakeFiles\leden.elf.dir\Core\Startup\startup_stm32f103vetx.s.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.s
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c
+CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj -MF CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.obj.d -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.obj -c C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c > CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.i
 
 CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.s
 
 CMakeFiles/leden.elf.dir/EC11/EC11.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/EC11/EC11.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/EC11/EC11.c
+CMakeFiles/leden.elf.dir/EC11/EC11.c.obj: C:/Users/WOW/Desktop/leden/EC11/EC11.c
 CMakeFiles/leden.elf.dir/EC11/EC11.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/leden.elf.dir/EC11/EC11.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/EC11/EC11.c.obj -MF CMakeFiles\leden.elf.dir\EC11\EC11.c.obj.d -o CMakeFiles\leden.elf.dir\EC11\EC11.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\EC11\EC11.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/leden.elf.dir/EC11/EC11.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/EC11/EC11.c.obj -MF CMakeFiles\leden.elf.dir\EC11\EC11.c.obj.d -o CMakeFiles\leden.elf.dir\EC11\EC11.c.obj -c C:\Users\WOW\Desktop\leden\EC11\EC11.c
 
 CMakeFiles/leden.elf.dir/EC11/EC11.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/EC11/EC11.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\EC11\EC11.c > CMakeFiles\leden.elf.dir\EC11\EC11.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\EC11\EC11.c > CMakeFiles\leden.elf.dir\EC11\EC11.c.i
 
 CMakeFiles/leden.elf.dir/EC11/EC11.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/EC11/EC11.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\EC11\EC11.c -o CMakeFiles\leden.elf.dir\EC11\EC11.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\EC11\EC11.c -o CMakeFiles\leden.elf.dir\EC11\EC11.c.s
 
 CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/FLASH/SPI1/spi1.c
+CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj: C:/Users/WOW/Desktop/leden/FLASH/SPI1/spi1.c
 CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj -MF CMakeFiles\leden.elf.dir\FLASH\SPI1\spi1.c.obj.d -o CMakeFiles\leden.elf.dir\FLASH\SPI1\spi1.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\FLASH\SPI1\spi1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.obj -MF CMakeFiles\leden.elf.dir\FLASH\SPI1\spi1.c.obj.d -o CMakeFiles\leden.elf.dir\FLASH\SPI1\spi1.c.obj -c C:\Users\WOW\Desktop\leden\FLASH\SPI1\spi1.c
 
 CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\FLASH\SPI1\spi1.c > CMakeFiles\leden.elf.dir\FLASH\SPI1\spi1.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\FLASH\SPI1\spi1.c > CMakeFiles\leden.elf.dir\FLASH\SPI1\spi1.c.i
 
 CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/FLASH/SPI1/spi1.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\FLASH\SPI1\spi1.c -o CMakeFiles\leden.elf.dir\FLASH\SPI1\spi1.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\FLASH\SPI1\spi1.c -o CMakeFiles\leden.elf.dir\FLASH\SPI1\spi1.c.s
 
 CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/FLASH/norflash.c
+CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj: C:/Users/WOW/Desktop/leden/FLASH/norflash.c
 CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj -MF CMakeFiles\leden.elf.dir\FLASH\norflash.c.obj.d -o CMakeFiles\leden.elf.dir\FLASH\norflash.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\FLASH\norflash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj -MF CMakeFiles\leden.elf.dir\FLASH\norflash.c.obj.d -o CMakeFiles\leden.elf.dir\FLASH\norflash.c.obj -c C:\Users\WOW\Desktop\leden\FLASH\norflash.c
 
 CMakeFiles/leden.elf.dir/FLASH/norflash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/FLASH/norflash.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\FLASH\norflash.c > CMakeFiles\leden.elf.dir\FLASH\norflash.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\FLASH\norflash.c > CMakeFiles\leden.elf.dir\FLASH\norflash.c.i
 
 CMakeFiles/leden.elf.dir/FLASH/norflash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/FLASH/norflash.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\FLASH\norflash.c -o CMakeFiles\leden.elf.dir\FLASH\norflash.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\FLASH\norflash.c -o CMakeFiles\leden.elf.dir\FLASH\norflash.c.s
 
 CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/JSMN/jsmn.c
+CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj: C:/Users/WOW/Desktop/leden/JSMN/jsmn.c
 CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj -MF CMakeFiles\leden.elf.dir\JSMN\jsmn.c.obj.d -o CMakeFiles\leden.elf.dir\JSMN\jsmn.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\JSMN\jsmn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/JSMN/jsmn.c.obj -MF CMakeFiles\leden.elf.dir\JSMN\jsmn.c.obj.d -o CMakeFiles\leden.elf.dir\JSMN\jsmn.c.obj -c C:\Users\WOW\Desktop\leden\JSMN\jsmn.c
 
 CMakeFiles/leden.elf.dir/JSMN/jsmn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/JSMN/jsmn.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\JSMN\jsmn.c > CMakeFiles\leden.elf.dir\JSMN\jsmn.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\JSMN\jsmn.c > CMakeFiles\leden.elf.dir\JSMN\jsmn.c.i
 
 CMakeFiles/leden.elf.dir/JSMN/jsmn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/JSMN/jsmn.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\JSMN\jsmn.c -o CMakeFiles\leden.elf.dir\JSMN\jsmn.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\JSMN\jsmn.c -o CMakeFiles\leden.elf.dir\JSMN\jsmn.c.s
 
 CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/MatrixKeys/MatrixKeys.c
+CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj: C:/Users/WOW/Desktop/leden/MatrixKeys/MatrixKeys.c
 CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj -MF CMakeFiles\leden.elf.dir\MatrixKeys\MatrixKeys.c.obj.d -o CMakeFiles\leden.elf.dir\MatrixKeys\MatrixKeys.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\MatrixKeys\MatrixKeys.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.obj -MF CMakeFiles\leden.elf.dir\MatrixKeys\MatrixKeys.c.obj.d -o CMakeFiles\leden.elf.dir\MatrixKeys\MatrixKeys.c.obj -c C:\Users\WOW\Desktop\leden\MatrixKeys\MatrixKeys.c
 
 CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\MatrixKeys\MatrixKeys.c > CMakeFiles\leden.elf.dir\MatrixKeys\MatrixKeys.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\MatrixKeys\MatrixKeys.c > CMakeFiles\leden.elf.dir\MatrixKeys\MatrixKeys.c.i
 
 CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/MatrixKeys/MatrixKeys.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\MatrixKeys\MatrixKeys.c -o CMakeFiles\leden.elf.dir\MatrixKeys\MatrixKeys.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\MatrixKeys\MatrixKeys.c -o CMakeFiles\leden.elf.dir\MatrixKeys\MatrixKeys.c.s
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c
+CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj: C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.obj -c C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c > CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c > CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.i
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.s
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
+CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.obj -c C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c > CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c > CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.i
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.s
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
+CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.obj -c C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c > CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c > CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.i
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.s
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
+CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: C:/Users/WOW/Desktop/leden/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.obj -c C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c > CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c > CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.i
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.s
 
 CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_42/oled.c
+CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj: C:/Users/WOW/Desktop/leden/OLED_42/oled.c
 CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj -MF CMakeFiles\leden.elf.dir\OLED_42\oled.c.obj.d -o CMakeFiles\leden.elf.dir\OLED_42\oled.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_42\oled.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/OLED_42/oled.c.obj -MF CMakeFiles\leden.elf.dir\OLED_42\oled.c.obj.d -o CMakeFiles\leden.elf.dir\OLED_42\oled.c.obj -c C:\Users\WOW\Desktop\leden\OLED_42\oled.c
 
 CMakeFiles/leden.elf.dir/OLED_42/oled.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/OLED_42/oled.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_42\oled.c > CMakeFiles\leden.elf.dir\OLED_42\oled.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\OLED_42\oled.c > CMakeFiles\leden.elf.dir\OLED_42\oled.c.i
 
 CMakeFiles/leden.elf.dir/OLED_42/oled.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/OLED_42/oled.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_42\oled.c -o CMakeFiles\leden.elf.dir\OLED_42\oled.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\OLED_42\oled.c -o CMakeFiles\leden.elf.dir\OLED_42\oled.c.s
 
 CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_96/SPI3/spi3.c
+CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj: C:/Users/WOW/Desktop/leden/OLED_96/SPI3/spi3.c
 CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj -MF CMakeFiles\leden.elf.dir\OLED_96\SPI3\spi3.c.obj.d -o CMakeFiles\leden.elf.dir\OLED_96\SPI3\spi3.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_96\SPI3\spi3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.obj -MF CMakeFiles\leden.elf.dir\OLED_96\SPI3\spi3.c.obj.d -o CMakeFiles\leden.elf.dir\OLED_96\SPI3\spi3.c.obj -c C:\Users\WOW\Desktop\leden\OLED_96\SPI3\spi3.c
 
 CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_96\SPI3\spi3.c > CMakeFiles\leden.elf.dir\OLED_96\SPI3\spi3.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\OLED_96\SPI3\spi3.c > CMakeFiles\leden.elf.dir\OLED_96\SPI3\spi3.c.i
 
 CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/OLED_96/SPI3/spi3.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_96\SPI3\spi3.c -o CMakeFiles\leden.elf.dir\OLED_96\SPI3\spi3.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\OLED_96\SPI3\spi3.c -o CMakeFiles\leden.elf.dir\OLED_96\SPI3\spi3.c.s
 
 CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_96/oled_96.c
+CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj: C:/Users/WOW/Desktop/leden/OLED_96/oled_96.c
 CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj -MF CMakeFiles\leden.elf.dir\OLED_96\oled_96.c.obj.d -o CMakeFiles\leden.elf.dir\OLED_96\oled_96.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_96\oled_96.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj -MF CMakeFiles\leden.elf.dir\OLED_96\oled_96.c.obj.d -o CMakeFiles\leden.elf.dir\OLED_96\oled_96.c.obj -c C:\Users\WOW\Desktop\leden\OLED_96\oled_96.c
 
 CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_96\oled_96.c > CMakeFiles\leden.elf.dir\OLED_96\oled_96.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\OLED_96\oled_96.c > CMakeFiles\leden.elf.dir\OLED_96\oled_96.c.i
 
 CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\OLED_96\oled_96.c -o CMakeFiles\leden.elf.dir\OLED_96\oled_96.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\OLED_96\oled_96.c -o CMakeFiles\leden.elf.dir\OLED_96\oled_96.c.s
 
 CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/SPI2/spi2.c
+CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj: C:/Users/WOW/Desktop/leden/SPI2/spi2.c
 CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj -MF CMakeFiles\leden.elf.dir\SPI2\spi2.c.obj.d -o CMakeFiles\leden.elf.dir\SPI2\spi2.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\SPI2\spi2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj -MF CMakeFiles\leden.elf.dir\SPI2\spi2.c.obj.d -o CMakeFiles\leden.elf.dir\SPI2\spi2.c.obj -c C:\Users\WOW\Desktop\leden\SPI2\spi2.c
 
 CMakeFiles/leden.elf.dir/SPI2/spi2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/SPI2/spi2.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\SPI2\spi2.c > CMakeFiles\leden.elf.dir\SPI2\spi2.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\SPI2\spi2.c > CMakeFiles\leden.elf.dir\SPI2\spi2.c.i
 
 CMakeFiles/leden.elf.dir/SPI2/spi2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/SPI2/spi2.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\SPI2\spi2.c -o CMakeFiles\leden.elf.dir\SPI2\spi2.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\SPI2\spi2.c -o CMakeFiles\leden.elf.dir\SPI2\spi2.c.s
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USB_DEVICE/App/usb_device.c
+CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj: C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usb_device.c
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usb_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.obj -c C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usb_device.c
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usb_device.c > CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usb_device.c > CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.i
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usb_device.c -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usb_device.c -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.s
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USB_DEVICE/App/usbd_custom_hid_if.c
+CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usbd_custom_hid_if.c
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usbd_custom_hid_if.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.obj -c C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usbd_custom_hid_if.c
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usbd_custom_hid_if.c > CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usbd_custom_hid_if.c > CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.i
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usbd_custom_hid_if.c -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usbd_custom_hid_if.c -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.s
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USB_DEVICE/App/usbd_desc.c
+CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: C:/Users/WOW/Desktop/leden/USB_DEVICE/App/usbd_desc.c
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usbd_desc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.obj -c C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usbd_desc.c
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usbd_desc.c > CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usbd_desc.c > CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.i
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\App\usbd_desc.c -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USB_DEVICE\App\usbd_desc.c -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.s
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USB_DEVICE/Target/usbd_conf.c
+CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: C:/Users/WOW/Desktop/leden/USB_DEVICE/Target/usbd_conf.c
 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\Target\usbd_conf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.obj -c C:\Users\WOW\Desktop\leden\USB_DEVICE\Target\usbd_conf.c
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\Target\usbd_conf.c > CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USB_DEVICE\Target\usbd_conf.c > CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.i
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USB_DEVICE\Target\usbd_conf.c -o CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USB_DEVICE\Target\usbd_conf.c -o CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.s
 
 CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Encoder/encoder_user.c
+CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: C:/Users/WOW/Desktop/leden/USER/Encoder/encoder_user.c
 CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Encoder\encoder_user.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.obj -c C:\Users\WOW\Desktop\leden\USER\Encoder\encoder_user.c
 
 CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Encoder\encoder_user.c > CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USER\Encoder\encoder_user.c > CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.i
 
 CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Encoder\encoder_user.c -o CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USER\Encoder\encoder_user.c -o CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.s
 
 CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Flash/flash_user.c
+CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: C:/Users/WOW/Desktop/leden/USER/Flash/flash_user.c
 CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Flash\flash_user.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.obj -c C:\Users\WOW\Desktop\leden\USER\Flash\flash_user.c
 
 CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Flash\flash_user.c > CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USER\Flash\flash_user.c > CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.i
 
 CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Flash\flash_user.c -o CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USER\Flash\flash_user.c -o CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.s
 
 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Json/jsmn_user.c
+CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: C:/Users/WOW/Desktop/leden/USER/Json/jsmn_user.c
 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Json\jsmn_user.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.obj -c C:\Users\WOW\Desktop\leden\USER\Json\jsmn_user.c
 
 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Json\jsmn_user.c > CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USER\Json\jsmn_user.c > CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.i
 
 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Json\jsmn_user.c -o CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USER\Json\jsmn_user.c -o CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.s
 
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Key/key_user.c
+CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: C:/Users/WOW/Desktop/leden/USER/Key/key_user.c
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Key\key_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Key\key_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Key\key_user.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Key\key_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Key\key_user.c.obj -c C:\Users\WOW\Desktop\leden\USER\Key\key_user.c
 
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USER/Key/key_user.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Key\key_user.c > CMakeFiles\leden.elf.dir\USER\Key\key_user.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USER\Key\key_user.c > CMakeFiles\leden.elf.dir\USER\Key\key_user.c.i
 
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USER/Key/key_user.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Key\key_user.c -o CMakeFiles\leden.elf.dir\USER\Key\key_user.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USER\Key\key_user.c -o CMakeFiles\leden.elf.dir\USER\Key\key_user.c.s
 
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Oled/oled_user.c
+CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: C:/Users/WOW/Desktop/leden/USER/Oled/oled_user.c
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Oled\oled_user.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.obj -c C:\Users\WOW\Desktop\leden\USER\Oled\oled_user.c
 
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Oled\oled_user.c > CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USER\Oled\oled_user.c > CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.i
 
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Oled\oled_user.c -o CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USER\Oled\oled_user.c -o CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.s
 
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Usb/usb_user.c
+CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: C:/Users/WOW/Desktop/leden/USER/Usb/usb_user.c
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Usb\usb_user.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.obj -c C:\Users\WOW\Desktop\leden\USER\Usb\usb_user.c
 
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Usb\usb_user.c > CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.i
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\WOW\Desktop\leden\USER\Usb\usb_user.c > CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.i
 
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\leden\USER\Usb\usb_user.c -o CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.s
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\WOW\Desktop\leden\USER\Usb\usb_user.c -o CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.s
 
 # Object files for target leden.elf
 leden_elf_OBJECTS = \
@@ -891,12 +891,12 @@ leden.elf: CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/build.make
 leden.elf: CMakeFiles/leden.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking C executable leden.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking C executable leden.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\leden.elf.dir\link.txt --verbose=$(VERBOSE)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug/leden.hex"
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug/leden.bin"
-	arm-none-eabi-objcopy -Oihex D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug/leden.elf D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug/leden.hex
-	arm-none-eabi-objcopy -Obinary D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug/leden.elf D:/Users/Administrator/Desktop/HARDWARE/leden/cmake-build-debug/leden.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.hex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.bin"
+	arm-none-eabi-objcopy -Oihex C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.elf C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.hex
+	arm-none-eabi-objcopy -Obinary C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.elf C:/Users/WOW/Desktop/leden/cmake-build-debug/leden.bin
 
 # Rule to build all files generated by this target.
 CMakeFiles/leden.elf.dir/build: leden.elf
@@ -907,6 +907,6 @@ CMakeFiles/leden.elf.dir/clean:
 .PHONY : CMakeFiles/leden.elf.dir/clean
 
 CMakeFiles/leden.elf.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Users\Administrator\Desktop\HARDWARE\leden D:\Users\Administrator\Desktop\HARDWARE\leden D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug D:\Users\Administrator\Desktop\HARDWARE\leden\cmake-build-debug\CMakeFiles\leden.elf.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\WOW\Desktop\leden C:\Users\WOW\Desktop\leden C:\Users\WOW\Desktop\leden\cmake-build-debug C:\Users\WOW\Desktop\leden\cmake-build-debug C:\Users\WOW\Desktop\leden\cmake-build-debug\CMakeFiles\leden.elf.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/leden.elf.dir/depend
 
