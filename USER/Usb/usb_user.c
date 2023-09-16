@@ -33,12 +33,16 @@ extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
 extern uint16_t key_setting_length[10];
 
 // 键盘命令
-extern char json_str[1024];
+extern char json_str[4096];
 
 uint8_t folder_index = 0;
 uint8_t file_array_index = 0;
 uint16_t file_position = 0;
 uint8_t photo_file_flag = 0;
+
+static void photo_string_to_hex(const char* hex_string_array);
+static void turn_to_next_position();
+static void set_key_value(const char* string_key_setting);
 
 static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end);
 static uint8_t char_to_hex(char hex_char);
@@ -54,38 +58,16 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
     // 根据文件数写入
     // 图片写入
     if (file_array_index < (OLED_42_NUM + OLED_96_NUM)) {
-        char hex_string_array[128];
-
+        char hex_string_array[129];
         for (uint8_t i = 0; i < len; i++) {
             sprintf(hex_string_array + (i * 2), "%02x", hid_handle->Report_buf[i]);
         }
         // 将16进制的字符串图片数组转为数值并写入图片数组
-        for (uint8_t i = 0; i < 128;) {
-            if (file_array_index < OLED_42_NUM && file_position >= 360) break;
-            if (file_array_index >= OLED_42_NUM && file_position >= 999) break;
-            if (file_array_index < OLED_42_NUM)
-                oled_42_array[file_array_index][file_position++] = string_to_num_hex(hex_string_array, i++, i++);
-            else if (file_array_index >= OLED_42_NUM) {
-                oled_96_array[file_array_index - OLED_42_NUM][file_position++] = string_to_num_hex(hex_string_array,
-                                                                                                   i++, i++);
-            }
-        }
+        photo_string_to_hex(hex_string_array);
+        // 转到下一个图片的位置
+        turn_to_next_position();
 
-        if (file_array_index < OLED_42_NUM && file_position >= 360) {
-            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
-                                oled_42_array[file_array_index], 1, file_array_index);
-            // 一张图片传完
-            file_position = 0;
-            // 下一张图片
-            file_array_index += 1;
-        } else if (file_array_index >= OLED_42_NUM && file_position >= 999) {
-            OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h,
-                                oled_96_array[file_array_index - OLED_42_NUM], 1, file_array_index - OLED_42_NUM);
-            file_position = 0;
-            file_array_index += 1;
-        }
     } else {
-        printf("file_array_index -> %d\n\r", file_array_index);
         // 所有图片传完
         if (file_array_index == (OLED_42_NUM + OLED_96_NUM) && photo_file_flag == 0) {
             photo_file_flag = 1;
@@ -93,20 +75,63 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
             // 将一个层级的图片存入 flash
             menu_photo_folder_storage(folder_index);
         }
-//        printf("hid_handle->Report_buf -> %s\n\r", hid_handle->Report_buf);
-        if(hid_handle->Report_buf[0] == '#' && hid_handle->Report_buf[1] == '$' && hid_handle->Report_buf[2] == '%') {
-            printf("key_done\n\r");
-            key_setting_length[folder_index] = file_position;
-            file_position = 0;
-            folder_index ++;
-            // 重置字符串数组
-
-        }
-        strncat(json_str, (char *)hid_handle->Report_buf, 64);
-        printf("json_str -> %s", json_str);
-        file_position += 64;
+        char string_key_setting[65];
+        strncat(string_key_setting, (char *)hid_handle->Report_buf, 64);
+        // 设置键值
+        set_key_value(string_key_setting);
     }
 }
+
+/********************************************************************************
+* 设置键值
+********************************************************************************/
+static void set_key_value(const char* string_key_setting) {
+//        printf("hid_handle->Report_buf -> %s\n\r", hid_handle->Report_buf);
+    if(string_key_setting[0] == '#' && string_key_setting[1] == '$' && string_key_setting[2] == '%') {
+        printf("key_done\n\r");
+        key_setting_length[folder_index] = file_position;
+        file_position = 0;
+        folder_index ++;
+    }
+    strncat(json_str, (char *)string_key_setting, 64);
+    printf("json_str -> %s", json_str);
+    file_position += 64;
+}
+/********************************************************************************
+* 将16进制的字符串图片数组转为数值并写入图片数组
+********************************************************************************/
+static void photo_string_to_hex(const char* hex_string_array) {
+    for (uint8_t i = 0; i < 128;) {
+        if (file_array_index < OLED_42_NUM && file_position >= 360) break;
+        if (file_array_index >= OLED_42_NUM && file_position >= 999) break;
+        if (file_array_index < OLED_42_NUM)
+            oled_42_array[file_array_index][file_position++] = string_to_num_hex(hex_string_array, i++, i++);
+        else if (file_array_index >= OLED_42_NUM) {
+            oled_96_array[file_array_index - OLED_42_NUM][file_position++] = string_to_num_hex(hex_string_array,
+                                                                                               i++, i++);
+        }
+    }
+}
+
+/********************************************************************************
+* 转到下一个图片的位置
+********************************************************************************/
+static void turn_to_next_position() {
+    if (file_array_index < OLED_42_NUM && file_position >= 360) {
+        OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                            oled_42_array[file_array_index], 1, file_array_index);
+        // 一张图片传完
+        file_position = 0;
+        // 下一张图片
+        file_array_index += 1;
+    } else if (file_array_index >= OLED_42_NUM && file_position >= 999) {
+        OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h,
+                            oled_96_array[file_array_index - OLED_42_NUM], 1, file_array_index - OLED_42_NUM);
+        file_position = 0;
+        file_array_index += 1;
+    }
+}
+
 
 /********************************************************************************
 * 发送 hid 码
