@@ -51,7 +51,16 @@ void (*parse_by_function[8])(uint8_t) = {parse_json_normal_key, parse_json_comp_
 // json 解析初始化
 void jsmn_init_user() {
     jsmn_init(&p);
-    parse_json_data(&p, 0);
+}
+
+/********************************************************************************
+* 加载键值配置并解析在键值数组
+********************************************************************************/
+void load_parse_key(uint8_t menu) {
+    // 从 flash 加载图片
+//    load_setting_from_flash(menu);
+    // 解析图片
+    parse_json_data(&p, menu);
 }
 
 /********************************************************************************
@@ -79,7 +88,7 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
     if (r < 1 && t[0].type != JSMN_OBJECT) return 1;
     for (uint8_t j = 0; j < 30; j++) {
         // sprintf 函数执行速度还未测试
-        // jsno 字符的键abcabcabc
+        // json 字符的键
         char json_key_str[4] = {0};
         // 数字转字符串
         char key_num_str[3] = {0};
@@ -97,7 +106,7 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
                 s += 1;
 //                printf("json_key_str -> %s\n", json_value_str);
                 strcat(key_value_array[j], json_value_str);
-                printf("key_value_array[%d] - >%s\n", j, *(key_value_array + j));
+                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
             }
         }
     }

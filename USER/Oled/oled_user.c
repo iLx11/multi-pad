@@ -7,7 +7,7 @@ extern uint8_t menu_change_lock;
 
 void load_menu_from_flash(uint8_t folderIndex);
 
-void OLED_ShowPicture(uint8_t menu_index);
+void oled_show_pic(uint8_t menu_index);
 
 static void screen_shake(uint8_t screen_index, uint8_t *pre, uint8_t mode);
 
@@ -39,7 +39,7 @@ void oled_init_user() {
 void load_show_menu(uint8_t menu_index) {
     menu_change_lock = 1;
     load_menu_from_flash(menu_index);
-    OLED_ShowPicture(menu_index);
+    oled_show_pic(menu_index);
     menu_change_lock = 0;
 }
 
@@ -57,7 +57,7 @@ void load_menu_from_flash(uint8_t folderIndex) {
 /********************************************************************************
 * œ‘ æÕº∆¨
 ********************************************************************************/
-void OLED_ShowPicture(uint8_t menu_index) {
+void oled_show_pic(uint8_t menu_index) {
     for (int i = 0; i < OLED_42_NUM; i++) {
         OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
                             oled_42_array[random_refresh[menu_index % 3][i]], 1, random_refresh[menu_index % 3][i]);

@@ -14,6 +14,8 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer);
 
 void jsmn_init_user();
 
+void load_parse_key(uint8_t menu);
+
 // 转发执行不同功能
 void parse_json_value(uint8_t key_value_index);
 #endif //LEDEN_JSMN_USER_H

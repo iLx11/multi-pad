@@ -3,6 +3,7 @@
 #include "oled_user.h"
 #include "flash_user.h"
 #include "usbd_customhid.h"
+#include "jsmn_user.h"
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 
@@ -36,15 +37,18 @@ extern uint16_t key_setting_length[10];
 extern char json_str[4096];
 
 uint8_t folder_index = 0;
-uint8_t file_array_index = 0;
+uint8_t file_array_index = 25;
 uint16_t file_position = 0;
-uint8_t photo_file_flag = 0;
+uint8_t photo_file_flag = 1;
 
-static void photo_string_to_hex(const char* hex_string_array);
+static void photo_string_to_hex(const char *hex_string_array);
+
 static void turn_to_next_position();
-static void set_key_value(const char* string_key_setting);
+
+static void set_key_value(const char *string_key_setting);
 
 static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end);
+
 static uint8_t char_to_hex(char hex_char);
 
 
@@ -52,7 +56,7 @@ static uint8_t char_to_hex(char hex_char);
 * 接收 hid 发送的数据
 ********************************************************************************/
 void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t len) {
-    if(hid_handle->Report_buf[0] == '1' && hid_handle->Report_buf[1] == '2' && hid_handle->Report_buf[2] == '3') {
+    if (hid_handle->Report_buf[0] == '1' && hid_handle->Report_buf[1] == '2' && hid_handle->Report_buf[2] == '3') {
 //        USBD_CUSTOM_HID_SendReport();
     }
     // 根据文件数写入
@@ -75,32 +79,45 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
             // 将一个层级的图片存入 flash
             menu_photo_folder_storage(folder_index);
         }
-        char string_key_setting[65];
-        strncat(string_key_setting, (char *)hid_handle->Report_buf, 64);
-        // 设置键值
-        set_key_value(string_key_setting);
+/*        printf("hid_handle->Report_buf[0] -> %c, %d\n\r", hid_handle->Report_buf[0], hid_handle->Report_buf[0]);
+        printf("hid_handle->Report_buf[1] -> %c, %d\n\r", hid_handle->Report_buf[1], hid_handle->Report_buf[1]);
+        printf("hid_handle->Report_buf[2] -> %c, %d\n\r", hid_handle->Report_buf[2], hid_handle->Report_buf[2]);*/
+        // 键值命令传完
+        if ((char) hid_handle->Report_buf[0] == '#' && (char) hid_handle->Report_buf[1] == '$' &&
+            (char) hid_handle->Report_buf[2] == '%') {
+            printf("key_done\n\r");
+            // 记录长度，增加读取速度
+            key_setting_length[folder_index] = file_position;
+            // 键值写入 flash
+            // json_key_storage();
+            /* ----------------- test ----------------------------------*/
+            load_parse_key(folder_index);
+            /* ----------------- test ----------------------------------*/
+            file_array_index = 0;
+            file_position = 0;
+            folder_index += 1;
+            // 清空字符串
+            memset(json_str, 0, sizeof(json_str));
+            printf("json_str -> %s\n\r", json_str);
+        } else {
+            strncat(json_str, (char *) hid_handle->Report_buf, 64);
+            printf("json_str -> %s\r\n", json_str);
+            file_position += 64;
+        }
     }
 }
 
 /********************************************************************************
 * 设置键值
 ********************************************************************************/
-static void set_key_value(const char* string_key_setting) {
-//        printf("hid_handle->Report_buf -> %s\n\r", hid_handle->Report_buf);
-    if(string_key_setting[0] == '#' && string_key_setting[1] == '$' && string_key_setting[2] == '%') {
-        printf("key_done\n\r");
-        key_setting_length[folder_index] = file_position;
-        file_position = 0;
-        folder_index ++;
-    }
-    strncat(json_str, (char *)string_key_setting, 64);
-    printf("json_str -> %s", json_str);
-    file_position += 64;
+static void set_key_value(const char *string_key_setting) {
+
 }
+
 /********************************************************************************
 * 将16进制的字符串图片数组转为数值并写入图片数组
 ********************************************************************************/
-static void photo_string_to_hex(const char* hex_string_array) {
+static void photo_string_to_hex(const char *hex_string_array) {
     for (uint8_t i = 0; i < 128;) {
         if (file_array_index < OLED_42_NUM && file_position >= 360) break;
         if (file_array_index >= OLED_42_NUM && file_position >= 999) break;
@@ -160,6 +177,7 @@ void hid_buff_reset() {
 static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end) {
     return char_to_hex(hex_string_array[start]) * 16 + char_to_hex(hex_string_array[end]);
 }
+
 static uint8_t char_to_hex(char hex_char) {
     uint8_t result = 0x00;
     if (hex_char >= '0' && hex_char <= '9')
