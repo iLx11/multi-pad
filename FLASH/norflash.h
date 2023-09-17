@@ -66,5 +66,6 @@ void norflash_write(uint8_t *pbuf, uint32_t addr, uint16_t datalen);    /* 写NOR
 void norflash_erase_chip(void);                                         /* 擦除整个NOR Flash芯片 */
 void norflash_erase_sector(uint32_t saddr);                             /* 擦除NOR Flash一个扇区 */
 void norflash_wakeup(void);
+void norflash_write_disable(void);
 
 #endif

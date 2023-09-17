@@ -20,6 +20,28 @@ void flash_init_user() {
 }
 
 /********************************************************************************
+* º¸÷µ–¥»Î flash ¥Ê¥¢
+********************************************************************************/
+void storage_setting_to_flash(uint8_t folder_index, uint8_t* str_data, uint16_t str_size) {
+    uint32_t sector = (folder_index * NUM_PHOTOS_PER_FOLDER + 25);
+    norflash_write_enable(); // Ω‚À¯Flash
+    norflash_write(str_data, sector * SECTOR_SIZE, str_size);
+    printf("norflash_write -> buff -> %s\r\n", str_data);
+    norflash_write_disable();
+}
+
+/********************************************************************************
+* ¥” flash ∂¡»°º¸÷µ
+********************************************************************************/
+void load_setting_from_flash(uint8_t folder_index, uint8_t* str_data, uint16_t str_size) {
+    uint32_t sector = (folder_index * NUM_PHOTOS_PER_FOLDER + 25);
+    norflash_read(str_data, sector * SECTOR_SIZE, str_size);
+    printf("norflash_read -> buff -> %s\r\n", str_data);
+
+}
+
+
+/********************************************************************************
 * Õº∆¨–¥»Î flash ¥Ê¥¢
 ********************************************************************************/
 void menu_photo_folder_storage(uint8_t folder_index) {
@@ -31,7 +53,7 @@ void menu_photo_folder_storage(uint8_t folder_index) {
 }
 
 /********************************************************************************
-* ¥Ê¥¢Õº∆¨
+* ¥Ê¥¢µΩ flash
 ********************************************************************************/
 void storage_to_flash(uint8_t folder_index, uint8_t photo_index, uint8_t *photo_data, uint16_t photo_size) {
     uint32_t sector = (folder_index * NUM_PHOTOS_PER_FOLDER + photo_index);

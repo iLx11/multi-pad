@@ -30,11 +30,9 @@ buff_struct buff_point_array[3] = {
 // 图片数组
 extern uint8_t oled_42_array[OLED_42_NUM][SIZE_42];
 extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
-// 键值长度记录数组
-extern uint16_t key_setting_length[10];
 
 // 键盘命令
-extern char json_str[4096];
+extern char json_str[JSON_SIZE];
 
 uint8_t folder_index = 0;
 uint8_t file_array_index = 25;
@@ -53,7 +51,7 @@ static uint8_t char_to_hex(char hex_char);
 
 
 /********************************************************************************
-* 接收 hid 发送的数据
+* 接收 hid 上位机发送的数据
 ********************************************************************************/
 void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t len) {
     if (hid_handle->Report_buf[0] == '1' && hid_handle->Report_buf[1] == '2' && hid_handle->Report_buf[2] == '3') {
@@ -86,22 +84,21 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
         if ((char) hid_handle->Report_buf[0] == '#' && (char) hid_handle->Report_buf[1] == '$' &&
             (char) hid_handle->Report_buf[2] == '%') {
             printf("key_done\n\r");
-            // 记录长度，增加读取速度
-            key_setting_length[folder_index] = file_position;
+            printf("json_str -> %s\r\n", json_str);
             // 键值写入 flash
-            // json_key_storage();
+            storage_setting_to_flash(folder_index, (uint8_t *)json_str, JSON_SIZE);
+            // 清空字符串
+            memset(json_str, 0, sizeof(json_str));
             /* ----------------- test ----------------------------------*/
             load_parse_key(folder_index);
+            printf("json_str -> %s\r\n", json_str);
+
             /* ----------------- test ----------------------------------*/
             file_array_index = 0;
             file_position = 0;
             folder_index += 1;
-            // 清空字符串
-            memset(json_str, 0, sizeof(json_str));
-            printf("json_str -> %s\n\r", json_str);
         } else {
             strncat(json_str, (char *) hid_handle->Report_buf, 64);
-            printf("json_str -> %s\r\n", json_str);
             file_position += 64;
         }
     }

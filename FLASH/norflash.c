@@ -65,6 +65,12 @@ void norflash_write_enable(void) {
     NORFLASH_CS(1);                             /* 失能NOR Flash片选 */
 }
 
+void norflash_write_disable(void) {
+    NORFLASH_CS(1);                             /* 使能NOR Flash片选 */
+    spi1_read_write_byte(NORFLASH_WriteDisable); /* 发送写使能命令 */
+    NORFLASH_CS(0);                             /* 失能NOR Flash片选 */
+}
+
 /**
  * @brief   向NOR Flash发送地址
  * @note    根据芯片型号的不同，发送3字节或4字节地址

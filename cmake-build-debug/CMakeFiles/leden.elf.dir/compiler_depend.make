@@ -2389,7 +2389,9 @@ CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: D:/Users/Administrator/Deskt
   D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Json/jsmn_user.h \
   D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_96/oled_96.h \
   D:/Users/Administrator/Desktop/HARDWARE/leden/OLED_96/SPI3/spi3.h \
-  D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Oled/oled_user.h
+  D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Oled/oled_user.h \
+  D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Flash/flash_user.h \
+  D:/Users/Administrator/Desktop/HARDWARE/leden/FLASH/norflash.h
 
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Key/key_user.c \
   D:/Users/Administrator/Desktop/HARDWARE/leden/USER/Key/key_user.h \

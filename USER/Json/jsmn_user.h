@@ -8,6 +8,8 @@
 #include "usb_user.h"
 #include "encoder_user.h"
 
+#define JSON_SIZE 4096
+
 extern uint8_t menu_index;
 
 uint8_t parse_json_data(jsmn_parser *p, uint8_t layer);

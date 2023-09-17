@@ -115,7 +115,6 @@ int main(void) {
     flash_init_user();
     // OLED œ‘ æ
     oled_init_user();
-
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -124,12 +123,6 @@ int main(void) {
     while (1) {
         // º¸≈Ã…®√Ë
         key_scan_user();
-        // oled œ‘ æ
-//        oled_show_user();
-//        send_buff[2] = 0x04;
-//        send_buff[3] = 0x05;
-//        while (USBD_HID_SendReport(&hUsbDeviceFS, send_buff, 8) != USBD_OK);
-
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */

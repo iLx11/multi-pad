@@ -1,11 +1,10 @@
 #include "jsmn_user.h"
+#include "flash_user.h"
 //#include "fatfs_user.h"
 
 //char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"00A04100410041007100810\",\"004\":\"00A04100410041007100810\",\"005\":\"500020030040\",\"006\":\"60200\",\"020\":\"60100\",\"021\":\"60200\",\"022\":\"700\",\"023\":\"710\",\"022\":\"60100\",\"025\":\"00A04100410041007100810\",\"026\":\"00A04100410041007100810\",\"027\":\"00A04100410041007100810\",\"028\":\"00A04100410041007100810\",\"029\":\"00A04100410041007100810\"}";
 
-char json_str[1024];
-// 键值长度记录数组
-uint16_t key_setting_length[10] = {0};
+char json_str[JSON_SIZE];
 
 // hid 发送缓冲数组指针结构体
 extern buff_struct buff_point_array[3];
@@ -57,9 +56,9 @@ void jsmn_init_user() {
 * 加载键值配置并解析在键值数组
 ********************************************************************************/
 void load_parse_key(uint8_t menu) {
-    // 从 flash 加载图片
-//    load_setting_from_flash(menu);
-    // 解析图片
+    // 从 flash 加载键值
+    load_setting_from_flash(menu, (uint8_t *)json_str, JSON_SIZE);
+    // 解析键值
     parse_json_data(&p, menu);
 }
 
@@ -203,6 +202,29 @@ static void parse_json_comp_delay_key(uint8_t key_value_index) {
     }
 }
 
+
+/********************************************************************************
+* 设置与发送缓冲数组
+********************************************************************************/
+static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index) {
+    buff_point_array[0].send_buff_point[0] = 0x01;
+    uint8_t normal_key_count = key_value_array[key_value_index][(*start)++] - 0x30;
+    if (normal_key_count > 6) return;
+    for (uint8_t i = 0; i < normal_key_count; i++)
+        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, (*start)++, (*start)++);
+    send_hid_code(0);
+    hid_buff_reset();
+}
+
+/********************************************************************************
+* 获取与执行延迟
+********************************************************************************/
+static void get_execute_delay(uint8_t *start, uint8_t key_value_index) {
+    uint16_t delay_time = (key_value_array[key_value_index][(*start)++] - 0x30) * 1000;
+    delay_time += string_to_num_hex(key_value_index, (*start)++, (*start)++);
+    HAL_Delay(delay_time);
+}
+
 /********************************************************************************
 * 解析json (鼠标功能）
 ********************************************************************************/
@@ -243,27 +265,6 @@ static void parse_json_menu_func(uint8_t key_value_index) {
     debounce_func(key_value_index);
 }
 
-/********************************************************************************
-* 设置与发送缓冲数组
-********************************************************************************/
-static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index) {
-    buff_point_array[0].send_buff_point[0] = 0x01;
-    uint8_t normal_key_count = key_value_array[key_value_index][(*start)++] - 0x30;
-    if (normal_key_count > 6) return;
-    for (uint8_t i = 0; i < normal_key_count; i++)
-        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, (*start)++, (*start)++);
-    send_hid_code(0);
-    hid_buff_reset();
-}
-
-/********************************************************************************
-* 获取与执行延迟
-********************************************************************************/
-static void get_execute_delay(uint8_t *start, uint8_t key_value_index) {
-    uint16_t delay_time = (key_value_array[key_value_index][(*start)++] - 0x30) * 1000;
-    delay_time += string_to_num_hex(key_value_index, (*start)++, (*start)++);
-    HAL_Delay(delay_time);
-}
 /********************************************************************************
 * ------ 解析不同功能的字符串 ------ end
 ********************************************************************************/
