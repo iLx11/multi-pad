@@ -22,28 +22,7 @@
   <component name="ChangeListManager">
     <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="USB_TWO_INTERFACE_ADD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FLASH/norflash.c" beforeDir="false" afterPath="$PROJECT_DIR$/FLASH/norflash.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FLASH/norflash.h" beforeDir="false" afterPath="$PROJECT_DIR$/FLASH/norflash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Usb/usb_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Usb/usb_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/FLASH/norflash.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON字符生成规则.md" beforeDir="false" afterPath="$PROJECT_DIR$/JSON字符生成规则.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,35 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/WOW/Desktop/leden/OLED_96",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/WOW/Desktop/leden/OLED_96&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\WOW\Desktop\leden\OLED_96" />
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.leden">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="leden.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="leden" TARGET_NAME="leden.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="leden" RUN_TARGET_NAME="leden.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
