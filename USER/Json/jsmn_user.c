@@ -181,7 +181,7 @@ static void parse_json_comp_delay_key(uint8_t key_value_index) {
     while (delay_key_count--) {
         get_execute_delay(&start, key_value_index);
         buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
-        hid_buff_set_send(&start, key_value_index);
+        hid_buff_set_send(&start, key_value_index, special_key);
     }
 }
 
