@@ -2,7 +2,7 @@
 #include "flash_user.h"
 //#include "fatfs_user.h"
 
-//char *json_str = "{\"000\":\"00A04100410041007100810\",\"001\":\"101106\",\"002\":\"23011040110601119\",\"003\":\"00A04100410041007100810\",\"004\":\"00A04100410041007100810\",\"005\":\"500020030040\",\"006\":\"60200\",\"020\":\"60100\",\"021\":\"60200\",\"022\":\"700\",\"023\":\"710\",\"022\":\"60100\",\"025\":\"00A04100410041007100810\",\"026\":\"00A04100410041007100810\",\"027\":\"00A04100410041007100810\",\"028\":\"00A04100410041007100810\",\"029\":\"00A04100410041007100810\"}";
+char *json_string = "{\"000\":\"50001\",\"001\":\"50002\",\"002\":\"50004\",\"003\":\"50008\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
 
 char json_str[JSON_SIZE];
 
@@ -26,13 +26,11 @@ static void parse_json_normal_key(uint8_t key_value_index);
 
 static void parse_json_comp_key(uint8_t key_value_index);
 
-static void parse_json_compp_key(uint8_t key_value_index);
-
 static void parse_json_delay_key(uint8_t key_value_index);
 
 static void parse_json_comp_delay_key(uint8_t key_value_index);
 
-static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index);
+static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t special_key);
 
 static void get_execute_delay(uint8_t *start, uint8_t key_value_index);
 
@@ -43,13 +41,14 @@ static void parse_json_media_func(uint8_t key_value_index);
 static void parse_json_menu_func(uint8_t key_value_index);
 
 // 根据功能解析 json 值的函数指针数组
-void (*parse_by_function[8])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_compp_key,
-                                         parse_json_delay_key, parse_json_comp_delay_key, parse_json_mouse_func,
+void (*parse_by_function[8])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_delay_key,
+                                         parse_json_comp_delay_key, parse_json_mouse_func,
                                          parse_json_media_func, parse_json_menu_func};
 
 // json 解析初始化
 void jsmn_init_user() {
     jsmn_init(&p);
+    parse_json_data(&p, 0);
 }
 
 /********************************************************************************
@@ -57,7 +56,7 @@ void jsmn_init_user() {
 ********************************************************************************/
 void load_parse_key(uint8_t menu) {
     // 从 flash 加载键值
-    load_setting_from_flash(menu, (uint8_t *)json_str, JSON_SIZE);
+    load_setting_from_flash(menu, (uint8_t *) json_string, JSON_SIZE);
     // 解析键值
     parse_json_data(&p, menu);
 }
@@ -77,7 +76,7 @@ static int json_cmp(const char *json, jsmntok_t *tok, const char *str) {
 * 解析 json 字符并按键值存入数组
 ********************************************************************************/
 uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
-    uint8_t r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
+    uint8_t r = jsmn_parse(p, json_string, strlen(json_string), t, sizeof(t) / sizeof(t[0]));
     if (r < 0) printf("parse fail");
 /*    printf("\ntype - start - end - size\n");
     for (uint8_t i = 0; i < r; i++) {
@@ -98,10 +97,10 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
         strcat(json_key_str, num_to_string(j, key_num_str));
 
         for (uint8_t s = 0; s < r; s++) {
-            if (json_cmp(json_str, &t[s], json_key_str) == 0) {
+            if (json_cmp(json_string, &t[s], json_key_str) == 0) {
                 // 取出 json 字符中键对应的值
                 char json_value_str[200] = {0};
-                memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
+                memcpy(json_value_str, json_string + t[s + 1].start, t[s + 1].end - t[s + 1].start);
                 s += 1;
 //                printf("json_key_str -> %s\n", json_value_str);
                 strcat(key_value_array[j], json_value_str);
@@ -131,45 +130,29 @@ void parse_json_value(uint8_t key_value_index) {
 * 解析 json 字符（普通键值）
 ********************************************************************************/
 static void parse_json_normal_key(uint8_t key_value_index) {
-//    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
-    uint8_t normal_key_count = string_to_num_hex(key_value_index, 1, 2);
-    uint8_t cycle_count = 0;
-//    printf("normal_key_count -> %d\n", normal_key_count);
+    uint8_t start = 1;
+    hid_buff_set_send(&start, key_value_index, 0x00);
+    /*uint8_t normal_key_count = string_to_num_hex(key_value_index, start++, start++);
+    uint8_t cycle_num = normal_key_count / 6;
     do {
         buff_point_array[0].send_buff_point[0] = 0x01;
-        uint8_t cycle_start = cycle_count == 0 ? 0 : cycle_count * 6 * 2;
-        for (uint8_t i = 3; i < 9; i++) {
-            if (normal_key_count == 0x00) break;
-            buff_point_array[0].send_buff_point[i] = string_to_num_hex(key_value_index,
-                                                                       ((2 * (i - 2) + 1) + cycle_start),
-                                                                       ((2 * (i - 2) + 2) + cycle_start));
-//            printf("buff_point_array[0].send_buff_point[%d] -> %d\n", i, buff_point_array[0].send_buff_point[i]);
-            normal_key_count--;
+        for (uint8_t i = 0; i < 6; i++) {
+            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, start++, start++);
         }
         send_hid_code(0);
         hid_buff_reset();
-        cycle_count++;
-    } while (normal_key_count > 0);
-}
-
-/********************************************************************************
-* 解析 json 字符（组合键值）
-********************************************************************************/
-static void parse_json_comp_key(uint8_t key_value_index) {
-    uint8_t start = 1;
-    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
-    hid_buff_set_send(&start, key_value_index);
+    } while (cycle_num--);*/
 }
 
 /********************************************************************************
 * 解析 json （组合组合）
 ********************************************************************************/
-static void parse_json_compp_key(uint8_t key_value_index) {
-    uint8_t compp_key_count = key_value_array[key_value_index][1] - 0x30;
-    uint8_t start = 2;
+static void parse_json_comp_key(uint8_t key_value_index) {
+    uint8_t start = 1;
+    uint8_t compp_key_count = string_to_num_hex(key_value_index, start++, start++);
     while (compp_key_count--) {
-        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
-        hid_buff_set_send(&start, key_value_index);
+        uint8_t special_key = string_to_num_hex(key_value_index, start++, start++);
+        hid_buff_set_send(&start, key_value_index, special_key);
     }
 }
 
@@ -180,10 +163,10 @@ static void parse_json_delay_key(uint8_t key_value_index) {
 //    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
     uint8_t delay_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
-    hid_buff_set_send(&start, key_value_index);
+    hid_buff_set_send(&start, key_value_index, 0x00);
     while (delay_key_count--) {
         get_execute_delay(&start, key_value_index);
-        hid_buff_set_send(&start, key_value_index);
+        hid_buff_set_send(&start, key_value_index, 0x00);
     }
 }
 
@@ -193,8 +176,8 @@ static void parse_json_delay_key(uint8_t key_value_index) {
 static void parse_json_comp_delay_key(uint8_t key_value_index) {
     uint8_t delay_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
-    buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
-    hid_buff_set_send(&start, key_value_index);
+    uint8_t special_key = string_to_num_hex(key_value_index, start++, start++);
+    hid_buff_set_send(&start, key_value_index, special_key);
     while (delay_key_count--) {
         get_execute_delay(&start, key_value_index);
         buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
@@ -202,18 +185,23 @@ static void parse_json_comp_delay_key(uint8_t key_value_index) {
     }
 }
 
-
 /********************************************************************************
 * 设置与发送缓冲数组
 ********************************************************************************/
-static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index) {
+static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t special_key) {
     buff_point_array[0].send_buff_point[0] = 0x01;
-    uint8_t normal_key_count = key_value_array[key_value_index][(*start)++] - 0x30;
-    if (normal_key_count > 6) return;
-    for (uint8_t i = 0; i < normal_key_count; i++)
-        buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, (*start)++, (*start)++);
-    send_hid_code(0);
-    hid_buff_reset();
+    uint8_t normal_key_count = string_to_num_hex(key_value_index, (*start)++, (*start)++);
+    uint8_t cycle_num = normal_key_count / 6;
+    do {
+        buff_point_array[0].send_buff_point[1] = special_key;
+        for (uint8_t i = 0; i < 6; i++){
+            if(normal_key_count == 0) break;
+            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, (*start)++, (*start)++);
+            normal_key_count --;
+        }
+        send_hid_code(0);
+        hid_buff_reset();
+    } while (cycle_num--);
 }
 
 /********************************************************************************

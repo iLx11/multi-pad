@@ -22,7 +22,7 @@ void MK_on_keyup(uint8_t row, uint8_t col) {
 
 void MK_on_keydown(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
-    screen_effect(row, col, 0, 0);
+//    screen_effect(row, col, 0, 0);
 //    screen_effect_two(row, col, 0, 0);
     printf("key_value -> %d\n", key_value);
     parse_json_value(key_value);

@@ -96,7 +96,7 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
             /* ----------------- test ----------------------------------*/
             file_array_index = 0;
             file_position = 0;
-            folder_index += 1;
+            folder_index > 9 ? folder_index = 0 : folder_index ++;
         } else {
             strncat(json_str, (char *) hid_handle->Report_buf, 64);
             file_position += 64;
@@ -104,12 +104,6 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
     }
 }
 
-/********************************************************************************
-* 设置键值
-********************************************************************************/
-static void set_key_value(const char *string_key_setting) {
-
-}
 
 /********************************************************************************
 * 将16进制的字符串图片数组转为数值并写入图片数组

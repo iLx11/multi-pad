@@ -249,7 +249,7 @@ const int media_array_one[8] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 媒体数组2
 
 ```c
-// 从左到右代表：Calculator、Consumer Control、Email Reader、Home、Back、Forward、New
+// 从左到右代表：Calculator、Consumer Control、Email Reader、Home、Back、Forward、New、Open
 const int media_array_two[8] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80};
 ```
 
