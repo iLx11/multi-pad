@@ -22,10 +22,9 @@
   <component name="ChangeListManager">
     <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="JSON_PARSE_MODIFY">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON字符生成规则.md" beforeDir="false" afterPath="$PROJECT_DIR$/JSON字符生成规则.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-09-16T13-48-17-0521.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
@@ -163,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695032717376</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="JSON_PARSE_MODIFY">
+      <option name="closed" value="true" />
+      <created>1695033087951</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695033087951</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -2,7 +2,7 @@
 #include "flash_user.h"
 //#include "fatfs_user.h"
 
-char *json_string = "{\"000\":\"50001\",\"001\":\"50002\",\"002\":\"50004\",\"003\":\"50008\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
+char *json_string = "{\"000\":\"009040506070809040609\",\"001\":\"103010104010106010119\",\"002\":\"210904050607080904060904FF0904050607080904060904\",\"003\":\"50008\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
 
 char json_str[JSON_SIZE];
 
@@ -176,12 +176,19 @@ static void parse_json_delay_key(uint8_t key_value_index) {
 static void parse_json_comp_delay_key(uint8_t key_value_index) {
     uint8_t delay_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
-    uint8_t special_key = string_to_num_hex(key_value_index, start++, start++);
-    hid_buff_set_send(&start, key_value_index, special_key);
+    uint8_t speial_key_count = string_to_num_hex(key_value_index, start++, start++);
+    uint8_t special_key;
+    while(speial_key_count --) {
+        special_key = string_to_num_hex(key_value_index, start++, start++);
+        hid_buff_set_send(&start, key_value_index, special_key);
+    }
     while (delay_key_count--) {
         get_execute_delay(&start, key_value_index);
-        buff_point_array[0].send_buff_point[1] = string_to_num_hex(key_value_index, start++, start++);
-        hid_buff_set_send(&start, key_value_index, special_key);
+        speial_key_count = string_to_num_hex(key_value_index, start++, start++);
+        while (speial_key_count --) {
+            special_key = string_to_num_hex(key_value_index, start++, start++);
+            hid_buff_set_send(&start, key_value_index, special_key);
+        }
     }
 }
 
@@ -189,10 +196,10 @@ static void parse_json_comp_delay_key(uint8_t key_value_index) {
 * 设置与发送缓冲数组
 ********************************************************************************/
 static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t special_key) {
-    buff_point_array[0].send_buff_point[0] = 0x01;
     uint8_t normal_key_count = string_to_num_hex(key_value_index, (*start)++, (*start)++);
     uint8_t cycle_num = normal_key_count / 6;
     do {
+        buff_point_array[0].send_buff_point[0] = 0x01;
         buff_point_array[0].send_buff_point[1] = special_key;
         for (uint8_t i = 0; i < 6; i++){
             if(normal_key_count == 0) break;
@@ -208,7 +215,7 @@ static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t s
 * 获取与执行延迟
 ********************************************************************************/
 static void get_execute_delay(uint8_t *start, uint8_t key_value_index) {
-    uint16_t delay_time = (key_value_array[key_value_index][(*start)++] - 0x30) * 1000;
+    uint16_t delay_time = string_to_num_hex(key_value_index, (*start)++, (*start)++) * 255;
     delay_time += string_to_num_hex(key_value_index, (*start)++, (*start)++);
     HAL_Delay(delay_time);
 }
