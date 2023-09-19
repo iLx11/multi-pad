@@ -2,7 +2,7 @@
 #include "flash_user.h"
 //#include "fatfs_user.h"
 
-char *json_string = "{\"000\":\"009040506070809040609\",\"001\":\"103010104010106010119\",\"002\":\"210904050607080904060904FF0904050607080904060904\",\"003\":\"50008\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
+//char *json_str = "{\"000\":\"009040506070809040609\",\"001\":\"103010104010106010119\",\"002\":\"210904050607080904060904FF0904050607080904060904\",\"003\":\"320201010401010604FF0201011901011904FF01010104\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
 
 char json_str[JSON_SIZE];
 
@@ -13,7 +13,7 @@ jsmntok_t t[128];
 jsmn_parser p;
 
 // 解析后的键值数组
-char key_value_array[30][200] = {0};
+char key_value_array[30][256] = {0};
 
 // 数字转字符串
 static char *num_to_string(uint8_t num, char *str);
@@ -56,7 +56,7 @@ void jsmn_init_user() {
 ********************************************************************************/
 void load_parse_key(uint8_t menu) {
     // 从 flash 加载键值
-    load_setting_from_flash(menu, (uint8_t *) json_string, JSON_SIZE);
+    load_setting_from_flash(menu, (uint8_t *) json_str, JSON_SIZE);
     // 解析键值
     parse_json_data(&p, menu);
 }
@@ -76,7 +76,7 @@ static int json_cmp(const char *json, jsmntok_t *tok, const char *str) {
 * 解析 json 字符并按键值存入数组
 ********************************************************************************/
 uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
-    uint8_t r = jsmn_parse(p, json_string, strlen(json_string), t, sizeof(t) / sizeof(t[0]));
+    uint8_t r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
     if (r < 0) printf("parse fail");
 /*    printf("\ntype - start - end - size\n");
     for (uint8_t i = 0; i < r; i++) {
@@ -97,10 +97,10 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
         strcat(json_key_str, num_to_string(j, key_num_str));
 
         for (uint8_t s = 0; s < r; s++) {
-            if (json_cmp(json_string, &t[s], json_key_str) == 0) {
+            if (json_cmp(json_str, &t[s], json_key_str) == 0) {
                 // 取出 json 字符中键对应的值
                 char json_value_str[200] = {0};
-                memcpy(json_value_str, json_string + t[s + 1].start, t[s + 1].end - t[s + 1].start);
+                memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
                 s += 1;
 //                printf("json_key_str -> %s\n", json_value_str);
                 strcat(key_value_array[j], json_value_str);
@@ -176,16 +176,16 @@ static void parse_json_delay_key(uint8_t key_value_index) {
 static void parse_json_comp_delay_key(uint8_t key_value_index) {
     uint8_t delay_key_count = key_value_array[key_value_index][1] - 0x30;
     uint8_t start = 2;
-    uint8_t speial_key_count = string_to_num_hex(key_value_index, start++, start++);
+    uint8_t special_key_count = string_to_num_hex(key_value_index, start++, start++);
     uint8_t special_key;
-    while(speial_key_count --) {
+    while(special_key_count --) {
         special_key = string_to_num_hex(key_value_index, start++, start++);
         hid_buff_set_send(&start, key_value_index, special_key);
     }
     while (delay_key_count--) {
         get_execute_delay(&start, key_value_index);
-        speial_key_count = string_to_num_hex(key_value_index, start++, start++);
-        while (speial_key_count --) {
+        special_key_count = string_to_num_hex(key_value_index, start++, start++);
+        while (special_key_count --) {
             special_key = string_to_num_hex(key_value_index, start++, start++);
             hid_buff_set_send(&start, key_value_index, special_key);
         }
