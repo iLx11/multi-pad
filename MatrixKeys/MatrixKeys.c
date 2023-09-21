@@ -1,6 +1,7 @@
 #include "MatrixKeys.h"
 #include  "stm32f1xx.h"
 #include "system_stm32f1xx.h"
+#include <stdio.h>
 
 // 定义状态记录,记录所有的
 static uint32_t key_state = 0xfffff;
@@ -25,6 +26,8 @@ static uint32_t key_state = 0xfffff;
 ////低电平按下
 #define SET_KEY_UP(row, col)		key_state |= (1 << (row * COL_NUM + col))
 #define SET_KEY_DOWN(row, col)	key_state &= ~(1 << (row * COL_NUM + col))
+
+void key_hold_check(uint8_t row, uint8_t col);
 
 void KEY_INIT(){
     // ROW 推挽输出
@@ -67,6 +70,11 @@ static void ROW_OUT(uint8_t row) {
 void MK_init() {
     KEY_INIT();
 }
+
+uint16_t x = 0;
+/********************************************************************************
+* 键盘扫描
+********************************************************************************/
 void MK_scan(uint16_t *state) {
     uint8_t i, j;
     for(j = 0; j < ROW_NUM; j++) {
@@ -75,22 +83,33 @@ void MK_scan(uint16_t *state) {
         // 只让row1工作
         ROW_OUT(j);
         for(i = 0; i < COL_NUM; i++) {
-            // 列
-            // 判断某个列是否抬起或者按下
-            // i就是某个列
             // row, col
-            if(COL_STATE(i) == KEY_DOWN && IS_KEY_UP(j, i)) {
+            while(COL_STATE(i) == KEY_DOWN && IS_KEY_UP(j, i)) {
                 // 按键如果是按下， 并且上一次是高电平，电平应该是低
                 // 记录状态
                 SET_KEY_DOWN(j, i);							
 								MK_on_keydown(j, i);
-            } else if(COL_STATE(i) == KEY_UP && IS_KEY_DOWN(j, i)) {
+                key_hold_check(j, i);
+            }
+            if(COL_STATE(i) == KEY_UP && IS_KEY_DOWN(j, i)) {
                 // 按键如果是抬起，并且上一次是低电平, 电平应该是高
                 // 记录状态
                 SET_KEY_UP(j, i);							
 								MK_on_keyup(j, i);
             }
+            x = 0;
         }
     }
 		*state = key_state;
+}
+
+/********************************************************************************
+* 键盘持续按下判断
+********************************************************************************/
+void key_hold_check(uint8_t row, uint8_t col) {
+    x ++;
+    HAL_Delay(10);
+    if(x > 20) {
+        key_hold_callback(row, col);
+    }
 }

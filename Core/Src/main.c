@@ -103,16 +103,16 @@ int main(void) {
     MX_USART1_UART_Init();
     MX_USB_DEVICE_Init();
     /* USER CODE BEGIN 2 */
-    // ¾ØÕó¼üÅÌ
-    key_init_user();
-    // json ½âÎö
-    jsmn_init_user();
-    // ±àÂëÆ÷
-    encoder_init_user();
     // ÎÄ¼şÏµÍ³
 //    file_sys_init();
     // flash
     flash_init_user();
+    // json ½âÎö
+    jsmn_init_user();
+    // ¾ØÕó¼üÅÌ
+    key_init_user();
+    // ±àÂëÆ÷
+    encoder_init_user();
     // OLED ÏÔÊ¾
     oled_init_user();
     /* USER CODE END 2 */

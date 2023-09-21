@@ -64,4 +64,6 @@ extern void MK_on_keyup(uint8_t row, uint8_t col);
 
 extern void MK_on_keydown(uint8_t row, uint8_t col);
 
+extern void key_hold_callback(uint8_t row, uint8_t col);
+
 #endif

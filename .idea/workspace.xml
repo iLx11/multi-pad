@@ -22,7 +22,20 @@
   <component name="ChangeListManager">
     <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="JSON_DOCUMENT_MODIFY">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixKeys/MatrixKeys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Encoder/encoder_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Encoder/encoder_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/USER/Usb/usb_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Usb/usb_user.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-571c1a8f83004faa024e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-e88c2db3e8453f5aeb7c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d899ecebc4d5e748dcb9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-09-19T12-17-47-0054.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-leden.elf-Debug-7bf1362f54bee48b1759.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
@@ -197,11 +210,6 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.leden">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="leden.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="leden" TARGET_NAME="leden.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="leden" RUN_TARGET_NAME="leden.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -228,6 +236,9 @@
       <workItem from="1694576411318" duration="207000" />
       <workItem from="1694589203043" duration="38177000" />
       <workItem from="1695095591194" duration="4414000" />
+      <workItem from="1695177712173" duration="24826000" />
+      <workItem from="1695262614847" duration="5043000" />
+      <workItem from="1695269582662" duration="13193000" />
     </task>
     <task id="LOCAL-00001" summary="ENCODER_MENU_EXECUTE">
       <option name="closed" value="true" />

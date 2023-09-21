@@ -1,5 +1,4 @@
 #include "usb_user.h"
-#include "oled.h"
 #include "oled_user.h"
 #include "flash_user.h"
 #include "usbd_customhid.h"
@@ -33,11 +32,12 @@ extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
 
 // 键盘命令
 extern char json_str[JSON_SIZE];
+char clear_str[JSON_SIZE] = {0};
 
 uint8_t folder_index = 0;
 uint8_t file_array_index = 0;
 uint16_t file_position = 0;
-uint8_t photo_file_flag = 1;
+uint8_t photo_file_flag = 0;
 
 static void photo_string_to_hex(const char *hex_string_array);
 
@@ -54,8 +54,9 @@ static uint8_t char_to_hex(char hex_char);
 * 接收 hid 上位机发送的数据
 ********************************************************************************/
 void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t len) {
-    if (hid_handle->Report_buf[0] == '1' && hid_handle->Report_buf[1] == '2' && hid_handle->Report_buf[2] == '3') {
+    if (hid_handle->Report_buf[0] == '!' && hid_handle->Report_buf[1] == '@' && hid_handle->Report_buf[2] == '$') {
 //        USBD_CUSTOM_HID_SendReport();
+        return ;
     }
     // 根据文件数写入
     // 图片写入
@@ -76,6 +77,8 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
             printf("photo_array_done\n\r");
             // 将一个层级的图片存入 flash
             menu_photo_folder_storage(folder_index);
+            // 清空字符串
+            memset(json_str, 0, JSON_SIZE);
         }
 /*        printf("hid_handle->Report_buf[0] -> %c, %d\n\r", hid_handle->Report_buf[0], hid_handle->Report_buf[0]);
         printf("hid_handle->Report_buf[1] -> %c, %d\n\r", hid_handle->Report_buf[1], hid_handle->Report_buf[1]);
@@ -84,19 +87,16 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
         if ((char) hid_handle->Report_buf[0] == '#' && (char) hid_handle->Report_buf[1] == '$' &&
             (char) hid_handle->Report_buf[2] == '%') {
             printf("key_done\n\r");
-            printf("json_str -> %s\r\n", json_str);
+            printf("json_str -> %s\n\r", json_str);
             // 键值写入 flash
-            storage_setting_to_flash(folder_index, (uint8_t *)json_str, JSON_SIZE);
+            storage_setting_to_flash(folder_index, clear_str, JSON_SIZE);
+            storage_setting_to_flash(folder_index, json_str, JSON_SIZE);
             // 清空字符串
-            memset(json_str, 0, sizeof(json_str));
-            /* ----------------- test ----------------------------------*/
-            load_parse_key(folder_index);
-            printf("json_str -> %s\r\n", json_str);
-
-            /* ----------------- test ----------------------------------*/
+            memset(json_str, 0, JSON_SIZE);
             file_array_index = 0;
             file_position = 0;
-            folder_index += 1;
+            photo_file_flag = 0;
+            folder_index > 9 ? folder_index = 0 : folder_index ++;
         } else {
             strncat(json_str, (char *) hid_handle->Report_buf, 64);
             file_position += 64;
@@ -132,15 +132,15 @@ static void photo_string_to_hex(const char *hex_string_array) {
 ********************************************************************************/
 static void turn_to_next_position() {
     if (file_array_index < OLED_42_NUM && file_position >= 360) {
-        OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
-                            oled_42_array[file_array_index], 1, file_array_index);
+        /*OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
+                            oled_42_array[file_array_index], 1, file_array_index);*/
         // 一张图片传完
         file_position = 0;
         // 下一张图片
         file_array_index += 1;
     } else if (file_array_index >= OLED_42_NUM && file_position >= 999) {
-        OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h,
-                            oled_96_array[file_array_index - OLED_42_NUM], 1, file_array_index - OLED_42_NUM);
+        /*OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h,
+                            oled_96_array[file_array_index - OLED_42_NUM], 1, file_array_index - OLED_42_NUM);*/
         file_position = 0;
         file_array_index += 1;
     }

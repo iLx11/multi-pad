@@ -13,9 +13,9 @@ void flash_init_user();
 
 void menu_photo_folder_storage(uint8_t folder_index);
 
-void load_setting_from_flash(uint8_t folder_index, uint8_t* str_data, uint16_t str_size);
+void load_setting_from_flash(uint8_t folder_index, char* str_data, uint16_t str_size);
 
-void storage_setting_to_flash(uint8_t folder_index, uint8_t* str_data, uint16_t str_size);
+void storage_setting_to_flash(uint8_t folder_index, char* str_data, uint16_t str_size);
 
 
 #endif //LEDEN_FLASH_H

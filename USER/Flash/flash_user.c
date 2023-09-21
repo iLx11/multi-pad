@@ -22,22 +22,19 @@ void flash_init_user() {
 /********************************************************************************
 * 键值写入 flash 存储
 ********************************************************************************/
-void storage_setting_to_flash(uint8_t folder_index, uint8_t* str_data, uint16_t str_size) {
+void storage_setting_to_flash(uint8_t folder_index, char* str_data, uint16_t str_size) {
     uint32_t sector = (folder_index * NUM_PHOTOS_PER_FOLDER + 25);
     norflash_write_enable(); // 解锁Flash
-    norflash_write(str_data, sector * SECTOR_SIZE, str_size);
-    printf("norflash_write -> buff -> %s\r\n", str_data);
-    norflash_write_disable();
+    norflash_write((uint8_t *)str_data, sector * SECTOR_SIZE, str_size);
+//    norflash_write_disable();
 }
 
 /********************************************************************************
 * 从 flash 读取键值
 ********************************************************************************/
-void load_setting_from_flash(uint8_t folder_index, uint8_t* str_data, uint16_t str_size) {
+void load_setting_from_flash(uint8_t folder_index, char* str_data, uint16_t str_size) {
     uint32_t sector = (folder_index * NUM_PHOTOS_PER_FOLDER + 25);
-    norflash_read(str_data, sector * SECTOR_SIZE, str_size);
-    printf("norflash_read -> buff -> %s\r\n", str_data);
-
+    norflash_read((uint8_t *)str_data, sector * SECTOR_SIZE, str_size);
 }
 
 

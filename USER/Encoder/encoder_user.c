@@ -7,7 +7,7 @@ uint16_t cur_time = 0;
 uint8_t change_flag = 0;
 uint8_t menu_change_lock = 0;
 
-uint8_t cur_menu = 0;
+uint8_t pre_menu = 0;
 
 extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
 
@@ -32,7 +32,6 @@ void debounce_func(uint8_t encoder_index) {
     if(menu_change_lock == 0) {
         cur_time = 0;
         change_flag = 1;
-//    OLED_ShowChar(10, 10, menu_index + 0x30, 24, 1, (encoder_index - 20) / 2);
         OLED_92_ShowPicture(oled_96_x, oled_96_y, oled_96_l, oled_96_h, num_bmp[menu_index], 1, (encoder_index - 20) / 2);
     }
 }
@@ -42,11 +41,13 @@ void debounce_func(uint8_t encoder_index) {
 ********************************************************************************/
 static void keyboard_menu_change() {
     printf("menu_index -> %d\r", menu_index);
-    cur_menu == 0 ? (cur_menu = 1) : (cur_menu = 0);
-    // 加载图片并显示
-    load_show_menu(cur_menu);
-    // 加载当前层级的命令
-
+    if(pre_menu != menu_index) {
+        pre_menu = menu_index;
+        // 加载图片并显示
+        load_show_menu(menu_index);
+        // 加载当前层级的命令
+        load_parse_key(menu_index);
+    }
 }
 
 /********************************************************************************
