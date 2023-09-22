@@ -43,8 +43,6 @@ static void photo_string_to_hex(const char *hex_string_array);
 
 static void turn_to_next_position();
 
-static void set_key_value(const char *string_key_setting);
-
 static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end);
 
 static uint8_t char_to_hex(char hex_char);
@@ -102,13 +100,6 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
             file_position += 64;
         }
     }
-}
-
-/********************************************************************************
-* …Ë÷√º¸÷µ
-********************************************************************************/
-static void set_key_value(const char *string_key_setting) {
-
 }
 
 /********************************************************************************

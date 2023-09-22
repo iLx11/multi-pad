@@ -20,15 +20,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="KEY_TEST_DONE">
+    <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="JSON_PARSE_BUGFIX">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Json/jsmn_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Json/jsmn_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USER/Usb/usb_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Usb/usb_user.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +100,7 @@
       <workItem from="1695262614847" duration="5043000" />
       <workItem from="1695269582662" duration="19374000" />
       <workItem from="1695351050099" duration="1414000" />
-      <workItem from="1695353235053" duration="5876000" />
+      <workItem from="1695353235053" duration="6711000" />
     </task>
     <task id="LOCAL-00001" summary="ENCODER_MENU_EXECUTE">
       <option name="closed" value="true" />
@@ -187,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695290794742</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="JSON_PARSE_BUGFIX">
+      <option name="closed" value="true" />
+      <created>1695363202128</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695363202128</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +211,7 @@
     <MESSAGE value="JSON_PARSE_MODIFY" />
     <MESSAGE value="JSON_DOCUMENT_MODIFY" />
     <MESSAGE value="KEY_TEST_DONE" />
-    <option name="LAST_COMMIT_MESSAGE" value="KEY_TEST_DONE" />
+    <MESSAGE value="JSON_PARSE_BUGFIX" />
+    <option name="LAST_COMMIT_MESSAGE" value="JSON_PARSE_BUGFIX" />
   </component>
 </project>
