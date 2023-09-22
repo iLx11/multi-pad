@@ -4,14 +4,14 @@
 
 //char *json_str = "{\"000\":\"009040506070809040609\",\"001\":\"103010104010106010119\",\"002\":\"210904050607080904060904FF0904050607080904060904\",\"003\":\"320201010401010604FF0201011901011904FF01010104\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
 
-char json_str[JSON_SIZE] ={0};
+char json_str[JSON_SIZE];
 
 // hid 发送缓冲数组指针结构体
 extern buff_struct buff_point_array[3];
 
 extern uint8_t menu_change_lock;
 
-jsmntok_t t[512];
+//jsmntok_t t[512];
 jsmn_parser p;
 
 // 解析后的键值数组
@@ -58,10 +58,14 @@ void jsmn_init_user() {
 * 加载键值配置并解析在键值数组
 ********************************************************************************/
 void load_parse_key(uint8_t menu) {
+    // 清空字符串
+    memset(key_value_array, 0, sizeof (key_value_array));
     // 从 flash 加载键值
     load_setting_from_flash(menu, json_str, JSON_SIZE);
+    // 清空 jsmn 解析结构体
+    memset(&p, 0, sizeof(jsmn_parser));
     // 解析键值
-    parse_json_data(&p, menu);
+    parse_json_data(&p);
 }
 
 /********************************************************************************
@@ -78,7 +82,8 @@ static int json_cmp(const char *json, jsmntok_t *tok, const char *str) {
 /********************************************************************************
 * 解析 json 字符并按键值存入数组
 ********************************************************************************/
-uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
+uint8_t parse_json_data(jsmn_parser *p) {
+    jsmntok_t t[512] = {0};
     uint8_t r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
     if (r < 0) printf("parse fail");
     // 根据键取字符串
@@ -89,12 +94,9 @@ uint8_t parse_json_data(jsmn_parser *p, uint8_t layer) {
         char json_key_str[4] = {0};
         // 数字转字符串
         char key_num_str[3] = {0};
-        num_to_string(layer, key_num_str);
-        strncat(json_key_str, key_num_str, 1);
-        num_to_string(j, key_num_str);
-        if (j < 10) strncat(json_key_str, "0", 2);
+        strcat(json_key_str, "l");
+        if (j < 10) strcat(json_key_str, "0");
         strcat(json_key_str, num_to_string(j, key_num_str));
-
         for (uint8_t s = 0; s < r; s++) {
             if (json_cmp(json_str, &t[s], json_key_str) == 0) {
                 // 取出 json 字符中键对应的值
