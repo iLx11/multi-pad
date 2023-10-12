@@ -170,7 +170,7 @@ void OLED_42_ShowPicture(u8 x, u8 y, u8 sizex, u8 sizey, u8 BMP[], u8 mode, u8 i
         }
     }
     OLED_42_Refresh_Single(index);
-   // OLED_42_Clear();
+    // OLED_42_Clear();
 
 }
 
@@ -249,7 +249,7 @@ void OLED_42_Init(void) {
     OLED_42_WR_Byte_ALL(0xA6, OLED_CMD); /*normal / reverse*/
     OLED_42_WR_Byte_ALL(0x0C, OLED_CMD); /*set lower column address*/
     OLED_42_WR_Byte_ALL(0x11, OLED_CMD); /*set higher column address*/
-  //  OLED_42_Clear();
+    //  OLED_42_Clear();
     OLED_42_WR_Byte_ALL(0xAF, OLED_CMD); /*display ON*/
     //  OLED_42_CS_ALL_OFF();
 }

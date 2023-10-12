@@ -9,6 +9,10 @@ uint8_t menu_change_lock = 0;
 
 uint8_t pre_menu = 0;
 
+extern uint8_t is_key_holding;
+
+extern uint8_t holding_key_value;
+
 extern uint8_t oled_96_array[OLED_96_NUM][SIZE_96];
 
 static void keyboard_menu_change();

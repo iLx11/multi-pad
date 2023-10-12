@@ -1799,7 +1799,8 @@ CMakeFiles/leden.elf.dir/OLED_96/oled_96.c.obj: C:/Users/WOW/Desktop/leden/OLED_
   C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
   C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
   C:/Users/WOW/Desktop/leden/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
-  C:/Users/WOW/Desktop/leden/OLED_96/SPI3/spi3.h
+  C:/Users/WOW/Desktop/leden/OLED_96/SPI3/spi3.h \
+  C:/Users/WOW/Desktop/leden/SPI2/spi2.h
 
 CMakeFiles/leden.elf.dir/SPI2/spi2.c.obj: C:/Users/WOW/Desktop/leden/SPI2/spi2.c \
   C:/Users/WOW/Desktop/leden/SPI2/spi2.h \

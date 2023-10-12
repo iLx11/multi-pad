@@ -3,7 +3,7 @@
 #include "stdlib.h"
 #include "stm32f1xx_hal.h"
 #include "spi3.h"
-
+#include "spi2.h"
 #ifndef u8
 #define u8 uint8_t
 #endif
@@ -64,9 +64,9 @@ typedef struct {
 
 static CS_92_PinInfo oled_92_cs_pins [OLED_92_NUM]=
         {
-                {OLED_92_CS_0}, //OLED_CS0
+                {OLED_92_CS_2}, //OLED_CS0
                 {OLED_92_CS_1}, //OLED_CS1
-                {OLED_92_CS_2}, //OLED_CS2
+                {OLED_92_CS_0}, //OLED_CS2
                 {OLED_92_CS_3}, //OLED_CS3
                 {OLED_92_CS_4}, //OLED_CS4
         };

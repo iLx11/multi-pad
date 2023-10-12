@@ -54,7 +54,7 @@ static uint8_t char_to_hex(char hex_char);
 void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t len) {
     if (hid_handle->Report_buf[0] == '!' && hid_handle->Report_buf[1] == '@' && hid_handle->Report_buf[2] == '$') {
 //        USBD_CUSTOM_HID_SendReport();
-        return ;
+        return;
     }
     // 根据文件数写入
     // 图片写入
@@ -94,7 +94,7 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
             file_array_index = 0;
             file_position = 0;
             photo_file_flag = 0;
-            folder_index > 9 ? folder_index = 0 : folder_index ++;
+            folder_index > 9 ? folder_index = 0 : folder_index++;
         } else {
             strncat(json_str, (char *) hid_handle->Report_buf, 64);
             file_position += 64;
@@ -112,8 +112,8 @@ static void photo_string_to_hex(const char *hex_string_array) {
         if (file_array_index < OLED_42_NUM)
             oled_42_array[file_array_index][file_position++] = string_to_num_hex(hex_string_array, i++, i++);
         else if (file_array_index >= OLED_42_NUM) {
-            oled_96_array[file_array_index - OLED_42_NUM][file_position++] = string_to_num_hex(hex_string_array,
-                                                                                               i++, i++);
+            oled_96_array[file_array_index - OLED_42_NUM][file_position++] = string_to_num_hex(hex_string_array, i++,
+                                                                                               i++);
         }
     }
 }

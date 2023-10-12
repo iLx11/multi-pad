@@ -63,7 +63,9 @@ void OLED_92_WR_Byte_Single(u8 dat, u8 cmd, u8 index) {
         dat <<= 1;
     }
 
+
     //SPI0_write_byte(dat);
+//    spi2_read_write_byte(dat);
     OLED_92_CS_SINGLE(index, 1);
     //OLED_42_CS_Set();
     OLED_92_DC_Set();
@@ -199,13 +201,23 @@ void OLED_92_Init(void) {
     __HAL_RCC_AFIO_CLK_ENABLE();  // 使能AFIO外设时钟
     __HAL_RCC_GPIOB_CLK_ENABLE();
     GPIO_InitStructure.Pin =
-            OLED_92_SPI_SCK_PIN | OLED_92_SPI_SCK_PIN | OLED_92_SPI_DC_PIN | OLED_92_SPI_MOSI_PIN | OLED_92_SPI_RES_PIN;
+            OLED_92_SPI_SCK_PIN  | OLED_92_SPI_DC_PIN | OLED_92_SPI_MOSI_PIN | OLED_92_SPI_RES_PIN;
+
+//    GPIO_InitStructure.Pin =
+//            OLED_92_SPI_DC_PIN  | OLED_92_SPI_RES_PIN;
+
+
     GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;     //推挽输出
     GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;//速度50MHz
     HAL_GPIO_Init(OLED_92_SPI_GPIO, &GPIO_InitStructure);    //初始化GPIOG12
     HAL_GPIO_WritePin(OLED_92_SPI_GPIO,
                       OLED_92_SPI_SCK_PIN | OLED_92_SPI_SCK_PIN | OLED_92_SPI_DC_PIN | OLED_92_SPI_MOSI_PIN |
                       OLED_92_SPI_RES_PIN, GPIO_PIN_SET);
+
+//    HAL_GPIO_WritePin(OLED_92_SPI_GPIO,
+//                 OLED_92_SPI_DC_PIN |
+//                 OLED_92_SPI_RES_PIN, GPIO_PIN_SET);
+
 
     /***********CS1************/
     __HAL_RCC_GPIOA_CLK_ENABLE();

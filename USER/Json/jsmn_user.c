@@ -197,6 +197,9 @@ static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t s
             buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, (*start)++, (*start)++);
             normal_key_count --;
         }
+//        for(uint8_t i = 0; i < 9; i ++) {
+//            printf("\nsend_buff[%d] -> %02x\n\r", i, buff_point_array[0].send_buff_point[i]);
+//        }
         send_hid_code(0);
         hid_buff_reset();
     } while (cycle_num--);

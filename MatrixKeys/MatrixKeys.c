@@ -84,11 +84,13 @@ void MK_scan(uint16_t *state) {
         ROW_OUT(j);
         for(i = 0; i < COL_NUM; i++) {
             // row, col
-            while(COL_STATE(i) == KEY_DOWN && IS_KEY_UP(j, i)) {
+            if(COL_STATE(i) == KEY_DOWN && IS_KEY_UP(j, i)) {
                 // 按键如果是按下， 并且上一次是高电平，电平应该是低
                 // 记录状态
                 SET_KEY_DOWN(j, i);							
 								MK_on_keydown(j, i);
+            }
+            while(COL_STATE(i) == KEY_DOWN) {
                 key_hold_check(j, i);
             }
             if(COL_STATE(i) == KEY_UP && IS_KEY_DOWN(j, i)) {
@@ -109,7 +111,7 @@ void MK_scan(uint16_t *state) {
 void key_hold_check(uint8_t row, uint8_t col) {
     x ++;
     HAL_Delay(10);
-    if(x > 20) {
+    if(x > 50) {
         key_hold_callback(row, col);
     }
 }

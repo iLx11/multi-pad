@@ -115,10 +115,11 @@ void screen_effect(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat) {
 void screen_effect_two(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat) {
     if (repeat < 0 || repeat > 10) return;
     uint8_t screen_index = (col * ROW_NUM) + row;
+    uint8_t cur_center = (col * ROW_NUM) + row;
     uint8_t level = 0, left = col - 1, top = row - 1, right = COL_NUM - (COL_NUM - col) + 1, bottom =
             ROW_NUM - (ROW_NUM - row) + 1;
     uint8_t pre = 0;
-    uint8_t left_up_y = 0, left_up_x = 0;
+    uint8_t move_block = 0, left_store = 0, top_store = 0, right_store = 0, bottom_store = 0;
     OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
                         white_background, 1, screen_index);
     HAL_Delay(30);
@@ -129,45 +130,101 @@ void screen_effect_two(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat) {
                             oled_42_array[pre], 1, pre);
     for (; level < 4; level++) {
 
-        left_up_x = 0;
+        move_block = 222;
         if (left >= 0 && left < COL_NUM) {
-            screen_index = (left-- * ROW_NUM) + row;
-            left_up_x = left;
+            move_block = screen_index = (left-- * ROW_NUM) + row;
             screen_shake(screen_index, &pre, mode);
         }
-        left_up_y = 0;
+        // ×ó
+        left_store = move_block;
+        for(uint8_t i = 0; i < 4; i ++) {
+            if((cur_center - move_block) % 5 != 0 && (move_block > 0 && move_block < 20) && move_block % 4 != 0) {
+                if(move_block == 0) break;
+                move_block -= 1;
+                screen_shake(move_block, &pre, mode);
+            }
+            if(cur_center - left_store == 12 || cur_center - left_store == 15 || ((cur_center - left_store) % 3 != 0 && (left_store >= 0 && left_store < 20) && (left_store + 1) % 4 != 0)) {
+                if(cur_center == 19 || cur_center == 15) continue;
+                left_store += 1;
+                screen_shake(left_store, &pre, mode);
+            }
+        }
+
+        move_block = 222;
         if (top >= 0 && top < ROW_NUM) {
-            screen_index = (col * ROW_NUM) + top--;
-            left_up_y = top;
+            move_block = screen_index = (col * ROW_NUM) + top--;
             screen_shake(screen_index, &pre, mode);
         }
-//        while(left_up_y-- <= left_up_x)
- /*           OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
-                                white_background, 1, left_pre);
-            HAL_Delay(10);
-            OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
-                                oled_42_array[left_pre], 1, left_pre);*/
+        // ÉÏ
+        top_store = move_block;
+        for(uint8_t i = 0; i < 5; i ++) {
+            if(((cur_center - 1) - move_block) % 5 != 0 && (move_block > 0 && move_block < 20)) {
+                if(move_block == 0) break;
+                move_block -= 4;
+                screen_shake(move_block, &pre, mode);
+            }
+            if((top_store - (cur_center - 1)) % 3 != 0 && (top_store >= 0 && top_store < 20)) {
+                top_store += 4;
+                screen_shake(top_store, &pre, mode);
+            }
+        }
 
 
+        move_block = 222;
         if (right >= 0 && right < COL_NUM) {
-            screen_index = (right++ * ROW_NUM) + row;
+            move_block = screen_index = (right++ * ROW_NUM) + row;
             screen_shake(screen_index, &pre, mode);
         }
+        // ÓÒ
+        right_store = move_block;
+        for(uint8_t i = 0; i < 4; i ++) {
+            if(move_block - cur_center == 12 || move_block - cur_center == 15 || ((move_block - cur_center) % 3 != 0 && (move_block > 0 && move_block < 20) && move_block % 4 != 0)) {
+                if(cur_center != 0) {
+                    move_block -= 1;
+                    screen_shake(move_block, &pre, mode);
+                }
+            }
+            if((right_store - cur_center) % 5 != 0 && (right_store > 0 && right_store < 20) && (right_store + 1) % 4 != 0) {
+                if(right_store == 0) break;
+                right_store += 1;
+                screen_shake(right_store, &pre, mode);
+            }
+        }
+
+        // ÏÂ
+        move_block = 222;
         if (bottom >= 0 && bottom < ROW_NUM) {
-            screen_index = (col * ROW_NUM) + bottom++;
+            move_block = screen_index = (col * ROW_NUM) + bottom++;
             screen_shake(screen_index, &pre, mode);
+        }
+
+        bottom_store = move_block;
+        for(uint8_t i = 0; i < 5; i ++) {
+            if(((cur_center + 1) - move_block) % 3 != 0 && (move_block > 0 && move_block < 20)) {
+                if(move_block == 0) break;
+                move_block -= 4;
+                screen_shake(move_block, &pre, mode);
+            }
+            if((bottom_store - (cur_center + 1)) % 5 != 0 && (bottom_store > 0 && bottom_store < 20)) {
+                if(bottom_store == 0) break;
+                bottom_store += 4;
+                screen_shake(bottom_store, &pre, mode);
+            }
         }
     }
     OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
                         oled_42_array[pre], 1, pre);
-    screen_effect(row, col, mode, repeat-1);
-    HAL_Delay(40);
+    if(repeat != 0) {
+        HAL_Delay(40);
+        screen_effect_two(row, col, mode, repeat-1);
+    }
 }
+
 /********************************************************************************
 * ÆÁÄ»ÇÐ»»
 ********************************************************************************/
-
 static void screen_shake(uint8_t screen_index, uint8_t *pre, uint8_t mode) {
+    if(screen_index > 20) return ;
     if (mode == 0) {
         OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
                             white_background, 1, screen_index);
@@ -175,7 +232,7 @@ static void screen_shake(uint8_t screen_index, uint8_t *pre, uint8_t mode) {
         OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
                             black_background, 1, screen_index);
     }
-    HAL_Delay(30);
+    HAL_Delay(5);
     if (pre != 0)
         OLED_42_ShowPicture(oled_42_x, oled_42_y, oled_42_l, oled_42_h,
                             oled_42_array[(*pre)], 1, (*pre));
