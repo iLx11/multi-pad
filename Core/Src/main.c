@@ -123,6 +123,7 @@ int main(void) {
     while (1) {
         // º¸≈Ã…®√Ë
         key_scan_user();
+        holding_key_execute();
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
