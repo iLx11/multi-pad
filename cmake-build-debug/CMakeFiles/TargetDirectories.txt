@@ -1,3 +1,3 @@
-C:/Users/WOW/Desktop/leden/cmake-build-debug/CMakeFiles/leden.elf.dir
-C:/Users/WOW/Desktop/leden/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/WOW/Desktop/leden/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug/CMakeFiles/leden.elf.dir
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

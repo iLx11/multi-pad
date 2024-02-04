@@ -67,7 +67,6 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
         photo_string_to_hex(hex_string_array);
         // 转到下一个图片的位置
         turn_to_next_position();
-
     } else {
         // 所有图片传完
         if (file_array_index == (OLED_42_NUM + OLED_96_NUM) && photo_file_flag == 0) {

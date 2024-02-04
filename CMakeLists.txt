@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.25)
 # specify cross-compilers and tools
 set(CMAKE_C_COMPILER arm-none-eabi-gcc)
 set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
-set(CMAKE_ASM_COMPILER  arm-none-eabi-gcc)
+set(CMAKE_ASM_COMPILER arm-none-eabi-gcc)
 set(CMAKE_AR arm-none-eabi-ar)
 set(CMAKE_OBJCOPY arm-none-eabi-objcopy)
 set(CMAKE_OBJDUMP arm-none-eabi-objdump)
@@ -49,11 +49,36 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(USER/Usb OLED_96/SPI3 USER/Encoder OLED_96 FLASH/SPI1 USER/Flash FLASH SPI2 EC11 USER/Oled USER/Json USER/Key JSMN_USER OLED_42 MatrixKeys JSMN Core/Inc Drivers/STM32F1xx_HAL_Driver/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include USB_DEVICE/App USB_DEVICE/Target Middlewares/ST/STM32_USB_Device_Library/Core/Inc Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc)
+include_directories(
+        HARDWARE/SPI/SPI1
+        HARDWARE/SPI/SPI2
+        HARDWARE/SPI/SPI3
+        HARDWARE/OLED/OLED_42
+        HARDWARE/OLED/OLED_96
+        HARDWARE/FLASH
+        HARDWARE/EC11
+        HARDWARE/MatrixKeys
+        HARDWARE/JSMN
+        HARDWARE/TIM/TIM1
+        HARDWARE/TIM/TIM3
+        HARDWARE/TIM/TIM4
+        HARDWARE/ENCODER/ENCODER1
+        HARDWARE/ENCODER/ENCODER2
+        HARDWARE/ENCODER/ENCODER3
+        USER/Encoder1
+        USER/Usb
+        USER/Json
+        USER/Key
+        USER/Flash
+        USER/Encoder
+        USER/Oled
+        JSMN_USER
+        Core/Inc
+        Drivers/STM32F1xx_HAL_Driver/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include USB_DEVICE/App USB_DEVICE/Target Middlewares/ST/STM32_USB_Device_Library/Core/Inc Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE)
 
-file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "OLED_42/*.*" "MatrixKeys/*.*" "JSMN/*.*" "JSMN_USER/*.*" "USER/*.*" "EC11/*.*" "SPI2/*.*" "FLASH/*.*" "OLED_96/*.*")
+file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "HARDWARE/*.*" "USER/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103VETX_FLASH.ld)
 

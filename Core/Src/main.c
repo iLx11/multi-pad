@@ -32,8 +32,8 @@
 #include "jsmn_user.h"
 #include "key_user.h"
 #include "oled_user.h"
-#include "encoder_user.h"
-#include "flash_user.h"
+#include "encoder1_user.h"
+//#include "flash_user.h"
 
 //#include "fatfs_user.h"
 /* USER CODE END Includes */
@@ -106,15 +106,15 @@ int main(void) {
     // ÎÄ¼şÏµÍ³
 //    file_sys_init();
     // flash
-    flash_init_user();
-    // json ½âÎö
-    jsmn_init_user();
+//    flash_init_user();
+//    // json ½âÎö
+//    jsmn_init_user();
     // ¾ØÕó¼üÅÌ
     key_init_user();
-    // ±àÂëÆ÷
-    encoder_init_user();
-    // OLED ÏÔÊ¾
-    oled_init_user();
+//    // ±àÂëÆ÷
+    encoder1_init_user();
+//    // OLED ÏÔÊ¾
+//    oled_init_user();
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -123,9 +123,10 @@ int main(void) {
     while (1) {
         // ¼üÅÌÉ¨Ãè
         key_scan_user();
-        holding_key_execute();
-        /* USER CODE END WHILE */
+        // ±àÂëÆ÷É¨Ãè
+        encoder1_scan_user();
 
+        /* USER CODE END WHILE */
         /* USER CODE BEGIN 3 */
     }
     /* USER CODE END 3 */

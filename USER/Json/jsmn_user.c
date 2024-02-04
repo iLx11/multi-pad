@@ -86,7 +86,7 @@ uint8_t parse_json_data(jsmn_parser *p) {
     jsmntok_t t[512] = {0};
     uint8_t r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
     if (r < 0) printf("parse fail");
-    // 根据键取字符串
+    // 根据键取字符串+
     if (r < 1 && t[0].type != JSMN_OBJECT) return 1;
     for (uint8_t j = 0; j < 30; j++) {
         // sprintf 函数执行速度还未测试

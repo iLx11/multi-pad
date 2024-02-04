@@ -19,20 +19,15 @@ void key_scan_user() {
 
 // 按键执行
 void MK_on_keyup(uint8_t row, uint8_t col) {
-    hid_buff_reset();
-    HAL_Delay(10);
+//    hid_buff_reset();
+//    HAL_Delay(10);
 }
 
 void MK_on_keydown(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
-/*    if (key_value < 10) {
-        load_show_menu(key_value);
-        load_parse_key(0);
-    }*/
-//    screen_effect(row, col, 0, 0);
-    screen_effect_two(row, col, 0, 0);
+//    screen_effect_two(row, col, 0, 0);
     printf("key_value -> %d\n", key_value);
-    parse_json_value(key_value);
+//    parse_json_value(key_value);
 }
 
 // 循环执行
