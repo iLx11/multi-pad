@@ -55,6 +55,8 @@ include_directories(
         HARDWARE/SPI/SPI3
         HARDWARE/OLED/OLED_42
         HARDWARE/OLED/OLED_96
+        HARDWARE/OLED/OLED_42_BEFORE
+        HARDWARE/LCD/LCD_47
         HARDWARE/FLASH
         HARDWARE/EC11
         HARDWARE/MatrixKeys
@@ -65,6 +67,7 @@ include_directories(
         HARDWARE/ENCODER/ENCODER1
         HARDWARE/ENCODER/ENCODER2
         HARDWARE/ENCODER/ENCODER3
+        USER/Lcd
         USER/Encoder1
         USER/Usb
         USER/Json

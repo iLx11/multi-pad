@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/../keyPadF1/Core/Src/main.c" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/../keyPadF1/HARDWARE/EC11/EC11.c" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/../keyPadF1/HARDWARE/OLED/OLED_42/oled.c" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/../keyPadF1/HARDWARE/OLED/OLED_42/oled.h" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/../keyPadF1/SOFT_SPI/spi.c" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/../keyPadF1/SOFT_SPI/stm32f1xx_hal_spi.c" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../keyPadF1/SOFT_SPI/stm32f1xx_hal_spi.h" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../keyPadF1/USER/Fatfs/fatfs_user.c" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/../keyPadF1/USER/Json/jsmn_user.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/main.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/HARDWARE/EC11/EC11.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/HARDWARE/OLED/OLED_42_BEFORE/oled.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/HARDWARE/OLED/OLED_42_BEFORE/oled.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SOFT_SPI/spi.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SOFT_SPI/stm32f1xx_hal_spi.c" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SOFT_SPI/stm32f1xx_hal_spi.h" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/USER/Fatfs/fatfs_user.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/USER/Json/jsmn_user.c" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

@@ -32,6 +32,7 @@
 #include "jsmn_user.h"
 #include "key_user.h"
 #include "oled_user.h"
+#include "lcd_user.h"
 #include "encoder1_user.h"
 //#include "flash_user.h"
 
@@ -111,10 +112,12 @@ int main(void) {
 //    jsmn_init_user();
     // ¾ØÕó¼üÅÌ
     key_init_user();
-//    // ±àÂëÆ÷
+    // ±àÂëÆ÷
     encoder1_init_user();
-//    // OLED ÏÔÊ¾
-//    oled_init_user();
+    // OLED ÏÔÊ¾
+    oled_init_user();
+    // lcd ÏÔÊ¾
+    lcd_init_user();
     /* USER CODE END 2 */
 
     /* Infinite loop */

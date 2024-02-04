@@ -41,7 +41,7 @@ CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Core\Inc/stm32f1xx_it.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\EC11/EC11.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42/oled.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE/oled.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\ieeefp.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \

@@ -82,7 +82,7 @@ CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder/encoder_user.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\EC11/EC11.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42/oled.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE/oled.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2/spi2.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Json/jsmn_user.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_96/oled_96.h \

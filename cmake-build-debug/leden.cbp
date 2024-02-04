@@ -32,6 +32,8 @@
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI3"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96"/>
+					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE"/>
+					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/FLASH"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys"/>
@@ -42,6 +44,7 @@
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER1"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER2"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER3"/>
+					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder1"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Usb"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Json"/>
@@ -88,6 +91,8 @@
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI3"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96"/>
+					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE"/>
+					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/FLASH"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys"/>
@@ -98,6 +103,7 @@
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER1"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER2"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER3"/>
+					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder1"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Usb"/>
 					<Add directory="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Json"/>
@@ -462,22 +468,34 @@
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/JSMN/jsmn.h">
 			<Option target="leden.elf"/>
 		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.h">
+			<Option target="leden.elf"/>
+		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.c">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/bmp.h">
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.c">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.c">
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h">
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/bmp.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oledfont.h">
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oledfont.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96/numbmp.h">
@@ -610,6 +628,15 @@
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Key/key_user.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/lcd_user.c">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/lcd_user.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/pic.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled/oled_user.c">

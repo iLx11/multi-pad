@@ -39,7 +39,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_ll_usb.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd_ex.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42/oled.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE/oled.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\ieeefp.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \

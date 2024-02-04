@@ -134,7 +134,7 @@ CMakeFiles/leden.elf.dir/Core/Src/main.c.obj: D:/Users/Administrator/Desktop/HAR
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder/encoder_user.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11/EC11.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2/spi2.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96/oled_96.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI3/spi3.h \
@@ -299,7 +299,7 @@ CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj: D:/Users/Administrator/Des
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Core/Inc/stm32f1xx_it.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11/EC11.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
@@ -1216,7 +1216,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj: D:/Users/Administrator/Deskto
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
@@ -1488,6 +1488,47 @@ CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj: D:/Users/Administrator/Deskto
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/JSMN/jsmn.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
 
+CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.c \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Core/Inc/stm32f1xx_hal_conf.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/core_cm3.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2/spi2.h
+
 CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.c \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
@@ -1553,8 +1594,49 @@ CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj: D:/Users/Administ
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/types.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/stdio.h
 
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.c \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.c \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Core/Inc/stm32f1xx_hal_conf.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/core_cm3.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI3/spi3.h
+
+CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.c \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
@@ -2663,7 +2745,7 @@ CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: D:/Users/Administrator
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
@@ -2845,7 +2927,7 @@ CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: D:/Users/Administrator/Des
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/types.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/stdio.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled/oled_user.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/stdlib.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/alloca.h \
@@ -2950,7 +3032,7 @@ CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: D:/Users/Administrator/Deskt
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder/encoder_user.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11/EC11.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2/spi2.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Json/jsmn_user.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96/oled_96.h \
@@ -3044,15 +3126,57 @@ CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: D:/Users/Administrator/Desktop
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder/encoder_user.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11/EC11.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2/spi2.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96/oled_96.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI3/spi3.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled/oled_user.h
 
+CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/lcd_user.c \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/lcd_user.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Core/Inc/stm32f1xx_hal_conf.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/core_cm3.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdint.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/_default_types.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/features.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_newlib_version.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_intsup.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/_stdint.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/pic.h
+
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled/oled_user.c \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled/oled_user.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/ieeefp.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/_ansi.h \
@@ -3123,7 +3247,8 @@ CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: D:/Users/Administrator/Deskt
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/sched.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/types.h \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/stdio.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.h
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.h
 
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Usb/usb_user.c \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Usb/usb_user.h \
@@ -3204,7 +3329,7 @@ CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: D:/Users/Administrator/Desktop
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled/oled_user.h \
-  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h \
+  D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2/spi2.h \
   D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96/oled_96.h \
@@ -3328,6 +3453,8 @@ D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/In
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h:
 
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/lcd_user.h:
+
 D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/newlib.h:
 
 D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/types.h:
@@ -3376,8 +3503,6 @@ D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Sr
 
 D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/sys/stdio.h:
 
-D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.h:
-
 D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/stdlib.h:
 
 D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/machine/stdlib.h:
@@ -3417,6 +3542,10 @@ D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder/encoder_user.h:
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11/EC11.h:
+
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
+
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.h:
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2/spi2.h:
 
@@ -3486,8 +3615,6 @@ D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Sr
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd_ex.c:
 
-D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c:
-
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c:
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c:
@@ -3520,9 +3647,17 @@ D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI1/spi1.h:
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/JSMN/jsmn.c:
 
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.c:
+
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.h:
+
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.c:
 
-D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled.c:
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.c:
+
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.h:
+
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.c:
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96/oled_96.c:
 
@@ -3559,5 +3694,9 @@ D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder1/encoder1_user.c:
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Flash/flash_user.c:
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Json/jsmn_user.c:
+
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/lcd_user.c:
+
+D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/pic.h:
 
 D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled/oled_user.c:

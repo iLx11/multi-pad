@@ -928,6 +928,30 @@ HARDWARE/JSMN/jsmn.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.s
 .PHONY : HARDWARE/JSMN/jsmn.c.s
 
+HARDWARE/LCD/LCD_47/lcd_47.obj: HARDWARE/LCD/LCD_47/lcd_47.c.obj
+.PHONY : HARDWARE/LCD/LCD_47/lcd_47.obj
+
+# target to build an object file
+HARDWARE/LCD/LCD_47/lcd_47.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj
+.PHONY : HARDWARE/LCD/LCD_47/lcd_47.c.obj
+
+HARDWARE/LCD/LCD_47/lcd_47.i: HARDWARE/LCD/LCD_47/lcd_47.c.i
+.PHONY : HARDWARE/LCD/LCD_47/lcd_47.i
+
+# target to preprocess a source file
+HARDWARE/LCD/LCD_47/lcd_47.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.i
+.PHONY : HARDWARE/LCD/LCD_47/lcd_47.c.i
+
+HARDWARE/LCD/LCD_47/lcd_47.s: HARDWARE/LCD/LCD_47/lcd_47.c.s
+.PHONY : HARDWARE/LCD/LCD_47/lcd_47.s
+
+# target to generate assembly for a file
+HARDWARE/LCD/LCD_47/lcd_47.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.s
+.PHONY : HARDWARE/LCD/LCD_47/lcd_47.c.s
+
 HARDWARE/MatrixKeys/MatrixKeys.obj: HARDWARE/MatrixKeys/MatrixKeys.c.obj
 .PHONY : HARDWARE/MatrixKeys/MatrixKeys.obj
 
@@ -952,29 +976,53 @@ HARDWARE/MatrixKeys/MatrixKeys.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.s
 .PHONY : HARDWARE/MatrixKeys/MatrixKeys.c.s
 
-HARDWARE/OLED/OLED_42/oled.obj: HARDWARE/OLED/OLED_42/oled.c.obj
-.PHONY : HARDWARE/OLED/OLED_42/oled.obj
+HARDWARE/OLED/OLED_42/oled_42.obj: HARDWARE/OLED/OLED_42/oled_42.c.obj
+.PHONY : HARDWARE/OLED/OLED_42/oled_42.obj
 
 # target to build an object file
-HARDWARE/OLED/OLED_42/oled.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled.c.obj
-.PHONY : HARDWARE/OLED/OLED_42/oled.c.obj
+HARDWARE/OLED/OLED_42/oled_42.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj
+.PHONY : HARDWARE/OLED/OLED_42/oled_42.c.obj
 
-HARDWARE/OLED/OLED_42/oled.i: HARDWARE/OLED/OLED_42/oled.c.i
-.PHONY : HARDWARE/OLED/OLED_42/oled.i
+HARDWARE/OLED/OLED_42/oled_42.i: HARDWARE/OLED/OLED_42/oled_42.c.i
+.PHONY : HARDWARE/OLED/OLED_42/oled_42.i
 
 # target to preprocess a source file
-HARDWARE/OLED/OLED_42/oled.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled.c.i
-.PHONY : HARDWARE/OLED/OLED_42/oled.c.i
+HARDWARE/OLED/OLED_42/oled_42.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.i
+.PHONY : HARDWARE/OLED/OLED_42/oled_42.c.i
 
-HARDWARE/OLED/OLED_42/oled.s: HARDWARE/OLED/OLED_42/oled.c.s
-.PHONY : HARDWARE/OLED/OLED_42/oled.s
+HARDWARE/OLED/OLED_42/oled_42.s: HARDWARE/OLED/OLED_42/oled_42.c.s
+.PHONY : HARDWARE/OLED/OLED_42/oled_42.s
 
 # target to generate assembly for a file
-HARDWARE/OLED/OLED_42/oled.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled.c.s
-.PHONY : HARDWARE/OLED/OLED_42/oled.c.s
+HARDWARE/OLED/OLED_42/oled_42.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.s
+.PHONY : HARDWARE/OLED/OLED_42/oled_42.c.s
+
+HARDWARE/OLED/OLED_42_BEFORE/oled.obj: HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj
+.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.obj
+
+# target to build an object file
+HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj
+.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj
+
+HARDWARE/OLED/OLED_42_BEFORE/oled.i: HARDWARE/OLED/OLED_42_BEFORE/oled.c.i
+.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.i
+
+# target to preprocess a source file
+HARDWARE/OLED/OLED_42_BEFORE/oled.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.i
+.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.c.i
+
+HARDWARE/OLED/OLED_42_BEFORE/oled.s: HARDWARE/OLED/OLED_42_BEFORE/oled.c.s
+.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.s
+
+# target to generate assembly for a file
+HARDWARE/OLED/OLED_42_BEFORE/oled.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.s
+.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.c.s
 
 HARDWARE/OLED/OLED_96/oled_96.obj: HARDWARE/OLED/OLED_96/oled_96.c.obj
 .PHONY : HARDWARE/OLED/OLED_96/oled_96.obj
@@ -1456,6 +1504,30 @@ USER/Key/key_user.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Key/key_user.c.s
 .PHONY : USER/Key/key_user.c.s
 
+USER/Lcd/lcd_user.obj: USER/Lcd/lcd_user.c.obj
+.PHONY : USER/Lcd/lcd_user.obj
+
+# target to build an object file
+USER/Lcd/lcd_user.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj
+.PHONY : USER/Lcd/lcd_user.c.obj
+
+USER/Lcd/lcd_user.i: USER/Lcd/lcd_user.c.i
+.PHONY : USER/Lcd/lcd_user.i
+
+# target to preprocess a source file
+USER/Lcd/lcd_user.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.i
+.PHONY : USER/Lcd/lcd_user.c.i
+
+USER/Lcd/lcd_user.s: USER/Lcd/lcd_user.c.s
+.PHONY : USER/Lcd/lcd_user.s
+
+# target to generate assembly for a file
+USER/Lcd/lcd_user.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.s
+.PHONY : USER/Lcd/lcd_user.c.s
+
 USER/Oled/oled_user.obj: USER/Oled/oled_user.c.obj
 .PHONY : USER/Oled/oled_user.obj
 
@@ -1613,12 +1685,18 @@ help:
 	@echo ... HARDWARE/JSMN/jsmn.obj
 	@echo ... HARDWARE/JSMN/jsmn.i
 	@echo ... HARDWARE/JSMN/jsmn.s
+	@echo ... HARDWARE/LCD/LCD_47/lcd_47.obj
+	@echo ... HARDWARE/LCD/LCD_47/lcd_47.i
+	@echo ... HARDWARE/LCD/LCD_47/lcd_47.s
 	@echo ... HARDWARE/MatrixKeys/MatrixKeys.obj
 	@echo ... HARDWARE/MatrixKeys/MatrixKeys.i
 	@echo ... HARDWARE/MatrixKeys/MatrixKeys.s
-	@echo ... HARDWARE/OLED/OLED_42/oled.obj
-	@echo ... HARDWARE/OLED/OLED_42/oled.i
-	@echo ... HARDWARE/OLED/OLED_42/oled.s
+	@echo ... HARDWARE/OLED/OLED_42/oled_42.obj
+	@echo ... HARDWARE/OLED/OLED_42/oled_42.i
+	@echo ... HARDWARE/OLED/OLED_42/oled_42.s
+	@echo ... HARDWARE/OLED/OLED_42_BEFORE/oled.obj
+	@echo ... HARDWARE/OLED/OLED_42_BEFORE/oled.i
+	@echo ... HARDWARE/OLED/OLED_42_BEFORE/oled.s
 	@echo ... HARDWARE/OLED/OLED_96/oled_96.obj
 	@echo ... HARDWARE/OLED/OLED_96/oled_96.i
 	@echo ... HARDWARE/OLED/OLED_96/oled_96.s
@@ -1679,6 +1757,9 @@ help:
 	@echo ... USER/Key/key_user.obj
 	@echo ... USER/Key/key_user.i
 	@echo ... USER/Key/key_user.s
+	@echo ... USER/Lcd/lcd_user.obj
+	@echo ... USER/Lcd/lcd_user.i
+	@echo ... USER/Lcd/lcd_user.s
 	@echo ... USER/Oled/oled_user.obj
 	@echo ... USER/Oled/oled_user.i
 	@echo ... USER/Oled/oled_user.s
