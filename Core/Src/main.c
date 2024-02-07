@@ -22,117 +22,48 @@
 #include "usb_device.h"
 #include "gpio.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
-
 #define JSMN_HEADER
-
 #include "jsmn.h"
 #include "retarget.h"
 #include "jsmn_user.h"
 #include "key_user.h"
 #include "oled_user.h"
 #include "lcd_user.h"
-#include "encoder1_user.h"
-//#include "flash_user.h"
+#include "encoder_user.h"
+#include "flash_user.h"
 
-//#include "fatfs_user.h"
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-
-
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-#define SIZE sizeof(BMP1)
-
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
-
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
   * @retval int
   */
 int main(void) {
-    /* USER CODE BEGIN 1 */
     RetargetInit(&huart1);
-
-    /* USER CODE END 1 */
-
-    /* MCU Configuration--------------------------------------------------------*/
-
-    /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
     HAL_Init();
-
-    /* USER CODE BEGIN Init */
-
-    /* USER CODE END Init */
-
-    /* Configure the system clock */
     SystemClock_Config();
-
-    /* USER CODE BEGIN SysInit */
-
-    /* USER CODE END SysInit */
-
-    /* Initialize all configured peripherals */
     MX_GPIO_Init();
     MX_USART1_UART_Init();
     MX_USB_DEVICE_Init();
-    /* USER CODE BEGIN 2 */
-    // Œƒº˛œµÕ≥
-//    file_sys_init();
     // flash
-//    flash_init_user();
-//    // json Ω‚Œˆ
+    if(flash_init_user() == 0) return 0;
+    // json Ω‚Œˆ
 //    jsmn_init_user();
     // æÿ’Ûº¸≈Ã
     key_init_user();
     // ±‡¬Î∆˜
-    encoder1_init_user();
+    encoder_init_user();
     // OLED œ‘ æ
     oled_init_user();
     // lcd œ‘ æ
     lcd_init_user();
-    /* USER CODE END 2 */
-
-    /* Infinite loop */
-    /* USER CODE BEGIN WHILE */
 
     while (1) {
         // º¸≈Ã…®√Ë
         key_scan_user();
         // ±‡¬Î∆˜…®√Ë
-        encoder1_scan_user();
-
-        /* USER CODE END WHILE */
-        /* USER CODE BEGIN 3 */
+        encoder_scan_user();
     }
-    /* USER CODE END 3 */
 }
 
 /**

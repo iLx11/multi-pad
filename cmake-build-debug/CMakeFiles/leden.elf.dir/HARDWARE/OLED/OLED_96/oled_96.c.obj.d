@@ -52,4 +52,18 @@ CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_ll_usb.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd_ex.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI3/spi3.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdio.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\types.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\endian.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_endian.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\select.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_sigset.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_timeval.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\timespec.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_timespec.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_pthreadtypes.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\sched.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\types.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2/spi2.h

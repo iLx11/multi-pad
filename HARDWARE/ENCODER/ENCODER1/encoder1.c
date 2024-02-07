@@ -11,7 +11,7 @@
 #include "tim1.h"
 
 // 初始状态为抬起
-uint8_t encoder_key_state = 1;
+static uint8_t encoder_key_state = 1;
 
 void encoder1_init(void) {
     // 定时器初始化
@@ -43,23 +43,27 @@ static void encoder1_rotation_scan(void) {
         if(encoder_counter == 4) {
             if(GET_ENCODER1_KEY_STATE == ENCODER1_KEY_DOWN) {
                 // 按住左旋回调
-                encoder1_hold_a_callback();
+                encoder1_callback(DOWN_ANTICLOCKWISE);
+//                encoder1_hold_a_callback();
                 set_encoder1_counter(0);
                 return;
             }
             // 编码器逆时针回调
-            encoder1_anticlockwise_callback();
+            encoder1_callback(ANTICLOCKWISE);
+//            encoder1_anticlockwise_callback();
         }else if(encoder_counter == 124) {
             if(GET_ENCODER1_KEY_STATE == ENCODER1_KEY_DOWN) {
                 // 按住右旋回调
-                encoder1_hold_c_callback();
+                encoder1_callback(UP_CLOCKWISE);
+//                encoder1_hold_c_callback();
                 set_encoder1_counter(0);
                 return;
             }
             // 编码器顺时针回调
-            encoder1_clockwise_callback();
+            encoder1_callback(0);
+//            encoder1_clockwise_callback();
         }
-        set_encoder1_counter(0);
+        set_encoder1_counter(CLOCKWISE);
     }
 }
 
@@ -70,10 +74,12 @@ static void encoder1_key_scan(void) {
     if(GET_ENCODER1_KEY_STATE == ENCODER1_KEY_DOWN  && encoder_key_state == 1) {
         encoder_key_state = ENCODER1_KEY_DOWN;
         // 编码器按下回调
-        encoder1_key_down_callback();
+        encoder1_callback(ENCODER_DOWN);
+//        encoder1_key_down_callback();
     }else if(GET_ENCODER1_KEY_STATE == ENCODER1_KEY_UP && encoder_key_state == 0) {
         encoder_key_state = ENCODER1_KEY_UP;
         // 编码器抬起回调
-        encoder1_key_up_callback();
+        encoder1_callback(ENCODER_UP);
+//        encoder1_key_up_callback();
     }
 }

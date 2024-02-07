@@ -89,15 +89,9 @@ CMakeFiles/leden.elf.dir/Core/Src/main.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder/encoder_user.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\EC11/EC11.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE/oled.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2/spi2.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_96/oled_96.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI3/spi3.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Oled/oled_user.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Key/key_user.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys/MatrixKeys.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Lcd/lcd_user.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\LCD\LCD_47/lcd_47.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder1/encoder1_user.h
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Flash/flash_user.h

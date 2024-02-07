@@ -62,4 +62,5 @@ CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj: \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_pthreadtypes.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\sched.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\types.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\ENCODER\ENCODER1/encoder1.h

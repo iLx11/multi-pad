@@ -38,4 +38,5 @@ CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_ll_usb.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd_ex.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2/spi2.h
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2/spi2.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\LCD\LCD_47\lcdfont.h

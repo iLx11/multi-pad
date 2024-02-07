@@ -13,7 +13,7 @@
 #include "stm32f1xx_hal.h"
 
 // ∂®“Â»Ìº˛ SPI
-#define SOFT_SPI 1
+#define SOFT_SPI 0
 
 #define LCD_47_NUM 1
 
@@ -127,6 +127,10 @@ void lcd_clear_index(uint8_t index);
 
 void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, const uint8_t pic[], uint8_t index);
 
+void lcd_show_char_index(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode, uint8_t index);
+
+void lcd_show_string(uint16_t x, uint16_t y, const uint8_t *p, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode, uint8_t index);
+
 void lcd_wt_byte(uint8_t data, uint8_t cmd, uint8_t index);
 
 static void lcd_wt_d_byte(uint16_t data, uint8_t index);
@@ -139,8 +143,9 @@ void lcd_page_draw_point(uint8_t x, uint8_t y, uint16_t color_data, uint8_t inde
 
 void lcd_fill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16_t color, uint8_t index);
 
+void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t index);
 
-typedef struct {
+        typedef struct {
     GPIO_TypeDef* gpio_port;
     uint16_t gpio_pin;
 } spi_device_cs;

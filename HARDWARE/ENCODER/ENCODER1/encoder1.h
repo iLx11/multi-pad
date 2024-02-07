@@ -21,12 +21,23 @@
 
 #define GET_ENCODER1_KEY_STATE HAL_GPIO_ReadPin(ENCODER1_KEY_GPIO, ENCODER1_KEY_PIN)
 
+typedef enum {
+    ENCODER_DOWN,
+    ENCODER_UP,
+    ANTICLOCKWISE,
+    CLOCKWISE,
+    DOWN_ANTICLOCKWISE,
+    UP_CLOCKWISE
+} encoder_t;
+
 void encoder1_init(void);
 void encoder1_scan(void);
 
 static void encoder1_key_scan(void);
 
 static void encoder1_rotation_scan(void);
+
+__weak void encoder1_callback(uint8_t callback_value);
 
 __weak void encoder1_key_down_callback(void);
 

@@ -28,25 +28,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 92,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
 				"line" : 88,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 89,
+				"line" : 84,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 90,
+				"line" : 85,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 86,
 				"parent" : 0
 			},
 			{
@@ -76,7 +76,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 82,
+				"line" : 78,
 				"parent" : 0
 			},
 			{
@@ -170,23 +170,11 @@
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96"
-				},
-				{
-					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE"
-				},
-				{
-					"backtrace" : 10,
 					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47"
 				},
 				{
 					"backtrace" : 10,
 					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/FLASH"
-				},
-				{
-					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11"
 				},
 				{
 					"backtrace" : 10,
@@ -223,10 +211,6 @@
 				{
 					"backtrace" : 10,
 					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd"
-				},
-				{
-					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder1"
 				},
 				{
 					"backtrace" : 10,
@@ -337,33 +321,29 @@
 				98,
 				100,
 				102,
-				104,
-				106,
+				105,
 				108,
-				111,
-				115,
+				110,
+				112,
+				114,
+				116,
 				118,
 				120,
-				122,
-				124,
-				126,
+				123,
 				128,
+				129,
+				130,
 				131,
-				136,
+				133,
+				135,
 				137,
-				138,
 				139,
 				141,
 				143,
 				145,
 				147,
-				149,
-				151,
-				153,
-				155,
-				157,
-				160,
-				162
+				150,
+				152
 			]
 		},
 		{
@@ -452,23 +432,11 @@
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96"
-				},
-				{
-					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE"
-				},
-				{
-					"backtrace" : 10,
 					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47"
 				},
 				{
 					"backtrace" : 10,
 					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/FLASH"
-				},
-				{
-					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11"
 				},
 				{
 					"backtrace" : 10,
@@ -505,10 +473,6 @@
 				{
 					"backtrace" : 10,
 					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd"
-				},
-				{
-					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder1"
 				},
 				{
 					"backtrace" : 10,
@@ -708,39 +672,33 @@
 				99,
 				101,
 				103,
-				105,
+				104,
+				106,
 				107,
 				109,
-				110,
-				112,
+				111,
 				113,
-				114,
-				116,
+				115,
 				117,
 				119,
 				121,
-				123,
+				122,
+				124,
 				125,
+				126,
 				127,
-				129,
-				130,
 				132,
-				133,
 				134,
-				135,
+				136,
+				138,
 				140,
 				142,
 				144,
 				146,
 				148,
-				150,
-				152,
-				154,
-				156,
-				158,
-				159,
-				161,
-				163
+				149,
+				151,
+				153
 			]
 		},
 		{
@@ -780,33 +738,29 @@
 				98,
 				100,
 				102,
-				104,
-				106,
+				105,
 				108,
-				111,
-				115,
+				110,
+				112,
+				114,
+				116,
 				118,
 				120,
-				122,
-				124,
-				126,
+				123,
 				128,
+				129,
+				130,
 				131,
-				136,
+				133,
+				135,
 				137,
-				138,
 				139,
 				141,
 				143,
 				145,
 				147,
-				149,
-				151,
-				153,
-				155,
-				157,
-				160,
-				162
+				150,
+				152
 			]
 		},
 		{
@@ -817,7 +771,7 @@
 				19,
 				41,
 				73,
-				164
+				154
 			]
 		}
 	],
@@ -1314,17 +1268,6 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "HARDWARE/EC11/EC11.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "HARDWARE/EC11/EC11.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "HARDWARE/ENCODER/ENCODER1/encoder1.c",
 			"sourceGroupIndex" : 1
 		},
@@ -1358,12 +1301,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "HARDWARE/FLASH/norflash.c",
+			"path" : "HARDWARE/FLASH/flash.c",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "HARDWARE/FLASH/norflash.h",
+			"path" : "HARDWARE/FLASH/flash.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1390,6 +1333,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "HARDWARE/LCD/LCD_47/lcdfont.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "HARDWARE/MatrixKeys/MatrixKeys.c",
 			"sourceGroupIndex" : 1
@@ -1401,6 +1349,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "HARDWARE/OLED/OLED_42/number_pic.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "HARDWARE/OLED/OLED_42/oled_42.c",
 			"sourceGroupIndex" : 1
@@ -1408,48 +1361,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "HARDWARE/OLED/OLED_42/oled_42.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "HARDWARE/OLED/OLED_42_BEFORE/bmp.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "HARDWARE/OLED/OLED_42_BEFORE/oled.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "HARDWARE/OLED/OLED_42_BEFORE/oled.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "HARDWARE/OLED/OLED_42_BEFORE/oledfont.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "HARDWARE/OLED/OLED_96/numbmp.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "HARDWARE/OLED/OLED_96/oled_96.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "HARDWARE/OLED/OLED_96/oled_96.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "HARDWARE/OLED/OLED_96/oledfont.h",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -1620,17 +1531,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "USER/Encoder/encoder_user.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "USER/Encoder1/encoder1_user.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "USER/Encoder1/encoder1_user.h",
 			"sourceGroupIndex" : 0
 		},
 		{

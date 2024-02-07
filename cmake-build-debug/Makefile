@@ -784,30 +784,6 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s
 
-HARDWARE/EC11/EC11.obj: HARDWARE/EC11/EC11.c.obj
-.PHONY : HARDWARE/EC11/EC11.obj
-
-# target to build an object file
-HARDWARE/EC11/EC11.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj
-.PHONY : HARDWARE/EC11/EC11.c.obj
-
-HARDWARE/EC11/EC11.i: HARDWARE/EC11/EC11.c.i
-.PHONY : HARDWARE/EC11/EC11.i
-
-# target to preprocess a source file
-HARDWARE/EC11/EC11.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.i
-.PHONY : HARDWARE/EC11/EC11.c.i
-
-HARDWARE/EC11/EC11.s: HARDWARE/EC11/EC11.c.s
-.PHONY : HARDWARE/EC11/EC11.s
-
-# target to generate assembly for a file
-HARDWARE/EC11/EC11.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.s
-.PHONY : HARDWARE/EC11/EC11.c.s
-
 HARDWARE/ENCODER/ENCODER1/encoder1.obj: HARDWARE/ENCODER/ENCODER1/encoder1.c.obj
 .PHONY : HARDWARE/ENCODER/ENCODER1/encoder1.obj
 
@@ -880,29 +856,29 @@ HARDWARE/ENCODER/ENCODER3/encoder3.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.s
 .PHONY : HARDWARE/ENCODER/ENCODER3/encoder3.c.s
 
-HARDWARE/FLASH/norflash.obj: HARDWARE/FLASH/norflash.c.obj
-.PHONY : HARDWARE/FLASH/norflash.obj
+HARDWARE/FLASH/flash.obj: HARDWARE/FLASH/flash.c.obj
+.PHONY : HARDWARE/FLASH/flash.obj
 
 # target to build an object file
-HARDWARE/FLASH/norflash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.obj
-.PHONY : HARDWARE/FLASH/norflash.c.obj
+HARDWARE/FLASH/flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj
+.PHONY : HARDWARE/FLASH/flash.c.obj
 
-HARDWARE/FLASH/norflash.i: HARDWARE/FLASH/norflash.c.i
-.PHONY : HARDWARE/FLASH/norflash.i
+HARDWARE/FLASH/flash.i: HARDWARE/FLASH/flash.c.i
+.PHONY : HARDWARE/FLASH/flash.i
 
 # target to preprocess a source file
-HARDWARE/FLASH/norflash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.i
-.PHONY : HARDWARE/FLASH/norflash.c.i
+HARDWARE/FLASH/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.i
+.PHONY : HARDWARE/FLASH/flash.c.i
 
-HARDWARE/FLASH/norflash.s: HARDWARE/FLASH/norflash.c.s
-.PHONY : HARDWARE/FLASH/norflash.s
+HARDWARE/FLASH/flash.s: HARDWARE/FLASH/flash.c.s
+.PHONY : HARDWARE/FLASH/flash.s
 
 # target to generate assembly for a file
-HARDWARE/FLASH/norflash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.s
-.PHONY : HARDWARE/FLASH/norflash.c.s
+HARDWARE/FLASH/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.s
+.PHONY : HARDWARE/FLASH/flash.c.s
 
 HARDWARE/JSMN/jsmn.obj: HARDWARE/JSMN/jsmn.c.obj
 .PHONY : HARDWARE/JSMN/jsmn.obj
@@ -999,54 +975,6 @@ HARDWARE/OLED/OLED_42/oled_42.s: HARDWARE/OLED/OLED_42/oled_42.c.s
 HARDWARE/OLED/OLED_42/oled_42.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.s
 .PHONY : HARDWARE/OLED/OLED_42/oled_42.c.s
-
-HARDWARE/OLED/OLED_42_BEFORE/oled.obj: HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj
-.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.obj
-
-# target to build an object file
-HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj
-.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj
-
-HARDWARE/OLED/OLED_42_BEFORE/oled.i: HARDWARE/OLED/OLED_42_BEFORE/oled.c.i
-.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.i
-
-# target to preprocess a source file
-HARDWARE/OLED/OLED_42_BEFORE/oled.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.i
-.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.c.i
-
-HARDWARE/OLED/OLED_42_BEFORE/oled.s: HARDWARE/OLED/OLED_42_BEFORE/oled.c.s
-.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.s
-
-# target to generate assembly for a file
-HARDWARE/OLED/OLED_42_BEFORE/oled.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.s
-.PHONY : HARDWARE/OLED/OLED_42_BEFORE/oled.c.s
-
-HARDWARE/OLED/OLED_96/oled_96.obj: HARDWARE/OLED/OLED_96/oled_96.c.obj
-.PHONY : HARDWARE/OLED/OLED_96/oled_96.obj
-
-# target to build an object file
-HARDWARE/OLED/OLED_96/oled_96.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj
-.PHONY : HARDWARE/OLED/OLED_96/oled_96.c.obj
-
-HARDWARE/OLED/OLED_96/oled_96.i: HARDWARE/OLED/OLED_96/oled_96.c.i
-.PHONY : HARDWARE/OLED/OLED_96/oled_96.i
-
-# target to preprocess a source file
-HARDWARE/OLED/OLED_96/oled_96.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.i
-.PHONY : HARDWARE/OLED/OLED_96/oled_96.c.i
-
-HARDWARE/OLED/OLED_96/oled_96.s: HARDWARE/OLED/OLED_96/oled_96.c.s
-.PHONY : HARDWARE/OLED/OLED_96/oled_96.s
-
-# target to generate assembly for a file
-HARDWARE/OLED/OLED_96/oled_96.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.s
-.PHONY : HARDWARE/OLED/OLED_96/oled_96.c.s
 
 HARDWARE/SPI/SPI1/spi1.obj: HARDWARE/SPI/SPI1/spi1.c.obj
 .PHONY : HARDWARE/SPI/SPI1/spi1.obj
@@ -1408,30 +1336,6 @@ USER/Encoder/encoder_user.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.s
 .PHONY : USER/Encoder/encoder_user.c.s
 
-USER/Encoder1/encoder1_user.obj: USER/Encoder1/encoder1_user.c.obj
-.PHONY : USER/Encoder1/encoder1_user.obj
-
-# target to build an object file
-USER/Encoder1/encoder1_user.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.obj
-.PHONY : USER/Encoder1/encoder1_user.c.obj
-
-USER/Encoder1/encoder1_user.i: USER/Encoder1/encoder1_user.c.i
-.PHONY : USER/Encoder1/encoder1_user.i
-
-# target to preprocess a source file
-USER/Encoder1/encoder1_user.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.i
-.PHONY : USER/Encoder1/encoder1_user.c.i
-
-USER/Encoder1/encoder1_user.s: USER/Encoder1/encoder1_user.c.s
-.PHONY : USER/Encoder1/encoder1_user.s
-
-# target to generate assembly for a file
-USER/Encoder1/encoder1_user.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.s
-.PHONY : USER/Encoder1/encoder1_user.c.s
-
 USER/Flash/flash_user.obj: USER/Flash/flash_user.c.obj
 .PHONY : USER/Flash/flash_user.obj
 
@@ -1667,9 +1571,6 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.s
-	@echo ... HARDWARE/EC11/EC11.obj
-	@echo ... HARDWARE/EC11/EC11.i
-	@echo ... HARDWARE/EC11/EC11.s
 	@echo ... HARDWARE/ENCODER/ENCODER1/encoder1.obj
 	@echo ... HARDWARE/ENCODER/ENCODER1/encoder1.i
 	@echo ... HARDWARE/ENCODER/ENCODER1/encoder1.s
@@ -1679,9 +1580,9 @@ help:
 	@echo ... HARDWARE/ENCODER/ENCODER3/encoder3.obj
 	@echo ... HARDWARE/ENCODER/ENCODER3/encoder3.i
 	@echo ... HARDWARE/ENCODER/ENCODER3/encoder3.s
-	@echo ... HARDWARE/FLASH/norflash.obj
-	@echo ... HARDWARE/FLASH/norflash.i
-	@echo ... HARDWARE/FLASH/norflash.s
+	@echo ... HARDWARE/FLASH/flash.obj
+	@echo ... HARDWARE/FLASH/flash.i
+	@echo ... HARDWARE/FLASH/flash.s
 	@echo ... HARDWARE/JSMN/jsmn.obj
 	@echo ... HARDWARE/JSMN/jsmn.i
 	@echo ... HARDWARE/JSMN/jsmn.s
@@ -1694,12 +1595,6 @@ help:
 	@echo ... HARDWARE/OLED/OLED_42/oled_42.obj
 	@echo ... HARDWARE/OLED/OLED_42/oled_42.i
 	@echo ... HARDWARE/OLED/OLED_42/oled_42.s
-	@echo ... HARDWARE/OLED/OLED_42_BEFORE/oled.obj
-	@echo ... HARDWARE/OLED/OLED_42_BEFORE/oled.i
-	@echo ... HARDWARE/OLED/OLED_42_BEFORE/oled.s
-	@echo ... HARDWARE/OLED/OLED_96/oled_96.obj
-	@echo ... HARDWARE/OLED/OLED_96/oled_96.i
-	@echo ... HARDWARE/OLED/OLED_96/oled_96.s
 	@echo ... HARDWARE/SPI/SPI1/spi1.obj
 	@echo ... HARDWARE/SPI/SPI1/spi1.i
 	@echo ... HARDWARE/SPI/SPI1/spi1.s
@@ -1745,9 +1640,6 @@ help:
 	@echo ... USER/Encoder/encoder_user.obj
 	@echo ... USER/Encoder/encoder_user.i
 	@echo ... USER/Encoder/encoder_user.s
-	@echo ... USER/Encoder1/encoder1_user.obj
-	@echo ... USER/Encoder1/encoder1_user.i
-	@echo ... USER/Encoder1/encoder1_user.s
 	@echo ... USER/Flash/flash_user.obj
 	@echo ... USER/Flash/flash_user.i
 	@echo ... USER/Flash/flash_user.s

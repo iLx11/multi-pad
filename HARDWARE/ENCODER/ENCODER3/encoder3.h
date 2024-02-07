@@ -29,6 +29,8 @@ static void encoder3_key_scan(void);
 
 static void encoder3_rotation_scan(void);
 
+__weak void encoder3_callback(uint8_t callback_value);
+
 __weak void encoder3_key_down_callback(void);
 
 __weak void encoder3_key_up_callback(void);

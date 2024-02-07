@@ -1,10 +1,19 @@
-#ifndef LEDEN_SPI3_H
-#define LEDEN_SPI3_H
+/********************************************************************************
+* @author: iLx1
+* @email: colorful_ilx1@163.com
+* @date: 2023/11/23 20:59
+* @version: 1.0
+* @description: 
+********************************************************************************/
+
+
+#ifndef MULTI_SPI3_H
+#define MULTI_SPI3_H
+
+#include <stdio.h>
 #include "stm32f1xx_hal.h"
 
-void SPI3_Init(void);                           /* 初始化SPI2 */
-void spi3_set_speed(uint32_t speed);            /* 设置SPI2通信波特率 */
-uint8_t spi3_read_write_byte(uint8_t txdata);   /* SPI2读写一字节数据 */
+void spi3_init(void);
+uint8_t spi3_transmit_receive_byte(uint8_t byte_data);
 
-
-#endif //LEDEN_SPI3_H
+#endif //MULTI_SPI3_H

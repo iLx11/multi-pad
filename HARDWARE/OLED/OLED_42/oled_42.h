@@ -17,7 +17,7 @@
 
 
 // ¶¨ÒåÈí¼ş SPI
-#define SOFT_42_SPI 1
+#define SOFT_42_SPI 0
 
 #define OLED_42_NUM_ 2
 
@@ -99,6 +99,8 @@ void oled_42_wt_byte(uint8_t data, uint8_t cmd, uint8_t index);
 void oled_42_wt_byte_all(uint8_t data, uint8_t cmd);
 
 void oled_42_page_draw_point(uint8_t x, uint8_t y, uint8_t f);
+
+void oled_42_show_num(uint8_t num, uint8_t mode, uint8_t index);
 
 
 typedef struct {

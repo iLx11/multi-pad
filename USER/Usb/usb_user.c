@@ -39,14 +39,6 @@ uint8_t file_array_index = 0;
 uint16_t file_position = 0;
 uint8_t photo_file_flag = 0;
 
-static void photo_string_to_hex(const char *hex_string_array);
-
-static void turn_to_next_position();
-
-static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end);
-
-static uint8_t char_to_hex(char hex_char);
-
 
 /********************************************************************************
 * 接收 hid 上位机发送的数据
@@ -73,7 +65,6 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
             photo_file_flag = 1;
             printf("photo_array_done\n\r");
             // 将一个层级的图片存入 flash
-            menu_photo_folder_storage(folder_index);
             // 清空字符串
             memset(json_str, 0, JSON_SIZE);
         }
@@ -86,8 +77,8 @@ void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef *hid_handle, uint8_t 
             printf("key_done\n\r");
             printf("json_str -> %s\n\r", json_str);
             // 键值写入 flash
-            storage_setting_to_flash(folder_index, clear_str, JSON_SIZE);
-            storage_setting_to_flash(folder_index, json_str, JSON_SIZE);
+//            storage_setting_to_flash(folder_index, clear_str, JSON_SIZE);
+//            storage_setting_to_flash(folder_index, json_str, JSON_SIZE);
             // 清空字符串
             memset(json_str, 0, JSON_SIZE);
             file_array_index = 0;
@@ -109,10 +100,9 @@ static void photo_string_to_hex(const char *hex_string_array) {
         if (file_array_index < OLED_42_NUM && file_position >= 360) break;
         if (file_array_index >= OLED_42_NUM && file_position >= 999) break;
         if (file_array_index < OLED_42_NUM)
-            oled_42_array[file_array_index][file_position++] = string_to_num_hex(hex_string_array, i++, i++);
+            oled_42_array[file_array_index][file_position++] = string_to_num(hex_string_array, i++, i++);
         else if (file_array_index >= OLED_42_NUM) {
-            oled_96_array[file_array_index - OLED_42_NUM][file_position++] = string_to_num_hex(hex_string_array, i++,
-                                                                                               i++);
+
         }
     }
 }
@@ -159,12 +149,15 @@ void hid_buff_reset() {
 }
 
 /********************************************************************************
-* 字符转十六进制
+* 字符串转十六进制
 ********************************************************************************/
-static uint8_t string_to_num_hex(const char *hex_string_array, uint8_t start, uint8_t end) {
+static uint8_t string_to_num(const char *hex_string_array, uint8_t start, uint8_t end) {
     return char_to_hex(hex_string_array[start]) * 16 + char_to_hex(hex_string_array[end]);
 }
 
+/********************************************************************************
+* 字符转十六进制
+********************************************************************************/
 static uint8_t char_to_hex(char hex_char) {
     uint8_t result = 0x00;
     if (hex_char >= '0' && hex_char <= '9')

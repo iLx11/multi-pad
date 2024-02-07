@@ -9,6 +9,7 @@
 
 #include "lcd_47.h"
 #include "spi2.h"
+#include "lcdfont.h"
 
 
 /********************************************************************************
@@ -134,7 +135,7 @@ static void lcd_gpio_init(void) {
     __HAL_RCC_GPIOB_CLK_ENABLE();
 
     //GPIO初始化设置
-    GPIO_InitStruct.Pin = GPIO_PIN_10 | GPIO_PIN_15;
+    GPIO_InitStruct.Pin = LCD_SPI_SOFT_SCL_PIN | LCD_SPI_SOFT_SDA_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Pull = GPIO_PULLUP;//上拉
@@ -211,7 +212,7 @@ static void lcd_send_byte(uint8_t data) {
 #endif
 
 /********************************************************************************
-* 设置屏幕地址
+* 设置屏幕地址，光标位置
 ********************************************************************************/
 void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t index) {
     if (LCD_DIRECTION == 0) {
@@ -222,7 +223,6 @@ void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t
         lcd_wt_d_byte(y1 + 34, index);
         lcd_wt_d_byte(y2 + 34, index);
         lcd_wt_byte(0x2c, LCD_CMD, index);
-
 
     } else {
         lcd_wt_byte(0x2A, LCD_CMD, index);
@@ -270,5 +270,69 @@ void lcd_fill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16
         for (j = xsta; j < xend; j++) {
             lcd_wt_d_byte(color, index);
         }
+    }
+}
+
+/********************************************************************************
+* LCD 显示单个字符
+********************************************************************************/
+void lcd_show_char_index(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode, uint8_t index) {
+    uint8_t temp, sizex, t, m = 0;
+    // 一个字符所占字节大小
+    uint16_t i, TypefaceNum;
+    uint16_t x0 = x;
+    sizex = sizey / 2;
+    TypefaceNum = (sizex / 8 + ((sizex % 8) ? 1 : 0)) * sizey;
+    // 得到偏移后的值
+    num = num - ' ';
+    set_lcd_address(x, y, x + sizex - 1, y + sizey - 1, index);  //设置光标位置
+    for (i = 0; i < TypefaceNum; i++) {
+        if (sizey == 12) temp = ascii_1206[num][i];               //调用6x12字体
+        else if (sizey == 16) temp = ascii_1608[num][i];         //调用8x16字体
+        else if (sizey == 24) temp = ascii_2412[num][i];         //调用12x24字体
+        else if (sizey == 32) temp = ascii_3216[num][i];         //调用16x32字体
+        else return;
+        for (t = 0; t < 8; t++) {
+            // 非叠加模式
+            if (!mode) {
+                if (temp & (0x01 << t))
+                    lcd_wt_d_byte(fc, index);
+                else lcd_wt_d_byte(bc, index);
+                m++;
+                if (m % sizex == 0) {
+                    m = 0;
+                    break;
+                }
+                // 叠加模式
+            } else {
+                if (temp & (0x01 << t))
+                    lcd_page_draw_point(x, y, fc, index);//画一个点
+                x++;
+                if ((x - x0) == sizex) {
+                    x = x0;
+                    y++;
+                    break;
+                }
+            }
+        }
+    }
+}
+
+/********************************************************************************
+* LCD 显示字符串
+* 函数说明：显示单个字符
+  入口数据：  x,y显示坐标
+            num 要显示的字符
+            fc 字的颜色
+            bc 字的背景色
+            sizey 字号
+            mode:  0非叠加模式  1叠加模式
+  返回值：  无
+********************************************************************************/
+void lcd_show_string(uint16_t x, uint16_t y, const uint8_t *p, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode, uint8_t index) {
+    while (*p != '\0') {
+        lcd_show_char_index(x, y, *p, fc, bc, sizey, mode, index);
+        x += sizey / 2;
+        p++;
     }
 }

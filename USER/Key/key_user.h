@@ -9,6 +9,4 @@ void key_init_user();
 
 void key_scan_user();
 
-void holding_key_execute();
-
 #endif //LEDEN_KEY_USER_H

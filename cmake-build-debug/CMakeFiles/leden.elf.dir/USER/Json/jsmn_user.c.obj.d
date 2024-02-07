@@ -80,13 +80,6 @@ CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder/encoder_user.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\EC11/EC11.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE/oled.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2/spi2.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Json/jsmn_user.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_96/oled_96.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI3/spi3.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Oled/oled_user.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Flash/flash_user.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH/norflash.h
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Flash/flash_user.h

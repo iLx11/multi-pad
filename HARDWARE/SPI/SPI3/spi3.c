@@ -1,13 +1,20 @@
-#include "spi3.h"
+/********************************************************************************
+* @author: iLx1
+* @email: colorful_ilx1@163.com
+* @date: 2023/11/23 20:59
+* @version: 1.0
+* @description: 
+********************************************************************************/
 
+
+#include "spi3.h"
 
 // SPI句柄
 SPI_HandleTypeDef handle_spi3;
 
-// 初始化 SPI
-void SPI3_Init(void) {
-    // 设置 SPI2
-    handle_spi3.Instance = SPI1;
+void spi3_init(void) {
+    // 设置 SPI3
+    handle_spi3.Instance = SPI3;
     // 设置SPI工作模式:设置为主SPI
     handle_spi3.Init.Mode = SPI_MODE_MASTER;
     // 设置全双工或是半双工的数据模式
@@ -15,9 +22,9 @@ void SPI3_Init(void) {
     // 设置 SPI 的数据大小，发送8位帧结构
     handle_spi3.Init.DataSize = SPI_DATASIZE_8BIT;
     // 串行同步时钟空闲状态为高电平
-    handle_spi3.Init.CLKPolarity = SPI_POLARITY_HIGH;
+    handle_spi3.Init.CLKPolarity = SPI_POLARITY_LOW;
     // 串行同步时钟的第二个跳变沿（上升或下降）数据被采样
-    handle_spi3.Init.CLKPhase = SPI_PHASE_2EDGE;
+    handle_spi3.Init.CLKPhase = SPI_PHASE_1EDGE;
     // NSS 管脚由硬件还是由软件（SSI） 管理： 内部 NSS 信号有 SSI 位控制
     handle_spi3.Init.NSS = SPI_NSS_SOFT;
     // 定义波特率预分频的之： 波特率预分频值为256
@@ -29,42 +36,56 @@ void SPI3_Init(void) {
     // CRC 值计算的多项式
     handle_spi3.Init.CRCPolynomial = 10;
     // 根据指定参数初始化外设 SPIX 寄存器d
-    HAL_SPI_Init(&handle_spi3);
-}
-
-/**
- * @brief   设置SPI2通信波特率
- * @param   speed: SPI2波特率分频系数
- * @arg     SPI_BAUDRATEPRESCALER_2: 2分频
- * @arg     SPI_BAUDRATEPRESCALER_4: 2分频
- * @arg     SPI_BAUDRATEPRESCALER_8: 8分频
- * @arg     SPI_BAUDRATEPRESCALER_16: 16分频
- * @arg     SPI_BAUDRATEPRESCALER_32: 32分频
- * @arg     SPI_BAUDRATEPRESCALER_64: 64分频
- * @arg     SPI_BAUDRATEPRESCALER_128: 128分频
- * @arg     SPI_BAUDRATEPRESCALER_256: 256分频
- * @retval  无
- */
-void spi3_set_speed(uint32_t speed)
-{
-    __HAL_SPI_DISABLE(&handle_spi3);
-    handle_spi3.Instance->CR1 &= ~SPI_CR1_BR_Msk;
-    handle_spi3.Instance->CR1 |= speed;
-    __HAL_SPI_ENABLE(&handle_spi3);
-}
-/**
- * @brief   SPI2读写一字节数据
- * @param   txdata: 待写入的一字节数据
- * @retval  读取到的一字节数据
- */
-uint8_t spi3_read_write_byte(uint8_t txdata)
-{
-    uint8_t rxdata;
-
-    if (HAL_SPI_TransmitReceive(&handle_spi3, &txdata, &rxdata, 1, 1000) != HAL_OK)
+    if (HAL_SPI_Init(&handle_spi3) != HAL_OK)
     {
-        return 0;
+        printf("spi3 init error !");
     }
+}
 
-    return rxdata;
+// SPI 底层初始化
+void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi) {
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    if (hspi->Instance == SPI3) {
+        // 时钟使能
+        __HAL_RCC_SPI3_CLK_ENABLE();
+
+        __HAL_RCC_GPIOB_CLK_ENABLE();
+
+        GPIO_InitStruct.Pin = GPIO_PIN_3| GPIO_PIN_5;
+        GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+        GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+        GPIO_InitStruct.Pull = GPIO_NOPULL;
+        HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    }
+    if (hspi->Instance == SPI2) {
+        // 时钟使能
+        __HAL_RCC_SPI2_CLK_ENABLE();
+        __HAL_RCC_GPIOB_CLK_ENABLE();
+
+        GPIO_InitStruct.Pin = GPIO_PIN_15 | GPIO_PIN_13;
+        GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+        GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+        GPIO_InitStruct.Pull = GPIO_NOPULL;
+        HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+    }
+    if (hspi->Instance == SPI1) {
+        __HAL_RCC_GPIOA_CLK_ENABLE();
+        // 时钟使能
+        __HAL_RCC_SPI1_CLK_ENABLE();
+
+        GPIO_InitStruct.Pin = GPIO_PIN_5| GPIO_PIN_6| GPIO_PIN_7;
+        GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+        GPIO_InitStruct.Pull = GPIO_PULLUP;
+        GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+        HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    }
+}
+
+/********************************************************************************
+* SPI 发送并接受一个字节的数据
+********************************************************************************/
+uint8_t spi3_transmit_receive_byte(uint8_t byte_data) {
+    uint8_t receive_data;
+    if (HAL_SPI_TransmitReceive(&handle_spi3, &byte_data, &receive_data, 1, 1000) != HAL_OK) return 0;
+    return receive_data;
 }

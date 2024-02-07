@@ -1,46 +1,20 @@
 #include "jsmn_user.h"
 #include "flash_user.h"
-//#include "fatfs_user.h"
-
-//char *json_str = "{\"000\":\"009040506070809040609\",\"001\":\"103010104010106010119\",\"002\":\"210904050607080904060904FF0904050607080904060904\",\"003\":\"320201010401010604FF0201011901011904FF01010104\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
-
-char json_str[JSON_SIZE];
 
 // hid 发送缓冲数组指针结构体
 extern buff_struct buff_point_array[3];
 
 extern uint8_t menu_change_lock;
 
+//char *json_str = "{\"000\":\"009040506070809040609\",\"001\":\"103010104010106010119\",\"002\":\"210904050607080904060904FF0904050607080904060904\",\"003\":\"320201010401010604FF0201011901011904FF01010104\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
+
 //jsmntok_t t[512];
 jsmn_parser p;
 
+char json_str[JSON_SIZE];
+
 // 解析后的键值数组
-char key_value_array[30][256] = {0};
-
-// 数字转字符串
-static char *num_to_string(uint8_t num, char *str);
-
-// 字符串转数字
-static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t end);
-
-// 不同的解析 json 字符串的功能函数
-static void parse_json_normal_key(uint8_t key_value_index);
-
-static void parse_json_comp_key(uint8_t key_value_index);
-
-static void parse_json_delay_key(uint8_t key_value_index);
-
-static void parse_json_comp_delay_key(uint8_t key_value_index);
-
-static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t special_key);
-
-static void get_execute_delay(uint8_t *start, uint8_t key_value_index);
-
-static void parse_json_mouse_func(uint8_t key_value_index);
-
-static void parse_json_media_func(uint8_t key_value_index);
-
-static void parse_json_menu_func(uint8_t key_value_index);
+char key_value_array[34][360] = {0};
 
 // 根据功能解析 json 值的函数指针数组
 void (*parse_by_function[8])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_delay_key,
@@ -57,15 +31,15 @@ void jsmn_init_user() {
 /********************************************************************************
 * 加载键值配置并解析在键值数组
 ********************************************************************************/
-void load_parse_key(uint8_t menu) {
+uint8_t load_parse_key(uint8_t menu) {
     // 清空字符串
     memset(key_value_array, 0, sizeof (key_value_array));
     // 从 flash 加载键值
-    load_setting_from_flash(menu, json_str, JSON_SIZE);
+    load_menu_from_flash(menu, (uint8_t *) json_str, 12288, 1);
     // 清空 jsmn 解析结构体
     memset(&p, 0, sizeof(jsmn_parser));
     // 解析键值
-    parse_json_data(&p);
+    return parse_json_data(&p);
 }
 
 /********************************************************************************
@@ -82,10 +56,13 @@ static int json_cmp(const char *json, jsmntok_t *tok, const char *str) {
 /********************************************************************************
 * 解析 json 字符并按键值存入数组
 ********************************************************************************/
-uint8_t parse_json_data(jsmn_parser *p) {
+static uint8_t parse_json_data(jsmn_parser *p) {
     jsmntok_t t[512] = {0};
     uint8_t r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
-    if (r < 0) printf("parse fail");
+    if (r < 0)  {
+        printf("parse fail");
+        return 0;
+    }
     // 根据键取字符串+
     if (r < 1 && t[0].type != JSMN_OBJECT) return 1;
     for (uint8_t j = 0; j < 30; j++) {
@@ -94,7 +71,7 @@ uint8_t parse_json_data(jsmn_parser *p) {
         char json_key_str[4] = {0};
         // 数字转字符串
         char key_num_str[3] = {0};
-        strcat(json_key_str, "l");
+//        strcat(json_key_str, "l");
         if (j < 10) strcat(json_key_str, "0");
         strcat(json_key_str, num_to_string(j, key_num_str));
         for (uint8_t s = 0; s < r; s++) {
@@ -109,7 +86,7 @@ uint8_t parse_json_data(jsmn_parser *p) {
         }
         menu_change_lock = 0;
     }
-    return 0;
+    return 1;
 }
 
 /********************************************************************************

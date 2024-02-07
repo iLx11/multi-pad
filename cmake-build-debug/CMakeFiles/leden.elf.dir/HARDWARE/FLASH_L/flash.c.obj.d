@@ -1,5 +1,5 @@
-CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj: \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2\spi2.c \
+CMakeFiles/leden.elf.dir/HARDWARE/FLASH_L/flash.c.obj: \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH_L\flash.c \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdio.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\newlib.h \
@@ -29,7 +29,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj: \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\sched.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\types.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2\spi2.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH_L\flash.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Core\Inc/stm32f1xx_hal_conf.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_rcc.h \
@@ -61,4 +61,5 @@ CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_uart.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_ll_usb.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd_ex.h
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd_ex.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI1/spi1.h

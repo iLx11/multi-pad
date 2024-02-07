@@ -39,25 +39,19 @@ CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_ll_usb.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd_ex.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Core\Inc/stm32f1xx_it.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\EC11/EC11.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE/oled.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\ieeefp.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder/encoder_user.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdio.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\newlib.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\config.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\ieeefp.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\cdefs.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\reent.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_types.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_types.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\lock.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\cdefs.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2/spi2.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdio.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\types.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\endian.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\_endian.h \
@@ -69,4 +63,22 @@ CMakeFiles/leden.elf.dir/Core/Src/stm32f1xx_it.c.obj: \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_pthreadtypes.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\sched.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\types.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Json/jsmn_user.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\JSMN/jsmn.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\string.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Usb/usb_user.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Inc/usbd_customhid.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_def.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USB_DEVICE\Target/usbd_conf.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_core.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Oled/oled_user.h

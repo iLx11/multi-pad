@@ -459,24 +459,10 @@ CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s: 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.s"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c -o CMakeFiles\leden.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c.s
 
-CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/EC11/EC11.c
-CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\EC11\EC11.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\EC11\EC11.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\EC11\EC11.c
-
-CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\EC11\EC11.c > CMakeFiles\leden.elf.dir\HARDWARE\EC11\EC11.c.i
-
-CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\EC11\EC11.c -o CMakeFiles\leden.elf.dir\HARDWARE\EC11\EC11.c.s
-
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER1/encoder1.c
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\ENCODER\ENCODER1\encoder1.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\ENCODER\ENCODER1\encoder1.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\ENCODER\ENCODER1\encoder1.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.i: cmake_force
@@ -490,7 +476,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER2/encoder2.c
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\ENCODER\ENCODER2\encoder2.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\ENCODER\ENCODER2\encoder2.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\ENCODER\ENCODER2\encoder2.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.i: cmake_force
@@ -504,7 +490,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER3/encoder3.c
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\ENCODER\ENCODER3\encoder3.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\ENCODER\ENCODER3\encoder3.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\ENCODER\ENCODER3\encoder3.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.i: cmake_force
@@ -515,24 +501,24 @@ CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.s"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\ENCODER\ENCODER3\encoder3.c -o CMakeFiles\leden.elf.dir\HARDWARE\ENCODER\ENCODER3\encoder3.c.s
 
-CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/FLASH/norflash.c
-CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\FLASH\norflash.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\FLASH\norflash.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH\norflash.c
+CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj: CMakeFiles/leden.elf.dir/flags.make
+CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/FLASH/flash.c
+CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\FLASH\flash.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\FLASH\flash.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH\flash.c
 
-CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH\norflash.c > CMakeFiles\leden.elf.dir\HARDWARE\FLASH\norflash.c.i
+CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.i"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH\flash.c > CMakeFiles\leden.elf.dir\HARDWARE\FLASH\flash.c.i
 
-CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH\norflash.c -o CMakeFiles\leden.elf.dir\HARDWARE\FLASH\norflash.c.s
+CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.s"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\FLASH\flash.c -o CMakeFiles\leden.elf.dir\HARDWARE\FLASH\flash.c.s
 
 CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/JSMN/jsmn.c
 CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\JSMN\jsmn.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\JSMN\jsmn.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\JSMN\jsmn.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.i: cmake_force
@@ -546,7 +532,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.c
 CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\LCD\LCD_47\lcd_47.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\LCD\LCD_47\lcd_47.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\LCD\LCD_47\lcd_47.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.i: cmake_force
@@ -560,7 +546,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.c
 CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\MatrixKeys.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\MatrixKeys.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys\MatrixKeys.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.i: cmake_force
@@ -574,7 +560,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.c
 CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_42\oled_42.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_42\oled_42.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42\oled_42.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.i: cmake_force
@@ -585,38 +571,10 @@ CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.s"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42\oled_42.c -o CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_42\oled_42.c.s
 
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42_BEFORE/oled.c
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_42_BEFORE\oled.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_42_BEFORE\oled.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE\oled.c
-
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE\oled.c > CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_42_BEFORE\oled.c.i
-
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_42_BEFORE\oled.c -o CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_42_BEFORE\oled.c.s
-
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_96/oled_96.c
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_96\oled_96.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_96\oled_96.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_96\oled_96.c
-
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_96\oled_96.c > CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_96\oled_96.c.i
-
-CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\OLED\OLED_96\oled_96.c -o CMakeFiles\leden.elf.dir\HARDWARE\OLED\OLED_96\oled_96.c.s
-
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI1/spi1.c
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\SPI\SPI1\spi1.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\SPI\SPI1\spi1.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI1\spi1.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.i: cmake_force
@@ -630,7 +588,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2/spi2.c
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\SPI\SPI2\spi2.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\SPI\SPI2\spi2.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI2\spi2.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.i: cmake_force
@@ -644,7 +602,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI3/spi3.c
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\SPI\SPI3\spi3.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\SPI\SPI3\spi3.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\SPI\SPI3\spi3.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.i: cmake_force
@@ -658,7 +616,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM1/tim1.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM1/tim1.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM1/tim1.c
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM1/tim1.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM1/tim1.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM1/tim1.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM1/tim1.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\TIM\TIM1\tim1.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\TIM\TIM1\tim1.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\TIM\TIM1\tim1.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM1/tim1.c.i: cmake_force
@@ -672,7 +630,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM1/tim1.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM3/tim3.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM3/tim3.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM3/tim3.c
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM3/tim3.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM3/tim3.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM3/tim3.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM3/tim3.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\TIM\TIM3\tim3.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\TIM\TIM3\tim3.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\TIM\TIM3\tim3.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM3/tim3.c.i: cmake_force
@@ -686,7 +644,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM3/tim3.c.s: cmake_force
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM4/tim4.c
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\TIM\TIM4\tim4.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\TIM\TIM4\tim4.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\TIM\TIM4\tim4.c
 
 CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.i: cmake_force
@@ -700,7 +658,7 @@ CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.s: cmake_force
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Class\CustomHID\Src\usbd_customhid.c
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.i: cmake_force
@@ -714,7 +672,7 @@ CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.i: cmake_force
@@ -728,7 +686,7 @@ CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.i: cmake_force
@@ -742,7 +700,7 @@ CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj -MF CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.obj.d -o CMakeFiles\leden.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c
 
 CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.i: cmake_force
@@ -756,7 +714,7 @@ CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_i
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USB_DEVICE/App/usb_device.c
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usb_device.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USB_DEVICE\App\usb_device.c
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.i: cmake_force
@@ -770,7 +728,7 @@ CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USB_DEVICE/App/usbd_custom_hid_if.c
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_custom_hid_if.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USB_DEVICE\App\usbd_custom_hid_if.c
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.i: cmake_force
@@ -784,7 +742,7 @@ CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USB_DEVICE/App/usbd_desc.c
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\App\usbd_desc.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USB_DEVICE\App\usbd_desc.c
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.i: cmake_force
@@ -798,7 +756,7 @@ CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USB_DEVICE/Target/usbd_conf.c
 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.obj.d -o CMakeFiles\leden.elf.dir\USB_DEVICE\Target\usbd_conf.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USB_DEVICE\Target\usbd_conf.c
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.i: cmake_force
@@ -812,7 +770,7 @@ CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder/encoder_user.c
 CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder\encoder_user.c
 
 CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.i: cmake_force
@@ -823,24 +781,10 @@ CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.s"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder\encoder_user.c -o CMakeFiles\leden.elf.dir\USER\Encoder\encoder_user.c.s
 
-CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder1/encoder1_user.c
-CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Encoder1\encoder1_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Encoder1\encoder1_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder1\encoder1_user.c
-
-CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder1\encoder1_user.c > CMakeFiles\leden.elf.dir\USER\Encoder1\encoder1_user.c.i
-
-CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder1\encoder1_user.c -o CMakeFiles\leden.elf.dir\USER\Encoder1\encoder1_user.c.s
-
 CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Flash/flash_user.c
 CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Flash\flash_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Flash\flash_user.c
 
 CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.i: cmake_force
@@ -854,7 +798,7 @@ CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Json/jsmn_user.c
 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Json\jsmn_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Json\jsmn_user.c
 
 CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.i: cmake_force
@@ -868,7 +812,7 @@ CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Key/key_user.c
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Key\key_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Key\key_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Key\key_user.c
 
 CMakeFiles/leden.elf.dir/USER/Key/key_user.c.i: cmake_force
@@ -882,7 +826,7 @@ CMakeFiles/leden.elf.dir/USER/Key/key_user.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd/lcd_user.c
 CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Lcd\lcd_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Lcd\lcd_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Lcd\lcd_user.c
 
 CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.i: cmake_force
@@ -896,7 +840,7 @@ CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled/oled_user.c
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Oled\oled_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Oled\oled_user.c
 
 CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.i: cmake_force
@@ -910,7 +854,7 @@ CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.s: cmake_force
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Usb/usb_user.c
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj -MF CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.obj.d -o CMakeFiles\leden.elf.dir\USER\Usb\usb_user.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Usb\usb_user.c
 
 CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.i: cmake_force
@@ -951,17 +895,14 @@ leden_elf_OBJECTS = \
 "CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" \
 "CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" \
 "CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj" \
-"CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj" \
-"CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.obj" \
+"CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj" \
-"CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj" \
-"CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.obj" \
@@ -977,7 +918,6 @@ leden_elf_OBJECTS = \
 "CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj" \
 "CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj" \
 "CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj" \
-"CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.obj" \
 "CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj" \
 "CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" \
 "CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" \
@@ -1016,17 +956,14 @@ leden.elf: CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_h
 leden.elf: CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_usb.c.obj
-leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/EC11/EC11.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER1/encoder1.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER2/encoder2.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj
-leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/FLASH/norflash.c.obj
+leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj
-leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42_BEFORE/oled.c.obj
-leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_96/oled_96.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI3/spi3.c.obj
@@ -1042,7 +979,6 @@ leden.elf: CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj
-leden.elf: CMakeFiles/leden.elf.dir/USER/Encoder1/encoder1_user.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj
@@ -1050,9 +986,8 @@ leden.elf: CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/build.make
-leden.elf: CMakeFiles/leden.elf.dir/objects1
 leden.elf: CMakeFiles/leden.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Linking C executable leden.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Linking C executable leden.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\leden.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug/leden.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug/leden.bin"

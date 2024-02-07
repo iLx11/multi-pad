@@ -1,9 +1,9 @@
 #ifndef LEDEN_OLED_USER_H
 #define LEDEN_OLED_USER_H
 
-#include "oled.h"
 //#include "bmp.h"
-#include "oled_96.h"
+#include "string.h"
+#include "stm32f1xx_hal.h"
 
 #define SIZE_42    360
 #define SIZE_96    999
@@ -11,7 +11,7 @@
 #define oled_42_h   40
 #define oled_42_x    0
 #define oled_42_y    0
-#define OLED_42_NUM 20
+#define OLED_42_NUM 2
 
 #define oled_96_l  128
 #define oled_96_h   64
@@ -21,12 +21,6 @@
 
 void oled_init_user();
 
-void oled_show_user();
-
 void load_show_menu(uint8_t menu_index);
-
-void screen_effect(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat);
-
-void screen_effect_two(uint8_t row, uint8_t col, uint8_t mode, uint8_t repeat);
 
 #endif //LEDEN_OLED_USER_H

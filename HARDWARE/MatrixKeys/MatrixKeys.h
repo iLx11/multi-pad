@@ -48,11 +48,6 @@
 #define KEY_UP    1
 
 
-//// 高电平
-//#define KEY_DOWN	1
-//// 低电平
-//#define KEY_UP		0
-
 void MK_init();
 
 void MK_scan(uint16_t *state);
