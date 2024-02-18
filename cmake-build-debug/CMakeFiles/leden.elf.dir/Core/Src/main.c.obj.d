@@ -91,7 +91,7 @@ CMakeFiles/leden.elf.dir/Core/Src/main.c.obj: \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Encoder/encoder_user.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Oled/oled_user.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Key/key_user.h \
- D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys/MatrixKeys.h \
+ D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys/matrix_key.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Lcd/lcd_user.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\LCD\LCD_47/lcd_47.h \
  D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\USER\Flash/flash_user.h

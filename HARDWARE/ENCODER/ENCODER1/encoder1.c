@@ -60,10 +60,10 @@ static void encoder1_rotation_scan(void) {
                 return;
             }
             // ±àÂëÆ÷Ë³Ê±Õë»Øµ÷
-            encoder1_callback(0);
+            encoder1_callback(CLOCKWISE);
 //            encoder1_clockwise_callback();
         }
-        set_encoder1_counter(CLOCKWISE);
+        set_encoder1_counter(0);
     }
 }
 

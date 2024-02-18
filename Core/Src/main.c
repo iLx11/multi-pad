@@ -46,7 +46,7 @@ int main(void) {
     MX_USART1_UART_Init();
     MX_USB_DEVICE_Init();
     // flash
-    if(flash_init_user() == 0) return 0;
+//    if(flash_init_user() == 0) return 0;
     // json ½âÎö
 //    jsmn_init_user();
     // ¾ØÕó¼üÅÌ
@@ -56,7 +56,7 @@ int main(void) {
     // OLED ÏÔÊ¾
     oled_init_user();
     // lcd ÏÔÊ¾
-    lcd_init_user();
+//    lcd_init_user();
 
     while (1) {
         // ¼üÅÌÉ¨Ãè

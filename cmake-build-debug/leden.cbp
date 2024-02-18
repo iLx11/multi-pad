@@ -463,10 +463,10 @@
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47/lcdfont.h">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.c">
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/matrix_key.c">
 			<Option target="leden.elf"/>
 		</Unit>
-		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.h">
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/matrix_key.h">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/number_pic.h">

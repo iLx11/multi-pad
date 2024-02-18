@@ -543,19 +543,19 @@ CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.s"
 	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\LCD\LCD_47\lcd_47.c -o CMakeFiles\leden.elf.dir\HARDWARE\LCD\LCD_47\lcd_47.c.s
 
-CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj: CMakeFiles/leden.elf.dir/flags.make
-CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/MatrixKeys.c
-CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\MatrixKeys.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\MatrixKeys.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys\MatrixKeys.c
+CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.obj: CMakeFiles/leden.elf.dir/flags.make
+CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys/matrix_key.c
+CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.obj: CMakeFiles/leden.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.obj"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.obj -MF CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\matrix_key.c.obj.d -o CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\matrix_key.c.obj -c D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys\matrix_key.c
 
-CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.i"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys\MatrixKeys.c > CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\MatrixKeys.c.i
+CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.i"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys\matrix_key.c > CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\matrix_key.c.i
 
-CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.s"
-	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys\MatrixKeys.c -o CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\MatrixKeys.c.s
+CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.s"
+	D:\RA\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\HARDWARE\MatrixKeys\matrix_key.c -o CMakeFiles\leden.elf.dir\HARDWARE\MatrixKeys\matrix_key.c.s
 
 CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj: CMakeFiles/leden.elf.dir/flags.make
 CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42/oled_42.c
@@ -901,7 +901,7 @@ leden_elf_OBJECTS = \
 "CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj" \
-"CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj" \
+"CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj" \
 "CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj" \
@@ -962,7 +962,7 @@ leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/ENCODER/ENCODER3/encoder3.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/FLASH/flash.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/JSMN/jsmn.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.obj
-leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj
+leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/OLED/OLED_42/oled_42.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI1/spi1.c.obj
 leden.elf: CMakeFiles/leden.elf.dir/HARDWARE/SPI/SPI2/spi2.c.obj

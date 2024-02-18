@@ -928,29 +928,29 @@ HARDWARE/LCD/LCD_47/lcd_47.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/LCD/LCD_47/lcd_47.c.s
 .PHONY : HARDWARE/LCD/LCD_47/lcd_47.c.s
 
-HARDWARE/MatrixKeys/MatrixKeys.obj: HARDWARE/MatrixKeys/MatrixKeys.c.obj
-.PHONY : HARDWARE/MatrixKeys/MatrixKeys.obj
+HARDWARE/MatrixKeys/matrix_key.obj: HARDWARE/MatrixKeys/matrix_key.c.obj
+.PHONY : HARDWARE/MatrixKeys/matrix_key.obj
 
 # target to build an object file
-HARDWARE/MatrixKeys/MatrixKeys.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.obj
-.PHONY : HARDWARE/MatrixKeys/MatrixKeys.c.obj
+HARDWARE/MatrixKeys/matrix_key.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.obj
+.PHONY : HARDWARE/MatrixKeys/matrix_key.c.obj
 
-HARDWARE/MatrixKeys/MatrixKeys.i: HARDWARE/MatrixKeys/MatrixKeys.c.i
-.PHONY : HARDWARE/MatrixKeys/MatrixKeys.i
+HARDWARE/MatrixKeys/matrix_key.i: HARDWARE/MatrixKeys/matrix_key.c.i
+.PHONY : HARDWARE/MatrixKeys/matrix_key.i
 
 # target to preprocess a source file
-HARDWARE/MatrixKeys/MatrixKeys.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.i
-.PHONY : HARDWARE/MatrixKeys/MatrixKeys.c.i
+HARDWARE/MatrixKeys/matrix_key.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.i
+.PHONY : HARDWARE/MatrixKeys/matrix_key.c.i
 
-HARDWARE/MatrixKeys/MatrixKeys.s: HARDWARE/MatrixKeys/MatrixKeys.c.s
-.PHONY : HARDWARE/MatrixKeys/MatrixKeys.s
+HARDWARE/MatrixKeys/matrix_key.s: HARDWARE/MatrixKeys/matrix_key.c.s
+.PHONY : HARDWARE/MatrixKeys/matrix_key.s
 
 # target to generate assembly for a file
-HARDWARE/MatrixKeys/MatrixKeys.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/MatrixKeys.c.s
-.PHONY : HARDWARE/MatrixKeys/MatrixKeys.c.s
+HARDWARE/MatrixKeys/matrix_key.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/MatrixKeys/matrix_key.c.s
+.PHONY : HARDWARE/MatrixKeys/matrix_key.c.s
 
 HARDWARE/OLED/OLED_42/oled_42.obj: HARDWARE/OLED/OLED_42/oled_42.c.obj
 .PHONY : HARDWARE/OLED/OLED_42/oled_42.obj
@@ -1589,9 +1589,9 @@ help:
 	@echo ... HARDWARE/LCD/LCD_47/lcd_47.obj
 	@echo ... HARDWARE/LCD/LCD_47/lcd_47.i
 	@echo ... HARDWARE/LCD/LCD_47/lcd_47.s
-	@echo ... HARDWARE/MatrixKeys/MatrixKeys.obj
-	@echo ... HARDWARE/MatrixKeys/MatrixKeys.i
-	@echo ... HARDWARE/MatrixKeys/MatrixKeys.s
+	@echo ... HARDWARE/MatrixKeys/matrix_key.obj
+	@echo ... HARDWARE/MatrixKeys/matrix_key.i
+	@echo ... HARDWARE/MatrixKeys/matrix_key.s
 	@echo ... HARDWARE/OLED/OLED_42/oled_42.obj
 	@echo ... HARDWARE/OLED/OLED_42/oled_42.i
 	@echo ... HARDWARE/OLED/OLED_42/oled_42.s

@@ -1,7 +1,7 @@
 #ifndef LEDEN_KEY_USER_H
 #define LEDEN_KEY_USER_H
 
-#include "MatrixKeys.h"
+#include "matrix_key.h"
 #include "stdio.h"
 #include "jsmn_user.h"
 

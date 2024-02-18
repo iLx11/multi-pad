@@ -30,12 +30,16 @@ static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t
 /********************************************************************************
 * 不同的解析 json 字符串的功能函数
 ********************************************************************************/
+// 普通按键 （不包含特殊按键以及延迟的按键）
 static void parse_json_normal_key(uint8_t key_value_index);
 
+// 组合按键 （包含特殊按键，不包含延迟的按键）
 static void parse_json_comp_key(uint8_t key_value_index);
 
+// 延迟按键 （包含延迟，不包含特殊按键）
 static void parse_json_delay_key(uint8_t key_value_index);
 
+// 组合延迟按键 （包含延迟和特殊按键）
 static void parse_json_comp_delay_key(uint8_t key_value_index);
 
 static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t special_key);

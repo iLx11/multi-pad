@@ -9,24 +9,27 @@ uint8_t holding_key_value = 200;
 
 // ¼üÅÌ³õÊ¼»¯
 void key_init_user() {
-    MK_init();
+    matrix_init();
 }
 
 // ¼üÅÌÖ´ÐÐÉ¨Ãè
 void key_scan_user() {
-    MK_scan(&state);
+    matrix_scan();
 }
 
 // °´¼üÖ´ÐÐ
-void MK_on_keyup(uint8_t row, uint8_t col) {
+void key_up_callback(uint8_t row, uint8_t col) {
+    uint8_t key_value = (col * ROW_NUM) + row;
+    printf("key_value -> %d\n\r", (key_value << 1) + 1);
+//    parse_json_value((key_value << 1) + 1);
 //    hid_buff_reset();
 //    HAL_Delay(10);
 }
 
-void MK_on_keydown(uint8_t row, uint8_t col) {
+void key_down_callback(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
-    printf("key_value -> %d\n", key_value);
-    parse_json_value(key_value);
+    printf("key_value -> %d\n\r", key_value << 1);
+//    parse_json_value(key_value << 1);
 }
 
 void key_hold_callback(uint8_t row, uint8_t col) {
