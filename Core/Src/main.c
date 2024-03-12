@@ -31,13 +31,11 @@
 #include "lcd_user.h"
 #include "encoder_user.h"
 #include "flash_user.h"
+//#include "usbd_cdc_if.h"
+#include "usb_user.h"
 
 void SystemClock_Config(void);
 
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
 int main(void) {
     RetargetInit(&huart1);
     HAL_Init();

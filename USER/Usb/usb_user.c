@@ -3,6 +3,7 @@
 #include "flash_user.h"
 #include "usbd_customhid.h"
 #include "jsmn_user.h"
+#include "usbd_cdc_if.h"
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 
@@ -39,6 +40,12 @@ uint8_t file_array_index = 0;
 uint16_t file_position = 0;
 uint8_t photo_file_flag = 0;
 
+#define RX_BUFFER_LEN (512)
+
+// 接收 FLAG
+uint8_t data_receive_flag;
+// 接收缓存数组
+uint8_t receive_buff[RX_BUFFER_LEN];
 
 /********************************************************************************
 * 接收 hid 上位机发送的数据
@@ -132,7 +139,7 @@ static void turn_to_next_position() {
 ********************************************************************************/
 void send_hid_code(uint8_t func) {
     cur_buff = func;
-    while (USBD_CUSTOM_HID_FUNC_SendReport(&hUsbDeviceFS, buff_point_array[func].send_buff_point,
+    while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[func].send_buff_point,
                                            buff_point_array[func].buff_size) != USBD_OK);
 }
 
@@ -143,7 +150,7 @@ void hid_buff_reset() {
     for (uint8_t i = 0; i < buff_point_array[cur_buff].buff_size; i++) {
         buff_point_array[cur_buff].send_buff_point[i] &= 0x00;
     }
-    while (USBD_CUSTOM_HID_FUNC_SendReport(&hUsbDeviceFS, buff_point_array[cur_buff].zero_buff_point,
+    while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[cur_buff].zero_buff_point,
                                            buff_point_array[cur_buff].buff_size) != USBD_OK);
     printf("reset ok\n");
 }

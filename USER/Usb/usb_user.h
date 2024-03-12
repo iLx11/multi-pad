@@ -2,6 +2,7 @@
 #define LEDEN_USB_USER_H
 
 #include "usbd_customhid.h"
+#include "usbd_cdc.h"
 #include <stdio.h>
 
 // 缓冲数组指针结构体

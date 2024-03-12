@@ -1,5 +1,5 @@
-"D:\RA\CLION\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Users\Administrator\Desktop\HARDWARE\keyPadF1 -B D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug
+"D:\RA\CLION\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Users\Administrator\Desktop\keyPadF1 -B D:\Users\Administrator\Desktop\keyPadF1\cmake-build-debug
 -- Minimal optimization, debug info included
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug
+-- Build files have been written to: D:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug

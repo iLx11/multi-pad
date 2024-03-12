@@ -28,25 +28,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 88,
+				"line" : 97,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 84,
+				"line" : 93,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 85,
+				"line" : 94,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 86,
+				"line" : 95,
 				"parent" : 0
 			},
 			{
@@ -76,7 +76,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 78,
+				"line" : 87,
 				"parent" : 0
 			},
 			{
@@ -154,127 +154,135 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI1"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI3"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/OLED/OLED_42"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/LCD/LCD_47"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/FLASH"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/FLASH"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/MatrixKeys"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/JSMN"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/JSMN"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM1"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM3"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM4"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM4"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER1"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER2"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER3"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Lcd"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Usb"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Usb"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Json"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Json"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Key"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Key"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Flash"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Flash"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Encoder"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Oled"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/JSMN_USER"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/JSMN_USER"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USB_DEVICE/App"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/App"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USB_DEVICE/Target"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/Target"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Inc"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
 				}
 			],
 			"language" : "C",
@@ -330,11 +338,11 @@
 				118,
 				120,
 				123,
-				128,
-				129,
-				130,
-				131,
+				125,
+				127,
+				132,
 				133,
+				134,
 				135,
 				137,
 				139,
@@ -342,8 +350,11 @@
 				143,
 				145,
 				147,
-				150,
-				152
+				149,
+				151,
+				153,
+				156,
+				158
 			]
 		},
 		{
@@ -416,127 +427,135 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI1"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI2"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/SPI/SPI3"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/OLED/OLED_42"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/OLED/OLED_42"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/LCD/LCD_47"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/LCD/LCD_47"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/FLASH"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/FLASH"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/MatrixKeys"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/MatrixKeys"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/JSMN"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/JSMN"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM1"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM3"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/TIM/TIM4"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM4"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER1"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER2"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/HARDWARE/ENCODER/ENCODER3"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Lcd"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Lcd"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Usb"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Usb"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Json"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Json"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Key"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Key"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Flash"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Flash"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Encoder"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Encoder"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USER/Oled"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Oled"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/JSMN_USER"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/JSMN_USER"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Drivers/CMSIS/Include"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USB_DEVICE/App"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/App"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/USB_DEVICE/Target"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/Target"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Inc"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
 				}
 			],
 			"language" : "ASM",
@@ -561,7 +580,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug/leden.map",
+				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug/leden.map",
 				"role" : "flags"
 			},
 			{
@@ -586,7 +605,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/STM32F103VETX_FLASH.ld",
+				"fragment" : "D:/Users/Administrator/Desktop/keyPadF1/STM32F103VETX_FLASH.ld",
 				"role" : "flags"
 			}
 		],
@@ -684,11 +703,11 @@
 				121,
 				122,
 				124,
-				125,
 				126,
-				127,
-				132,
-				134,
+				128,
+				129,
+				130,
+				131,
 				136,
 				138,
 				140,
@@ -696,9 +715,12 @@
 				144,
 				146,
 				148,
-				149,
-				151,
-				153
+				150,
+				152,
+				154,
+				155,
+				157,
+				159
 			]
 		},
 		{
@@ -747,11 +769,11 @@
 				118,
 				120,
 				123,
-				128,
-				129,
-				130,
-				131,
+				125,
+				127,
+				132,
 				133,
+				134,
 				135,
 				137,
 				139,
@@ -759,8 +781,11 @@
 				143,
 				145,
 				147,
-				150,
-				152
+				149,
+				151,
+				153,
+				156,
+				158
 			]
 		},
 		{
@@ -771,7 +796,7 @@
 				19,
 				41,
 				73,
-				154
+				160
 			]
 		}
 	],
@@ -1431,6 +1456,28 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Inc/usbd_composite.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
 			"path" : "Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h",
 			"sourceGroupIndex" : 0
 		},
@@ -1487,6 +1534,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "USB_DEVICE/App/usb_device.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "USB_DEVICE/App/usbd_cdc_if.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "USB_DEVICE/App/usbd_cdc_if.h",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -56,10 +56,10 @@ RM = "D:\RA\CLION\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Users\Administrator\Desktop\HARDWARE\keyPadF1
+CMAKE_SOURCE_DIR = D:\Users\Administrator\Desktop\keyPadF1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Users\Administrator\Desktop\keyPadF1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Users\Administrator\Desktop\keyPadF1\cmake-build-debug\CMakeFiles D:\Users\Administrator\Desktop\keyPadF1\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Users\Administrator\Desktop\HARDWARE\keyPadF1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Users\Administrator\Desktop\keyPadF1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1120,6 +1120,54 @@ HARDWARE/TIM/TIM4/tim4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/HARDWARE/TIM/TIM4/tim4.c.s
 .PHONY : HARDWARE/TIM/TIM4/tim4.c.s
 
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.obj: Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.obj
+
+# target to build an object file
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.i: Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.i
+
+# target to preprocess a source file
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i
+
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.s: Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.s
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.s
+
+# target to generate assembly for a file
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.s
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.s
+
+Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.obj: Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.obj
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.obj
+
+# target to build an object file
+Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.obj
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.obj
+
+Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.i: Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.i
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.i
+
+# target to preprocess a source file
+Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.i
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.i
+
+Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.s: Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.s
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.s
+
+# target to generate assembly for a file
+Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.s
+.PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c.s
+
 Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.obj: Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c.obj
 .PHONY : Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.obj
 
@@ -1239,6 +1287,30 @@ USB_DEVICE/App/usb_device.s: USB_DEVICE/App/usb_device.c.s
 USB_DEVICE/App/usb_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/App/usb_device.c.s
 .PHONY : USB_DEVICE/App/usb_device.c.s
+
+USB_DEVICE/App/usbd_cdc_if.obj: USB_DEVICE/App/usbd_cdc_if.c.obj
+.PHONY : USB_DEVICE/App/usbd_cdc_if.obj
+
+# target to build an object file
+USB_DEVICE/App/usbd_cdc_if.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+.PHONY : USB_DEVICE/App/usbd_cdc_if.c.obj
+
+USB_DEVICE/App/usbd_cdc_if.i: USB_DEVICE/App/usbd_cdc_if.c.i
+.PHONY : USB_DEVICE/App/usbd_cdc_if.i
+
+# target to preprocess a source file
+USB_DEVICE/App/usbd_cdc_if.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.i
+.PHONY : USB_DEVICE/App/usbd_cdc_if.c.i
+
+USB_DEVICE/App/usbd_cdc_if.s: USB_DEVICE/App/usbd_cdc_if.c.s
+.PHONY : USB_DEVICE/App/usbd_cdc_if.s
+
+# target to generate assembly for a file
+USB_DEVICE/App/usbd_cdc_if.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\leden.elf.dir\build.make CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.s
+.PHONY : USB_DEVICE/App/usbd_cdc_if.c.s
 
 USB_DEVICE/App/usbd_custom_hid_if.obj: USB_DEVICE/App/usbd_custom_hid_if.c.obj
 .PHONY : USB_DEVICE/App/usbd_custom_hid_if.obj
@@ -1613,6 +1685,12 @@ help:
 	@echo ... HARDWARE/TIM/TIM4/tim4.obj
 	@echo ... HARDWARE/TIM/TIM4/tim4.i
 	@echo ... HARDWARE/TIM/TIM4/tim4.s
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.obj
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.i
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.s
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.obj
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.i
+	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.s
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.obj
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.i
 	@echo ... Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.s
@@ -1628,6 +1706,9 @@ help:
 	@echo ... USB_DEVICE/App/usb_device.obj
 	@echo ... USB_DEVICE/App/usb_device.i
 	@echo ... USB_DEVICE/App/usb_device.s
+	@echo ... USB_DEVICE/App/usbd_cdc_if.obj
+	@echo ... USB_DEVICE/App/usbd_cdc_if.i
+	@echo ... USB_DEVICE/App/usbd_cdc_if.s
 	@echo ... USB_DEVICE/App/usbd_custom_hid_if.obj
 	@echo ... USB_DEVICE/App/usbd_custom_hid_if.i
 	@echo ... USB_DEVICE/App/usbd_custom_hid_if.s

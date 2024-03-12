@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug"
+			"value" : "d:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1"
+			"value" : "D:/Users/Administrator/Desktop/keyPadF1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1415,7 +1415,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/cmake-build-debug"
+			"value" : "D:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug"
 		},
 		{
 			"name" : "leden_IS_TOP_LEVEL",
@@ -1439,7 +1439,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1"
+			"value" : "D:/Users/Administrator/Desktop/keyPadF1"
 		}
 	],
 	"kind" : "cache",

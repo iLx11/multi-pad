@@ -25,7 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake"
   "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Generic.cmake"
   "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/ProcessorCount.cmake"
-  "D:/Users/Administrator/Desktop/HARDWARE/keyPadF1/CMakeLists.txt"
+  "D:/Users/Administrator/Desktop/keyPadF1/CMakeLists.txt"
   "CMakeFiles/3.25.2/CMakeASMCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
