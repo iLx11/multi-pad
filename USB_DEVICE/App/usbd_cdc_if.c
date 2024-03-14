@@ -256,21 +256,31 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t *pbuf, uint16_t length) {
   * @param  Len: Number of data received (in bytes)
   * @retval Result of the operation: USBD_OK if all operations are OK else USBD_FAIL
   */
-#include "usb_user.h"
-
-#define MAX_PACK_SIZE (64)
-#define RX_BUFFER_LEN (512)
+#define MAX_PACK_SIZE (60)
+#define RE_BUFF_SIZE (4096)
 // 接收 FLAG
 extern uint8_t data_receive_flag;
 // 接收缓存数组
-extern uint8_t receive_buff[RX_BUFFER_LEN];
+extern uint8_t receive_buff[RE_BUFF_SIZE];
+// 数据包的大小
+extern uint16_t package_size;
+
+uint8_t package_num = 0;
 
 static int8_t CDC_Receive_FS(uint8_t *Buf, uint32_t *Len) {
     /* USER CODE BEGIN 6 */
     USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
     USBD_CDC_ReceivePacket(&hUsbDeviceFS);
-//    CDC_Transmit_FS(Buf, *Len);
-    receive_buff[0] = 0x11;
+    // 存入缓存数组中
+    memcpy((uint8_t *)(&receive_buff[0] + (MAX_PACK_SIZE * package_num)), &Buf[0], *Len);
+    package_num ++;
+    if(*Len < MAX_PACK_SIZE) {
+        package_size += *Len;
+        package_num = 0;
+        data_receive_flag = 0xff;
+        return (USBD_OK);
+    }
+    package_size += MAX_PACK_SIZE;
     return (USBD_OK);
     /* USER CODE END 6 */
 }

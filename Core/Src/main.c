@@ -46,13 +46,13 @@ int main(void) {
     // flash
 //    if(flash_init_user() == 0) return 0;
     // json ½âÎö
-//    jsmn_init_user();
+    jsmn_init_user();
     // ¾ØÕó¼üÅÌ
     key_init_user();
     // ±àÂëÆ÷
     encoder_init_user();
     // OLED ÏÔÊ¾
-    oled_init_user();
+//    oled_init_user();
     // lcd ÏÔÊ¾
 //    lcd_init_user();
 
@@ -61,6 +61,8 @@ int main(void) {
         key_scan_user();
         // ±àÂëÆ÷É¨Ãè
         encoder_scan_user();
+        // usb Êı¾İÉ¨Ãè
+        usb_scan_user();
     }
 }
 

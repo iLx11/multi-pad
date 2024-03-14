@@ -40,12 +40,35 @@ uint8_t file_array_index = 0;
 uint16_t file_position = 0;
 uint8_t photo_file_flag = 0;
 
-#define RX_BUFFER_LEN (512)
+#define RE_BUFF_SIZE (4096)
 
 // 接收 FLAG
 uint8_t data_receive_flag;
 // 接收缓存数组
-uint8_t receive_buff[RX_BUFFER_LEN];
+uint8_t receive_buff[RE_BUFF_SIZE];
+// 数据包的大小
+uint16_t package_size = 0;
+
+/********************************************************************************
+* USB 扫描
+********************************************************************************/
+void usb_scan_user() {
+    // 填充满接收缓冲数组之后写入 FLASH
+    if(data_receive_flag == 0xff) {
+        data_receive_flag = 0x00;
+        CDC_Transmit_FS(receive_buff, package_size);
+        // 写入并重置
+        // ------------------ test --------------------------
+        HAL_Delay(20);
+        memcpy(json_str, receive_buff, package_size);
+        load_parse_key(1);
+        CDC_Transmit_FS("done", 5);
+
+        // 写入键值数据
+//        storage_menu_to_flash(1, (uint8_t *)&receive_buff, package_size, 0);
+    }
+}
+
 
 /********************************************************************************
 * 接收 hid 上位机发送的数据

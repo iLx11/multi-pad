@@ -27,23 +27,35 @@ uint8_t flash_init_user(void) {
 }
 
 /********************************************************************************
-* 按照菜单写入
+* 按照菜单写入键值和单色屏，mode == 1 时为读取屏幕数据
 ********************************************************************************/
 void storage_menu_to_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t data_size, uint8_t mode) {
-    if(menu_index > 9 || data_size > 12288) return ;
+    if(menu_index > 10) return ;
     uint32_t sector_address = menu_index << PER_FOLDER_SECTOR_SHIFT << 12;
-    if(mode) sector_address += 4096;
-    enable_flash_write(); // 解锁Flas h
+    // 读取每一层的小屏幕 4096 + 3072
+    if(mode) sector_address += 7168;
+    enable_flash_write();
     write_to_flash(data_buff, sector_address, data_size);
 }
 
 /********************************************************************************
-* 按照菜单读取
+* 写入彩色屏幕，每层占据 27 个扇区，十层菜单占据 16 个块
+********************************************************************************/
+void storage_color_screen(uint8_t menu_index, uint8_t * data_buff, uint16_t data_size) {
+    if(menu_index > 10) return ;
+    menu_index += 11;
+    uint32_t sector_address = menu_index << 12;
+    enable_flash_write();
+    write_to_flash(data_buff, sector_address, data_size);
+}
+
+/********************************************************************************
+* 按照菜单读取键值和单色屏
 ********************************************************************************/
 void load_menu_from_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t data_size, uint8_t mode) {
-    if(menu_index > 9 || data_size > 12288) return ;
+    if(menu_index > 10) return ;
     uint32_t sector_address = menu_index << PER_FOLDER_SECTOR_SHIFT << 12;
-    if(mode) sector_address += 4096;
+    if(mode) sector_address += 7168;
     read_flash(data_buff, sector_address, data_size);
 }
 

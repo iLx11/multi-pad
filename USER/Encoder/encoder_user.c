@@ -61,7 +61,7 @@ static void keyboard_menu_change() {
     if(pre_menu != menu_index) {
         pre_menu = menu_index;
         // 加载图片并显示
-        load_show_menu(menu_index);
+        load_show_menu(menu_index + 1);
         // 加载当前层级的命令
         load_parse_key(menu_index);
     }
@@ -81,18 +81,29 @@ void HAL_IncTick(void) {
 uint32_t HAL_GetTick(void) {
     return cur_time;
 }
-
+/*
+ *  每个编码器回调函数携带事件参数
+ *  0 -> 按下
+ *  1 -> 抬起
+ *  2 -> 左旋
+ *  3 -> 右旋
+ *  4 -> 按下左旋
+ *  5 -> 按下右旋
+ * */
 // 编码器 1
 void encoder1_callback(uint8_t encoder_value) {
-    printf("encoder_value -> %d\n\r", encoder_value);
+    printf("encoder_value -> %d\n\r", encoder_value + 16);
+    parse_json_value( encoder_value + 16);
 }
 
 // 编码器 2
 void encoder2_callback(uint8_t encoder_value) {
-    printf("encoder_value -> %d\n\r", encoder_value);
+    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
+    parse_json_value( (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
 }
 
 // 编码器 3
 void encoder3_callback(uint8_t encoder_value) {
-    printf("encoder_value -> %d\n\r", encoder_value);
+    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
+    parse_json_value( (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
 }

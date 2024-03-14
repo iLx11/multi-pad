@@ -12,11 +12,13 @@ typedef struct {
     uint8_t buff_size;
 } buff_struct;
 
+void usb_scan_user();
+
 void send_hid_code(uint8_t func);
 // ∑¢ÀÕ hid ÷ÿ÷√
 void hid_buff_reset();
 
-void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef* hhid, uint8_t len);
+static void receive_data_from_upper(USBD_CUSTOM_HID_HandleTypeDef* hhid, uint8_t len);
 
 static void photo_string_to_hex(const char *hex_string_array);
 

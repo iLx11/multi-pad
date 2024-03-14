@@ -14,6 +14,8 @@
 #include "jsmn_user.h"
 #include "oled_user.h"
 
+#define ENCODER_EVENT_NUM 6
+
 void encoder_init_user(void);
 
 void encoder_scan_user(void);

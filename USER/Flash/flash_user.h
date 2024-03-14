@@ -12,14 +12,14 @@
 
 #include "stm32f1xx_hal.h"
 
-// 最大 FLASH SIZE ->16 M
+// 最大 FLASH SIZE -> 16M (128 / 8)
 #define MAX_FLASH_SIZE (16 * 1024 * 1024);
-// 块数量
+// 块数量 (16M / 4096 / 16)
 #define BLOCK_NUM 256
 // 扇区大小
 #define SECTOR_SIZE 4096
 // 每一层的存储偏移（* 4）
-#define PER_FOLDER_SECTOR_SHIFT 2
+#define PER_FOLDER_SECTOR_SHIFT 1
 
 
 uint8_t flash_init_user(void);

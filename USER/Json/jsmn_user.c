@@ -6,14 +6,14 @@ extern buff_struct buff_point_array[3];
 
 extern uint8_t menu_change_lock;
 
-//char *json_str = "{\"000\":\"009040506070809040609\",\"001\":\"103010104010106010119\",\"002\":\"210904050607080904060904FF0904050607080904060904\",\"003\":\"320201010401010604FF0201011901011904FF01010104\",\"004\":\"50010\",\"05\":\"50020\",\"006\":\"50040\",\"007\":\"50080\"}";
+//char *json_str = "{\"00\":\"009040506070809040609\"}";
 
 //jsmntok_t t[512];
 jsmn_parser p;
 
 char json_str[JSON_SIZE];
 
-// 解析后的键值数组
+// 解析后的键值数组 (2 * 8) + (6 * 3)
 char key_value_array[34][360] = {0};
 
 // 根据功能解析 json 值的函数指针数组
@@ -25,7 +25,7 @@ void (*parse_by_function[8])(uint8_t) = {parse_json_normal_key, parse_json_comp_
 void jsmn_init_user() {
     jsmn_init(&p);
     menu_change_lock = 1;
-    load_parse_key(0);
+    load_parse_key(1);
 }
 
 /********************************************************************************
@@ -35,7 +35,7 @@ uint8_t load_parse_key(uint8_t menu) {
     // 清空字符串
     memset(key_value_array, 0, sizeof (key_value_array));
     // 从 flash 加载键值
-    load_menu_from_flash(menu, (uint8_t *) json_str, 12288, 1);
+//    load_menu_from_flash(menu, (uint8_t *) json_str, 12288, 1);
     // 清空 jsmn 解析结构体
     memset(&p, 0, sizeof(jsmn_parser));
     // 解析键值
@@ -81,7 +81,7 @@ static uint8_t parse_json_data(jsmn_parser *p) {
                 memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
                 s += 1;
                 strcat(key_value_array[j], json_value_str);
-//                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
+                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
             }
         }
         menu_change_lock = 0;
