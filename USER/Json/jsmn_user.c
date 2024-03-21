@@ -6,15 +6,15 @@ extern buff_struct buff_point_array[3];
 
 extern uint8_t menu_change_lock;
 
-//char *json_str = "{\"00\":\"009040506070809040609\"}";
+//char *json_str = "{\"00\":\"101000B171A08171A08222021221F\",\"04\":\"0051715081A09\"}";
+char json_str[JSON_SIZE];
 
 //jsmntok_t t[512];
 jsmn_parser p;
 
-char json_str[JSON_SIZE];
 
 // 解析后的键值数组 (2 * 8) + (6 * 3)
-char key_value_array[34][360] = {0};
+char key_value_array[EVENT_NUM][EVENT_SIZE] = {0};
 
 // 根据功能解析 json 值的函数指针数组
 void (*parse_by_function[8])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_delay_key,
@@ -65,7 +65,7 @@ static uint8_t parse_json_data(jsmn_parser *p) {
     }
     // 根据键取字符串+
     if (r < 1 && t[0].type != JSMN_OBJECT) return 1;
-    for (uint8_t j = 0; j < 30; j++) {
+    for (uint8_t j = 0; j < EVENT_NUM; j++) {
         // sprintf 函数执行速度还未测试
         // json 字符的键
         char json_key_str[4] = {0};
@@ -77,7 +77,7 @@ static uint8_t parse_json_data(jsmn_parser *p) {
         for (uint8_t s = 0; s < r; s++) {
             if (json_cmp(json_str, &t[s], json_key_str) == 0) {
                 // 取出 json 字符中键对应的值
-                char json_value_str[200] = {0};
+                char json_value_str[EVENT_SIZE] = {0};
                 memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
                 s += 1;
                 strcat(key_value_array[j], json_value_str);
@@ -97,7 +97,10 @@ void parse_json_value(uint8_t key_value_index) {
     printf("function_index -> %d\n", function_index);
     if (function_index > 10 || function_index < 0) return;
     printf("parse_function_running.....\n");
+    holding_flag = 0;
+    printf("holding_flag -> %d\r\n", holding_flag);
     (*parse_by_function[function_index])(key_value_index);
+
 }
 
 /********************************************************************************

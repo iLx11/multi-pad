@@ -20,15 +20,11 @@ void oled_init_user() {
 ********************************************************************************/
 void load_show_menu(uint8_t menu_index) {
     menu_change_lock = 1;
-    uint8_t* flash_pic_data = (uint8_t *) malloc(sizeof (uint8_t) * 720);
+//    uint8_t* flash_pic_data = (uint8_t *) malloc(sizeof (uint8_t) * 720);
     // ∂¡»°”Î∏≥÷µÕº∆¨
-    load_menu_from_flash(menu_index, flash_pic_data, 720, 0);
-    memcpy(oled_42_array[0], flash_pic_data, 360);
-    memcpy(oled_42_array[1], flash_pic_data + 360, 360);
+
     // œ‘ æÕº∆¨
-    oled_42_show_pic_index(0,0,72,40, oled_42_array[0],1, 0);
-    oled_42_show_pic_index(0,0,72,40, oled_42_array[1],1, 0);
-    free(flash_pic_data);
+//    free(flash_pic_data);
     menu_change_lock = 0;
 }
 

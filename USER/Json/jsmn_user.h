@@ -11,7 +11,12 @@
 // 键值和小屏幕数组在 FLASH 中占据两个扇区(2 * 4096)，其中键值占据 7168
 #define JSON_SIZE 7168
 
+#define EVENT_NUM 34
+
+#define EVENT_SIZE 512
+
 extern uint8_t menu_index;
+extern uint8_t holding_flag;
 
 void jsmn_init_user();
 

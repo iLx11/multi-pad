@@ -260,6 +260,10 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t *pbuf, uint16_t length) {
 #define RE_BUFF_SIZE (4096)
 // 接收 FLAG
 extern uint8_t data_receive_flag;
+// 数据状态
+extern uint8_t data_state_flag;
+// 菜单配置
+extern uint8_t menu_config;
 // 接收缓存数组
 extern uint8_t receive_buff[RE_BUFF_SIZE];
 // 数据包的大小
@@ -268,16 +272,34 @@ extern uint16_t package_size;
 uint8_t package_num = 0;
 
 static int8_t CDC_Receive_FS(uint8_t *Buf, uint32_t *Len) {
+    // 判断越界
+    if(package_size >= RE_BUFF_SIZE) return
     /* USER CODE BEGIN 6 */
     USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
     USBD_CDC_ReceivePacket(&hUsbDeviceFS);
+    if(Buf[0] == 0xAA && Buf[1] == 0xBB) {
+        // 测试连接
+        if(Buf[2] == 0xCC) {
+            CDC_Transmit_FS(&Buf[0], 3);
+        }
+        // 菜单设置
+        if(Buf[2] == 0xDD) {
+            menu_config |= 0xff;
+        }
+        // 切换写入
+        if(Buf[2] == 0xEE) {
+            data_state_flag |= 0xff;
+        }
+        return (USBD_OK);
+    }
     // 存入缓存数组中
     memcpy((uint8_t *)(&receive_buff[0] + (MAX_PACK_SIZE * package_num)), &Buf[0], *Len);
     package_num ++;
-    if(*Len < MAX_PACK_SIZE) {
+    if(*Len < MAX_PACK_SIZE || package_size == 4036) {
         package_size += *Len;
         package_num = 0;
-        data_receive_flag = 0xff;
+        // 数据写入 flash
+        data_receive_flag |= 0xff;
         return (USBD_OK);
     }
     package_size += MAX_PACK_SIZE;

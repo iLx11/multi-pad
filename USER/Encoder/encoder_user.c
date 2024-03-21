@@ -92,6 +92,17 @@ uint32_t HAL_GetTick(void) {
  * */
 // ±àÂëÆ÷ 1
 void encoder1_callback(uint8_t encoder_value) {
+    if(encoder_value == 2) {
+        menu_index -= 1;
+        if(menu_index > 200) menu_index = 9;
+        oled_42_show_num(menu_index, 1, 0);
+    }
+    if(encoder_value == 3) {
+        menu_index += 1;
+        if(menu_index > 9) menu_index = 0;
+        oled_42_show_num(menu_index, 0, 0);
+    }
+    return;
     printf("encoder_value -> %d\n\r", encoder_value + 16);
     parse_json_value( encoder_value + 16);
 }
