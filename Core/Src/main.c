@@ -47,7 +47,6 @@ int main(void) {
     if(flash_init_user() == 0) return 0;
     // json ½âÎö
     jsmn_init_user();
-
     // ¾ØÕó¼üÅÌ
     key_init_user();
     // ±àÂëÆ÷
@@ -56,6 +55,8 @@ int main(void) {
     oled_init_user();
     // lcd ÏÔÊ¾
     lcd_init_user();
+
+    usb_init_user();
 
     while (1) {
         // ¼üÅÌÉ¨Ãè

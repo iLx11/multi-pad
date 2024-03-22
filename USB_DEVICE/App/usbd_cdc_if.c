@@ -268,6 +268,8 @@ extern uint8_t menu_config;
 extern uint8_t receive_buff[RE_BUFF_SIZE];
 // 数据包的大小
 extern uint16_t package_size;
+// 彩屏数据模式
+extern uint8_t color_mode;
 
 uint8_t package_num = 0;
 
@@ -283,19 +285,23 @@ static int8_t CDC_Receive_FS(uint8_t *Buf, uint32_t *Len) {
             CDC_Transmit_FS(&Buf[0], 3);
         }
         // 菜单设置
-        if(Buf[2] == 0xDD) {
+        else if(Buf[2] == 0xDD) {
             menu_config |= 0xff;
         }
         // 切换写入
-        if(Buf[2] == 0xEE) {
+        else if(Buf[2] == 0xEE) {
             data_state_flag |= 0xff;
+        }
+        // 彩色图片写入
+        else if(Buf[2] == 0xFF) {
+            color_mode |= 0xff;
         }
         return (USBD_OK);
     }
     // 存入缓存数组中
     memcpy((uint8_t *)(&receive_buff[0] + (MAX_PACK_SIZE * package_num)), &Buf[0], *Len);
     package_num ++;
-    if(*Len < MAX_PACK_SIZE || package_size == 4036) {
+    if(*Len < MAX_PACK_SIZE) {
         package_size += *Len;
         package_num = 0;
         // 数据写入 flash

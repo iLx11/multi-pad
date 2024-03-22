@@ -13,5 +13,6 @@
 #include "lcd_47.h"
 
 void lcd_init_user(void);
+void lcd_show_str(uint8_t* str);
 
 #endif //MULTI_LCD_USER_H
