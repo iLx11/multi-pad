@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "usbd_cdc_if.h"
+#include "lcd_user.h"
 
 /* USER CODE BEGIN INCLUDE */
 
@@ -306,6 +307,7 @@ static int8_t CDC_Receive_FS(uint8_t *Buf, uint32_t *Len) {
         package_num = 0;
         // Êý¾ÝÐ´Èë flash
         data_receive_flag |= 0xff;
+        CDC_Transmit_FS(&Buf[0], 3);
         return (USBD_OK);
     }
     package_size += MAX_PACK_SIZE;

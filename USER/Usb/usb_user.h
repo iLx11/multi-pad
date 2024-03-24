@@ -20,6 +20,8 @@ void send_hid_code(uint8_t func);
 // ·¢ËÍ hid ÖØÖÃ
 void hid_buff_reset(void);
 
+static void receive_reset(void);
+
 static uint8_t string_to_num(const char *hex_string_array, uint8_t start, uint8_t end);
 
 static uint8_t char_to_hex(char hex_char);

@@ -28,4 +28,8 @@ void storage_menu_to_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t dat
 
 void load_menu_from_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t data_size, uint8_t mode);
 
+void storage_color_screen(uint8_t menu_index, uint32_t address_offset, uint8_t * data_buff, uint16_t data_size);
+
+void read_color_screen(uint8_t menu_index, uint32_t address_offset, uint8_t * data_buff, uint16_t data_size);
+
 #endif //MULTI_FLASH_USER_H

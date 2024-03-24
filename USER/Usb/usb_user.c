@@ -4,6 +4,7 @@
 #include "usbd_customhid.h"
 #include "jsmn_user.h"
 #include "usbd_cdc_if.h"
+#include "lcd_user.h"
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 
@@ -31,7 +32,7 @@ buff_struct buff_point_array[3] = {
 extern char json_str[JSON_SIZE];
 //char clear_str[JSON_SIZE] = {0};
 
-#define RE_BUFF_SIZE (4096)
+#define RE_BUFF_SIZE 4096
 
 // 菜单索引
 uint8_t write_menu = 1;
@@ -50,17 +51,24 @@ uint8_t data_state;
 // 彩屏数据模式
 uint8_t color_mode;
 // 彩屏数据包计算
-uint8_t color_package_mode = 1;
+uint32_t color_package_count = 0;
 
 void usb_init_user(void) {
-    /*uint8_t str[] = "abbaabbaabbaabbabaab";
-    uint8_t* temp_arr = (uint8_t *) malloc(sizeof (uint8_t) * 30);
-    for (uint8_t i = 0; i < 20 - 1; i++) {
-        temp_arr[i] = string_to_num(str, i * 2, i * 2 + 1);
-        printf("temp_arr -> %x\r\n", temp_arr[i]);
+
+    uint8_t *image_arr = (uint8_t *) malloc(sizeof(uint8_t) * 3200);
+    for (uint8_t i = 0; i < 35; i++) {
+        if(i != 34) {
+            // 读取图片
+            read_color_screen(write_menu, i * 3200, image_arr, 3200);
+            // 显示图片
+            lcd_show_pic_index(0, i * 5, 320, 5, image_arr, 0);
+        } else {
+            read_color_screen(write_menu, i * 3200, image_arr, 1280);
+            lcd_show_pic_index(0, i * 5, 320, 2, image_arr, 0);
+        }
     }
-    free(temp_arr);
-    temp_arr = NULL;*/
+    free(image_arr);
+    image_arr = NULL;
 }
 
 /********************************************************************************
@@ -68,63 +76,87 @@ void usb_init_user(void) {
 ********************************************************************************/
 void usb_scan_user(void) {
     // 填充满接收缓冲数组之后写入 FLASH
-    if(data_receive_flag == 0xff) {
+    if (data_receive_flag == 0xff) {
         data_receive_flag &= 0x00;
         // 写入菜单
-        if(menu_config == 0xff) {
+        if (menu_config == 0xff) {
             menu_config &= 0x00;
-            storage_menu_to_flash(0, (uint8_t *)&receive_buff, package_size, 0);
-            package_size = 0;
-            memset(receive_buff, 0, RE_BUFF_SIZE);
+            storage_menu_to_flash(0, (uint8_t *) &receive_buff, package_size, 0);
+            receive_reset();
             return;
         }
         // 写入键值与图片
         // 单层图片
-        if(data_state_flag == 0xff) {
-            if(package_size > 700) return;
+        if (data_state_flag == 0xff) {
+            if (package_size > 700) return;
             data_state_flag &= 0x00;
-            // 存储小屏幕图片
-            storage_menu_to_flash(write_menu, (uint8_t *)receive_buff, package_size, 1);
-            package_size = 0;
-            memset(receive_buff, 0, RE_BUFF_SIZE);
+            // 转为图片数据后存储在 FLASH
+            storage_menu_to_flash(write_menu, (uint8_t *) receive_buff, package_size, 1);
+            receive_reset();
             return;
         }
         // 彩屏图片
-        if(color_mode == 0xff) {
-            // --------- modify --------------
-            uint8_t* temp_arr = (uint8_t *) malloc(sizeof (uint8_t) * (RE_BUFF_SIZE / 2));
-            for (uint8_t i = 0; i < (RE_BUFF_SIZE / 2) - 1; i++) {
-                temp_arr[i] = string_to_num(receive_buff, i * 2, i * 2 + 1);
-                printf("temp_arr -> %x\r\n", temp_arr[i]);
+        if (color_mode == 0xff) {
+            // 存储图片
+            storage_color_screen(write_menu, color_package_count << 12, receive_buff, package_size);
+            // 显示图片
+            if (color_package_count < 26) {
+                color_package_count++;
+            } else {
+                // 图片传输完成
+                lcd_show_str("test send done");
+                color_package_count = 0;
+                // --------------- test -----------------
+                uint8_t *image_arr = (uint8_t *) malloc(sizeof(uint8_t) * 3200);
+                for (uint8_t i = 0; i < 35; i++) {
+                    if(i != 34) {
+                        // 读取图片
+                        read_color_screen(write_menu, i * 3200, image_arr, 3200);
+                        // 显示图片
+                        lcd_show_pic_index(0, i * 5, 320, 5, image_arr, 0);
+                    } else {
+                        read_color_screen(write_menu, i * 3200, image_arr, 1280);
+                        lcd_show_pic_index(0, i * 5, 320, 2, image_arr, 0);
+                    }
+                }
+                free(image_arr);
+                image_arr = NULL;
             }
-            free(temp_arr);
-            temp_arr = NULL;
+
+            receive_reset();
+            return;
         }
         // 写入键值
-        if(data_state == 1) {
+        if (data_state == 1) {
             // 键值存储的第二个状态
             data_state = 0;
-            storage_menu_to_flash(write_menu, (uint8_t *)&receive_buff, package_size + 4096, 0);
+            storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, package_size + 4096, 0);
         } else {
             // 键值存储的第一个状态
             data_state = 1;
-            storage_menu_to_flash(write_menu, (uint8_t *)&receive_buff, package_size, 0);
+            storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, package_size, 0);
         }
 
         // ------------------ test --------------------------
         /*memset(json_str, 0, JSON_SIZE);
         memcpy(json_str, receive_buff, package_size);
         load_parse_key(1);*/
-        memset(json_str, 0, JSON_SIZE);
+        /*memset(json_str, 0, JSON_SIZE);
         load_menu_from_flash(write_menu, (uint8_t *)json_str, package_size, 0);
-        load_parse_key(1);
+        load_parse_key(1);*/
         // --------------------------------------------------
-        package_size = 0;
-        // 清空接收缓存数组
-        memset(receive_buff, 0, RE_BUFF_SIZE);
+        receive_reset();
     }
 }
 
+/********************************************************************************
+* 重置标志
+********************************************************************************/
+static void receive_reset(void) {
+    package_size = 0;
+    // 清空接收缓存数组
+    memset(receive_buff, 0, RE_BUFF_SIZE);
+}
 
 /********************************************************************************
 * 发送 hid 码
@@ -132,7 +164,7 @@ void usb_scan_user(void) {
 void send_hid_code(uint8_t func) {
     cur_buff = func;
     while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[func].send_buff_point,
-                                           buff_point_array[func].buff_size) != USBD_OK);
+                                      buff_point_array[func].buff_size) != USBD_OK);
 }
 
 /********************************************************************************
@@ -143,7 +175,7 @@ void hid_buff_reset(void) {
         buff_point_array[cur_buff].send_buff_point[i] &= 0x00;
     }
     while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[cur_buff].zero_buff_point,
-                                           buff_point_array[cur_buff].buff_size) != USBD_OK);
+                                      buff_point_array[cur_buff].buff_size) != USBD_OK);
     printf("reset ok\n");
 }
 
