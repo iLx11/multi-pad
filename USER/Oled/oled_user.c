@@ -6,9 +6,6 @@
 
 extern uint8_t menu_change_lock;
 
-// 图片存储数组
-uint8_t oled_42_array[OLED_42_NUM][SIZE_42];
-
 // 初始化
 void oled_init_user() {
     oled_42_init();
@@ -28,6 +25,18 @@ void load_show_menu(uint8_t menu_index) {
     menu_change_lock = 0;
 }
 
+/********************************************************************************
+* 显示当前层级的图片
+********************************************************************************/
+void show_menu_oled(uint8_t menu_index) {
+    // 读取图片
+    uint8_t* tempArr = (uint8_t *) malloc(sizeof (uint8_t) * 720);
+    load_menu_from_flash(menu_index, tempArr, 720, 1);
+    oled_42_show_pic_index(0, 0, 72, 40, tempArr,  1, 0);
+    oled_42_show_pic_index(0, 0, 72, 40, tempArr + 350,  1, 1);
+    free(tempArr);
+    tempArr = NULL;
+}
 
 /********************************************************************************
 * 显示数字

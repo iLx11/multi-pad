@@ -86,4 +86,5 @@ CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj: \
  D:\Users\Administrator\Desktop\keyPadF1\USER\Encoder/encoder_user.h \
  D:\Users\Administrator\Desktop\keyPadF1\USB_DEVICE\App/usbd_cdc_if.h \
  D:\Users\Administrator\Desktop\keyPadF1\USER\Lcd/lcd_user.h \
- D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\LCD\LCD_47/lcd_47.h
+ D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\LCD\LCD_47/lcd_47.h \
+ D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\OLED\OLED_42/oled_42.h

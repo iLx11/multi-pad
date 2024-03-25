@@ -62,9 +62,4 @@ CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: \
  D:\Users\Administrator\Desktop\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd.h \
  D:\Users\Administrator\Desktop\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_ll_usb.h \
  D:\Users\Administrator\Desktop\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pcd_ex.h \
- D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\FLASH/flash.h \
- D:\Users\Administrator\Desktop\keyPadF1\USER\Oled/oled_user.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\string.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\_locale.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\strings.h \
- d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\string.h
+ D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\FLASH/flash.h

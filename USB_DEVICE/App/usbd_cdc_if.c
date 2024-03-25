@@ -257,7 +257,7 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t *pbuf, uint16_t length) {
   * @param  Len: Number of data received (in bytes)
   * @retval Result of the operation: USBD_OK if all operations are OK else USBD_FAIL
   */
-#define MAX_PACK_SIZE (60)
+#define MAX_PACK_SIZE (62)
 #define RE_BUFF_SIZE (4096)
 // Ω” ’ FLAG
 extern uint8_t data_receive_flag;

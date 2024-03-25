@@ -12,7 +12,6 @@ char json_str[JSON_SIZE];
 //jsmntok_t t[512];
 jsmn_parser p;
 
-
 // 解析后的键值数组 (2 * 8) + (6 * 3)
 char key_value_array[EVENT_NUM][EVENT_SIZE] = {0};
 
@@ -81,7 +80,7 @@ static uint8_t parse_json_data(jsmn_parser *p) {
                 memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
                 s += 1;
                 strcat(key_value_array[j], json_value_str);
-                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
+//                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
             }
         }
         menu_change_lock = 0;
@@ -94,11 +93,11 @@ static uint8_t parse_json_data(jsmn_parser *p) {
 ********************************************************************************/
 void parse_json_value(uint8_t key_value_index) {
     uint8_t function_index = key_value_array[key_value_index][0] - 0x30;
-    printf("function_index -> %d\n", function_index);
+//    printf("function_index -> %d\n", function_index);
     if (function_index > 10 || function_index < 0) return;
-    printf("parse_function_running.....\n");
+//    printf("parse_function_running.....\n");
     holding_flag = 0;
-    printf("holding_flag -> %d\r\n", holding_flag);
+//    printf("holding_flag -> %d\r\n", holding_flag);
     (*parse_by_function[function_index])(key_value_index);
 
 }

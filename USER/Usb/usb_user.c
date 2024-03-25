@@ -5,6 +5,7 @@
 #include "jsmn_user.h"
 #include "usbd_cdc_if.h"
 #include "lcd_user.h"
+#include "oled_42.h"
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 
@@ -54,21 +55,8 @@ uint8_t color_mode;
 uint32_t color_package_count = 0;
 
 void usb_init_user(void) {
-
-    uint8_t *image_arr = (uint8_t *) malloc(sizeof(uint8_t) * 3200);
-    for (uint8_t i = 0; i < 35; i++) {
-        if(i != 34) {
-            // ¶ÁÈ¡Í¼Æ¬
-            read_color_screen(write_menu, i * 3200, image_arr, 3200);
-            // ÏÔÊ¾Í¼Æ¬
-            lcd_show_pic_index(0, i * 5, 320, 5, image_arr, 0);
-        } else {
-            read_color_screen(write_menu, i * 3200, image_arr, 1280);
-            lcd_show_pic_index(0, i * 5, 320, 2, image_arr, 0);
-        }
-    }
-    free(image_arr);
-    image_arr = NULL;
+    // ÏÔÊ¾Í¼Æ¬
+//    show_menu_color(write_menu);
 }
 
 /********************************************************************************
@@ -88,10 +76,12 @@ void usb_scan_user(void) {
         // Ð´Èë¼üÖµÓëÍ¼Æ¬
         // µ¥²ãÍ¼Æ¬
         if (data_state_flag == 0xff) {
-            if (package_size > 700) return;
+            if (package_size > 730) return;
             data_state_flag &= 0x00;
             // ×ªÎªÍ¼Æ¬Êý¾Ýºó´æ´¢ÔÚ FLASH
             storage_menu_to_flash(write_menu, (uint8_t *) receive_buff, package_size, 1);
+            // ------------- test --------------
+            show_menu_oled(write_menu);
             receive_reset();
             return;
         }
@@ -104,25 +94,11 @@ void usb_scan_user(void) {
                 color_package_count++;
             } else {
                 // Í¼Æ¬´«ÊäÍê³É
-                lcd_show_str("test send done");
                 color_package_count = 0;
                 // --------------- test -----------------
-                uint8_t *image_arr = (uint8_t *) malloc(sizeof(uint8_t) * 3200);
-                for (uint8_t i = 0; i < 35; i++) {
-                    if(i != 34) {
-                        // ¶ÁÈ¡Í¼Æ¬
-                        read_color_screen(write_menu, i * 3200, image_arr, 3200);
-                        // ÏÔÊ¾Í¼Æ¬
-                        lcd_show_pic_index(0, i * 5, 320, 5, image_arr, 0);
-                    } else {
-                        read_color_screen(write_menu, i * 3200, image_arr, 1280);
-                        lcd_show_pic_index(0, i * 5, 320, 2, image_arr, 0);
-                    }
-                }
-                free(image_arr);
-                image_arr = NULL;
+                // ÏÔÊ¾Í¼Æ¬
+                show_menu_color(write_menu);
             }
-
             receive_reset();
             return;
         }
