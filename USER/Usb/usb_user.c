@@ -30,8 +30,7 @@ buff_struct buff_point_array[3] = {
 };
 
 // 键盘命令
-extern char json_str[JSON_SIZE];
-//char clear_str[JSON_SIZE] = {0};
+//extern char json_str[JSON_SIZE];
 
 #define RE_BUFF_SIZE 4096
 
@@ -56,10 +55,10 @@ uint32_t color_package_count = 0;
 // 等待信号
 uint8_t sign[1] = {0x68};
 
-void usb_init_user(void) {
-    load_parse_key(write_menu);
-    show_menu_color(write_menu);
-    show_menu_oled(write_menu);
+void load_menu(uint8_t menu_index) {
+    load_parse_key(menu_index);
+    show_menu_oled(menu_index);
+    show_menu_color(menu_index);
 }
 
 /********************************************************************************
@@ -103,7 +102,7 @@ void usb_scan_user(void) {
                 color_package_count = 0;
                 // --------------- test -----------------
                 color_mode &= 0x00;
-                usb_init_user();
+//                load_menu(write_menu);
             }
             receive_reset();
             CDC_Transmit_FS(sign, 1);
@@ -113,7 +112,7 @@ void usb_scan_user(void) {
         if (data_state == 0xff) {
             // 键值存储的第二个状态
             data_state &= 0x00;
-            storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, package_size, 0);
+            storage_page_two(write_menu, (uint8_t *) &receive_buff, package_size);
         } else {
             // 键值存储的第一个状态
             data_state |= 0xff;

@@ -12,7 +12,7 @@ typedef struct {
     uint8_t buff_size;
 } buff_struct;
 
-void usb_init_user(void);
+void load_menu(uint8_t menu_index);
 
 void usb_scan_user(void);
 

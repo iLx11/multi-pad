@@ -17,23 +17,28 @@ void key_scan_user() {
     matrix_scan();
 }
 
-// 按键执行
+/********************************************************************************
+* 按键抬起回调
+********************************************************************************/
 void key_up_callback(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
 //    printf("key_value -> %d\n\r", (key_value << 1) + 1);
     parse_json_value((key_value << 1) + 1);
     holding_flag = 0;
-//    printf("holding_flag -> %d\r\n", holding_flag);
-//    hid_buff_reset();
-//    HAL_Delay(10);
 }
 
+/********************************************************************************
+* 按键按下回调
+********************************************************************************/
 void key_down_callback(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
 //    printf("key_value -> %d\n\r", key_value << 1);
     parse_json_value(key_value << 1);
 }
 
+/********************************************************************************
+* 按键按住回调
+********************************************************************************/
 void key_hold_callback(uint8_t row, uint8_t col) {
     HAL_Delay(10);
     if (holding_flag == 0) {

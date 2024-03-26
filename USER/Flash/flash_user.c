@@ -36,6 +36,17 @@ void storage_menu_to_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t dat
 }
 
 /********************************************************************************
+* 键值的第二页
+********************************************************************************/
+void storage_page_two(uint8_t menu_index, uint8_t * data_buff, uint16_t data_size) {
+    if(menu_index > 10) return ;
+    uint32_t sector_address = menu_index << PER_FOLDER_SECTOR_SHIFT << 12;
+    sector_address += 4096;
+    enable_flash_write();
+    write_to_flash(data_buff, sector_address, data_size);
+}
+
+/********************************************************************************
 * 写入彩色屏幕，每层占据 27 个扇区，十层菜单占据 16 个块
 ********************************************************************************/
 void storage_color_screen(uint8_t menu_index, uint32_t address_offset, uint8_t * data_buff, uint16_t data_size) {

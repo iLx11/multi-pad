@@ -1,30 +1,51 @@
 #include "jsmn_user.h"
 #include "flash_user.h"
 
+//char *json_str = "{\"00\":\"101000B171A08171A08222021221F\",\"04\":\"0051715081A09\"}";
+//char json_str[JSON_SIZE];
+// 解析后的键值数组 (2 * 8) + (6 * 3)
+//char key_value_array[EVENT_NUM][EVENT_SIZE] = {0};
+//jsmntok_t t[512];
+
 // hid 发送缓冲数组指针结构体
 extern buff_struct buff_point_array[3];
 
 extern uint8_t menu_change_lock;
-
-//char *json_str = "{\"00\":\"101000B171A08171A08222021221F\",\"04\":\"0051715081A09\"}";
-char json_str[JSON_SIZE];
-
-//jsmntok_t t[512];
+// json 数据
+char* json_str = NULL;
+// json 解析句柄
 jsmn_parser p;
-
-// 解析后的键值数组 (2 * 8) + (6 * 3)
-char key_value_array[EVENT_NUM][EVENT_SIZE] = {0};
+// 解析后的键值数组
+char **key_value_array = NULL;
 
 // 根据功能解析 json 值的函数指针数组
-void (*parse_by_function[8])(uint8_t) = {parse_json_normal_key, parse_json_comp_key, parse_json_delay_key,
-                                         parse_json_comp_delay_key, parse_json_mouse_func,
-                                         parse_json_media_func, parse_json_menu_func};
+void (*parse_by_function[8])(uint8_t) = {
+        parse_json_normal_key, parse_json_comp_key, parse_json_delay_key,
+        parse_json_comp_delay_key, parse_json_mouse_func,parse_json_media_func,
+        parse_json_menu_func
+};
 
 // json 解析初始化
 void jsmn_init_user() {
     jsmn_init(&p);
     menu_change_lock = 1;
-    load_parse_key(1);
+    json_str = (char *) malloc(sizeof(char) * JSON_SIZE);
+    // 分配内存失败
+    if(json_str == NULL) {
+        free(json_str);
+        json_str = NULL;
+    }
+    key_value_array = (char **) malloc(sizeof(char *) * EVENT_NUM);
+    for (uint8_t i = 0; i < EVENT_NUM; i++) {
+        *(key_value_array + i) = (char *) malloc(sizeof(char) * EVENT_SIZE);
+    }
+    if(key_value_array == NULL) {
+        for (uint8_t i = 0; i < EVENT_NUM; i++) {
+            free(*(key_value_array + i));
+        }
+        free(key_value_array);
+        key_value_array = NULL;
+    }
 }
 
 /********************************************************************************
@@ -32,12 +53,16 @@ void jsmn_init_user() {
 ********************************************************************************/
 uint8_t load_parse_key(uint8_t menu) {
     // 清空解析前后的的字符串
-    memset(key_value_array, 0, sizeof (key_value_array));
+//    memset(key_value_array, 0, sizeof (*key_value_array));
+    for (uint8_t i = 0; i < EVENT_NUM; i++) {
+        memset(*(key_value_array + i), 0, EVENT_SIZE);
+    }
+    // 重置 json 数据
     memset(json_str, 0, JSON_SIZE);
     // 清空 jsmn 解析结构体
     memset(&p, 0, sizeof(jsmn_parser));
     // 从 flash 加载键值
-    load_menu_from_flash(menu, (uint8_t *)json_str, 4096, 0);
+    load_menu_from_flash(menu, (uint8_t *)json_str, 7168, 0);
     // 解析键值
     return parse_json_data(&p);
 }
@@ -61,6 +86,13 @@ static uint8_t parse_json_data(jsmn_parser *p) {
     uint8_t r = jsmn_parse(p, json_str, strlen(json_str), t, sizeof(t) / sizeof(t[0]));
     if (r < 0)  {
         printf("parse fail");
+        free(json_str);
+        json_str = NULL;
+        for (uint8_t i = 0; i < EVENT_NUM; i++) {
+            free(*(key_value_array + i));
+        }
+        free(key_value_array);
+        key_value_array = NULL;
         return 0;
     }
     // 根据键取字符串+
@@ -71,17 +103,16 @@ static uint8_t parse_json_data(jsmn_parser *p) {
         char json_key_str[4] = {0};
         // 数字转字符串
         char key_num_str[3] = {0};
-//        strcat(json_key_str, "l");
         if (j < 10) strcat(json_key_str, "0");
         strcat(json_key_str, num_to_string(j, key_num_str));
         for (uint8_t s = 0; s < r; s++) {
             if (json_cmp(json_str, &t[s], json_key_str) == 0) {
                 // 取出 json 字符中键对应的值
-                char json_value_str[EVENT_SIZE] = {0};
-                memcpy(json_value_str, json_str + t[s + 1].start, t[s + 1].end - t[s + 1].start);
+                uint16_t size = t[s + 1].end - t[s + 1].start;
+//                *(key_value_array + j) = (char *) malloc(sizeof(char) * size);
+                memcpy(*(key_value_array + j), json_str + t[s + 1].start, size);
                 s += 1;
-                strcat(key_value_array[j], json_value_str);
-//                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
+                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
             }
         }
         menu_change_lock = 0;

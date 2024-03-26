@@ -86,4 +86,6 @@ CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj: \
  D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\ENCODER\ENCODER1/encoder1.h \
  D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\ENCODER\ENCODER2/encoder2.h \
  D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\ENCODER\ENCODER3/encoder3.h \
- D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\OLED\OLED_42/oled_42.h
+ D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\OLED\OLED_42/oled_42.h \
+ D:\Users\Administrator\Desktop\keyPadF1\USER\Lcd/lcd_user.h \
+ D:\Users\Administrator\Desktop\keyPadF1\HARDWARE\LCD\LCD_47/lcd_47.h

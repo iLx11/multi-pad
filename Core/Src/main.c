@@ -55,8 +55,8 @@ int main(void) {
     oled_init_user();
     // lcd œ‘ æ
     lcd_init_user();
-    // ≤‚ ‘
-    usb_init_user();
+    // œ‘ æ≤Àµ•
+    load_menu(1);
 
     while (1) {
         // º¸≈Ã…®√Ë

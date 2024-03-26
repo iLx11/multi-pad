@@ -13,6 +13,7 @@
 #include "encoder3.h"
 #include "oled_user.h"
 #include "oled_42.h"
+#include "lcd_user.h"
 
 uint8_t menu_index = 0;
 uint16_t cur_time = 0;
@@ -36,14 +37,6 @@ void encoder_scan_user(void) {
 }
 
 /********************************************************************************
-* 编码器中断回调并解析
-********************************************************************************/
-void encoder_callback(u_int8_t encoder_index) {
-//    printf("encoder_index -> %d\r", encoder_index + 20);
-    parse_json_value(encoder_index + 20);
-}
-
-/********************************************************************************
 * 防抖函数
 ********************************************************************************/
 void debounce_func(uint8_t encoder_index) {
@@ -60,10 +53,8 @@ static void keyboard_menu_change() {
     printf("menu_index -> %d\r", menu_index);
     if(pre_menu != menu_index) {
         pre_menu = menu_index;
-        // 加载图片并显示
-        show_menu_oled(menu_index + 1);
-        // 加载当前层级的命令
-        load_parse_key(menu_index);
+        // 显示菜单
+        load_menu(menu_index);
     }
 }
 
