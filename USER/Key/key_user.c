@@ -1,5 +1,6 @@
 #include "key_user.h"
 #include "oled_user.h"
+#include "usbd_cdc_if.h"
 
 // ¼üÅÌ³õÊ¼×´Ì¬
 static uint16_t state = 0xffff;
@@ -19,17 +20,17 @@ void key_scan_user() {
 // °´¼üÖ´ÐÐ
 void key_up_callback(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
-    printf("key_value -> %d\n\r", (key_value << 1) + 1);
+//    printf("key_value -> %d\n\r", (key_value << 1) + 1);
     parse_json_value((key_value << 1) + 1);
     holding_flag = 0;
-    printf("holding_flag -> %d\r\n", holding_flag);
+//    printf("holding_flag -> %d\r\n", holding_flag);
 //    hid_buff_reset();
 //    HAL_Delay(10);
 }
 
 void key_down_callback(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
-    printf("key_value -> %d\n\r", key_value << 1);
+//    printf("key_value -> %d\n\r", key_value << 1);
     parse_json_value(key_value << 1);
 }
 

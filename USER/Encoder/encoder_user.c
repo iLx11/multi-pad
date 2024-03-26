@@ -61,7 +61,7 @@ static void keyboard_menu_change() {
     if(pre_menu != menu_index) {
         pre_menu = menu_index;
         // 加载图片并显示
-        load_show_menu(menu_index + 1);
+        show_menu_oled(menu_index + 1);
         // 加载当前层级的命令
         load_parse_key(menu_index);
     }

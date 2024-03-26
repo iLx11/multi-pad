@@ -53,10 +53,13 @@ uint8_t data_state;
 uint8_t color_mode;
 // 彩屏数据包计算
 uint32_t color_package_count = 0;
+// 等待信号
+uint8_t sign[1] = {0x68};
 
 void usb_init_user(void) {
-    // 显示图片
-//    show_menu_color(write_menu);
+    load_parse_key(write_menu);
+    show_menu_color(write_menu);
+    show_menu_oled(write_menu);
 }
 
 /********************************************************************************
@@ -71,6 +74,7 @@ void usb_scan_user(void) {
             menu_config &= 0x00;
             storage_menu_to_flash(0, (uint8_t *) &receive_buff, package_size, 0);
             receive_reset();
+            CDC_Transmit_FS(sign, 1);
             return;
         }
         // 写入键值与图片
@@ -81,35 +85,38 @@ void usb_scan_user(void) {
             // 转为图片数据后存储在 FLASH
             storage_menu_to_flash(write_menu, (uint8_t *) receive_buff, package_size, 1);
             // ------------- test --------------
-            show_menu_oled(write_menu);
+//            show_menu_oled(write_menu);
+            data_state &= 0x00;
             receive_reset();
+            CDC_Transmit_FS(sign, 1);
             return;
         }
         // 彩屏图片
         if (color_mode == 0xff) {
             // 存储图片
             storage_color_screen(write_menu, color_package_count << 12, receive_buff, package_size);
-            // 显示图片
+            // 图片传输完成判断
             if (color_package_count < 26) {
                 color_package_count++;
             } else {
                 // 图片传输完成
                 color_package_count = 0;
                 // --------------- test -----------------
-                // 显示图片
-                show_menu_color(write_menu);
+                color_mode &= 0x00;
+                usb_init_user();
             }
             receive_reset();
+            CDC_Transmit_FS(sign, 1);
             return;
         }
         // 写入键值
-        if (data_state == 1) {
+        if (data_state == 0xff) {
             // 键值存储的第二个状态
-            data_state = 0;
-            storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, package_size + 4096, 0);
+            data_state &= 0x00;
+            storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, package_size, 0);
         } else {
             // 键值存储的第一个状态
-            data_state = 1;
+            data_state |= 0xff;
             storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, package_size, 0);
         }
 
@@ -122,6 +129,8 @@ void usb_scan_user(void) {
         load_parse_key(1);*/
         // --------------------------------------------------
         receive_reset();
+        CDC_Transmit_FS(sign, 1);
+
     }
 }
 

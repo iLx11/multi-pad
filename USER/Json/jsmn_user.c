@@ -31,12 +31,13 @@ void jsmn_init_user() {
 * 加载键值配置并解析在键值数组
 ********************************************************************************/
 uint8_t load_parse_key(uint8_t menu) {
-    // 清空字符串
+    // 清空解析前后的的字符串
     memset(key_value_array, 0, sizeof (key_value_array));
-    // 从 flash 加载键值
-//    load_menu_from_flash(menu, (uint8_t *) json_str, 12288, 1);
+    memset(json_str, 0, JSON_SIZE);
     // 清空 jsmn 解析结构体
     memset(&p, 0, sizeof(jsmn_parser));
+    // 从 flash 加载键值
+    load_menu_from_flash(menu, (uint8_t *)json_str, 4096, 0);
     // 解析键值
     return parse_json_data(&p);
 }
@@ -99,7 +100,6 @@ void parse_json_value(uint8_t key_value_index) {
     holding_flag = 0;
 //    printf("holding_flag -> %d\r\n", holding_flag);
     (*parse_by_function[function_index])(key_value_index);
-
 }
 
 /********************************************************************************

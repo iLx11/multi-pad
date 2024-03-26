@@ -20,7 +20,7 @@ void lcd_init_user(void) {
 * ÏÔÊ¾×Ö·û´®
 ********************************************************************************/
 void lcd_show_str(uint8_t* str) {
-    lcd_fill(0,0,LCD_WIDTH,LCD_HEIGHT,WHITE, 0);
+//    lcd_fill(0,0,LCD_WIDTH,LCD_HEIGHT,WHITE, 0);
     lcd_show_string(10, 10, str, BLACK, WHITE, 32, 0, 0);
 }
 

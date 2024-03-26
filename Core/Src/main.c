@@ -56,7 +56,7 @@ int main(void) {
     // lcd ÏÔÊ¾
     lcd_init_user();
     // ²âÊÔ
-//    usb_init_user();
+    usb_init_user();
 
     while (1) {
         // ¼üÅÌÉ¨Ãè

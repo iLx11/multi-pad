@@ -9,33 +9,21 @@ extern uint8_t menu_change_lock;
 // 初始化
 void oled_init_user() {
     oled_42_init();
-    load_show_menu(0);
-}
-
-/********************************************************************************
-* 菜单读取后显示
-********************************************************************************/
-void load_show_menu(uint8_t menu_index) {
-    menu_change_lock = 1;
-//    uint8_t* flash_pic_data = (uint8_t *) malloc(sizeof (uint8_t) * 720);
-    // 读取与赋值图片
-
-    // 显示图片
-//    free(flash_pic_data);
-    menu_change_lock = 0;
 }
 
 /********************************************************************************
 * 显示当前层级的图片
 ********************************************************************************/
 void show_menu_oled(uint8_t menu_index) {
+    menu_change_lock = 1;
     // 读取图片
     uint8_t* tempArr = (uint8_t *) malloc(sizeof (uint8_t) * 720);
     load_menu_from_flash(menu_index, tempArr, 720, 1);
     oled_42_show_pic_index(0, 0, 72, 40, tempArr,  1, 0);
-    oled_42_show_pic_index(0, 0, 72, 40, tempArr + 350,  1, 1);
+    oled_42_show_pic_index(0, 0, 72, 40, tempArr + 360,  1, 1);
     free(tempArr);
     tempArr = NULL;
+    menu_change_lock = 0;
 }
 
 /********************************************************************************

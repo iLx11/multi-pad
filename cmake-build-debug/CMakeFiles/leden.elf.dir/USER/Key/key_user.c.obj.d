@@ -83,4 +83,5 @@ CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: \
  D:\Users\Administrator\Desktop\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h \
  D:\Users\Administrator\Desktop\keyPadF1\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc/usbd_cdc.h \
  D:\Users\Administrator\Desktop\keyPadF1\USER\Encoder/encoder_user.h \
- D:\Users\Administrator\Desktop\keyPadF1\USER\Oled/oled_user.h
+ D:\Users\Administrator\Desktop\keyPadF1\USER\Oled/oled_user.h \
+ D:\Users\Administrator\Desktop\keyPadF1\USB_DEVICE\App/usbd_cdc_if.h

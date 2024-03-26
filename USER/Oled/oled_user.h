@@ -21,8 +21,6 @@
 
 void oled_init_user();
 
-void load_show_menu(uint8_t menu_index);
-
 void show_menu_oled(uint8_t menu_index);
 
 #endif //LEDEN_OLED_USER_H

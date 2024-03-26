@@ -3184,7 +3184,8 @@ CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj: D:/Users/Administrator/Desktop
   D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
   D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
   D:/Users/Administrator/Desktop/keyPadF1/USER/Encoder/encoder_user.h \
-  D:/Users/Administrator/Desktop/keyPadF1/USER/Oled/oled_user.h
+  D:/Users/Administrator/Desktop/keyPadF1/USER/Oled/oled_user.h \
+  D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/App/usbd_cdc_if.h
 
 CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj: D:/Users/Administrator/Desktop/keyPadF1/USER/Lcd/lcd_user.c \
   D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/malloc.h \
