@@ -62,7 +62,7 @@ uint8_t load_parse_key(uint8_t menu) {
     // 清空 jsmn 解析结构体
     memset(&p, 0, sizeof(jsmn_parser));
     // 从 flash 加载键值
-    load_menu_from_flash(menu, (uint8_t *)json_str, 7168, 0);
+    load_menu_from_flash(menu, (uint8_t *)json_str, get_key_size(menu), 0);
     // 解析键值
     return parse_json_data(&p);
 }
@@ -261,7 +261,7 @@ static void parse_json_menu_func(uint8_t key_value_index) {
         menu_index >= 9 ? menu_index = 0 : menu_index++;
     else
         menu_index = key_value_array[key_value_index][2] - 0x30;
-    debounce_func(key_value_index);
+    debounce_func();
 }
 
 /********************************************************************************

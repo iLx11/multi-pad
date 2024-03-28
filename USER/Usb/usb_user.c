@@ -54,11 +54,26 @@ uint8_t color_mode;
 uint32_t color_package_count = 0;
 // 等待信号
 uint8_t sign[1] = {0x68};
+// 菜单配置数组
+uint8_t menu_config_arr[31] = {0};
 
-void load_menu(uint8_t menu_index) {
-    load_parse_key(menu_index);
-    show_menu_oled(menu_index);
-    show_menu_color(menu_index);
+/********************************************************************************
+* 开机配置
+********************************************************************************/
+void first_load_menu(void) {
+    // 加载菜单配置
+    load_menu_config();
+    load_menu(menu_config_arr[0]);
+}
+
+/********************************************************************************
+* 加载菜单
+********************************************************************************/
+void load_menu(uint8_t index) {
+    if(index < 1 || index > 10) return;
+    load_parse_key(index);
+    show_menu_oled(index);
+    show_menu_color(index);
 }
 
 /********************************************************************************
@@ -100,8 +115,11 @@ void usb_scan_user(void) {
             } else {
                 // 图片传输完成
                 color_package_count = 0;
-                // --------------- test -----------------
                 color_mode &= 0x00;
+                // 切换菜单
+                write_menu ++;
+                turn_next_menu();
+                // --------------- test -----------------
 //                load_menu(write_menu);
             }
             receive_reset();
@@ -112,25 +130,44 @@ void usb_scan_user(void) {
         if (data_state == 0xff) {
             // 键值存储的第二个状态
             data_state &= 0x00;
-            storage_page_two(write_menu, (uint8_t *) &receive_buff, package_size);
+            storage_page_two(write_menu, (uint8_t *) &receive_buff, 3072);
         } else {
             // 键值存储的第一个状态
             data_state |= 0xff;
-            storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, package_size, 0);
+            storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, 4096, 0);
         }
-
-        // ------------------ test --------------------------
-        /*memset(json_str, 0, JSON_SIZE);
-        memcpy(json_str, receive_buff, package_size);
-        load_parse_key(1);*/
-        /*memset(json_str, 0, JSON_SIZE);
-        load_menu_from_flash(write_menu, (uint8_t *)json_str, package_size, 0);
-        load_parse_key(1);*/
-        // --------------------------------------------------
         receive_reset();
         CDC_Transmit_FS(sign, 1);
 
     }
+}
+
+/********************************************************************************
+* 加载菜单配置
+********************************************************************************/
+void load_menu_config(void) {
+    load_menu_from_flash(0, menu_config_arr, 31, 0);
+}
+
+/********************************************************************************
+* 跳转到有内容的下一级菜单
+********************************************************************************/
+void turn_next_menu(void) {
+    while(menu_config_arr[write_menu] == 0x00) {
+        if(write_menu > 10) {
+            write_menu = 1;
+            return;
+        }
+        write_menu += 1;
+    }
+}
+
+/********************************************************************************
+* 获取键值单页键值的长度
+********************************************************************************/
+uint32_t get_key_size(uint8_t index) {
+    uint8_t p = (index * 2) + 10;
+    return menu_config_arr[p - 1] * 255 + menu_config_arr[p];
 }
 
 /********************************************************************************
