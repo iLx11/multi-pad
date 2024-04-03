@@ -22,9 +22,9 @@
 #define OLED_42_NUM_ 2
 
 #define PAGE_42_NUM 5
-#define PAGE_42_WIDTH 88
+#define PAGE_42_WIDTH 72
 
-#define OLED_42_WIDTH 70
+#define OLED_42_WIDTH 72
 #define OLED_42_HEIGHT 40
 
 #if SOFT_42_SPI

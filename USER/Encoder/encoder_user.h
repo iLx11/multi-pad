@@ -20,7 +20,7 @@ void encoder_init_user(void);
 
 void encoder_scan_user(void);
 
-void debounce_func(uint8_t encoder_index);
+void debounce_func();
 
 
 #endif //MULTI_ENCODER_USER_H

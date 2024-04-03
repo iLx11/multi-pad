@@ -69,6 +69,22 @@ void load_menu_from_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t data
 }
 
 /********************************************************************************
+* 加载菜单配置
+********************************************************************************/
+void load_config(uint8_t * data_buff, uint16_t data_size) {
+    read_flash(data_buff, 2048, data_size);
+}
+
+/********************************************************************************
+* 存储配置
+********************************************************************************/
+void storage_config(uint8_t * data_buff, uint16_t data_size) {
+    enable_flash_write();
+    write_to_flash(data_buff, 2048, data_size);
+}
+
+
+/********************************************************************************
 * 读取彩色屏幕，每层占据 27 个扇区，十层菜单占据 16 个块
 ********************************************************************************/
 void read_color_screen(uint8_t menu_index, uint32_t address_offset, uint8_t * data_buff, uint16_t data_size) {

@@ -54,11 +54,38 @@ uint8_t color_mode;
 uint32_t color_package_count = 0;
 // 等待信号
 uint8_t sign[1] = {0x68};
+// 菜单配置数组
+uint8_t menu_config_arr[31] = {0};
+// 菜单锁
+extern uint8_t menu_change_lock;
 
+/********************************************************************************
+* 开机配置
+********************************************************************************/
+void first_load_menu(void) {
+    // 加载菜单配置
+    load_menu_config();
+    if (menu_config_arr[0] >= 1 && menu_config_arr[0] <= 10) {
+        load_menu(menu_config_arr[0]);
+    } else {
+        uint8_t *temp = (uint8_t *) calloc(sizeof(uint8_t), 31);
+        temp[0] = 1;
+        storage_config(temp, 31);
+        load_menu(1);
+    }
+}
+
+
+/********************************************************************************
+* 加载菜单
+********************************************************************************/
 void load_menu(uint8_t menu_index) {
+    if (menu_config_arr[menu_index] != 1) return;
+    menu_change_lock = 1;
     load_parse_key(menu_index);
     show_menu_oled(menu_index);
     show_menu_color(menu_index);
+    menu_change_lock = 0;
 }
 
 /********************************************************************************
@@ -71,7 +98,8 @@ void usb_scan_user(void) {
         // 写入菜单
         if (menu_config == 0xff) {
             menu_config &= 0x00;
-            storage_menu_to_flash(0, (uint8_t *) &receive_buff, package_size, 0);
+            storage_config((uint8_t *) receive_buff, 31);
+            load_menu_config();
             receive_reset();
             CDC_Transmit_FS(sign, 1);
             return;
@@ -102,7 +130,9 @@ void usb_scan_user(void) {
                 color_package_count = 0;
                 // --------------- test -----------------
                 color_mode &= 0x00;
-//                load_menu(write_menu);
+                load_menu(write_menu);
+//                write_menu ++;
+//                turn_next_menu();
             }
             receive_reset();
             CDC_Transmit_FS(sign, 1);
@@ -131,6 +161,42 @@ void usb_scan_user(void) {
         CDC_Transmit_FS(sign, 1);
 
     }
+}
+
+/********************************************************************************
+* 加载菜单配置
+********************************************************************************/
+void load_menu_config(void) {
+    uint8_t *temp = (uint8_t *) malloc(sizeof(uint8_t) * 31);
+    load_config(temp, 31);
+    memcpy((uint8_t *) menu_config_arr, (uint8_t *) temp, 31);
+    for(uint8_t i = 0; i < 31; i ++) {
+        printf("temp -> %d", menu_config_arr[i]);
+    }
+    free(temp);
+    temp = NULL;
+}
+
+
+/********************************************************************************
+* 跳转到有内容的下一级菜单
+********************************************************************************/
+void turn_next_menu(void) {
+    while (menu_config_arr[write_menu] == 0x00) {
+        if (write_menu > 10) {
+            write_menu = 1;
+            return;
+        }
+        write_menu += 1;
+    }
+}
+
+/********************************************************************************
+* 获取键值单页键值的长度
+********************************************************************************/
+uint32_t get_key_size(uint8_t index) {
+    uint8_t p = (index * 2) + 10;
+    return menu_config_arr[p - 1] * 255 + menu_config_arr[p];
 }
 
 /********************************************************************************

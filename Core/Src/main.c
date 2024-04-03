@@ -56,7 +56,7 @@ int main(void) {
     // lcd œ‘ æ
     lcd_init_user();
     // œ‘ æ≤Àµ•
-    load_menu(1);
+    first_load_menu();
 
     while (1) {
         // º¸≈Ã…®√Ë

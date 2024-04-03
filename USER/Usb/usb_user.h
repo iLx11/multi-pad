@@ -12,9 +12,15 @@ typedef struct {
     uint8_t buff_size;
 } buff_struct;
 
+void first_load_menu(void);
+
 void load_menu(uint8_t menu_index);
 
 void usb_scan_user(void);
+
+void load_menu_config(void);
+
+void turn_next_menu(void);
 
 void send_hid_code(uint8_t func);
 // ∑¢ÀÕ hid ÷ÿ÷√

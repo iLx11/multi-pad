@@ -9,8 +9,6 @@
 
 // hid 发送缓冲数组指针结构体
 extern buff_struct buff_point_array[3];
-
-extern uint8_t menu_change_lock;
 // json 数据
 char* json_str = NULL;
 // json 解析句柄
@@ -28,7 +26,6 @@ void (*parse_by_function[8])(uint8_t) = {
 // json 解析初始化
 void jsmn_init_user() {
     jsmn_init(&p);
-    menu_change_lock = 1;
     json_str = (char *) malloc(sizeof(char) * JSON_SIZE);
     // 分配内存失败
     if(json_str == NULL) {
@@ -115,7 +112,6 @@ static uint8_t parse_json_data(jsmn_parser *p) {
                 printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
             }
         }
-        menu_change_lock = 0;
     }
     return 1;
 }

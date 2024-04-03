@@ -276,7 +276,7 @@ uint8_t package_num = 0;
 
 static int8_t CDC_Receive_FS(uint8_t *Buf, uint32_t *Len) {
     // еп╤от╫╫Г
-    if(package_size >= RE_BUFF_SIZE) return
+    if(package_size >= RE_BUFF_SIZE || *Len > MAX_PACK_SIZE) return
     /* USER CODE BEGIN 6 */
     USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
     USBD_CDC_ReceivePacket(&hUsbDeviceFS);

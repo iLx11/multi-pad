@@ -19,8 +19,9 @@ uint8_t menu_index = 0;
 uint16_t cur_time = 0;
 uint8_t change_flag = 0;
 uint8_t menu_change_lock = 0;
-
 uint8_t pre_menu = 0;
+// ²Ëµ¥ÅäÖÃÊý×é
+extern uint8_t menu_config_arr[31];
 
 static void keyboard_menu_change();
 
@@ -39,10 +40,12 @@ void encoder_scan_user(void) {
 /********************************************************************************
 * ·À¶¶º¯Êý
 ********************************************************************************/
-void debounce_func(uint8_t encoder_index) {
+void debounce_func() {
     if(menu_change_lock == 0) {
         cur_time = 0;
         change_flag = 1;
+        // ÏÔÊ¾Êý×Ö
+        oled_42_show_num(menu_index, 1, 0);
     }
 }
 
@@ -50,11 +53,11 @@ void debounce_func(uint8_t encoder_index) {
 * ²Ëµ¥²ã¼¶ÊµÖÊÇÐ»»
 ********************************************************************************/
 static void keyboard_menu_change() {
-    printf("menu_index -> %d\r", menu_index);
+//    printf("menu_index -> %d\r", menu_index);
     if(pre_menu != menu_index) {
         pre_menu = menu_index;
         // ÏÔÊ¾²Ëµ¥
-        load_menu(menu_index);
+        load_menu(menu_index + 1);
     }
 }
 
@@ -83,29 +86,29 @@ uint32_t HAL_GetTick(void) {
  * */
 // ±àÂëÆ÷ 1
 void encoder1_callback(uint8_t encoder_value) {
-    if(encoder_value == 2) {
-        menu_index -= 1;
-        if(menu_index > 200) menu_index = 9;
-        oled_42_show_num(menu_index, 1, 0);
+//    if(menu_config_arr[menu_index + 1] == 0x00) {
+    if(encoder_value == 4) {
+        menu_index <= 0 ? menu_index = 9 : menu_index--;
+        debounce_func();
+        return;
+    } else if(encoder_value == 5) {
+        menu_index >= 9 ? menu_index = 0 : menu_index++;
+        debounce_func();
+        return;
     }
-    if(encoder_value == 3) {
-        menu_index += 1;
-        if(menu_index > 9) menu_index = 0;
-        oled_42_show_num(menu_index, 0, 0);
-    }
-    return;
-    printf("encoder_value -> %d\n\r", encoder_value + 16);
+//    }
+//    printf("encoder_value -> %d\n\r", encoder_value + 16);
     parse_json_value( encoder_value + 16);
 }
 
 // ±àÂëÆ÷ 2
 void encoder2_callback(uint8_t encoder_value) {
-    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
+//    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
     parse_json_value( (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
 }
 
 // ±àÂëÆ÷ 3
 void encoder3_callback(uint8_t encoder_value) {
-    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
+//    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
     parse_json_value( (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
 }
