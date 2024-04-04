@@ -82,6 +82,9 @@ void first_load_menu(void) {
 void load_menu(uint8_t menu_index) {
     if (menu_config_arr[menu_index] != 1) return;
     menu_change_lock = 1;
+    // 存储上一次使用的菜单
+    uint8_t cur[1] = {menu_index};
+    storage_config(cur, 1);
     load_parse_key(menu_index);
     show_menu_oled(menu_index);
     show_menu_color(menu_index);
@@ -131,8 +134,8 @@ void usb_scan_user(void) {
                 // --------------- test -----------------
                 color_mode &= 0x00;
                 load_menu(write_menu);
-//                write_menu ++;
-//                turn_next_menu();
+                write_menu ++;
+                turn_next_menu();
             }
             receive_reset();
             CDC_Transmit_FS(sign, 1);
@@ -170,9 +173,9 @@ void load_menu_config(void) {
     uint8_t *temp = (uint8_t *) malloc(sizeof(uint8_t) * 31);
     load_config(temp, 31);
     memcpy((uint8_t *) menu_config_arr, (uint8_t *) temp, 31);
-    for(uint8_t i = 0; i < 31; i ++) {
-        printf("temp -> %d", menu_config_arr[i]);
-    }
+//    for(uint8_t i = 0; i < 31; i ++) {
+//        printf("temp -> %d", menu_config_arr[i]);
+//    }
     free(temp);
     temp = NULL;
 }
@@ -226,7 +229,7 @@ void hid_buff_reset(void) {
     }
     while (USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, buff_point_array[cur_buff].zero_buff_point,
                                       buff_point_array[cur_buff].buff_size) != USBD_OK);
-    printf("reset ok\n");
+//    printf("reset ok\n");
 }
 
 /********************************************************************************

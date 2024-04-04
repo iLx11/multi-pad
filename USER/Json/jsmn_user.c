@@ -109,7 +109,7 @@ static uint8_t parse_json_data(jsmn_parser *p) {
 //                *(key_value_array + j) = (char *) malloc(sizeof(char) * size);
                 memcpy(*(key_value_array + j), json_str + t[s + 1].start, size);
                 s += 1;
-                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
+//                printf("key_value_array[%d] - >%s\n\r", j, *(key_value_array + j));
             }
         }
     }
