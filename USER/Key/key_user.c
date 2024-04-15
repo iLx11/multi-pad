@@ -22,7 +22,7 @@ void key_scan_user() {
 ********************************************************************************/
 void key_up_callback(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
-//    printf("key_value -> %d\n\r", (key_value << 1) + 1);
+    printf("key_value -> %d\n\r", (key_value << 1) + 1);
     parse_json_value((key_value << 1) + 1);
     holding_flag = 0;
 }
@@ -32,7 +32,7 @@ void key_up_callback(uint8_t row, uint8_t col) {
 ********************************************************************************/
 void key_down_callback(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
-//    printf("key_value -> %d\n\r", key_value << 1);
+    printf("key_value -> %d\n\r", key_value << 1);
     parse_json_value(key_value << 1);
 }
 

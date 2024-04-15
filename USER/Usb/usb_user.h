@@ -20,6 +20,8 @@ void usb_scan_user(void);
 
 void load_menu_config(void);
 
+static void send_wait_sign(void);
+
 void turn_next_menu(void);
 
 void send_hid_code(uint8_t func);

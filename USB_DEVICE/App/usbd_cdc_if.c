@@ -271,7 +271,8 @@ extern uint8_t receive_buff[RE_BUFF_SIZE];
 extern uint16_t package_size;
 // 彩屏数据模式
 extern uint8_t color_mode;
-
+// 上位机接收数据标志
+extern uint8_t upper_re_flag;
 uint8_t package_num = 0;
 
 static int8_t CDC_Receive_FS(uint8_t *Buf, uint32_t *Len) {
@@ -281,6 +282,10 @@ static int8_t CDC_Receive_FS(uint8_t *Buf, uint32_t *Len) {
     USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
     USBD_CDC_ReceivePacket(&hUsbDeviceFS);
     if(Buf[0] == 0xAA && Buf[1] == 0xBB) {
+        // 上位机接收标志
+        if(Buf[2] == 0x11) {
+            upper_re_flag |= 0xff;
+        }
         // 测试连接
         if(Buf[2] == 0xCC) {
             CDC_Transmit_FS(&Buf[0], 3);

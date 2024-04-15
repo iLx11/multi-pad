@@ -13,7 +13,7 @@
 
 #define EVENT_NUM 34
 
-#define EVENT_SIZE 512
+#define EVENT_SIZE 456
 
 extern uint8_t menu_index;
 extern uint8_t holding_flag;

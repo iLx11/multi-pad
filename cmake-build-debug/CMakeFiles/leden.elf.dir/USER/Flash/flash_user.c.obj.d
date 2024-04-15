@@ -29,6 +29,9 @@ CMakeFiles/leden.elf.dir/USER/Flash/flash_user.c.obj: \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\sched.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\types.h \
  d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stdio.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\stdlib.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\machine\stdlib.h \
+ d:\ra\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\alloca.h \
  D:\Users\Administrator\Desktop\keyPadF1\USER\Flash\flash_user.h \
  D:\Users\Administrator\Desktop\keyPadF1\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal.h \
  D:\Users\Administrator\Desktop\keyPadF1\Core\Inc/stm32f1xx_hal_conf.h \
