@@ -29,8 +29,10 @@ uint8_t flash_init_user(void) {
 ********************************************************************************/
 void reset_menu_data(uint8_t index, uint8_t func) {
     if(func == 0) {
+        uint8_t temp = index << PER_FOLDER_SECTOR_SHIFT;
         // 键值重置
-        erase_flash_sector(index << PER_FOLDER_SECTOR_SHIFT);
+        erase_flash_sector(temp);
+        erase_flash_sector(temp + 1);
     } else if(func == 1) {
         // 单色图片重置
         uint8_t* temp = (uint8_t *) calloc(sizeof(uint8_t), 720);
