@@ -21,7 +21,6 @@
 // Ã¿Ò»²ãµÄ´æ´¢Æ«ÒÆ£¨* 4£©
 #define PER_FOLDER_SECTOR_SHIFT 1
 
-
 uint8_t flash_init_user(void);
 
 void reset_menu_data(uint8_t index, uint8_t func);

@@ -97,18 +97,18 @@ void encoder1_callback(uint8_t encoder_value) {
         return;
     }
 //    }
-    printf("encoder_value -> %d\n\r", encoder_value + 16);
+//    printf("encoder_value -> %d\n\r", encoder_value + 16);
     parse_json_value( encoder_value + 16);
 }
 
 // ±àÂëÆ÷ 2
 void encoder2_callback(uint8_t encoder_value) {
-    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
+//    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
     parse_json_value( (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
 }
 
 // ±àÂëÆ÷ 3
 void encoder3_callback(uint8_t encoder_value) {
-    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
+//    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
     parse_json_value( (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
 }
