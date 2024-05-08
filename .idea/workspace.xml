@@ -22,16 +22,7 @@
   <component name="ChangeListManager">
     <list default="true" id="284c5e99-336b-4d47-8966-ba45c3e1ae74" name="Changes" comment="EFFECTS_TWO_DONE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Encoder/encoder_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Encoder/encoder_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Flash/flash_user.h" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Flash/flash_user.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USER/Key/key_user.c" beforeDir="false" afterPath="$PROJECT_DIR$/USER/Key/key_user.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Encoder/encoder_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Json/jsmn_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Key/key_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Lcd/lcd_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Oled/oled_user.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leden.elf.dir/USER/Usb/usb_user.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HARDWARE/MatrixKeys/matrix_key.c" beforeDir="false" afterPath="$PROJECT_DIR$/HARDWARE/MatrixKeys/matrix_key.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/leden.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/leden.hex" afterDir="false" />
@@ -168,7 +159,9 @@
       <workItem from="1712825156547" duration="5483000" />
       <workItem from="1712907894429" duration="37585000" />
       <workItem from="1713486511828" duration="1410000" />
-      <workItem from="1714052917864" duration="2576000" />
+      <workItem from="1714052917864" duration="3310000" />
+      <workItem from="1714226344780" duration="3000" />
+      <workItem from="1714834560039" duration="842000" />
     </task>
     <task id="LOCAL-00001" summary="ENCODER_MENU_EXECUTE">
       <option name="closed" value="true" />

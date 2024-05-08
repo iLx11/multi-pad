@@ -62,7 +62,7 @@ void matrix_scan() {
                 key_up_callback(row, col);
             }
             // ¼üÅÌ°´×¡¼ì²é
-            key_hold_check(row, col);
+//            key_hold_check(row, col);
         }
     }
 }
