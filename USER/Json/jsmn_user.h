@@ -18,6 +18,19 @@
 extern uint8_t menu_index;
 extern uint8_t holding_flag;
 
+// 解析键值的函数类型定义
+typedef void (*parse_func_t)(uint8_t);
+
+// json 功能结构体定义
+typedef struct jsmn_func {
+    // json 数据
+    char* json_str;
+    // 解析后的键值数组
+    char** key_value_arr;
+    // 根据功能解析 json 值的函数指针数组
+    parse_func_t parse_func[8];
+} *p_jsmn_t;
+
 void jsmn_init_user();
 
 uint8_t load_parse_key(uint8_t menu);
