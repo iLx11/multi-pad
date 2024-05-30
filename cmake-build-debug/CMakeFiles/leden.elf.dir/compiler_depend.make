@@ -2619,7 +2619,9 @@ CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: D:/Users/Administrato
   D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
   D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
   D:/Users/Administrator/Desktop/keyPadF1/USER/Lcd/lcd_user.h \
-  D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.h
+  D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/LCD/LCD_47/lcd_47.h \
+  D:/Users/Administrator/Desktop/keyPadF1/USER/Usb/usb_user.h \
+  D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h
 
 CMakeFiles/leden.elf.dir/USB_DEVICE/App/usbd_custom_hid_if.c.obj: D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/App/usbd_custom_hid_if.c \
   D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/App/usbd_custom_hid_if.h \

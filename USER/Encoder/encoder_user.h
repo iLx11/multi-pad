@@ -22,5 +22,10 @@ void encoder_scan_user(void);
 
 void debounce_func();
 
+void set_menu_lock(uint8_t lock_value);
+
+void set_menu_index(uint8_t index_value);
+
+uint8_t get_menu_index(void);
 
 #endif //MULTI_ENCODER_USER_H

@@ -1,12 +1,10 @@
 #include "jsmn_user.h"
 #include "flash_user.h"
 
-static p_jsmn_t jsmn_p = NULL;
 // json 解析句柄
-jsmn_parser p;
+static jsmn_parser p;
 
-// hid 发送缓冲数组指针结构体
-extern buff_struct buff_point_array[3];
+static p_jsmn_t jsmn_p = NULL;
 
 // json 解析初始化
 void jsmn_init_user() {
@@ -149,7 +147,7 @@ void parse_json_value(uint8_t key_value_index) {
 //    printf("function_index -> %d\n", function_index);
     if (function_index > 10 || function_index < 0) return;
 //    printf("parse_function_running.....\n");
-    holding_flag = 0;
+//    holding_flag = 0;
 //    printf("holding_flag -> %d\r\n", holding_flag);
     jsmn_p->parse_func[function_index](key_value_index);
 }
@@ -221,11 +219,11 @@ static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t s
     uint8_t normal_key_count = string_to_num_hex(key_value_index, (*start)++, (*start)++);
     uint8_t cycle_num = normal_key_count / 6;
     do {
-        buff_point_array[0].send_buff_point[0] = 0x01;
-        buff_point_array[0].send_buff_point[1] = special_key;
+        set_data_buff(0, 0, 0x01);
+        set_data_buff(0, 1, special_key);
         for (uint8_t i = 0; i < 6; i++){
             if(normal_key_count == 0) break;
-            buff_point_array[0].send_buff_point[i + 3] = string_to_num_hex(key_value_index, (*start)++, (*start)++);
+            set_data_buff(0, i + 3, string_to_num_hex(key_value_index, (*start)++, (*start)++));
             normal_key_count --;
         }
 //        for(uint8_t i = 0; i < 9; i ++) {
@@ -249,12 +247,12 @@ static void get_execute_delay(uint8_t *start, uint8_t key_value_index) {
 * 解析json (鼠标功能）
 ********************************************************************************/
 static void parse_json_mouse_func(uint8_t key_value_index) {
-    buff_point_array[1].send_buff_point[0] = 0x02;
-    buff_point_array[1].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
+    set_data_buff(1, 0, 0x02);
+    set_data_buff(1, 1, string_to_num_hex(key_value_index, 1, 2));
     char sign;
     for (uint8_t i = 2, start = 3; i < 5; i++) {
         sign = jsmn_p->key_value_arr[key_value_index][start++] - 0x30 == 1 ? 1 : -1;
-        buff_point_array[1].send_buff_point[i] = string_to_num_hex(key_value_index, start++, start++) * sign;
+        set_data_buff(1, i, string_to_num_hex(key_value_index, start++, start++) * sign);
     }
     send_hid_code(1);
     hid_buff_reset();
@@ -264,9 +262,9 @@ static void parse_json_mouse_func(uint8_t key_value_index) {
 * 媒体功能
 ********************************************************************************/
 static void parse_json_media_func(uint8_t key_value_index) {
-    buff_point_array[2].send_buff_point[0] = 0x03;
-    buff_point_array[2].send_buff_point[1] = string_to_num_hex(key_value_index, 1, 2);
-    buff_point_array[2].send_buff_point[2] = string_to_num_hex(key_value_index, 3, 4);
+    set_data_buff(2, 0, 0x03);
+    set_data_buff(2, 1, string_to_num_hex(key_value_index, 1, 2));
+    set_data_buff(2, 2, string_to_num_hex(key_value_index, 3, 4));
     send_hid_code(2);
     hid_buff_reset();
 }
@@ -276,12 +274,15 @@ static void parse_json_media_func(uint8_t key_value_index) {
 ********************************************************************************/
 static void parse_json_menu_func(uint8_t key_value_index) {
     uint8_t menu_func = jsmn_p->key_value_arr[key_value_index][1] - 0x30;
-    if (menu_func == 0)
-        menu_index <= 0 ? menu_index = 9 : menu_index--;
-    else if (menu_func == 1)
-        menu_index >= 9 ? menu_index = 0 : menu_index++;
-    else
-        menu_index = jsmn_p->key_value_arr[key_value_index][2] - 0x30;
+    uint8_t index = get_menu_index();
+    if (menu_func == 0) {
+        index <= 0 ? index = 9 : index--;
+    } else if (menu_func == 1) {
+        index >= 9 ? index = 0 : index++;
+    } else {
+        index = jsmn_p->key_value_arr[key_value_index][2] - 0x30;
+    }
+    set_menu_index(index);
     debounce_func(key_value_index);
 }
 

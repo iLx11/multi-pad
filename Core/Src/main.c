@@ -45,6 +45,8 @@ int main(void) {
     MX_USB_DEVICE_Init();
     // flash
     if(flash_init_user() == 0) return 0;
+    // usb
+    usb_init_user();
     // json ½âÎö
     jsmn_init_user();
     // ¾ØÕó¼üÅÌ

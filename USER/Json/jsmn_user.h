@@ -15,9 +15,6 @@
 
 #define EVENT_SIZE 456
 
-extern uint8_t menu_index;
-extern uint8_t holding_flag;
-
 // 解析键值的函数类型定义
 typedef void (*parse_func_t)(uint8_t);
 

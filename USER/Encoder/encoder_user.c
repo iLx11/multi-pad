@@ -15,11 +15,11 @@
 #include "oled_42.h"
 #include "lcd_user.h"
 
-uint8_t menu_index = 0;
-uint16_t cur_time = 0;
-uint8_t change_flag = 0;
-uint8_t menu_change_lock = 0;
-uint8_t pre_menu = 0;
+static uint8_t menu_index = 0;
+static uint16_t cur_time = 0;
+static uint8_t change_flag = 0;
+static uint8_t menu_change_lock = 0;
+static uint8_t pre_menu = 0;
 // 菜单配置数组
 extern uint8_t menu_config_arr[31];
 
@@ -35,6 +35,27 @@ void encoder_scan_user(void) {
     encoder1_scan();
     encoder2_scan();
     encoder3_scan();
+}
+
+/********************************************************************************
+* 菜单锁配置
+********************************************************************************/
+void set_menu_lock(uint8_t lock_value) {
+    menu_change_lock = lock_value;
+}
+
+/********************************************************************************
+* 菜单索引配置
+********************************************************************************/
+void set_menu_index(uint8_t index_value) {
+    menu_index = index_value;
+}
+
+/********************************************************************************
+* 获取菜单索引
+********************************************************************************/
+uint8_t get_menu_index(void) {
+    return menu_index;
 }
 
 /********************************************************************************
