@@ -11,6 +11,7 @@
 #define SIGN_SET 1
 #define SIGN_RESET 0
 
+// 缓冲数组结构体类型
 typedef struct usb_data {
     // 缓冲数组指针结构体
     struct {
@@ -20,6 +21,7 @@ typedef struct usb_data {
     } data_buff[3];
 }* p_usb_data_t;
 
+// 信号数据结构体类型
 typedef struct sign_data {
     uint8_t sign_byte;
     enum {
@@ -29,14 +31,26 @@ typedef struct sign_data {
         data_state,
         // 菜单配置
         menu_config,
-        // 键值数据状态
+        // 键值数据状态 
         key_state,
         // 彩屏数据模式
         color_mode
     } sign_bit;
-} *p_sign_data_t;
+}* p_sign_data_t;
 
-int8_t cdc_event_cb(uint8_t *Buf, uint32_t *Len);
+// 上位机交互数据结构体类型
+typedef struct upper_data {
+    // 数据包数量
+    uint8_t package_num;
+    // 接收缓存数组
+    uint8_t* rec_buff;
+    // 数据包的大小
+    uint16_t package_size;
+    // 彩屏数据包计算
+    uint32_t color_package_count;
+}* p_upper_data_t;
+
+uint8_t cdc_event_cb(uint8_t *Buf, uint32_t *Len);
 
 void usb_init_user(void);
 

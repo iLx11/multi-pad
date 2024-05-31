@@ -5,7 +5,7 @@
 // ¼üÅÌ³õÊ¼×´Ì¬
 static uint16_t state = 0xffff;
 
-uint8_t holding_flag = 0;
+static uint8_t holding_flag = 0;
 
 // ¼üÅÌ³õÊ¼»¯
 void key_init_user() {

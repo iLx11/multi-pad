@@ -15,17 +15,17 @@
 #include "oled_42.h"
 #include "lcd_user.h"
 
-static uint8_t menu_index = 0;
-static uint16_t cur_time = 0;
-static uint8_t change_flag = 0;
-static uint8_t menu_change_lock = 0;
-static uint8_t pre_menu = 0;
-// 菜单配置数组
-extern uint8_t menu_config_arr[31];
+static p_menu_sign_t menu_sign_p = NULL;
 
-static void keyboard_menu_change();
-
+/********************************************************************************
+* 编码器初始化
+********************************************************************************/
 void encoder_init_user(void) {
+    menu_sign_p = (p_menu_sign_t) malloc(sizeof(struct menu_sign));
+    if(menu_sign_p == NULL) {
+        free(menu_sign_p);
+        return;
+    }
     encoder1_init();
     encoder2_init();
     encoder3_init();
@@ -41,32 +41,32 @@ void encoder_scan_user(void) {
 * 菜单锁配置
 ********************************************************************************/
 void set_menu_lock(uint8_t lock_value) {
-    menu_change_lock = lock_value;
+    menu_sign_p->menu_change_lock = lock_value;
 }
 
 /********************************************************************************
 * 菜单索引配置
 ********************************************************************************/
 void set_menu_index(uint8_t index_value) {
-    menu_index = index_value;
+    menu_sign_p->menu_index = index_value;
 }
 
 /********************************************************************************
 * 获取菜单索引
 ********************************************************************************/
 uint8_t get_menu_index(void) {
-    return menu_index;
+    return menu_sign_p->menu_index;
 }
 
 /********************************************************************************
 * 防抖函数
 ********************************************************************************/
 void debounce_func() {
-    if(menu_change_lock == 0) {
-        cur_time = 0;
-        change_flag = 1;
+    if(menu_sign_p->menu_change_lock == 0) {
+        menu_sign_p->cur_time = 0;
+        menu_sign_p->change_flag = 1;
         // 显示数字
-        oled_42_show_num(menu_index, 1, 0);
+        oled_42_show_num(menu_sign_p->menu_index, 1, 0);
     }
 }
 
@@ -75,10 +75,10 @@ void debounce_func() {
 ********************************************************************************/
 static void keyboard_menu_change() {
 //    printf("menu_index -> %d\r", menu_index);
-    if(pre_menu != menu_index) {
-        pre_menu = menu_index;
+    if(menu_sign_p->pre_menu != menu_sign_p->menu_index) {
+        menu_sign_p->pre_menu = menu_sign_p->menu_index;
         // 显示菜单
-        load_menu(menu_index + 1);
+        load_menu(menu_sign_p->menu_index + 1);
     }
 }
 
@@ -86,17 +86,17 @@ static void keyboard_menu_change() {
 * 函数重载防抖后执行菜单切换
 ********************************************************************************/
 void HAL_IncTick(void) {
-    cur_time > 6000 ? cur_time = 0 : cur_time++;
-    if (cur_time > 300 && change_flag == 1) {
+    menu_sign_p->cur_time > 6000 ? menu_sign_p->cur_time = 0 : menu_sign_p->cur_time++;
+    if (menu_sign_p->cur_time > 300 && menu_sign_p->change_flag == 1) {
         keyboard_menu_change();
-        change_flag = 0;
+        menu_sign_p->change_flag = 0;
     }
 }
 
 uint32_t HAL_GetTick(void) {
-    return cur_time;
+    return menu_sign_p->cur_time;
 }
-/*
+/********************************************************************************
  *  每个编码器回调函数携带事件参数
  *  0 -> 按下
  *  1 -> 抬起
@@ -104,16 +104,16 @@ uint32_t HAL_GetTick(void) {
  *  3 -> 右旋
  *  4 -> 按下左旋
  *  5 -> 按下右旋
- * */
+********************************************************************************/
 // 编码器 1
 void encoder1_callback(uint8_t encoder_value) {
 //    if(menu_config_arr[menu_index + 1] == 0x00) {
     if(encoder_value == 4) {
-        menu_index <= 0 ? menu_index = 9 : menu_index--;
+        menu_sign_p->menu_index <= 0 ? menu_sign_p->menu_index = 9 : menu_sign_p->menu_index--;
         debounce_func();
         return;
     } else if(encoder_value == 5) {
-        menu_index >= 9 ? menu_index = 0 : menu_index++;
+        menu_sign_p->menu_index >= 9 ? menu_sign_p->menu_index = 0 : menu_sign_p->menu_index++;
         debounce_func();
         return;
     }

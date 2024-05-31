@@ -142,14 +142,14 @@ static uint8_t parse_json_data(jsmn_parser *p) {
 /********************************************************************************
 * 解析 json 字符值的功能位，并根据功能执行
 ********************************************************************************/
-void parse_json_value(uint8_t key_value_index) {
-    uint8_t function_index = jsmn_p->key_value_arr[key_value_index][0] - 0x30;
+void parse_json_value(uint8_t v_index) {
+    uint8_t function_index = jsmn_p->key_value_arr[v_index][0] - 0x30;
 //    printf("function_index -> %d\n", function_index);
     if (function_index > 10 || function_index < 0) return;
 //    printf("parse_function_running.....\n");
 //    holding_flag = 0;
 //    printf("holding_flag -> %d\r\n", holding_flag);
-    jsmn_p->parse_func[function_index](key_value_index);
+    jsmn_p->parse_func[function_index](v_index);
 }
 
 /********************************************************************************
@@ -159,55 +159,55 @@ void parse_json_value(uint8_t key_value_index) {
 /********************************************************************************
 * 解析 json 字符（普通键值）
 ********************************************************************************/
-static void parse_json_normal_key(uint8_t key_value_index) {
+static void parse_json_normal_key(uint8_t v_index) {
     uint8_t start = 1;
-    hid_buff_set_send(&start, key_value_index, 0x00);
+    hid_buff_set_send(&start, v_index, 0x00);
 }
 
 /********************************************************************************
 * 解析 json （组合组合）
 ********************************************************************************/
-static void parse_json_comp_key(uint8_t key_value_index) {
+static void parse_json_comp_key(uint8_t v_index) {
     uint8_t start = 1;
-    uint8_t compp_key_count = string_to_num_hex(key_value_index, start++, start++);
+    uint8_t compp_key_count = string_to_num_hex(v_index, start++, start++);
     while (compp_key_count--) {
-        uint8_t special_key = string_to_num_hex(key_value_index, start++, start++);
-        hid_buff_set_send(&start, key_value_index, special_key);
+        uint8_t special_key = string_to_num_hex(v_index, start++, start++);
+        hid_buff_set_send(&start, v_index, special_key);
     }
 }
 
 /********************************************************************************
 * 解析 json (普通延迟按键）
 ********************************************************************************/
-static void parse_json_delay_key(uint8_t key_value_index) {
-//    printf("json_parse_normal_success -> %s\n", key_value_array[key_value_index]);
-    uint8_t delay_key_count = jsmn_p->key_value_arr[key_value_index][1] - 0x30;
+static void parse_json_delay_key(uint8_t v_index) {
+//    printf("json_parse_normal_success -> %s\n", key_value_array[v_index]);
+    uint8_t delay_key_count = jsmn_p->key_value_arr[v_index][1] - 0x30;
     uint8_t start = 2;
-    hid_buff_set_send(&start, key_value_index, 0x00);
+    hid_buff_set_send(&start, v_index, 0x00);
     while (delay_key_count--) {
-        get_execute_delay(&start, key_value_index);
-        hid_buff_set_send(&start, key_value_index, 0x00);
+        get_execute_delay(&start, v_index);
+        hid_buff_set_send(&start, v_index, 0x00);
     }
 }
 
 /********************************************************************************
 * 解析 json (组合延迟按键）
 ********************************************************************************/
-static void parse_json_comp_delay_key(uint8_t key_value_index) {
-    uint8_t delay_key_count = jsmn_p->key_value_arr[key_value_index][1] - 0x30;
+static void parse_json_comp_delay_key(uint8_t v_index) {
+    uint8_t delay_key_count = jsmn_p->key_value_arr[v_index][1] - 0x30;
     uint8_t start = 2;
-    uint8_t special_key_count = string_to_num_hex(key_value_index, start++, start++);
+    uint8_t special_key_count = string_to_num_hex(v_index, start++, start++);
     uint8_t special_key;
     while(special_key_count --) {
-        special_key = string_to_num_hex(key_value_index, start++, start++);
-        hid_buff_set_send(&start, key_value_index, special_key);
+        special_key = string_to_num_hex(v_index, start++, start++);
+        hid_buff_set_send(&start, v_index, special_key);
     }
     while (delay_key_count--) {
-        get_execute_delay(&start, key_value_index);
-        special_key_count = string_to_num_hex(key_value_index, start++, start++);
+        get_execute_delay(&start, v_index);
+        special_key_count = string_to_num_hex(v_index, start++, start++);
         while (special_key_count --) {
-            special_key = string_to_num_hex(key_value_index, start++, start++);
-            hid_buff_set_send(&start, key_value_index, special_key);
+            special_key = string_to_num_hex(v_index, start++, start++);
+            hid_buff_set_send(&start, v_index, special_key);
         }
     }
 }
@@ -215,15 +215,15 @@ static void parse_json_comp_delay_key(uint8_t key_value_index) {
 /********************************************************************************
 * 设置与发送缓冲数组
 ********************************************************************************/
-static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t special_key) {
-    uint8_t normal_key_count = string_to_num_hex(key_value_index, (*start)++, (*start)++);
+static void hid_buff_set_send(uint8_t *start, uint8_t v_index, uint8_t special_key) {
+    uint8_t normal_key_count = string_to_num_hex(v_index, (*start)++, (*start)++);
     uint8_t cycle_num = normal_key_count / 6;
     do {
         set_data_buff(0, 0, 0x01);
         set_data_buff(0, 1, special_key);
         for (uint8_t i = 0; i < 6; i++){
             if(normal_key_count == 0) break;
-            set_data_buff(0, i + 3, string_to_num_hex(key_value_index, (*start)++, (*start)++));
+            set_data_buff(0, i + 3, string_to_num_hex(v_index, (*start)++, (*start)++));
             normal_key_count --;
         }
 //        for(uint8_t i = 0; i < 9; i ++) {
@@ -237,22 +237,22 @@ static void hid_buff_set_send(uint8_t *start, uint8_t key_value_index, uint8_t s
 /********************************************************************************
 * 获取与执行延迟
 ********************************************************************************/
-static void get_execute_delay(uint8_t *start, uint8_t key_value_index) {
-    uint16_t delay_time = string_to_num_hex(key_value_index, (*start)++, (*start)++) * 255;
-    delay_time += string_to_num_hex(key_value_index, (*start)++, (*start)++);
+static void get_execute_delay(uint8_t *start, uint8_t v_index) {
+    uint16_t delay_time = string_to_num_hex(v_index, (*start)++, (*start)++) * 255;
+    delay_time += string_to_num_hex(v_index, (*start)++, (*start)++);
     HAL_Delay(delay_time);
 }
 
 /********************************************************************************
 * 解析json (鼠标功能）
 ********************************************************************************/
-static void parse_json_mouse_func(uint8_t key_value_index) {
+static void parse_json_mouse_func(uint8_t v_index) {
     set_data_buff(1, 0, 0x02);
-    set_data_buff(1, 1, string_to_num_hex(key_value_index, 1, 2));
+    set_data_buff(1, 1, string_to_num_hex(v_index, 1, 2));
     char sign;
     for (uint8_t i = 2, start = 3; i < 5; i++) {
-        sign = jsmn_p->key_value_arr[key_value_index][start++] - 0x30 == 1 ? 1 : -1;
-        set_data_buff(1, i, string_to_num_hex(key_value_index, start++, start++) * sign);
+        sign = jsmn_p->key_value_arr[v_index][start++] - 0x30 == 1 ? 1 : -1;
+        set_data_buff(1, i, string_to_num_hex(v_index, start++, start++) * sign);
     }
     send_hid_code(1);
     hid_buff_reset();
@@ -261,10 +261,10 @@ static void parse_json_mouse_func(uint8_t key_value_index) {
 /********************************************************************************
 * 媒体功能
 ********************************************************************************/
-static void parse_json_media_func(uint8_t key_value_index) {
+static void parse_json_media_func(uint8_t v_index) {
     set_data_buff(2, 0, 0x03);
-    set_data_buff(2, 1, string_to_num_hex(key_value_index, 1, 2));
-    set_data_buff(2, 2, string_to_num_hex(key_value_index, 3, 4));
+    set_data_buff(2, 1, string_to_num_hex(v_index, 1, 2));
+    set_data_buff(2, 2, string_to_num_hex(v_index, 3, 4));
     send_hid_code(2);
     hid_buff_reset();
 }
@@ -272,18 +272,18 @@ static void parse_json_media_func(uint8_t key_value_index) {
 /********************************************************************************
 * 菜单切换功能
 ********************************************************************************/
-static void parse_json_menu_func(uint8_t key_value_index) {
-    uint8_t menu_func = jsmn_p->key_value_arr[key_value_index][1] - 0x30;
+static void parse_json_menu_func(uint8_t v_index) {
+    uint8_t menu_func = jsmn_p->key_value_arr[v_index][1] - 0x30;
     uint8_t index = get_menu_index();
     if (menu_func == 0) {
         index <= 0 ? index = 9 : index--;
     } else if (menu_func == 1) {
         index >= 9 ? index = 0 : index++;
     } else {
-        index = jsmn_p->key_value_arr[key_value_index][2] - 0x30;
+        index = jsmn_p->key_value_arr[v_index][2] - 0x30;
     }
     set_menu_index(index);
-    debounce_func(key_value_index);
+    debounce_func(v_index);
 }
 
 /********************************************************************************
@@ -298,12 +298,12 @@ static void parse_json_menu_func(uint8_t key_value_index) {
 /********************************************************************************
 * 字符串转十六进制数字
 ********************************************************************************/
-static uint8_t string_to_num_hex(uint8_t key_value_index, uint8_t start, uint8_t end) {
+static uint8_t string_to_num_hex(uint8_t v_index, uint8_t start, uint8_t end) {
     uint8_t result = 0x00;
-    result += ((jsmn_p->key_value_arr[key_value_index][start] - 0x30) * 16);
-    result += (jsmn_p->key_value_arr[key_value_index][end] >= 0x41 && jsmn_p->key_value_arr[key_value_index][end] <= 0x46) ?
-              (0x0A + jsmn_p->key_value_arr[key_value_index][end] - 0x41) :
-              jsmn_p->key_value_arr[key_value_index][end] - 0x30;
+    result += ((jsmn_p->key_value_arr[v_index][start] - 0x30) * 16);
+    result += (jsmn_p->key_value_arr[v_index][end] >= 0x41 && jsmn_p->key_value_arr[v_index][end] <= 0x46) ?
+              (0x0A + jsmn_p->key_value_arr[v_index][end] - 0x41) :
+              jsmn_p->key_value_arr[v_index][end] - 0x30;
     return result;
 }
 

@@ -7,11 +7,15 @@
 #include "lcd_user.h"
 #include "oled_42.h"
 
+// typedef unsigned char uint8_t 
+
 extern USBD_HandleTypeDef hUsbDeviceFS;
 // usb 键值数据
 static p_usb_data_t usb_data_p = NULL;
 // 信号数据
 static p_sign_data_t sign_data_p = NULL;
+// 上位机交互数据
+static p_upper_data_t upper_data_p = NULL;
 
 // 键盘
 static uint8_t key_buff[9] = {0};
@@ -25,56 +29,51 @@ static uint8_t media_zero[5] = {0x03};
 
 // 当前的 buff
 static uint8_t cur_buff = 0;
-// 菜单索引
-static uint8_t write_menu = 1;
-// 接收缓存数组
-static uint8_t receive_buff[RE_BUFF_SIZE];
-// 数据包的大小
-static uint16_t package_size;
-// 彩屏数据包计算
-static uint32_t color_package_count = 0;
 // 菜单配置数组
 static uint8_t menu_config_arr[31] = {0};
-// 数据包数量
-static uint8_t package_num = 0;
+// 菜单索引
+static uint8_t write_menu = 1;
+
+// 接收缓存数组
+static uint8_t rec_buff[RE_BUFF_SIZE];
 
 /********************************************************************************
 * CDC 处理回调
 ********************************************************************************/
-int8_t cdc_event_cb(uint8_t *Buf, uint32_t *Len) {
+uint8_t cdc_event_cb(uint8_t *Buf, uint32_t *Len) {
     // 判断越界
-    if (package_size >= RE_BUFF_SIZE || *Len > MAX_PACK_SIZE) return (USBD_FAIL);
+    if (upper_data_p->package_size >= RE_BUFF_SIZE || *Len > MAX_PACK_SIZE) return (USBD_FAIL);
     if (Buf[0] == 0xAA && Buf[1] == 0xBB) {
         // 测试连接
         if (Buf[2] == 0xCC) {
             CDC_Transmit_FS(&Buf[0], 3);
         }
-            // 菜单设置
+        // 菜单设置
         else if (Buf[2] == 0xDD) {
             set_sign(menu_config, SIGN_SET);
         }
-            // 切换写入
+        // 切换写入
         else if (Buf[2] == 0xEE) {
             set_sign(data_state, SIGN_SET);
         }
-            // 彩色图片写入
+        // 彩色图片写入
         else if (Buf[2] == 0xFF) {
             set_sign(color_mode, SIGN_SET);
         }
         return (USBD_OK);
     }
     // 存入缓存数组中
-    memcpy((uint8_t *) (&receive_buff[0] + (MAX_PACK_SIZE * package_num)), &Buf[0], *Len);
-    package_num++;
+    memcpy((uint8_t *) (&upper_data_p->rec_buff[0] + (MAX_PACK_SIZE * upper_data_p->package_num)), &Buf[0], *Len);
+    upper_data_p->package_num++;
     if (*Len < MAX_PACK_SIZE) {
-        package_size += *Len;
-        package_num = 0;
+        upper_data_p->package_size += *Len;
+        upper_data_p->package_num = 0;
         // 数据写入 flash
         set_sign(data_rec, SIGN_SET);
 //        CDC_Transmit_FS(&Buf[0], 3);
         return (USBD_OK);
     }
-    package_size += MAX_PACK_SIZE;
+    upper_data_p->package_size += MAX_PACK_SIZE;
     return (USBD_OK);
     /* USER CODE END 6 */
 }
@@ -89,10 +88,12 @@ void usb_init_user(void) {
         free(sign_data_p);
         return;
     }
+
     usb_data_p = (p_usb_data_t) malloc(sizeof(struct usb_data));
     if (usb_data_p == NULL) {
         free(sign_data_p);
         free(usb_data_p);
+        sign_data_p = NULL;
         return;
     }
     usb_data_p->data_buff[0].key_p = key_buff;
@@ -104,6 +105,17 @@ void usb_init_user(void) {
     usb_data_p->data_buff[2].key_p = media_buff;
     usb_data_p->data_buff[2].zero_p = media_zero;
     usb_data_p->data_buff[2].buff_size = 5;
+
+    upper_data_p = (p_upper_data_t) malloc(sizeof(struct upper_data));
+    if(upper_data_p == NULL) {
+        free(sign_data_p);
+        free(usb_data_p);
+        free(upper_data_p);
+        sign_data_p = NULL;
+        usb_data_p = NULL;
+        return;
+    }
+    upper_data_p->rec_buff = rec_buff;
 }
 
 /********************************************************************************
@@ -176,7 +188,7 @@ void usb_scan_user(void) {
         // 写入菜单
         if (get_sign(menu_config) == SIGN_SET) {
             set_sign(menu_config, SIGN_RESET);
-            storage_config((uint8_t *) receive_buff, 31);
+            storage_config(upper_data_p->rec_buff, 31);
             load_menu_config();
 //            lcd_show_str("menu config done");
             receive_reset();
@@ -186,13 +198,13 @@ void usb_scan_user(void) {
         // 单层图片
         if (get_sign(data_state) == SIGN_SET) {
             set_sign(data_state, SIGN_RESET);
-            if (package_size < 5) {
+            if (upper_data_p->package_size < 5) {
                 // 擦除数据
                 reset_menu_data(write_menu, 1);
             } else {
-                if (package_size > 730) return;
+                if (upper_data_p->package_size > 730) return;
                 // 转为图片数据后存储在 FLASH
-                storage_menu_to_flash(write_menu, (uint8_t *) receive_buff, package_size, 1);
+                storage_menu_to_flash(write_menu, upper_data_p->rec_buff, upper_data_p->package_size, 1);
             }
             set_sign(key_state, SIGN_RESET);
 //            lcd_show_str("oled done");
@@ -203,10 +215,10 @@ void usb_scan_user(void) {
         // 彩屏图片
         if (get_sign(color_mode) == SIGN_SET) {
             // 处理空图片，并重置内存
-            if (package_size < 5) {
+            if (upper_data_p->package_size < 5) {
                 // 擦除扇区
                 reset_menu_data(write_menu, 2);
-                color_package_count = 0;
+                upper_data_p->color_package_count = 0;
                 set_sign(color_mode, SIGN_RESET);
 //                lcd_show_str("Next ...");
 //                load_menu(write_menu);
@@ -214,13 +226,13 @@ void usb_scan_user(void) {
                 turn_next_menu();
             } else {
                 // 存储图片
-                storage_color_screen(write_menu, color_package_count << 12, receive_buff, package_size);
+                storage_color_screen(write_menu, upper_data_p->color_package_count << 12, upper_data_p->rec_buff, upper_data_p->package_size);
                 // 图片传输完成判断
-                if (color_package_count < 26) {
-                    color_package_count++;
+                if (upper_data_p->color_package_count < 26) {
+                    upper_data_p->color_package_count++;
                 } else {
                     // 图片传输完成
-                    color_package_count = 0;
+                    upper_data_p->color_package_count = 0;
                     set_sign(color_mode, SIGN_RESET);
 //                    lcd_show_str("Next ...");
 //                    load_menu(write_menu);
@@ -237,15 +249,15 @@ void usb_scan_user(void) {
         if (get_sign(key_state) == SIGN_SET) {
             // 键值存储的第二个状态
             set_sign(key_state, SIGN_RESET);
-            storage_page_two(write_menu, (uint8_t *) &receive_buff, package_size);
+            storage_page_two(write_menu, upper_data_p->rec_buff, upper_data_p->package_size);
         } else {
-            if (package_size < 5) {
+            if (upper_data_p->package_size < 5) {
                 // 擦除扇区
                 reset_menu_data(write_menu, 0);
             } else {
                 // 键值存储的第一个状态
                 set_sign(key_state, SIGN_SET);
-                storage_menu_to_flash(write_menu, (uint8_t *) &receive_buff, package_size, 0);
+                storage_menu_to_flash(write_menu, upper_data_p->rec_buff, upper_data_p->package_size, 0);
             }
         }
 //        lcd_show_str("json done");
@@ -285,9 +297,9 @@ void turn_next_menu(void) {
 * 重置标志
 ********************************************************************************/
 static void receive_reset(void) {
-    package_size = 0;
+    upper_data_p->package_size = 0;
     // 清空接收缓存数组
-    memset(receive_buff, 0, RE_BUFF_SIZE);
+    memset(upper_data_p->rec_buff, 0, RE_BUFF_SIZE);
 }
 
 /********************************************************************************
