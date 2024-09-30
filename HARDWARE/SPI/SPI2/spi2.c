@@ -10,40 +10,40 @@
 #include <stdio.h>
 #include "spi2.h"
 
-// SPI���
+// SPI句柄
 SPI_HandleTypeDef handle_spi2;
 
 void spi2_init(void) {
-    // ���� SPI2
+    // 设置 SPI2
     handle_spi2.Instance = SPI2;
-    // ����SPI����ģʽ:����Ϊ��SPI
+    // 设置SPI工作模式:设置为主SPI
     handle_spi2.Init.Mode = SPI_MODE_MASTER;
-    // ����ȫ˫�����ǰ�˫��������ģʽ
+    // 设置全双工或是半双工的数据模式
     handle_spi2.Init.Direction = SPI_DIRECTION_2LINES;
-    // ���� SPI �����ݴ�С������8λ֡�ṹ
+    // 设置 SPI 的数据大小，发送8位帧结构
     handle_spi2.Init.DataSize = SPI_DATASIZE_8BIT;
-    // ����ͬ��ʱ�ӿ���״̬Ϊ�ߵ�ƽ
+    // 串行同步时钟空闲状态为高电平
     handle_spi2.Init.CLKPolarity = SPI_POLARITY_LOW;
-    // ����ͬ��ʱ�ӵĵڶ��������أ��������½������ݱ�����
+    // 串行同步时钟的第二个跳变沿（上升或下降）数据被采样
     handle_spi2.Init.CLKPhase = SPI_PHASE_1EDGE;
-    // NSS �ܽ���Ӳ��������������SSI�� ������ �ڲ� NSS �ź��� SSI λ����
+    // NSS 管脚由硬件还是由软件（SSI） 管理： 内部 NSS 信号有 SSI 位控制
     handle_spi2.Init.NSS = SPI_NSS_SOFT;
-    // ���岨����Ԥ��Ƶ��֮�� ������Ԥ��ƵֵΪ256
+    // 定义波特率预分频的之： 波特率预分频值为256
     handle_spi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
-    // ָ�����ݴ���� MSB ��ʼ���� LSB ��ʼ�� ���ݴ� MSB ��ʼ
+    // 指定数据传输从 MSB 开始还是 LSB 开始： 数据从 MSB 开始
     handle_spi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
     handle_spi2.Init.TIMode = SPI_TIMODE_DISABLE;
     handle_spi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-    // CRC ֵ����Ķ���ʽ
+    // CRC 值计算的多项式
     handle_spi2.Init.CRCPolynomial = 10;
-    // ����ָ��������ʼ������ SPIX �Ĵ���d
+    // 根据指定参数初始化外设 SPIX 寄存器d
     if (HAL_SPI_Init(&handle_spi2) != HAL_OK) {
         printf("spi2 init error !");
     }
 }
 
 /********************************************************************************
-* SPI ���Ͳ�����һ���ֽڵ�����
+* SPI 发送并接受一个字节的数据
 ********************************************************************************/
 uint8_t spi2_transmit_receive_byte(uint8_t byte_data) {
     uint8_t receive_data;

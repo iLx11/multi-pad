@@ -12,14 +12,14 @@
 
 #include "stm32f1xx_hal.h"
 
-// ¶¨ÒåÈí¼ş SPI
+// å®šä¹‰è½¯ä»¶ SPI
 #define SOFT_SPI 0
 
 #define LCD_47_NUM 1
 
 
 /********************************************************************************
-* ¶¨Òå LCD ºáÆÁ»òÊúÆÁÏÔÊ¾ 0 - ºáÆÁÏÔÊ¾£¬ 1 - ÊúÆÁÏÔÊ¾
+* å®šä¹‰ LCD æ¨ªå±æˆ–ç«–å±æ˜¾ç¤º 0 - æ¨ªå±æ˜¾ç¤ºï¼Œ 1 - ç«–å±æ˜¾ç¤º
 ********************************************************************************/
 #define LCD_DIRECTION 0
 
@@ -36,7 +36,7 @@
 #endif
 
 /********************************************************************************
-* Èí¼ş SPI ¶¨Òå
+* è½¯ä»¶ SPI å®šä¹‰
 ********************************************************************************/
 #if SOFT_SPI
 
@@ -54,7 +54,7 @@
 #endif
 
 /********************************************************************************
-* Òı½Å¶¨Òå
+* å¼•è„šå®šä¹‰
 ********************************************************************************/
 // RES
 #define LCD_47_RES_GPIO GPIOD
@@ -72,12 +72,12 @@
 
 
 // RES
-// ½ÓµÍµçÆ½¸´Î»
+// æ¥ä½ç”µå¹³å¤ä½
 #define LCD_47_RES_RESET HAL_GPIO_WritePin(LCD_47_RES_GPIO, LCD_47_RES_PIN, GPIO_PIN_RESET)
 #define LCD_47_RES_SET HAL_GPIO_WritePin(LCD_47_RES_GPIO, LCD_47_RES_PIN, GPIO_PIN_SET)
 
 // DC
-// ÃüÁî -> À­µÍ / Êı¾İ -> À­¸ß
+// å‘½ä»¤ -> æ‹‰ä½ / æ•°æ® -> æ‹‰é«˜
 #define LCD_47_DC_RESET  HAL_GPIO_WritePin(LCD_47_DC_GPIO, LCD_47_DC_PIN, GPIO_PIN_RESET)
 #define LCD_47_DC_SET  HAL_GPIO_WritePin(LCD_47_DC_GPIO, LCD_47_DC_PIN, GPIO_PIN_SET)
 
@@ -85,12 +85,12 @@
 #define ENABLE_LCD_47_CS(GPIO, PIN) HAL_GPIO_WritePin(GPIO, PIN, GPIO_PIN_RESET)
 #define DISABLE_LCD_47_CS(GPIO, PIN) HAL_GPIO_WritePin(GPIO, PIN, GPIO_PIN_SET)
 
-// Ğ´ÃüÁî
+// å†™å‘½ä»¤
 #define LCD_CMD  0
-// Ğ´Êı¾İ
+// å†™æ•°æ®
 #define LCD_DATA 1
 
-//»­±ÊÑÕÉ«
+//ç”»ç¬”é¢œè‰²
 #define WHITE         	 0xFFFF
 #define BLACK         	 0x0000
 #define BLUE           	 0x001F
@@ -102,16 +102,16 @@
 #define GREEN         	 0x07E0
 #define CYAN          	 0x7FFF
 #define YELLOW        	 0xFFE0
-#define BROWN 			     0XBC40 //×ØÉ«
-#define BRRED 			     0XFC07 //×ØºìÉ«
-#define GRAY  			     0X8430 //»ÒÉ«
-#define DARKBLUE      	 0X01CF	//ÉîÀ¶É«
-#define LIGHTBLUE      	 0X7D7C	//Ç³À¶É«
-#define GRAYBLUE       	 0X5458 //»ÒÀ¶É«
-#define LIGHTGREEN     	 0X841F //Ç³ÂÌÉ«
-#define LGRAY 			     0XC618 //Ç³»ÒÉ«(PANNEL),´°Ìå±³¾°É«
-#define LGRAYBLUE        0XA651 //Ç³»ÒÀ¶É«(ÖĞ¼ä²ãÑÕÉ«)
-#define LBBLUE           0X2B12 //Ç³×ØÀ¶É«(Ñ¡ÔñÌõÄ¿µÄ·´É«)
+#define BROWN 			     0XBC40 //æ£•è‰²
+#define BRRED 			     0XFC07 //æ£•çº¢è‰²
+#define GRAY  			     0X8430 //ç°è‰²
+#define DARKBLUE      	 0X01CF	//æ·±è“è‰²
+#define LIGHTBLUE      	 0X7D7C	//æµ…è“è‰²
+#define GRAYBLUE       	 0X5458 //ç°è“è‰²
+#define LIGHTGREEN     	 0X841F //æµ…ç»¿è‰²
+#define LGRAY 			     0XC618 //æµ…ç°è‰²(PANNEL),çª—ä½“èƒŒæ™¯è‰²
+#define LGRAYBLUE        0XA651 //æµ…ç°è“è‰²(ä¸­é—´å±‚é¢œè‰²)
+#define LBBLUE           0X2B12 //æµ…æ£•è“è‰²(é€‰æ‹©æ¡ç›®çš„åè‰²)
 
 void lcd_47_init(void);
 
@@ -150,7 +150,7 @@ void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t
     uint16_t gpio_pin;
 } spi_device_cs;
 
-// SPI Æ¬Ñ¡Òı½ÅÊı×é
+// SPI ç‰‡é€‰å¼•è„šæ•°ç»„
 static spi_device_cs spi_device_cs_array[1] = {
         {LCD_47_CS1_GPIO, LCD_47_CS1_PIN}
 };

@@ -12,7 +12,7 @@
 
 #include "stm32f1xx_hal.h"
 
-// FLASH Ƭѡ��
+// FLASH 片选线
 #define FLASH_SPI_CS_GPIO GPIOC
 #define FLASH_SPI_CS_PIN GPIO_PIN_4
 
@@ -24,46 +24,46 @@
                             }while(0)
 
 /********************************************************************************
-* FLASHоƬ�б� ��ȡ ID ���Բο���������
+* FLASH芯片列表 读取 ID 可以参考下列数据
 ********************************************************************************/
-#define W25Q80      0XEF13          /* W25Q80   оƬID */
-#define W25Q16      0XEF14          /* W25Q16   оƬID */
-#define W25Q32      0XEF15          /* W25Q32   оƬID */
-#define W25Q64      0XEF16          /* W25Q64   оƬID */
-#define W25Q128     0XEF17          /* W25Q128  оƬID */
-#define W25Q256     0XEF18          /* W25Q256  оƬID */
-#define BY25Q64     0X6816          /* BY25Q64  оƬID */
-#define BY25Q128    0X6817          /* BY25Q128 оƬID */
-#define NM25Q64     0X5216          /* NM25Q64  оƬID */
-#define NM25Q128    0X5217          /* NM25Q128 оƬID */
+#define W25Q80      0XEF13          /* W25Q80   芯片ID */
+#define W25Q16      0XEF14          /* W25Q16   芯片ID */
+#define W25Q32      0XEF15          /* W25Q32   芯片ID */
+#define W25Q64      0XEF16          /* W25Q64   芯片ID */
+#define W25Q128     0XEF17          /* W25Q128  芯片ID */
+#define W25Q256     0XEF18          /* W25Q256  芯片ID */
+#define BY25Q64     0X6816          /* BY25Q64  芯片ID */
+#define BY25Q128    0X6817          /* BY25Q128 芯片ID */
+#define NM25Q64     0X5216          /* NM25Q64  芯片ID */
+#define NM25Q128    0X5217          /* NM25Q128 芯片ID */
 
 /********************************************************************************
-* FLASH ָ��
+* FLASH 指令
 ********************************************************************************/
-// ��ȡоƬ��Ϣ
+// 读取芯片信息
 #define MANUFACTURE_DEVICE_ID_CMD               0x90
-// ʹ�� 4 �ֽڵ�ַ
+// 使能 4 字节地址
 #define ENABLE_4_BYTE_ARRAY_CMD                 0xB7
-// ��ȡ FLASH ����
+// 读取 FLASH 数据
 #define READ_FLASH_DATA_CMD                     0x03
 #define READ_FAST_FLASH_DATA_CMD                0x0B
 #define READ_FAST_FLASH_DUAL_CMD                0x3B
 #define READ_FAST_FLASH_QUAD_CMD                0xEB
-// ��ȡ״̬�Ĵ���
+// 读取状态寄存器
 #define READ_STATUS_REG_1_CMD                   0x05
 #define READ_STATUS_REG_2_CMD                   0x35
 #define READ_STATUS_REG_3_CMD                   0x15
-// д״̬�Ĵ���
+// 写状态寄存器
 #define WRITE_STATUS_REG_1_CMD                  0x01
 #define WRITE_STATUS_REG_2_CMD                  0x31
 #define WRITE_STATUS_REG_3_CMD                  0x11
-// ҳ����
+// 页命令
 #define FLASH_PAGE_PROGRAM_CMD                  0x02
 #define FLASH_PAGE_PROGRAM_QUAD_CMD             0x32
-// ��дʹ��
+// 读写使能
 #define ENABLE_FLASH_WRITE_CMD                  0x06
 #define ENABLE_FLASH_READ_CMD                   0x04
-// ����ָ��
+// 擦除指令
 #define ERASE_FLASH_CMD                         0xC7
 #define ERASE_SECTOR_CMD                        0x20
 #define ERASE_BLOCK_CMD                         0xD8

@@ -10,11 +10,11 @@
 #include "oled_42.h"
 #include "spi3.h"
 
-// ÏÔÊ¾Êı¾İ,128 * 32,4 -> (32 / 8)
+// æ˜¾ç¤ºæ•°æ®,128 * 32,4 -> (32 / 8)
 uint8_t oled_42_page[PAGE_42_WIDTH][PAGE_42_NUM];
 
 /********************************************************************************
-* OLED ³õÊ¼»¯
+* OLED åˆå§‹åŒ–
 ********************************************************************************/
 void oled_42_init(void) {
     GPIO_InitTypeDef GPIO_InitStruct;
@@ -28,14 +28,14 @@ void oled_42_init(void) {
 #if SOFT_42_SPI
     ENABLE_OLED_42_SPI_RCC;
 
-    //GPIO³õÊ¼»¯ÉèÖÃ
+    //GPIOåˆå§‹åŒ–è®¾ç½®
     GPIO_InitStruct.Pin = OLED_42_SPI_SOFT_SCL_PIN | OLED_42_SPI_SOFT_SDA_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-    GPIO_InitStruct.Pull = GPIO_PULLUP;//ÉÏÀ­
-    HAL_GPIO_Init( OLED_42_SPI_SOFT_SCL_GPIO,&GPIO_InitStruct);//³õÊ¼»¯
+    GPIO_InitStruct.Pull = GPIO_PULLUP;//ä¸Šæ‹‰
+    HAL_GPIO_Init( OLED_42_SPI_SOFT_SCL_GPIO,&GPIO_InitStruct);//åˆå§‹åŒ–
 #else
-    // spi3 ³õÊ¼»¯
+    // spi3 åˆå§‹åŒ–
     spi3_init();
 #endif
 
@@ -78,32 +78,32 @@ void oled_42_init(void) {
 }
 
 /********************************************************************************
-* ¿ªÆô OLED ÏÔÊ¾
+* å¼€å¯ OLED æ˜¾ç¤º
 ********************************************************************************/
 void enable_oled_42_display(uint8_t index) {
-    // µçºÉ±ÃÊ¹ÄÜ
+    // ç”µè·æ³µä½¿èƒ½
     oled_42_wt_byte_all(0x8D, OLED_42_CMD);
-    // ¿ªÆô×ÜµçÔ´
+    // å¼€å¯æ€»ç”µæº
     oled_42_wt_byte_all(0x14, OLED_42_CMD);
-    // µãÁÁÆÁÄ»
+    // ç‚¹äº®å±å¹•
     oled_42_wt_byte_all(0xAF, OLED_42_CMD);
 }
 
 /********************************************************************************
-* ¹Ø±Õ OLED ÏÔÊ¾
+* å…³é—­ OLED æ˜¾ç¤º
 ********************************************************************************/
 void disable_oled_42_display(uint8_t index) {
-    // µçºÉ±ÃÊ¹ÄÜ
+    // ç”µè·æ³µä½¿èƒ½
     oled_42_wt_byte_all(0x8D, OLED_42_CMD);
-    // ¹Ø±Õ×ÜµçÔ´
+    // å…³é—­æ€»ç”µæº
     oled_42_wt_byte_all(0x10, OLED_42_CMD);
-    // ¹Ø±ÕÆÁÄ»
+    // å…³é—­å±å¹•
     oled_42_wt_byte_all(0xAE, OLED_42_CMD);
 }
 
 
 /********************************************************************************
-* OLED ¸ù¾İÆ¬Ñ¡Ïß¸üĞÂÏÔÊ¾
+* OLED æ ¹æ®ç‰‡é€‰çº¿æ›´æ–°æ˜¾ç¤º
 ********************************************************************************/
 void oled_42_refresh_index(uint8_t index) {
     for(uint8_t i = 0; i < PAGE_42_NUM; i ++) {
@@ -116,7 +116,7 @@ void oled_42_refresh_index(uint8_t index) {
 }
 
 /********************************************************************************
-* OLED ¸ù¾İÆ¬Ñ¡ÏßÇå³ıÏÔÊ¾
+* OLED æ ¹æ®ç‰‡é€‰çº¿æ¸…é™¤æ˜¾ç¤º
 ********************************************************************************/
 void oled_42_clear_index(uint8_t index) {
     for(uint8_t i = 0; i < PAGE_42_NUM; i ++){
@@ -128,7 +128,7 @@ void oled_42_clear_index(uint8_t index) {
 }
 
 /********************************************************************************
-* ·¢ËÍÊı¾İµ½ËùÓĞÉè±¸
+* å‘é€æ•°æ®åˆ°æ‰€æœ‰è®¾å¤‡
 ********************************************************************************/
 void oled_42_wt_byte_all(uint8_t data, uint8_t cmd) {
     for (int i = 0; i < OLED_42_NUM_; i++) {
@@ -137,41 +137,41 @@ void oled_42_wt_byte_all(uint8_t data, uint8_t cmd) {
 }
 
 /********************************************************************************
-* ´«Êäµ¥×Ö½ÚÊı¾İ
+* ä¼ è¾“å•å­—èŠ‚æ•°æ®
 ********************************************************************************/
 void oled_42_wt_byte(uint8_t data, uint8_t cmd, uint8_t index) {
     if(cmd)
         OLED_42_DC_SET;
     else
         OLED_42_DC_RESET;
-    // Ê¹ÄÜÆ¬Ñ¡,ÓĞ¶à¸ö´ÓÉè±¸Ê±,ĞèÒª¸ù¾İ²»Í¬µÄÆ¬Ñ¡ÏßÊ¹ÄÜ
+    // ä½¿èƒ½ç‰‡é€‰,æœ‰å¤šä¸ªä»è®¾å¤‡æ—¶,éœ€è¦æ ¹æ®ä¸åŒçš„ç‰‡é€‰çº¿ä½¿èƒ½
     ENABLE_OLED_42_CS(spi_device_cs_array_42[index].gpio_port, spi_device_cs_array_42[index].gpio_pin);
 #if SOFT_42_SPI
     for(uint8_t i = 0; i < 8; i ++) {
-        // À­µÍÊ±ÖÓ
+        // æ‹‰ä½æ—¶é’Ÿ
         OLED_42_SPI_SOFT_SCL_RESET;
-        // ÅĞ¶ÏÊı¾İ
+        // åˆ¤æ–­æ•°æ®
         if(data & 0x80)
             OLED_42_SPI_SOFT_SDA_SET;
         else
             OLED_42_SPI_SOFT_SDA_RESET;
-        // À­¸ßÊ±ÖÓ
+        // æ‹‰é«˜æ—¶é’Ÿ
         OLED_42_SPI_SOFT_SCL_SET;
-        // Êı¾İÒÆµ½ÏÂÒ»Î»
+        // æ•°æ®ç§»åˆ°ä¸‹ä¸€ä½
         data <<= 1;
     }
 #else
-    // Ó²¼ş SPI
-    // ·¢ËÍÊı¾İ
+    // ç¡¬ä»¶ SPI
+    // å‘é€æ•°æ®
     spi3_transmit_receive_byte(data);
 #endif
-    // Ê§ÄÜÆ¬Ñ¡
+    // å¤±èƒ½ç‰‡é€‰
     DISABLE_OLED_42_CS(spi_device_cs_array_42[index].gpio_port, spi_device_cs_array_42[index].gpio_pin);
     OLED_42_DC_SET;
 }
 
 /********************************************************************************
-* OLED ÏÔÊ¾Í¼Æ¬
+* OLED æ˜¾ç¤ºå›¾ç‰‡
 ********************************************************************************/
 void oled_42_show_pic_index(uint8_t x, uint8_t y, uint8_t sizex, uint8_t sizey, uint8_t BMP[], uint8_t mode, uint8_t index) {
     uint16_t j = 0;
@@ -202,19 +202,19 @@ void oled_42_show_pic_index(uint8_t x, uint8_t y, uint8_t sizex, uint8_t sizey, 
 }
 
 /********************************************************************************
-* OLED page Êı×é»­µã
+* OLED page æ•°ç»„ç”»ç‚¹
 ********************************************************************************/
 void oled_42_page_draw_point(uint8_t x, uint8_t y, uint8_t f) {
     uint8_t page = y / 8;
     uint8_t page_byte = y % 8;
     uint8_t set = (1 << page_byte);
     if(f) {
-        // ÉèÎª 1 Ìî³ä
+        // è®¾ä¸º 1 å¡«å……
         oled_42_page[x][page] |= set;
     } else {
-        // ÉèÎª 0 Çå¿Õ
+        // è®¾ä¸º 0 æ¸…ç©º
         oled_42_page[x][page] &= (~ set);
-        // ÁíÒ»ÖÖ·½Ê½
+        // å¦ä¸€ç§æ–¹å¼
         /*oled_42_page[x][page] = ~oled_42_page[x][page];
         oled_42_page[x][page] |= set;
         oled_42_page[x][page] = ~oled_42_page[x][page];*/

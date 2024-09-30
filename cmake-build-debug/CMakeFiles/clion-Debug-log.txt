@@ -1,5 +1,28 @@
-"D:\RA\CLION\CLion 2023.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Users\Administrator\Desktop\keyPadF1 -B D:\Users\Administrator\Desktop\keyPadF1\cmake-build-debug
+"D:\RA\CODE\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Users\Administrator\Desktop\HARDWARE\multi-pad-hd-private\multi-pad -B D:\Users\Administrator\Desktop\HARDWARE\multi-pad-hd-private\multi-pad\cmake-build-debug
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- The C compiler identification is GNU 10.3.1
+-- The CXX compiler identification is GNU 10.3.1
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Minimal optimization, debug info included
--- Configuring done
--- Generating done
--- Build files have been written to: D:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug

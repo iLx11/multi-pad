@@ -42,7 +42,7 @@ extern "C" {
   * @{
   */
 #define CUSTOM_HID_EPIN_ADDR                 0x85U
-#define CUSTOM_HID_EPIN_SIZE                 0x0DU
+#define CUSTOM_HID_EPIN_SIZE                 0x10U
 
 #define CUSTOM_HID_EPOUT_ADDR                0x04U
 #define CUSTOM_HID_EPOUT_SIZE                0x0DU

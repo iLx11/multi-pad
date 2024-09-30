@@ -13,7 +13,7 @@
 
 
 /********************************************************************************
-* LCD ³õÊ¼»¯
+* LCD åˆå§‹åŒ–
 ********************************************************************************/
 void lcd_47_init(void) {
 
@@ -118,7 +118,7 @@ void lcd_47_init(void) {
 }
 
 /********************************************************************************
-* LCD GPIO ³õÊ¼»¯
+* LCD GPIO åˆå§‹åŒ–
 ********************************************************************************/
 static void lcd_gpio_init(void) {
     GPIO_InitTypeDef GPIO_InitStruct;
@@ -134,22 +134,22 @@ static void lcd_gpio_init(void) {
 #if SOFT_SPI
     __HAL_RCC_GPIOB_CLK_ENABLE();
 
-    //GPIO³õÊ¼»¯ÉèÖÃ
+    //GPIOåˆå§‹åŒ–è®¾ç½®
     GPIO_InitStruct.Pin = LCD_SPI_SOFT_SCL_PIN | LCD_SPI_SOFT_SDA_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-    GPIO_InitStruct.Pull = GPIO_PULLUP;//ÉÏÀ­
-    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);//³õÊ¼»¯
+    GPIO_InitStruct.Pull = GPIO_PULLUP;//ä¸Šæ‹‰
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);//åˆå§‹åŒ–
 //    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10 | GPIO_PIN_15, GPIO_PIN_SET);
 #else
-    // spi2 ³õÊ¼»¯
+    // spi2 åˆå§‹åŒ–
     spi2_init();
 #endif
 }
 
 
 /********************************************************************************
-* ·¢ËÍÊı¾İµ½ËùÓĞÉè±¸
+* å‘é€æ•°æ®åˆ°æ‰€æœ‰è®¾å¤‡
 ********************************************************************************/
 void lcd_wt_byte_all(uint8_t data, uint8_t cmd) {
     for (int i = 0; i < LCD_47_NUM; i++) {
@@ -158,30 +158,30 @@ void lcd_wt_byte_all(uint8_t data, uint8_t cmd) {
 }
 
 /********************************************************************************
-* ´«Êäµ¥×Ö½ÚÊı¾İ
+* ä¼ è¾“å•å­—èŠ‚æ•°æ®
 ********************************************************************************/
 void lcd_wt_byte(uint8_t data, uint8_t cmd, uint8_t index) {
     if (cmd)
         LCD_47_DC_SET;
     else
         LCD_47_DC_RESET;
-    // Ê¹ÄÜÆ¬Ñ¡,ÓĞ¶à¸ö´ÓÉè±¸Ê±,ĞèÒª¸ù¾İ²»Í¬µÄÆ¬Ñ¡ÏßÊ¹ÄÜ
+    // ä½¿èƒ½ç‰‡é€‰,æœ‰å¤šä¸ªä»è®¾å¤‡æ—¶,éœ€è¦æ ¹æ®ä¸åŒçš„ç‰‡é€‰çº¿ä½¿èƒ½
     ENABLE_LCD_47_CS(spi_device_cs_array[index].gpio_port, spi_device_cs_array[index].gpio_pin);
 #if SOFT_SPI
     lcd_send_byte(data);
 #else
-    // Ó²¼ş SPI
-    // ·¢ËÍÊı¾İ
+    // ç¡¬ä»¶ SPI
+    // å‘é€æ•°æ®
 //    spi2_transmit_receive_byte(data);
     spi2_read_write_byte(data);
 #endif
-    // Ê§ÄÜÆ¬Ñ¡
+    // å¤±èƒ½ç‰‡é€‰
     DISABLE_LCD_47_CS(spi_device_cs_array[index].gpio_port, spi_device_cs_array[index].gpio_pin);
     LCD_47_DC_SET;
 }
 
 /********************************************************************************
-* ´«ÊäË«×Ö½ÚÊı¾İ
+* ä¼ è¾“åŒå­—èŠ‚æ•°æ®
 ********************************************************************************/
 static void lcd_wt_d_byte(uint16_t data, uint8_t index) {
     lcd_wt_byte(data >> 8, LCD_DATA, index);
@@ -191,20 +191,20 @@ static void lcd_wt_d_byte(uint16_t data, uint8_t index) {
 #if SOFT_SPI
 
 /********************************************************************************
-* Èí¼ş SPI ´«Êäµ¥×Ö½Ú
+* è½¯ä»¶ SPI ä¼ è¾“å•å­—èŠ‚
 ********************************************************************************/
 static void lcd_send_byte(uint8_t data) {
     for (uint8_t i = 0; i < 8; i++) {
-        // À­µÍÊ±ÖÓ
+        // æ‹‰ä½æ—¶é’Ÿ
         LCD_SPI_SOFT_SCL_RESET;
-        // ÅĞ¶ÏÊı¾İ
+        // åˆ¤æ–­æ•°æ®
         if (data & 0x80)
             LCD_SPI_SOFT_SDA_SET;
         else
             LCD_SPI_SOFT_SDA_RESET;
-        // À­¸ßÊ±ÖÓ
+        // æ‹‰é«˜æ—¶é’Ÿ
         LCD_SPI_SOFT_SCL_SET;
-        // Êı¾İÒÆµ½ÏÂÒ»Î»
+        // æ•°æ®ç§»åˆ°ä¸‹ä¸€ä½
         data <<= 1;
     }
 }
@@ -212,7 +212,7 @@ static void lcd_send_byte(uint8_t data) {
 #endif
 
 /********************************************************************************
-* ÉèÖÃÆÁÄ»µØÖ·£¬¹â±êÎ»ÖÃ
+* è®¾ç½®å±å¹•åœ°å€ï¼Œå…‰æ ‡ä½ç½®
 ********************************************************************************/
 void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t index) {
     if (LCD_DIRECTION == 0) {
@@ -236,7 +236,7 @@ void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t
 }
 
 /********************************************************************************
-* LCD ÏÔÊ¾Í¼Æ¬
+* LCD æ˜¾ç¤ºå›¾ç‰‡
 ********************************************************************************/
 void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, const uint8_t pic[], uint8_t index) {
     uint16_t i, j;
@@ -252,7 +252,7 @@ void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, co
 }
 
 /********************************************************************************
-* LCD page ÆÁÄ»»­µã
+* LCD page å±å¹•ç”»ç‚¹
 ********************************************************************************/
 void lcd_page_draw_point(uint8_t x, uint8_t y, uint16_t color_data, uint8_t index) {
     set_lcd_address(x, y, x, y, index);
@@ -261,11 +261,11 @@ void lcd_page_draw_point(uint8_t x, uint8_t y, uint16_t color_data, uint8_t inde
 
 
 /********************************************************************************
-* Ìî³äÕû¸öÆÁÄ»
+* å¡«å……æ•´ä¸ªå±å¹•
 ********************************************************************************/
 void lcd_fill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16_t color, uint8_t index) {
     uint16_t i, j;
-    set_lcd_address(xsta, ysta, xend - 1, yend - 1, index);//ÉèÖÃÏÔÊ¾·¶Î§
+    set_lcd_address(xsta, ysta, xend - 1, yend - 1, index);//è®¾ç½®æ˜¾ç¤ºèŒƒå›´
     for (i = ysta; i < yend; i++) {
         for (j = xsta; j < xend; j++) {
             lcd_wt_d_byte(color, index);
@@ -274,26 +274,26 @@ void lcd_fill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16
 }
 
 /********************************************************************************
-* LCD ÏÔÊ¾µ¥¸ö×Ö·û
+* LCD æ˜¾ç¤ºå•ä¸ªå­—ç¬¦
 ********************************************************************************/
 void lcd_show_char_index(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode, uint8_t index) {
     uint8_t temp, sizex, t, m = 0;
-    // Ò»¸ö×Ö·ûËùÕ¼×Ö½Ú´óĞ¡
+    // ä¸€ä¸ªå­—ç¬¦æ‰€å å­—èŠ‚å¤§å°
     uint16_t i, TypefaceNum;
     uint16_t x0 = x;
     sizex = sizey / 2;
     TypefaceNum = (sizex / 8 + ((sizex % 8) ? 1 : 0)) * sizey;
-    // µÃµ½Æ«ÒÆºóµÄÖµ
+    // å¾—åˆ°åç§»åçš„å€¼
     num = num - ' ';
-    set_lcd_address(x, y, x + sizex - 1, y + sizey - 1, index);  //ÉèÖÃ¹â±êÎ»ÖÃ
+    set_lcd_address(x, y, x + sizex - 1, y + sizey - 1, index);  //è®¾ç½®å…‰æ ‡ä½ç½®
     for (i = 0; i < TypefaceNum; i++) {
-        if (sizey == 12) temp = ascii_1206[num][i];               //µ÷ÓÃ6x12×ÖÌå
-        else if (sizey == 16) temp = ascii_1608[num][i];         //µ÷ÓÃ8x16×ÖÌå
-        else if (sizey == 24) temp = ascii_2412[num][i];         //µ÷ÓÃ12x24×ÖÌå
-        else if (sizey == 32) temp = ascii_3216[num][i];         //µ÷ÓÃ16x32×ÖÌå
+        if (sizey == 12) temp = ascii_1206[num][i];               //è°ƒç”¨6x12å­—ä½“
+        else if (sizey == 16) temp = ascii_1608[num][i];         //è°ƒç”¨8x16å­—ä½“
+        else if (sizey == 24) temp = ascii_2412[num][i];         //è°ƒç”¨12x24å­—ä½“
+        else if (sizey == 32) temp = ascii_3216[num][i];         //è°ƒç”¨16x32å­—ä½“
         else return;
         for (t = 0; t < 8; t++) {
-            // ·Çµş¼ÓÄ£Ê½
+            // éå åŠ æ¨¡å¼
             if (!mode) {
                 if (temp & (0x01 << t))
                     lcd_wt_d_byte(fc, index);
@@ -303,10 +303,10 @@ void lcd_show_char_index(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint1
                     m = 0;
                     break;
                 }
-                // µş¼ÓÄ£Ê½
+                // å åŠ æ¨¡å¼
             } else {
                 if (temp & (0x01 << t))
-                    lcd_page_draw_point(x, y, fc, index);//»­Ò»¸öµã
+                    lcd_page_draw_point(x, y, fc, index);//ç”»ä¸€ä¸ªç‚¹
                 x++;
                 if ((x - x0) == sizex) {
                     x = x0;
@@ -319,15 +319,15 @@ void lcd_show_char_index(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint1
 }
 
 /********************************************************************************
-* LCD ÏÔÊ¾×Ö·û´®
-* º¯ÊıËµÃ÷£ºÏÔÊ¾µ¥¸ö×Ö·û
-  Èë¿ÚÊı¾İ£º  x,yÏÔÊ¾×ø±ê
-            num ÒªÏÔÊ¾µÄ×Ö·û
-            fc ×ÖµÄÑÕÉ«
-            bc ×ÖµÄ±³¾°É«
-            sizey ×ÖºÅ
-            mode:  0·Çµş¼ÓÄ£Ê½  1µş¼ÓÄ£Ê½
-  ·µ»ØÖµ£º  ÎŞ
+* LCD æ˜¾ç¤ºå­—ç¬¦ä¸²
+* å‡½æ•°è¯´æ˜ï¼šæ˜¾ç¤ºå•ä¸ªå­—ç¬¦
+  å…¥å£æ•°æ®ï¼š  x,yæ˜¾ç¤ºåæ ‡
+            num è¦æ˜¾ç¤ºçš„å­—ç¬¦
+            fc å­—çš„é¢œè‰²
+            bc å­—çš„èƒŒæ™¯è‰²
+            sizey å­—å·
+            mode:  0éå åŠ æ¨¡å¼  1å åŠ æ¨¡å¼
+  è¿”å›å€¼ï¼š  æ— 
 ********************************************************************************/
 void lcd_show_string(uint16_t x, uint16_t y, const uint8_t *p, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode, uint8_t index) {
     while (*p != '\0') {

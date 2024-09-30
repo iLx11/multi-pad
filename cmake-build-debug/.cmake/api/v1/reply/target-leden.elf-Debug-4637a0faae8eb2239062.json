@@ -93,7 +93,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu11 -fdiagnostics-color=always"
 				},
 				{
 					"backtrace" : 5,
@@ -130,9 +130,6 @@
 				{
 					"backtrace" : 8,
 					"fragment" : "-g"
-				},
-				{
-					"fragment" : "-std=gnu11"
 				}
 			],
 			"defines" : 
@@ -154,135 +151,135 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI1"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/SPI/SPI1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI2"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/SPI/SPI2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI3"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/SPI/SPI3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/OLED/OLED_42"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/OLED/OLED_42"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/LCD/LCD_47"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/LCD/LCD_47"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/FLASH"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/FLASH"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/MatrixKeys"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/MatrixKeys"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/JSMN"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/JSMN"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM1"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/TIM/TIM1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM3"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/TIM/TIM3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM4"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/TIM/TIM4"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER1"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/ENCODER/ENCODER1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER2"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/ENCODER/ENCODER2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER3"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/ENCODER/ENCODER3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Lcd"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Lcd"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Usb"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Usb"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Json"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Json"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Key"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Key"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Flash"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Flash"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Encoder"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Encoder"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Oled"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Oled"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/JSMN_USER"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/JSMN_USER"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Drivers/STM32F1xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/CMSIS/Include"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/App"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/Target"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/Target"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
 				}
 			],
 			"language" : "C",
@@ -353,8 +350,8 @@
 				149,
 				151,
 				153,
-				156,
-				158
+				155,
+				157
 			]
 		},
 		{
@@ -427,135 +424,135 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI1"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/SPI/SPI1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI2"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/SPI/SPI2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/SPI/SPI3"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/SPI/SPI3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/OLED/OLED_42"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/OLED/OLED_42"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/LCD/LCD_47"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/LCD/LCD_47"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/FLASH"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/FLASH"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/MatrixKeys"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/MatrixKeys"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/JSMN"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/JSMN"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM1"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/TIM/TIM1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM3"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/TIM/TIM3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/TIM/TIM4"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/TIM/TIM4"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER1"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/ENCODER/ENCODER1"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER2"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/ENCODER/ENCODER2"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/HARDWARE/ENCODER/ENCODER3"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/HARDWARE/ENCODER/ENCODER3"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Lcd"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Lcd"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Usb"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Usb"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Json"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Json"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Key"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Key"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Flash"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Flash"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Encoder"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Encoder"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USER/Oled"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USER/Oled"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/JSMN_USER"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/JSMN_USER"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Drivers/STM32F1xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Drivers/CMSIS/Include"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Drivers/CMSIS/Include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/App"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/USB_DEVICE/Target"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/Target"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Inc"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "D:/Users/Administrator/Desktop/keyPadF1/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
+					"path" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"
 				}
 			],
 			"language" : "ASM",
@@ -580,7 +577,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug/leden.map",
+				"fragment" : "-Wl,-gc-sections,--print-memory-usage,-Map=D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/leden.map",
 				"role" : "flags"
 			},
 			{
@@ -605,7 +602,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "D:/Users/Administrator/Desktop/keyPadF1/STM32F103VETX_FLASH.ld",
+				"fragment" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/STM32F103VETX_FLASH.ld",
 				"role" : "flags"
 			}
 		],
@@ -718,9 +715,8 @@
 				150,
 				152,
 				154,
-				155,
-				157,
-				159
+				156,
+				158
 			]
 		},
 		{
@@ -784,8 +780,8 @@
 				149,
 				151,
 				153,
-				156,
-				158
+				155,
+				157
 			]
 		},
 		{
@@ -796,7 +792,7 @@
 				19,
 				41,
 				73,
-				160
+				159
 			]
 		}
 	],
@@ -1633,11 +1629,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "USER/Lcd/lcd_user.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "USER/Lcd/pic.h",
 			"sourceGroupIndex" : 0
 		},
 		{

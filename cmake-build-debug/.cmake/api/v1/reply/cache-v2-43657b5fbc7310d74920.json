@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-addr2line.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ar.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER_RANLIB",
@@ -47,7 +47,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ranlib.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER_WORKS",
@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug"
+			"value" : "d:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "25"
+			"value" : "28"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -199,7 +199,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_CODEBLOCKS_COMPILER_ID",
@@ -259,7 +259,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/bin/cmake.exe"
+			"value" : "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -271,7 +271,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/bin/cpack.exe"
+			"value" : "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -283,7 +283,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/bin/ctest.exe"
+			"value" : "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -295,11 +295,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe"
+			"type" : "STRING",
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -315,7 +315,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ar.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -331,7 +331,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ranlib.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -423,11 +423,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe"
+			"type" : "STRING",
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -443,7 +443,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ar.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -459,7 +459,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ranlib.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/mingw/bin/dlltool.exe"
+			"value" : "D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -683,7 +683,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1;d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi;d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward;d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include;d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed;d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+			"value" : "d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1;d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi;d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward;d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include;d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed;d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR_C_SYSTEM_DEFINED_MACROS",
@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include;d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed;d:\\ra\\gcc-arm-none-eabi-10.3-2021.10-win32\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
+			"value" : "d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include;d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/include-fixed;d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"
 		},
 		{
 			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Users/Administrator/Desktop/keyPadF1"
+			"value" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -807,7 +807,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ld.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -823,7 +823,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/mingw/bin/mingw32-make.exe"
+			"value" : "D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -919,7 +919,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-nm.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -995,7 +995,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ranlib.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -1011,7 +1011,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-readelf.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1023,7 +1023,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/RA/CLION/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25"
+			"value" : "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1231,7 +1231,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-strip.exe"
+			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-strip.exe"
+		},
+		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_TAPI-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1415,7 +1431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Users/Administrator/Desktop/keyPadF1/cmake-build-debug"
+			"value" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug"
 		},
 		{
 			"name" : "leden_IS_TOP_LEVEL",
@@ -1439,7 +1455,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Users/Administrator/Desktop/keyPadF1"
+			"value" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad"
 		}
 	],
 	"kind" : "cache",

@@ -18,7 +18,7 @@
 static p_menu_sign_t menu_sign_p = NULL;
 
 /********************************************************************************
-* ±àÂëÆ÷³õÊ¼»¯
+* ç¼–ç å™¨åˆå§‹åŒ–
 ********************************************************************************/
 void encoder_init_user(void) {
     menu_sign_p = (p_menu_sign_t) malloc(sizeof(struct menu_sign));
@@ -38,52 +38,52 @@ void encoder_scan_user(void) {
 }
 
 /********************************************************************************
-* ²Ëµ¥ËøÅäÖÃ
+* èœå•é”é…ç½®
 ********************************************************************************/
 void set_menu_lock(uint8_t lock_value) {
     menu_sign_p->menu_change_lock = lock_value;
 }
 
 /********************************************************************************
-* ²Ëµ¥Ë÷ÒýÅäÖÃ
+* èœå•ç´¢å¼•é…ç½®
 ********************************************************************************/
 void set_menu_index(uint8_t index_value) {
     menu_sign_p->menu_index = index_value;
 }
 
 /********************************************************************************
-* »ñÈ¡²Ëµ¥Ë÷Òý
+* èŽ·å–èœå•ç´¢å¼•
 ********************************************************************************/
 uint8_t get_menu_index(void) {
     return menu_sign_p->menu_index;
 }
 
 /********************************************************************************
-* ·À¶¶º¯Êý
+* é˜²æŠ–å‡½æ•°
 ********************************************************************************/
 void debounce_func() {
     if(menu_sign_p->menu_change_lock == 0) {
         menu_sign_p->cur_time = 0;
         menu_sign_p->change_flag = 1;
-        // ÏÔÊ¾Êý×Ö
+        // æ˜¾ç¤ºæ•°å­—
         oled_42_show_num(menu_sign_p->menu_index, 1, 0);
     }
 }
 
 /********************************************************************************
-* ²Ëµ¥²ã¼¶ÊµÖÊÇÐ»»
+* èœå•å±‚çº§å®žè´¨åˆ‡æ¢
 ********************************************************************************/
 static void keyboard_menu_change() {
 //    printf("menu_index -> %d\r", menu_index);
     if(menu_sign_p->pre_menu != menu_sign_p->menu_index) {
         menu_sign_p->pre_menu = menu_sign_p->menu_index;
-        // ÏÔÊ¾²Ëµ¥
+        // æ˜¾ç¤ºèœå•
         load_menu(menu_sign_p->menu_index + 1);
     }
 }
 
 /********************************************************************************
-* º¯ÊýÖØÔØ·À¶¶ºóÖ´ÐÐ²Ëµ¥ÇÐ»»
+* å‡½æ•°é‡è½½é˜²æŠ–åŽæ‰§è¡Œèœå•åˆ‡æ¢
 ********************************************************************************/
 void HAL_IncTick(void) {
     menu_sign_p->cur_time > 6000 ? menu_sign_p->cur_time = 0 : menu_sign_p->cur_time++;
@@ -97,15 +97,15 @@ uint32_t HAL_GetTick(void) {
     return menu_sign_p->cur_time;
 }
 /********************************************************************************
- *  Ã¿¸ö±àÂëÆ÷»Øµ÷º¯ÊýÐ¯´øÊÂ¼þ²ÎÊý
- *  0 -> °´ÏÂ
- *  1 -> Ì§Æð
- *  2 -> ×óÐý
- *  3 -> ÓÒÐý
- *  4 -> °´ÏÂ×óÐý
- *  5 -> °´ÏÂÓÒÐý
+ *  æ¯ä¸ªç¼–ç å™¨å›žè°ƒå‡½æ•°æºå¸¦äº‹ä»¶å‚æ•°
+ *  0 -> æŒ‰ä¸‹
+ *  1 -> æŠ¬èµ·
+ *  2 -> å·¦æ—‹
+ *  3 -> å³æ—‹
+ *  4 -> æŒ‰ä¸‹å·¦æ—‹
+ *  5 -> æŒ‰ä¸‹å³æ—‹
 ********************************************************************************/
-// ±àÂëÆ÷ 1
+// ç¼–ç å™¨ 1
 void encoder1_callback(uint8_t encoder_value) {
 //    if(menu_config_arr[menu_index + 1] == 0x00) {
     if(encoder_value == 4) {
@@ -122,13 +122,13 @@ void encoder1_callback(uint8_t encoder_value) {
     parse_json_value( encoder_value + 16);
 }
 
-// ±àÂëÆ÷ 2
+// ç¼–ç å™¨ 2
 void encoder2_callback(uint8_t encoder_value) {
 //    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
     parse_json_value( (ENCODER_EVENT_NUM * 1) + encoder_value + 16);
 }
 
-// ±àÂëÆ÷ 3
+// ç¼–ç å™¨ 3
 void encoder3_callback(uint8_t encoder_value) {
 //    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
     parse_json_value( (ENCODER_EVENT_NUM * 2) + encoder_value + 16);

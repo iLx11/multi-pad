@@ -3,7 +3,7 @@
 * @email: colorful_ilx1@163.com
 * @date: 2023/11/23 20:59
 * @version: 1.0
-* @description: 
+* @description:
 ********************************************************************************/
 
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 
 
-/* SPI总线速度设置 */
+/* SPI鎬荤嚎閫熷害璁剧疆 */
 #define SPI_SPEED_2         0
 #define SPI_SPEED_4         1
 #define SPI_SPEED_8         2

@@ -11,9 +11,9 @@
 #define SIGN_SET 1
 #define SIGN_RESET 0
 
-// »º³åÊı×é½á¹¹ÌåÀàĞÍ
+// ç¼“å†²æ•°ç»„ç»“æ„ä½“ç±»å‹
 typedef struct usb_data {
-    // »º³åÊı×éÖ¸Õë½á¹¹Ìå
+    // ç¼“å†²æ•°ç»„æŒ‡é’ˆç»“æ„ä½“
     struct {
         uint8_t *key_p;
         uint8_t *zero_p;
@@ -21,32 +21,32 @@ typedef struct usb_data {
     } data_buff[3];
 }* p_usb_data_t;
 
-// ĞÅºÅÊı¾İ½á¹¹ÌåÀàĞÍ
+// ä¿¡å·æ•°æ®ç»“æ„ä½“ç±»å‹
 typedef struct sign_data {
     uint8_t sign_byte;
     enum {
-        // ½ÓÊÕ
+        // æ¥æ”¶
         data_rec = 0,
-        // Êı¾İ×´Ì¬
+        // æ•°æ®çŠ¶æ€
         data_state,
-        // ²Ëµ¥ÅäÖÃ
+        // èœå•é…ç½®
         menu_config,
-        // ¼üÖµÊı¾İ×´Ì¬ 
+        // é”®å€¼æ•°æ®çŠ¶æ€ 
         key_state,
-        // ²ÊÆÁÊı¾İÄ£Ê½
+        // å½©å±æ•°æ®æ¨¡å¼
         color_mode
     } sign_bit;
 }* p_sign_data_t;
 
-// ÉÏÎ»»ú½»»¥Êı¾İ½á¹¹ÌåÀàĞÍ
+// ä¸Šä½æœºäº¤äº’æ•°æ®ç»“æ„ä½“ç±»å‹
 typedef struct upper_data {
-    // Êı¾İ°üÊıÁ¿
+    // æ•°æ®åŒ…æ•°é‡
     uint8_t package_num;
-    // ½ÓÊÕ»º´æÊı×é
+    // æ¥æ”¶ç¼“å­˜æ•°ç»„
     uint8_t* rec_buff;
-    // Êı¾İ°üµÄ´óĞ¡
+    // æ•°æ®åŒ…çš„å¤§å°
     uint16_t package_size;
-    // ²ÊÆÁÊı¾İ°ü¼ÆËã
+    // å½©å±æ•°æ®åŒ…è®¡ç®—
     uint32_t color_package_count;
 }* p_upper_data_t;
 
@@ -71,7 +71,7 @@ void load_menu_config(void);
 void turn_next_menu(void);
 
 void send_hid_code(uint8_t func);
-// ·¢ËÍ hid ÖØÖÃ
+// å‘é€ hid é‡ç½®
 void hid_buff_reset(void);
 
 static void receive_reset(void);

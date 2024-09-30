@@ -11,11 +11,11 @@
 #include "tim3.h"
 #include "encoder1.h"
 
-// ³õÊ¼×´Ì¬ÎªÌ§Æð
+// ï¿½ï¿½Ê¼×´Ì¬ÎªÌ§ï¿½ï¿½
 static uint8_t encoder_key_state = 1;
 
 void encoder2_init(void) {
-    // ¶¨Ê±Æ÷³õÊ¼»¯
+    // ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
     tim3_init();
 
     GPIO_InitTypeDef GPIO_InitStruct;
@@ -29,38 +29,38 @@ void encoder2_init(void) {
 }
 
 void encoder2_scan(void) {
-    // ±àÂëÆ÷°´¼üÉ¨Ãè
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¨ï¿½ï¿½
     encoder2_key_scan();
-    // ±àÂëÆ÷Ðý×ªÉ¨Ãè
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªÉ¨ï¿½ï¿½
     encoder2_rotation_scan();
 }
 
 /********************************************************************************
-* ±àÂëÆ÷Ðý×ªÉ¨Ãè
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªÉ¨ï¿½ï¿½
 ********************************************************************************/
 static void encoder2_rotation_scan(void) {
     uint16_t encoder_counter = get_encoder2_counter();
     if(encoder_counter % 4 == 0 && encoder_counter != 0) {
         if(encoder_counter == 4) {
             if(GET_ENCODER2_KEY_STATE == ENCODER2_KEY_DOWN) {
-                // °´×¡×óÐý»Øµ÷
+                // ï¿½ï¿½×¡ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½
                 encoder2_callback(DOWN_ANTICLOCKWISE);
 //                encoder2_hold_a_callback();
                 set_encoder2_counter(0);
                 return;
             }
-            // ±àÂëÆ÷ÄæÊ±Õë»Øµ÷
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Øµï¿½
             encoder2_callback(ANTICLOCKWISE);
 //            encoder2_anticlockwise_callback();
         }else if(encoder_counter == 124) {
             if(GET_ENCODER2_KEY_STATE == ENCODER2_KEY_DOWN) {
-                // °´×¡ÓÒÐý»Øµ÷
+                // ï¿½ï¿½×¡ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½
                 encoder2_callback(UP_CLOCKWISE);
 //                encoder2_hold_c_callback();
                 set_encoder2_counter(0);
                 return;
             }
-            // ±àÂëÆ÷Ë³Ê±Õë»Øµ÷
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³Ê±ï¿½ï¿½Øµï¿½
             encoder2_callback(CLOCKWISE);
 //            encoder2_clockwise_callback();
         }
@@ -69,17 +69,17 @@ static void encoder2_rotation_scan(void) {
 }
 
 /********************************************************************************
-* ±àÂëÆ÷°´¼üÉ¨Ãè
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¨ï¿½ï¿½
 ********************************************************************************/
 static void encoder2_key_scan(void) {
     if(GET_ENCODER2_KEY_STATE == ENCODER2_KEY_DOWN  && encoder_key_state == 1) {
         encoder_key_state = ENCODER2_KEY_DOWN;
-        // ±àÂëÆ÷°´ÏÂ»Øµ÷
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â»Øµï¿½
         encoder2_callback(ENCODER_DOWN);
 //        encoder2_key_down_callback();
     }else if(GET_ENCODER2_KEY_STATE == ENCODER2_KEY_UP && encoder_key_state == 0) {
         encoder_key_state = ENCODER2_KEY_UP;
-        // ±àÂëÆ÷Ì§Æð»Øµ÷
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì§ï¿½ï¿½Øµï¿½
         encoder2_callback(ENCODER_UP);
 //        encoder2_key_up_callback();
     }

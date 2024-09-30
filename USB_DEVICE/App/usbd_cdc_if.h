@@ -30,9 +30,7 @@
 #include "usbd_cdc.h"
 
 /* USER CODE BEGIN INCLUDE */
-#define USB_REC_LEN   200//定义USB串口最大接收字节数
-extern uint8_t USB_RX_BUF[USB_REC_LEN];//接收缓冲,最大USB_REC_LEN个字节.末字节为换行符
-extern uint16_t USB_RX_STA;//接收状态标记（接收到的有效字节数量）
+
 /* USER CODE END INCLUDE */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY

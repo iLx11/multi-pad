@@ -7,7 +7,7 @@
 #include "lcd_user.h"
 #include "oled_42.h"
 
-// typedef unsigned char uint8_t 
+// typedef unsigned char uint8_t
 
 extern USBD_HandleTypeDef hUsbDeviceFS;
 // usb 键值数据
@@ -36,18 +36,33 @@ static uint8_t write_menu = 1;
 
 // 接收缓存数组
 static uint8_t rec_buff[RE_BUFF_SIZE];
+// 等待信息
+static uint8_t wait_sign = 0;
+static uint8_t wait_response[1] = {0x33};
 
+static void oled_data_handle(void);
+static void color_data_handle(void);
+static void key_data_handle(void);
 /********************************************************************************
 * CDC 处理回调
 ********************************************************************************/
 uint8_t cdc_event_cb(uint8_t *Buf, uint32_t *Len) {
     // 判断越界
-    if (upper_data_p->package_size >= RE_BUFF_SIZE || *Len > MAX_PACK_SIZE) return (USBD_FAIL);
+    // if (upper_data_p->package_size >= RE_BUFF_SIZE || (*Len > MAX_PACK_SIZE)) return (USBD_FAIL);
+
     if (Buf[0] == 0xAA && Buf[1] == 0xBB) {
         // 测试连接
         if (Buf[2] == 0xCC) {
             CDC_Transmit_FS(&Buf[0], 3);
         }
+        // if(Buf[2] == 0x33) {
+        //     // HAL_Delay(20);
+        //     if(wait_sign == 0xff) {
+        //         wait_sign &= 0x00;
+        //         CDC_Transmit_FS(wait_response, 1);
+        //         oled_42_show_num(5, 1, 1);
+        //     }
+        // }
         // 菜单设置
         else if (Buf[2] == 0xDD) {
             set_sign(menu_config, SIGN_SET);
@@ -116,6 +131,9 @@ void usb_init_user(void) {
         return;
     }
     upper_data_p->rec_buff = rec_buff;
+    upper_data_p->package_num = 0;
+    upper_data_p->package_size = 0;
+    upper_data_p->color_package_count = 0;
 }
 
 /********************************************************************************
@@ -128,12 +146,10 @@ void first_load_menu(void) {
     if (menu_config_arr[0] >= 1 && menu_config_arr[0] <= 10) {
         load_menu(menu_config_arr[0]);
     } else {
-        uint8_t *temp = (uint8_t *) calloc(sizeof(uint8_t), 31);
+        uint8_t temp[31] = {0};
         temp[0] = 1;
         storage_config(temp, 31);
         load_menu(1);
-        free(temp);
-        temp = NULL;
     }
 }
 
@@ -198,70 +214,94 @@ void usb_scan_user(void) {
         // 单层图片
         if (get_sign(data_state) == SIGN_SET) {
             set_sign(data_state, SIGN_RESET);
-            if (upper_data_p->package_size < 5) {
-                // 擦除数据
-                reset_menu_data(write_menu, 1);
-            } else {
-                if (upper_data_p->package_size > 730) return;
-                // 转为图片数据后存储在 FLASH
-                storage_menu_to_flash(write_menu, upper_data_p->rec_buff, upper_data_p->package_size, 1);
-            }
-            set_sign(key_state, SIGN_RESET);
-//            lcd_show_str("oled done");
-//            load_menu(write_menu);
+            oled_data_handle();
             receive_reset();
             return;
         }
         // 彩屏图片
         if (get_sign(color_mode) == SIGN_SET) {
-            // 处理空图片，并重置内存
-            if (upper_data_p->package_size < 5) {
-                // 擦除扇区
-                reset_menu_data(write_menu, 2);
-                upper_data_p->color_package_count = 0;
-                set_sign(color_mode, SIGN_RESET);
-//                lcd_show_str("Next ...");
-//                load_menu(write_menu);
-                write_menu++;
-                turn_next_menu();
-            } else {
-                // 存储图片
-                storage_color_screen(write_menu, upper_data_p->color_package_count << 12, upper_data_p->rec_buff, upper_data_p->package_size);
-                // 图片传输完成判断
-                if (upper_data_p->color_package_count < 26) {
-                    upper_data_p->color_package_count++;
-                } else {
-                    // 图片传输完成
-                    upper_data_p->color_package_count = 0;
-                    set_sign(color_mode, SIGN_RESET);
-//                    lcd_show_str("Next ...");
-//                    load_menu(write_menu);
-                    write_menu++;
-                    turn_next_menu();
-                }
-            }
+            color_data_handle();
             receive_reset();
             return;
         }
         // 显示当前写入的菜单
         oled_42_show_num(write_menu - 1, 1, 1);
         // 写入键值
-        if (get_sign(key_state) == SIGN_SET) {
-            // 键值存储的第二个状态
-            set_sign(key_state, SIGN_RESET);
-            storage_page_two(write_menu, upper_data_p->rec_buff, upper_data_p->package_size);
-        } else {
-            if (upper_data_p->package_size < 5) {
-                // 擦除扇区
-                reset_menu_data(write_menu, 0);
-            } else {
-                // 键值存储的第一个状态
-                set_sign(key_state, SIGN_SET);
-                storage_menu_to_flash(write_menu, upper_data_p->rec_buff, upper_data_p->package_size, 0);
-            }
-        }
+        key_data_handle();
 //        lcd_show_str("json done");
         receive_reset();
+    }
+}
+
+/********************************************************************************
+* olod 数据处理
+********************************************************************************/
+static void oled_data_handle(void) {
+    if (upper_data_p->package_size < 5) {
+        // 擦除数据
+        reset_menu_data(write_menu, 1);
+    } else {
+        if (upper_data_p->package_size > 730) return;
+        // 转为图片数据后存储在 FLASH
+        storage_menu_to_flash(write_menu, upper_data_p->rec_buff, upper_data_p->package_size, 1);
+    }
+    set_sign(key_state, SIGN_RESET);
+    //            lcd_show_str("oled done");
+    //            load_menu(write_menu);
+}
+
+/********************************************************************************
+* color 数据处理
+********************************************************************************/
+static void color_data_handle(void) {
+    // 处理空图片，并重置内存
+    if (upper_data_p->package_size < 5) {
+        // 擦除扇区
+        reset_menu_data(write_menu, 2);
+        upper_data_p->color_package_count = 0;
+        set_sign(color_mode, SIGN_RESET);
+        //                lcd_show_str("Next ...");
+        //                load_menu(write_menu);
+        write_menu++;
+        turn_next_menu();
+    } else {
+        // 存储图片
+        storage_color_screen(write_menu, upper_data_p->color_package_count << 12, upper_data_p->rec_buff, upper_data_p->package_size);
+        // 图片传输完成判断
+        if (upper_data_p->color_package_count < 26) {
+            upper_data_p->color_package_count++;
+
+            // 等待信号
+            // wait_sign |= 0xff;
+        } else {
+            // 图片传输完成
+            upper_data_p->color_package_count = 0;
+            set_sign(color_mode, SIGN_RESET);
+            //                    lcd_show_str("Next ...");
+            //                    load_menu(write_menu);
+            write_menu++;
+            turn_next_menu();
+        }
+    }
+}
+
+/********************************************************************************
+* key 数据处理
+********************************************************************************/
+static void key_data_handle(void) {
+    if (get_sign(key_state) == SIGN_SET) {
+        // 键值存储的第二个状态
+        set_sign(key_state, SIGN_RESET);
+        storage_page_two(write_menu, upper_data_p->rec_buff, upper_data_p->package_size);
+    } else {
+        if (upper_data_p->package_size < 5) {
+            // 擦除扇区
+            reset_menu_data(write_menu, 0);
+        } else {
+            // 键值存储的第一个状态
+            set_sign(key_state, SIGN_SET);
+            storage_menu_to_flash(write_menu, upper_data_p->rec_buff, upper_data_p->package_size, 0);
+        }
     }
 }
 
@@ -269,14 +309,12 @@ void usb_scan_user(void) {
 * 加载菜单配置
 ********************************************************************************/
 void load_menu_config(void) {
-    uint8_t *temp = (uint8_t *) malloc(sizeof(uint8_t) * 31);
+    uint8_t temp[31] = {};
     load_config(temp, 31);
     memcpy((uint8_t *) menu_config_arr, (uint8_t *) temp, 31);
 //    for(uint8_t i = 0; i < 31; i ++) {
 //        printf("temp -> %d", menu_config_arr[i]);
 //    }
-    free(temp);
-    temp = NULL;
 }
 
 /********************************************************************************

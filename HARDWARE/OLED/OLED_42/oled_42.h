@@ -16,7 +16,7 @@
 #define SIZE_96    999
 
 
-// ¶¨ÒåÈí¼ş SPI
+// å®šä¹‰è½¯ä»¶ SPI
 #define SOFT_42_SPI 0
 
 #define OLED_42_NUM_ 2
@@ -62,12 +62,12 @@
 #define ENABLE_OLED_42_RCC __HAL_RCC_GPIOD_CLK_ENABLE()
 
 // RES
-// ½ÓµÍµçÆ½¸´Î»
+// æ¥ä½ç”µå¹³å¤ä½
 #define OLED_42_RES_RESET HAL_GPIO_WritePin(OLED_42_RES_GPIO, OLED_42_RES_PIN, GPIO_PIN_RESET)
 #define OLED_42_RES_SET HAL_GPIO_WritePin(OLED_42_RES_GPIO, OLED_42_RES_PIN, GPIO_PIN_SET)
 
 // DC
-// ÃüÁî -> À­µÍ / Êı¾İ -> À­¸ß
+// å‘½ä»¤ -> æ‹‰ä½ / æ•°æ® -> æ‹‰é«˜
 #define OLED_42_DC_RESET  HAL_GPIO_WritePin(OLED_42_DC_GPIO, OLED_42_DC_PIN, GPIO_PIN_RESET)
 #define OLED_42_DC_SET  HAL_GPIO_WritePin(OLED_42_DC_GPIO, OLED_42_DC_PIN, GPIO_PIN_SET)
 
@@ -75,9 +75,9 @@
 #define ENABLE_OLED_42_CS(GPIO, PIN) HAL_GPIO_WritePin(GPIO, PIN, GPIO_PIN_RESET)
 #define DISABLE_OLED_42_CS(GPIO, PIN) HAL_GPIO_WritePin(GPIO, PIN, GPIO_PIN_SET)
 
-// Ğ´ÃüÁî
+// å†™å‘½ä»¤
 #define OLED_42_CMD  0
-// Ğ´Êı¾İ
+// å†™æ•°æ®
 #define OLED_42_DATA 1
 
 
@@ -108,7 +108,7 @@ typedef struct {
     uint16_t gpio_pin;
 } spi_device_cs_42;
 
-// SPI Æ¬Ñ¡Òı½ÅÊı×é
+// SPI ç‰‡é€‰å¼•è„šæ•°ç»„
 static spi_device_cs_42 spi_device_cs_array_42[2] = {
         {OLED_42_CS1_GPIO, OLED_42_CS1_PIN},
         {OLED_42_CS2_GPIO, OLED_42_CS2_PIN}

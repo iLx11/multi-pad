@@ -33,8 +33,7 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-uint8_t USB_RX_BUF[USB_REC_LEN];//接收缓冲,最大USB_REC_LEN个字节.
-uint16_t USB_RX_STA = 0;//接收状态标记（接收到的有效字节数量）
+
 /* USER CODE END PV */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY

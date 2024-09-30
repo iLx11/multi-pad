@@ -8,35 +8,35 @@
 
 
 #include "spi1.h"
-// SPI¾ä±ú
+// SPIå¥æŸ„
 SPI_HandleTypeDef handle_spi1;
 
 void spi1_init(void) {
     __HAL_RCC_SPI1_CLK_ENABLE();
 
-    // ÉèÖÃ SPI1
+    // è®¾ç½® SPI1
     handle_spi1.Instance = SPI1;
-    // ÉèÖÃSPI¹¤×÷Ä£Ê½:ÉèÖÃÎªÖ÷SPI
+    // è®¾ç½®SPIå·¥ä½œæ¨¡å¼:è®¾ç½®ä¸ºä¸»SPI
     handle_spi1.Init.Mode = SPI_MODE_MASTER;
-    // ÉèÖÃÈ«Ë«¹¤»òÊÇ°ëË«¹¤µÄÊý¾ÝÄ£Ê½
+    // è®¾ç½®å…¨åŒå·¥æˆ–æ˜¯åŠåŒå·¥çš„æ•°æ®æ¨¡å¼
     handle_spi1.Init.Direction = SPI_DIRECTION_2LINES;
-    // ÉèÖÃ SPI µÄÊý¾Ý´óÐ¡£¬·¢ËÍ8Î»Ö¡½á¹¹
+    // è®¾ç½® SPI çš„æ•°æ®å¤§å°ï¼Œå‘é€8ä½å¸§ç»“æž„
     handle_spi1.Init.DataSize = SPI_DATASIZE_8BIT;
-    // ´®ÐÐÍ¬²½Ê±ÖÓ¿ÕÏÐ×´Ì¬Îª¸ßµçÆ½
+    // ä¸²è¡ŒåŒæ­¥æ—¶é’Ÿç©ºé—²çŠ¶æ€ä¸ºé«˜ç”µå¹³
     handle_spi1.Init.CLKPolarity = SPI_POLARITY_HIGH;
-    // ´®ÐÐÍ¬²½Ê±ÖÓµÄµÚ¶þ¸öÌø±äÑØ£¨ÉÏÉý»òÏÂ½µ£©Êý¾Ý±»²ÉÑù
+    // ä¸²è¡ŒåŒæ­¥æ—¶é’Ÿçš„ç¬¬äºŒä¸ªè·³å˜æ²¿ï¼ˆä¸Šå‡æˆ–ä¸‹é™ï¼‰æ•°æ®è¢«é‡‡æ ·
     handle_spi1.Init.CLKPhase = SPI_PHASE_2EDGE;
-    // NSS ¹Ü½ÅÓÉÓ²¼þ»¹ÊÇÓÉÈí¼þ£¨SSI£© ¹ÜÀí£º ÄÚ²¿ NSS ÐÅºÅÓÐ SSI Î»¿ØÖÆ
+    // NSS ç®¡è„šç”±ç¡¬ä»¶è¿˜æ˜¯ç”±è½¯ä»¶ï¼ˆSSIï¼‰ ç®¡ç†ï¼š å†…éƒ¨ NSS ä¿¡å·æœ‰ SSI ä½æŽ§åˆ¶
     handle_spi1.Init.NSS = SPI_NSS_SOFT;
-    // ¶¨Òå²¨ÌØÂÊÔ¤·ÖÆµµÄÖ®£º ²¨ÌØÂÊÔ¤·ÖÆµÖµÎª256
+    // å®šä¹‰æ³¢ç‰¹çŽ‡é¢„åˆ†é¢‘çš„ä¹‹ï¼š æ³¢ç‰¹çŽ‡é¢„åˆ†é¢‘å€¼ä¸º256
     handle_spi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
-    // Ö¸¶¨Êý¾Ý´«Êä´Ó MSB ¿ªÊ¼»¹ÊÇ LSB ¿ªÊ¼£º Êý¾Ý´Ó MSB ¿ªÊ¼
+    // æŒ‡å®šæ•°æ®ä¼ è¾“ä»Ž MSB å¼€å§‹è¿˜æ˜¯ LSB å¼€å§‹ï¼š æ•°æ®ä»Ž MSB å¼€å§‹
     handle_spi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
     handle_spi1.Init.TIMode = SPI_TIMODE_DISABLE;
     handle_spi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-    // CRC Öµ¼ÆËãµÄ¶àÏîÊ½
+    // CRC å€¼è®¡ç®—çš„å¤šé¡¹å¼
     handle_spi1.Init.CRCPolynomial = 7;
-    // ¸ù¾ÝÖ¸¶¨²ÎÊý³õÊ¼»¯ÍâÉè SPIX ¼Ä´æÆ÷d
+    // æ ¹æ®æŒ‡å®šå‚æ•°åˆå§‹åŒ–å¤–è®¾ SPIX å¯„å­˜å™¨d
     if (HAL_SPI_Init(&handle_spi1) != HAL_OK) {
         printf("spi1 init error !");
     }
@@ -44,20 +44,20 @@ void spi1_init(void) {
 }
 
 /********************************************************************************
-* SPI ·¢ËÍÊý¾Ý
+* SPI å‘é€æ•°æ®
 ********************************************************************************/
 HAL_SPI_StateTypeDef spi1_transmit_data(uint8_t* byte_data, uint16_t size) {
     return HAL_SPI_Transmit(&handle_spi1, byte_data, size, 100);
 }
 /********************************************************************************
-* SPI ½ÓÊÕÊý¾Ý
+* SPI æŽ¥æ”¶æ•°æ®
 ********************************************************************************/
 HAL_SPI_StateTypeDef spi1_receive_data(uint8_t* receive_data, uint16_t size) {
     return HAL_SPI_Receive(&handle_spi1, receive_data, size, 100);
 }
 
 /********************************************************************************
-* SPI ·¢ËÍµ¥×Ö½ÚÊý¾Ý
+* SPI å‘é€å•å­—èŠ‚æ•°æ®
 ********************************************************************************/
 uint8_t spi1_transmit_receive_byte(uint8_t transmit_byte) {
     uint8_t receive_data;
@@ -65,12 +65,12 @@ uint8_t spi1_transmit_receive_byte(uint8_t transmit_byte) {
     return receive_data;
 }
 /********************************************************************************
-* ÉèÖÃËÙÂÊ
+* è®¾ç½®é€ŸçŽ‡
 ********************************************************************************/
 void spi1_set_speed(uint8_t speed) {
-    assert_param(IS_SPI_BAUDRATE_PRESCALER(speed)); /* ÅÐ¶ÏÓÐÐ§ÐÔ */
-    __HAL_SPI_DISABLE(&handle_spi1);             /* ¹Ø±ÕSPI */
-    handle_spi1.Instance->CR1 &= 0XFFC7;         /* Î»3-5ÇåÁã£¬ÓÃÀ´ÉèÖÃ²¨ÌØÂÊ */
-    handle_spi1.Instance->CR1 |= speed << 3;     /* ÉèÖÃSPIËÙ¶È */
-    __HAL_SPI_ENABLE(&handle_spi1);              /* Ê¹ÄÜSPI */
+    assert_param(IS_SPI_BAUDRATE_PRESCALER(speed)); /* åˆ¤æ–­æœ‰æ•ˆæ€§ */
+    __HAL_SPI_DISABLE(&handle_spi1);             /* å…³é—­SPI */
+    handle_spi1.Instance->CR1 &= 0XFFC7;         /* ä½3-5æ¸…é›¶ï¼Œç”¨æ¥è®¾ç½®æ³¢ç‰¹çŽ‡ */
+    handle_spi1.Instance->CR1 |= speed << 3;     /* è®¾ç½®SPIé€Ÿåº¦ */
+    __HAL_SPI_ENABLE(&handle_spi1);              /* ä½¿èƒ½SPI */
 }

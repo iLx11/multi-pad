@@ -60,6 +60,8 @@ int main(void) {
     // ÏÔÊ¾²Ëµ¥
     first_load_menu();
 
+
+
     while (1) {
         // ¼üÅÌÉ¨Ãè
         key_scan_user();

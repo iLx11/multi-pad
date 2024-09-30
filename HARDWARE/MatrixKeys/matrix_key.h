@@ -3,7 +3,7 @@
 
 #include "stm32f1xx.h"
 
-//ÉèÖÃĞĞÁĞÊı
+//è®¾ç½®è¡Œåˆ—æ•°
 #define  ROW_NUM  2
 #define  COL_NUM  4
 
@@ -23,13 +23,13 @@
 #define COL3_PIN    GPIO_PIN_14
 #define COL4_PIN    GPIO_PIN_15
 
-//ÉèÖÃROWÎª¸ßµçÆ½
+//è®¾ç½®ROWä¸ºé«˜ç”µå¹³
 #define SET_ROW1_HIGH        HAL_GPIO_WritePin(ROW_GPIO,ROW1_PIN,GPIO_PIN_SET)
 #define SET_ROW2_HIGH        HAL_GPIO_WritePin(ROW_GPIO,ROW2_PIN,GPIO_PIN_SET)
 #define SET_ROW3_HIGH        HAL_GPIO_WritePin(ROW_GPIO,ROW3_PIN,GPIO_PIN_SET)
 #define SET_ROW4_HIGH        HAL_GPIO_WritePin(ROW_GPIO,ROW4_PIN,GPIO_PIN_SET)
 
-//ÉèÖÃROWÎªµÍµçÆ½
+//è®¾ç½®ROWä¸ºä½ç”µå¹³
 #define SET_ROW1_LOW        HAL_GPIO_WritePin(ROW_GPIO,ROW1_PIN,GPIO_PIN_RESET)
 #define SET_ROW2_LOW        HAL_GPIO_WritePin(ROW_GPIO,ROW2_PIN,GPIO_PIN_RESET)
 #define SET_ROW3_LOW        HAL_GPIO_WritePin(ROW_GPIO,ROW3_PIN,GPIO_PIN_RESET)
@@ -40,9 +40,9 @@
 #define GET_COL3_STATE HAL_GPIO_ReadPin(COL_GPIO, COL3_PIN);
 #define GET_COL4_STATE HAL_GPIO_ReadPin(COL_GPIO, COL4_PIN)
 
-// ¸ßµçÆ½
+// é«˜ç”µå¹³
 #define KEY_DOWN  0
-// µÍµçÆ½
+// ä½ç”µå¹³
 #define KEY_UP    1
 
 void matrix_init();
@@ -51,10 +51,10 @@ void matrix_scan();
 
 static void set_row_low(uint8_t row);
 
-// »ñÈ¡ÁĞµÄ×´Ì¬
+// è·å–åˆ—çš„çŠ¶æ€
 static uint8_t get_col_state(uint8_t col);
 
-// Íâ²¿ÖØĞ´°´¼üµÄ»Øµ÷º¯Êı
+// å¤–éƒ¨é‡å†™æŒ‰é”®çš„å›è°ƒå‡½æ•°
 __weak void key_down_callback(uint8_t row, uint8_t col);
 
 __weak void key_up_callback(uint8_t row, uint8_t col);

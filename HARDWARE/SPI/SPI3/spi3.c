@@ -9,44 +9,44 @@
 
 #include "spi3.h"
 
-// SPI¾ä±ú
+// SPIå¥æŸ„
 SPI_HandleTypeDef handle_spi3;
 
 void spi3_init(void) {
-    // ÉèÖÃ SPI3
+    // è®¾ç½® SPI3
     handle_spi3.Instance = SPI3;
-    // ÉèÖÃSPI¹¤×÷Ä£Ê½:ÉèÖÃÎªÖ÷SPI
+    // è®¾ç½®SPIå·¥ä½œæ¨¡å¼:è®¾ç½®ä¸ºä¸»SPI
     handle_spi3.Init.Mode = SPI_MODE_MASTER;
-    // ÉèÖÃÈ«Ë«¹¤»òÊÇ°ëË«¹¤µÄÊı¾İÄ£Ê½
+    // è®¾ç½®å…¨åŒå·¥æˆ–æ˜¯åŠåŒå·¥çš„æ•°æ®æ¨¡å¼
     handle_spi3.Init.Direction = SPI_DIRECTION_2LINES;
-    // ÉèÖÃ SPI µÄÊı¾İ´óĞ¡£¬·¢ËÍ8Î»Ö¡½á¹¹
+    // è®¾ç½® SPI çš„æ•°æ®å¤§å°ï¼Œå‘é€8ä½å¸§ç»“æ„
     handle_spi3.Init.DataSize = SPI_DATASIZE_8BIT;
-    // ´®ĞĞÍ¬²½Ê±ÖÓ¿ÕÏĞ×´Ì¬Îª¸ßµçÆ½
+    // ä¸²è¡ŒåŒæ­¥æ—¶é’Ÿç©ºé—²çŠ¶æ€ä¸ºé«˜ç”µå¹³
     handle_spi3.Init.CLKPolarity = SPI_POLARITY_LOW;
-    // ´®ĞĞÍ¬²½Ê±ÖÓµÄµÚ¶ş¸öÌø±äÑØ£¨ÉÏÉı»òÏÂ½µ£©Êı¾İ±»²ÉÑù
+    // ä¸²è¡ŒåŒæ­¥æ—¶é’Ÿçš„ç¬¬äºŒä¸ªè·³å˜æ²¿ï¼ˆä¸Šå‡æˆ–ä¸‹é™ï¼‰æ•°æ®è¢«é‡‡æ ·
     handle_spi3.Init.CLKPhase = SPI_PHASE_1EDGE;
-    // NSS ¹Ü½ÅÓÉÓ²¼ş»¹ÊÇÓÉÈí¼ş£¨SSI£© ¹ÜÀí£º ÄÚ²¿ NSS ĞÅºÅÓĞ SSI Î»¿ØÖÆ
+    // NSS ç®¡è„šç”±ç¡¬ä»¶è¿˜æ˜¯ç”±è½¯ä»¶ï¼ˆSSIï¼‰ ç®¡ç†ï¼š å†…éƒ¨ NSS ä¿¡å·æœ‰ SSI ä½æ§åˆ¶
     handle_spi3.Init.NSS = SPI_NSS_SOFT;
-    // ¶¨Òå²¨ÌØÂÊÔ¤·ÖÆµµÄÖ®£º ²¨ÌØÂÊÔ¤·ÖÆµÖµÎª256
+    // å®šä¹‰æ³¢ç‰¹ç‡é¢„åˆ†é¢‘çš„ä¹‹ï¼š æ³¢ç‰¹ç‡é¢„åˆ†é¢‘å€¼ä¸º256
     handle_spi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
-    // Ö¸¶¨Êı¾İ´«Êä´Ó MSB ¿ªÊ¼»¹ÊÇ LSB ¿ªÊ¼£º Êı¾İ´Ó MSB ¿ªÊ¼
+    // æŒ‡å®šæ•°æ®ä¼ è¾“ä» MSB å¼€å§‹è¿˜æ˜¯ LSB å¼€å§‹ï¼š æ•°æ®ä» MSB å¼€å§‹
     handle_spi3.Init.FirstBit = SPI_FIRSTBIT_MSB;
     handle_spi3.Init.TIMode = SPI_TIMODE_DISABLE;
     handle_spi3.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-    // CRC Öµ¼ÆËãµÄ¶àÏîÊ½
+    // CRC å€¼è®¡ç®—çš„å¤šé¡¹å¼
     handle_spi3.Init.CRCPolynomial = 10;
-    // ¸ù¾İÖ¸¶¨²ÎÊı³õÊ¼»¯ÍâÉè SPIX ¼Ä´æÆ÷d
+    // æ ¹æ®æŒ‡å®šå‚æ•°åˆå§‹åŒ–å¤–è®¾ SPIX å¯„å­˜å™¨d
     if (HAL_SPI_Init(&handle_spi3) != HAL_OK)
     {
         printf("spi3 init error !");
     }
 }
 
-// SPI µ×²ã³õÊ¼»¯
+// SPI åº•å±‚åˆå§‹åŒ–
 void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi) {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
     if (hspi->Instance == SPI3) {
-        // Ê±ÖÓÊ¹ÄÜ
+        // æ—¶é’Ÿä½¿èƒ½
         __HAL_RCC_SPI3_CLK_ENABLE();
 
         __HAL_RCC_GPIOB_CLK_ENABLE();
@@ -58,7 +58,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi) {
         HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
     }
     if (hspi->Instance == SPI2) {
-        // Ê±ÖÓÊ¹ÄÜ
+        // æ—¶é’Ÿä½¿èƒ½
         __HAL_RCC_SPI2_CLK_ENABLE();
         __HAL_RCC_GPIOB_CLK_ENABLE();
 
@@ -70,7 +70,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi) {
     }
     if (hspi->Instance == SPI1) {
         __HAL_RCC_GPIOA_CLK_ENABLE();
-        // Ê±ÖÓÊ¹ÄÜ
+        // æ—¶é’Ÿä½¿èƒ½
         __HAL_RCC_SPI1_CLK_ENABLE();
 
         GPIO_InitStruct.Pin = GPIO_PIN_5| GPIO_PIN_6| GPIO_PIN_7;
@@ -82,7 +82,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi) {
 }
 
 /********************************************************************************
-* SPI ·¢ËÍ²¢½ÓÊÜÒ»¸ö×Ö½ÚµÄÊı¾İ
+* SPI å‘é€å¹¶æ¥å—ä¸€ä¸ªå­—èŠ‚çš„æ•°æ®
 ********************************************************************************/
 uint8_t spi3_transmit_receive_byte(uint8_t byte_data) {
     uint8_t receive_data;

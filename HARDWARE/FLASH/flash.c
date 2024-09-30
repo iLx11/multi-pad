@@ -11,18 +11,18 @@
 #include "flash.h"
 #include "spi1.h"
 
-// FLASH ÀàĞÍ£¬ÉèÖÃÄ¬ÈÏÖµ
+// FLASH ç±»å‹ï¼Œè®¾ç½®é»˜è®¤å€¼
 uint16_t flash_type = NM25Q128;
 
-// ¶ÁÈ¡»º³åÊı×é
+// è¯»å–ç¼“å†²æ•°ç»„
 uint8_t flash_data_buff[4096];
 
 /********************************************************************************
-* FLASH ³õÊ¼»¯
+* FLASH åˆå§‹åŒ–
 ********************************************************************************/
 void flash_init(void) {
     ENABLE_CS_GPIO_RCC;
-    // cs Æ¬Ñ¡
+    // cs ç‰‡é€‰
     GPIO_InitTypeDef GPIO_InitStruct;
 
     GPIO_InitStruct.Pin = FLASH_SPI_CS_PIN;
@@ -32,24 +32,24 @@ void flash_init(void) {
     HAL_GPIO_Init(FLASH_SPI_CS_GPIO, &GPIO_InitStruct);
 
     SET_FLASH_SPI_CS(1);
-    // spi1 ³õÊ¼»¯
+    // spi1 åˆå§‹åŒ–
     spi1_init();
     spi1_set_speed(SPI_SPEED_4);
     flash_type = read_flash_id();
-    // Ôö¼Ó¶ÔÓÚ 4 ×Ö½ÚµØÖ·µÄÅĞ¶Ï
+    // å¢åŠ å¯¹äº 4 å­—èŠ‚åœ°å€çš„åˆ¤æ–­
     if (flash_type == W25Q256) {
-        // ¶ÁÈ¡×´Ì¬¼Ä´æÆ÷ 3
+        // è¯»å–çŠ¶æ€å¯„å­˜å™¨ 3
         uint8_t mode = read_flash_state_sr(3);
-        // Èç¹û²»ÊÇ 4 ×Ö½ÚµØÖ·£¬ÔòÉèÖÃÎª 4 ×Ö½ÚµØÖ·
+        // å¦‚æœä¸æ˜¯ 4 å­—èŠ‚åœ°å€ï¼Œåˆ™è®¾ç½®ä¸º 4 å­—èŠ‚åœ°å€
         if ((mode & 0x01) == 0) {
-            // Ğ´Ê¹ÄÜ
+            // å†™ä½¿èƒ½
             enable_flash_write();
-            // Ğ´×´Ì¬¼Ä´æÆ÷ 3
+            // å†™çŠ¶æ€å¯„å­˜å™¨ 3
             uint8_t temp;
             temp |= 1 << 1;
             write_flash_state_sr(3, temp);
             SET_FLASH_SPI_CS(0);
-            // Ê¹ÄÜ 4 ×Ö½Ú¼Ä´æÆ÷Ö¸Áî
+            // ä½¿èƒ½ 4 å­—èŠ‚å¯„å­˜å™¨æŒ‡ä»¤
             spi1_transmit_receive_byte(ENABLE_4_BYTE_ARRAY_CMD);
             SET_FLASH_SPI_CS(1);
         }
@@ -57,12 +57,12 @@ void flash_init(void) {
 }
 
 /********************************************************************************
-* ¶ÁÈ¡ FLASH ID
+* è¯»å– FLASH ID
 ********************************************************************************/
 uint16_t read_flash_id(void) {
     uint16_t flash_id;
     SET_FLASH_SPI_CS(0);
-    spi1_transmit_receive_byte(MANUFACTURE_DEVICE_ID_CMD);//·¢ËÍ¶ÁÈ¡IDÃüÁî
+    spi1_transmit_receive_byte(MANUFACTURE_DEVICE_ID_CMD);//å‘é€è¯»å–IDå‘½ä»¤
     spi1_transmit_receive_byte(0x00);
     spi1_transmit_receive_byte(0x00);
     spi1_transmit_receive_byte(0x00);
@@ -72,18 +72,18 @@ uint16_t read_flash_id(void) {
 }
 
 /********************************************************************************
-* ¶ÁÈ¡ FLASH
- * @note      ÔÚÖ¸¶¨µØÖ·¿ªÊ¼¶ÁÈ¡Ö¸¶¨³¤¶ÈµÄÊı¾İ
- * @param       read_buff    : Êı¾İ´æ´¢Çø
- * @param       address    : ¿ªÊ¼¶ÁÈ¡µÄµØÖ·(×î´ó32bit)
- * @param       length : Òª¶ÁÈ¡µÄ×Ö½ÚÊı(×î´ó65535)
- * @retval      ÎŞ
+* è¯»å– FLASH
+ * @note      åœ¨æŒ‡å®šåœ°å€å¼€å§‹è¯»å–æŒ‡å®šé•¿åº¦çš„æ•°æ®
+ * @param       read_buff    : æ•°æ®å­˜å‚¨åŒº
+ * @param       address    : å¼€å§‹è¯»å–çš„åœ°å€(æœ€å¤§32bit)
+ * @param       length : è¦è¯»å–çš„å­—èŠ‚æ•°(æœ€å¤§65535)
+ * @retval      æ— 
 ********************************************************************************/
 void read_flash(uint8_t *read_buff, uint32_t address, uint16_t length) {
     SET_FLASH_SPI_CS(0);
-    // ·¢ËÍ¶ÁÈ¡Ö¸Áî
+    // å‘é€è¯»å–æŒ‡ä»¤
     spi1_transmit_receive_byte(READ_FLASH_DATA_CMD);
-    // ·¢ËÍµØÖ·
+    // å‘é€åœ°å€
     send_flash_address(address);
     for (uint16_t i = 0; i < length; i++)
         read_buff[i] = spi1_transmit_receive_byte(0xFF);
@@ -92,20 +92,20 @@ void read_flash(uint8_t *read_buff, uint32_t address, uint16_t length) {
 }
 
 /********************************************************************************
-* °´Ò³Ğ´Èë
- * @brief       SPIÔÚÒ»Ò³(0~65535)ÄÚĞ´ÈëÉÙÓÚ256¸ö×Ö½ÚµÄÊı¾İ
- *   @note      ÔÚÖ¸¶¨µØÖ·¿ªÊ¼Ğ´Èë×î´ó256×Ö½ÚµÄÊı¾İ
- * @param       write_buff    : Êı¾İ´æ´¢Çø
- * @param       address    : ¿ªÊ¼Ğ´ÈëµÄµØÖ·(×î´ó32bit)
- * @param       length : ÒªĞ´ÈëµÄ×Ö½ÚÊı(×î´ó256),¸ÃÊı²»Ó¦¸Ã³¬¹ı¸ÃÒ³µÄÊ£Óà×Ö½ÚÊı!!!
- * @retval      ÎŞ
+* æŒ‰é¡µå†™å…¥
+ * @brief       SPIåœ¨ä¸€é¡µ(0~65535)å†…å†™å…¥å°‘äº256ä¸ªå­—èŠ‚çš„æ•°æ®
+ *   @note      åœ¨æŒ‡å®šåœ°å€å¼€å§‹å†™å…¥æœ€å¤§256å­—èŠ‚çš„æ•°æ®
+ * @param       write_buff    : æ•°æ®å­˜å‚¨åŒº
+ * @param       address    : å¼€å§‹å†™å…¥çš„åœ°å€(æœ€å¤§32bit)
+ * @param       length : è¦å†™å…¥çš„å­—èŠ‚æ•°(æœ€å¤§256),è¯¥æ•°ä¸åº”è¯¥è¶…è¿‡è¯¥é¡µçš„å‰©ä½™å­—èŠ‚æ•°!!!
+ * @retval      æ— 
 ********************************************************************************/
 static void write_flash_page(uint8_t *write_buff, uint32_t address, uint16_t length) {
-    // Ğ´Ê¹ÄÜ
+    // å†™ä½¿èƒ½
     enable_flash_write();
 
     SET_FLASH_SPI_CS(0);
-    // ·¢ËÍÒ³Ğ´ÃüÁî
+    // å‘é€é¡µå†™å‘½ä»¤
     spi1_transmit_receive_byte(FLASH_PAGE_PROGRAM_CMD);
     send_flash_address(address);
     for (uint16_t i = 0; i < length; i++)
@@ -116,19 +116,19 @@ static void write_flash_page(uint8_t *write_buff, uint32_t address, uint16_t len
 }
 
 /********************************************************************************
-* ÎŞ¼ìÑéĞ´Èë
- * @brief       ÎŞ¼ìÑéĞ´SPI FLASH
- *   @note      ±ØĞëÈ·±£ËùĞ´µÄµØÖ··¶Î§ÄÚµÄÊı¾İÈ«²¿Îª0XFF,·ñÔòÔÚ·Ç0XFF´¦Ğ´ÈëµÄÊı¾İ½«Ê§°Ü!
- *              ¾ßÓĞ×Ô¶¯»»Ò³¹¦ÄÜ
- *              ÔÚÖ¸¶¨µØÖ·¿ªÊ¼Ğ´ÈëÖ¸¶¨³¤¶ÈµÄÊı¾İ,µ«ÊÇÒªÈ·±£µØÖ·²»Ô½½ç!
+* æ— æ£€éªŒå†™å…¥
+ * @brief       æ— æ£€éªŒå†™SPI FLASH
+ *   @note      å¿…é¡»ç¡®ä¿æ‰€å†™çš„åœ°å€èŒƒå›´å†…çš„æ•°æ®å…¨éƒ¨ä¸º0XFF,å¦åˆ™åœ¨é0XFFå¤„å†™å…¥çš„æ•°æ®å°†å¤±è´¥!
+ *              å…·æœ‰è‡ªåŠ¨æ¢é¡µåŠŸèƒ½
+ *              åœ¨æŒ‡å®šåœ°å€å¼€å§‹å†™å…¥æŒ‡å®šé•¿åº¦çš„æ•°æ®,ä½†æ˜¯è¦ç¡®ä¿åœ°å€ä¸è¶Šç•Œ!
  *
- * @param       write_buff    : Êı¾İ´æ´¢Çø
- * @param       address    : ¿ªÊ¼Ğ´ÈëµÄµØÖ·(×î´ó32bit)
- * @param       length : ÒªĞ´ÈëµÄ×Ö½ÚÊı(×î´ó65535)
- * @retval      ÎŞ
+ * @param       write_buff    : æ•°æ®å­˜å‚¨åŒº
+ * @param       address    : å¼€å§‹å†™å…¥çš„åœ°å€(æœ€å¤§32bit)
+ * @param       length : è¦å†™å…¥çš„å­—èŠ‚æ•°(æœ€å¤§65535)
+ * @retval      æ— 
 ********************************************************************************/
 static void write_flash_nocheck(uint8_t *write_buff, uint32_t address, uint16_t length) {
-    // µ¥Ò³Ê£ÓàµÄ×Ö½Ú
+    // å•é¡µå‰©ä½™çš„å­—èŠ‚
     uint16_t page_residue = 256 - (address % 256);
     if (length <= page_residue) page_residue = length;
     while (1) {
@@ -146,28 +146,28 @@ static void write_flash_nocheck(uint8_t *write_buff, uint32_t address, uint16_t 
 }
 
 /********************************************************************************
-* ²Á³ı²¢Ğ´ÈëÒ»¸öÉÈÇø
+* æ“¦é™¤å¹¶å†™å…¥ä¸€ä¸ªæ‰‡åŒº
 ********************************************************************************/
 void write_to_flash(uint8_t *write_buff, uint32_t address, uint16_t length) {
-    // ÉÈÇøË÷Òı
+    // æ‰‡åŒºç´¢å¼•
     uint32_t sector_index = address / 4096;
-    // µ±Ç°ÉÈÇøÆ«ÒÆ£¨Ïà¶ÔÓÚ³õÊ¼Î»ÖÃ£©
+    // å½“å‰æ‰‡åŒºåç§»ï¼ˆç›¸å¯¹äºåˆå§‹ä½ç½®ï¼‰
     uint16_t sector_offset = address % 4096;
-    // ÉÈÇøÊ£Óà²Ù×÷Î»ÖÃ
+    // æ‰‡åŒºå‰©ä½™æ“ä½œä½ç½®
     uint16_t sector_residue = 4096 - sector_offset;
-    // ±£³ÖÈ«¾Ö±äÁ¿Ö¸ÕëÖ¸Ïò
+    // ä¿æŒå…¨å±€å˜é‡æŒ‡é’ˆæŒ‡å‘
     uint8_t *flash_buff_point = flash_data_buff;
     uint16_t i = 0;
     if (length <= sector_residue) sector_residue = length;
 
     while (1) {
         read_flash(flash_buff_point, sector_index * 4096, 4096);
-        // ÅĞ¶ÏÊÇ·ñĞèÒª²Á³ı£¬ÒòÎª FLASH ĞèÒª 0xFF Ê±ÄÜĞ´Èë
+        // åˆ¤æ–­æ˜¯å¦éœ€è¦æ“¦é™¤ï¼Œå› ä¸º FLASH éœ€è¦ 0xFF æ—¶èƒ½å†™å…¥
 //        while (flash_buff_point[sector_offset + i] == 0xFF && i < sector_residue) i++;
         for (i = 0; i < sector_residue; i++) {
             if (flash_buff_point[sector_offset + i] != 0XFF) break;
         }
-        // Èç¹ûĞèÒª²Á³ı£¬Ôò²Á³ıºóĞ´Èë
+        // å¦‚æœéœ€è¦æ“¦é™¤ï¼Œåˆ™æ“¦é™¤åå†™å…¥
         if (i < sector_residue) {
             i = 0;
             erase_flash_sector(sector_index);
@@ -191,27 +191,27 @@ void write_to_flash(uint8_t *write_buff, uint32_t address, uint16_t length) {
 }
 
 /********************************************************************************
-* ¶ÁÈ¡×´Ì¬¼Ä´æÆ÷
- * @brief       ¶ÁÈ¡25QXXµÄ×´Ì¬¼Ä´æÆ÷£¬25QXXÒ»¹²ÓĞ3¸ö×´Ì¬¼Ä´æÆ÷
- *   @note      ×´Ì¬¼Ä´æÆ÷1£º
+* è¯»å–çŠ¶æ€å¯„å­˜å™¨
+ * @brief       è¯»å–25QXXçš„çŠ¶æ€å¯„å­˜å™¨ï¼Œ25QXXä¸€å…±æœ‰3ä¸ªçŠ¶æ€å¯„å­˜å™¨
+ *   @note      çŠ¶æ€å¯„å­˜å™¨1ï¼š
  *              BIT7  6   5   4   3   2   1   0
  *              SPR   RV  TB BP2 BP1 BP0 WEL BUSY
- *              SPR:Ä¬ÈÏ0,×´Ì¬¼Ä´æÆ÷±£»¤Î»,ÅäºÏWPÊ¹ÓÃ
- *              TB,BP2,BP1,BP0:FLASHÇøÓòĞ´±£»¤ÉèÖÃ
- *              WEL:Ğ´Ê¹ÄÜËø¶¨
- *              BUSY:Ã¦±ê¼ÇÎ»(1,Ã¦;0,¿ÕÏĞ)
- *              Ä¬ÈÏ:0x00
+ *              SPR:é»˜è®¤0,çŠ¶æ€å¯„å­˜å™¨ä¿æŠ¤ä½,é…åˆWPä½¿ç”¨
+ *              TB,BP2,BP1,BP0:FLASHåŒºåŸŸå†™ä¿æŠ¤è®¾ç½®
+ *              WEL:å†™ä½¿èƒ½é”å®š
+ *              BUSY:å¿™æ ‡è®°ä½(1,å¿™;0,ç©ºé—²)
+ *              é»˜è®¤:0x00
  *
- *              ×´Ì¬¼Ä´æÆ÷2£º
+ *              çŠ¶æ€å¯„å­˜å™¨2ï¼š
  *              BIT7  6   5   4   3   2   1   0
  *              SUS   CMP LB3 LB2 LB1 (R) QE  SRP1
  *
- *              ×´Ì¬¼Ä´æÆ÷3£º
+ *              çŠ¶æ€å¯„å­˜å™¨3ï¼š
  *              BIT7      6    5    4   3   2   1   0
  *              HOLD/RST  DRV1 DRV0 (R) (R) WPS ADP ADS
  *
- * @param       sr_index: ×´Ì¬¼Ä´æÆ÷ºÅ£¬·¶:1~3
- * @retval      ×´Ì¬¼Ä´æÆ÷Öµ
+ * @param       sr_index: çŠ¶æ€å¯„å­˜å™¨å·ï¼ŒèŒƒ:1~3
+ * @retval      çŠ¶æ€å¯„å­˜å™¨å€¼
 ********************************************************************************/
 static uint8_t read_flash_state_sr(uint8_t sr_index) {
     uint8_t cmd = READ_STATUS_REG_1_CMD;
@@ -221,14 +221,14 @@ static uint8_t read_flash_state_sr(uint8_t sr_index) {
         cmd = READ_STATUS_REG_3_CMD;
     SET_FLASH_SPI_CS(0);
     spi1_transmit_receive_byte(cmd);
-    // ¶ÁÈ¡Ò»¸ö×Ö½Ú
+    // è¯»å–ä¸€ä¸ªå­—èŠ‚
     uint8_t result = spi1_transmit_receive_byte(0xFF);
     SET_FLASH_SPI_CS(1);
     return result;
 }
 
 /********************************************************************************
-* Ğ´Èë×´Ì¬¼Ä´æÆ÷
+* å†™å…¥çŠ¶æ€å¯„å­˜å™¨
 ********************************************************************************/
 static void write_flash_state_sr(uint8_t sr_index, uint8_t state) {
     uint8_t cmd = WRITE_STATUS_REG_1_CMD;
@@ -238,14 +238,14 @@ static void write_flash_state_sr(uint8_t sr_index, uint8_t state) {
         cmd = WRITE_STATUS_REG_3_CMD;
     SET_FLASH_SPI_CS(0);
     spi1_transmit_receive_byte(cmd);
-    // Ğ´ÈëÒ»¸ö×Ö½Ú
+    // å†™å…¥ä¸€ä¸ªå­—èŠ‚
     spi1_transmit_receive_byte(state);
     SET_FLASH_SPI_CS(1);
 }
 
 /********************************************************************************
-* FLASH Ğ´Ê¹ÄÜ
- * ½«S1¼Ä´æÆ÷µÄWELÖÃÎ»
+* FLASH å†™ä½¿èƒ½
+ * å°†S1å¯„å­˜å™¨çš„WELç½®ä½
 ********************************************************************************/
 void enable_flash_write(void) {
     SET_FLASH_SPI_CS(0);
@@ -254,8 +254,8 @@ void enable_flash_write(void) {
 }
 
 /********************************************************************************
-* ·¢ËÍµØÖ·
- * ¸ù¾İĞ¾Æ¬ĞÍºÅµÄ²»Í¬, ·¢ËÍ24ibt / 32bitµØÖ·
+* å‘é€åœ°å€
+ * æ ¹æ®èŠ¯ç‰‡å‹å·çš„ä¸åŒ, å‘é€24ibt / 32bitåœ°å€
 ********************************************************************************/
 static void send_flash_address(uint32_t address) {
     if (flash_type == W25Q256) spi1_transmit_receive_byte((uint8_t) ((address) >> 24));
@@ -265,14 +265,14 @@ static void send_flash_address(uint32_t address) {
 }
 
 /********************************************************************************
-* µÈ´ı¿ÕÏĞ
+* ç­‰å¾…ç©ºé—²
 ********************************************************************************/
 static void wait_when_busy(void) {
     while ((read_flash_state_sr(1) & 0x01) == 0x01);
 }
 
 /********************************************************************************
-* ²Á³ıÕû¸öĞ¾Æ¬
+* æ“¦é™¤æ•´ä¸ªèŠ¯ç‰‡
 ********************************************************************************/
 void erase_whole_flash(void) {
     enable_flash_write();
@@ -284,7 +284,7 @@ void erase_whole_flash(void) {
 }
 
 /********************************************************************************
-* ²Á³ıÒ»¸öÉÈÇø
+* æ“¦é™¤ä¸€ä¸ªæ‰‡åŒº
 ********************************************************************************/
 void erase_flash_sector(uint32_t sector_index) {
     sector_index *= 4096;

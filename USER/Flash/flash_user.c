@@ -3,7 +3,7 @@
 * @email: colorful_ilx1@163.com
 * @date: 2023/11/26 14:27
 * @version: 1.0
-* @description: 
+* @description:
 ********************************************************************************/
 
 
@@ -25,23 +25,21 @@ uint8_t flash_init_user(void) {
 }
 
 /********************************************************************************
-* ²Á³ı»òÖØÖÃ²Ëµ¥Êı¾İ
+* æ“¦é™¤æˆ–é‡ç½®èœå•æ•°æ®
 ********************************************************************************/
 void reset_menu_data(uint8_t index, uint8_t func) {
     if(func == 0) {
         uint8_t temp = index << PER_FOLDER_SECTOR_SHIFT;
-        // ¼üÖµÖØÖÃ
+        // é”®å€¼é‡ç½®
         erase_flash_sector(temp);
         erase_flash_sector(temp + 1);
     } else if(func == 1) {
-        // µ¥É«Í¼Æ¬ÖØÖÃ
-        uint8_t* temp = (uint8_t *) calloc(sizeof(uint8_t), 720);
+        // å•è‰²å›¾ç‰‡é‡ç½®
+        uint8_t temp[720] = {0};
         storage_menu_to_flash(index, (uint8_t *) temp, 720, 1);
-        free(temp);
-        temp = NULL;
     } else if(func == 2) {
         uint32_t sector = (index * 27) + 22;
-        // ²ÊÉ«Í¼Æ¬ÖØÖÃ
+        // å½©è‰²å›¾ç‰‡é‡ç½®
         for(uint8_t i = 0; i < 27; i ++) {
             erase_flash_sector(sector + i);
         }
@@ -49,19 +47,19 @@ void reset_menu_data(uint8_t index, uint8_t func) {
 }
 
 /********************************************************************************
-* °´ÕÕ²Ëµ¥Ğ´Èë¼üÖµºÍµ¥É«ÆÁ£¬mode == 1 Ê±Îª¶ÁÈ¡ÆÁÄ»Êı¾İ
+* æŒ‰ç…§èœå•å†™å…¥é”®å€¼å’Œå•è‰²å±ï¼Œmode == 1 æ—¶ä¸ºè¯»å–å±å¹•æ•°æ®
 ********************************************************************************/
 void storage_menu_to_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t data_size, uint8_t mode) {
     if(menu_index > 10) return ;
     uint32_t sector_address = menu_index << PER_FOLDER_SECTOR_SHIFT << 12;
-    // ¶ÁÈ¡Ã¿Ò»²ãµÄĞ¡ÆÁÄ» 4096 + 3072
+    // è¯»å–æ¯ä¸€å±‚çš„å°å±å¹• 4096 + 3072
     if(mode == 1) sector_address += 7168;
     enable_flash_write();
     write_to_flash(data_buff, sector_address, data_size);
 }
 
 /********************************************************************************
-* ¼üÖµµÄµÚ¶şÒ³
+* é”®å€¼çš„ç¬¬äºŒé¡µ
 ********************************************************************************/
 void storage_page_two(uint8_t menu_index, uint8_t * data_buff, uint16_t data_size) {
     if(menu_index > 10) return ;
@@ -72,7 +70,7 @@ void storage_page_two(uint8_t menu_index, uint8_t * data_buff, uint16_t data_siz
 }
 
 /********************************************************************************
-* °´ÕÕ²Ëµ¥¶ÁÈ¡¼üÖµºÍµ¥É«ÆÁ
+* æŒ‰ç…§èœå•è¯»å–é”®å€¼å’Œå•è‰²å±
 ********************************************************************************/
 void load_menu_from_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t data_size, uint8_t mode) {
     if(menu_index > 10) return ;
@@ -82,7 +80,7 @@ void load_menu_from_flash(uint8_t menu_index, uint8_t * data_buff, uint16_t data
 }
 
 /********************************************************************************
-* Ğ´Èë²ÊÉ«ÆÁÄ»£¬Ã¿²ãÕ¼¾İ 27 ¸öÉÈÇø£¬Ê®²ã²Ëµ¥Õ¼¾İ 16 ¸ö¿é
+* å†™å…¥å½©è‰²å±å¹•ï¼Œæ¯å±‚å æ® 27 ä¸ªæ‰‡åŒºï¼Œåå±‚èœå•å æ® 16 ä¸ªå—
 ********************************************************************************/
 void storage_color_screen(uint8_t menu_index, uint32_t address_offset, uint8_t * data_buff, uint16_t data_size) {
     if(menu_index > 10) return ;
@@ -93,7 +91,7 @@ void storage_color_screen(uint8_t menu_index, uint32_t address_offset, uint8_t *
 }
 
 /********************************************************************************
-* ¶ÁÈ¡²ÊÉ«ÆÁÄ»£¬Ã¿²ãÕ¼¾İ 27 ¸öÉÈÇø£¬Ê®²ã²Ëµ¥Õ¼¾İ 16 ¸ö¿é
+* è¯»å–å½©è‰²å±å¹•ï¼Œæ¯å±‚å æ® 27 ä¸ªæ‰‡åŒºï¼Œåå±‚èœå•å æ® 16 ä¸ªå—
 ********************************************************************************/
 void read_color_screen(uint8_t menu_index, uint32_t address_offset, uint8_t * data_buff, uint16_t data_size) {
     if(menu_index > 10) return ;
@@ -103,14 +101,14 @@ void read_color_screen(uint8_t menu_index, uint32_t address_offset, uint8_t * da
 }
 
 /********************************************************************************
-* ¼ÓÔØ²Ëµ¥ÅäÖÃ
+* åŠ è½½èœå•é…ç½®
 ********************************************************************************/
 void load_config(uint8_t * data_buff, uint16_t data_size) {
     read_flash(data_buff, 2048, data_size);
 }
 
 /********************************************************************************
-* ´æ´¢ÅäÖÃ
+* å­˜å‚¨é…ç½®
 ********************************************************************************/
 void storage_config(uint8_t * data_buff, uint16_t data_size) {
     enable_flash_write();
