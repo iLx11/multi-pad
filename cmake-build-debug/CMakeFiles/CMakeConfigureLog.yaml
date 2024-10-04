@@ -18,6 +18,1192 @@ events:
       - "CMakeLists.txt:17 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -Aa 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -D__CLASSIC_C__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: arm-none-eabi-g++ 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      no such file or directory
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:86 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake:131 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:17 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
       Compiler: D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe 
       Build flags: 
       Id flags:  
@@ -115,23 +1301,23 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5kna09"
-      binary: "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5kna09"
+      source: "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5oov9n"
+      binary: "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5oov9n"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
-      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_C_FLAGS_DEBUG: ""
       CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5kna09'
+        Change Dir: 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5oov9n'
         
-        Run Build Command(s): "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_69a7a/fast
-        D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_69a7a.dir\\build.make CMakeFiles/cmTC_69a7a.dir/build
-        mingw32-make[1]: Entering directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5kna09'
-        Building C object CMakeFiles/cmTC_69a7a.dir/CMakeCCompilerABI.c.obj
-        D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj -c "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f Makefile cmTC_652f8/fast
+        D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_652f8.dir\\build.make CMakeFiles/cmTC_652f8.dir/build
+        mingw32-make[1]: Entering directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5oov9n'
+        Building C object CMakeFiles/cmTC_652f8.dir/CMakeCCompilerABI.c.obj
+        D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj -c "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gcc.exe
         Target: arm-none-eabi
@@ -139,8 +1325,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
-         d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj -version -fdiagnostics-color=always -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccMrJ1pJ.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+         d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj -version -fdiagnostics-color=always -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccZGrKKe.s
         GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
         	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
         
@@ -161,18 +1347,18 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: f3937ce18b4177bfd408ca565336596a
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
-         d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccMrJ1pJ.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+         d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccZGrKKe.s
         GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
         COMPILER_PATH=d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
-        Linking C static library libcmTC_69a7a.a
-        "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_69a7a.dir\\cmake_clean_target.cmake
-        "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_69a7a.dir\\link.txt --verbose=1
-        arm-none-eabi-ar qc libcmTC_69a7a.a CMakeFiles/cmTC_69a7a.dir/CMakeCCompilerABI.c.obj
-        D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-ranlib.exe libcmTC_69a7a.a
-        mingw32-make[1]: Leaving directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5kna09'
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+        Linking C static library libcmTC_652f8.a
+        "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_652f8.dir\\cmake_clean_target.cmake
+        "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_652f8.dir\\link.txt --verbose=1
+        arm-none-eabi-ar qc libcmTC_652f8.a CMakeFiles/cmTC_652f8.dir/CMakeCCompilerABI.c.obj
+        D:\\RA\\CODE\\MSYS2\\mingw64\\bin\\ranlib.exe libcmTC_652f8.a
+        mingw32-make[1]: Leaving directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5oov9n'
         
       exitCode: 0
   -
@@ -203,14 +1389,14 @@ events:
       - "CMakeLists.txt:17 (project)"
     message: |
       Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(arm-none-eabi-ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5kna09']
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5oov9n']
         ignore line: []
-        ignore line: [Run Build Command(s): "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_69a7a/fast]
-        ignore line: [D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_69a7a.dir\\build.make CMakeFiles/cmTC_69a7a.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5kna09']
-        ignore line: [Building C object CMakeFiles/cmTC_69a7a.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj -c "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f Makefile cmTC_652f8/fast]
+        ignore line: [D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_652f8.dir\\build.make CMakeFiles/cmTC_652f8.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5oov9n']
+        ignore line: [Building C object CMakeFiles/cmTC_652f8.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj -c "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gcc.exe]
         ignore line: [Target: arm-none-eabi]
@@ -218,8 +1404,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
-        ignore line: [ d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj -version -fdiagnostics-color=always -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccMrJ1pJ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
+        ignore line: [ d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1.exe -quiet -v -iprefix d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj -version -fdiagnostics-color=always -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccZGrKKe.s]
         ignore line: [GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
         ignore line: []
@@ -240,8 +1426,8 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: f3937ce18b4177bfd408ca565336596a]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
-        ignore line: [ d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccMrJ1pJ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
+        ignore line: [ d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccZGrKKe.s]
         ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
         ignore line: [COMPILER_PATH=d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/]
         ignore line: [d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/]
@@ -250,13 +1436,13 @@ events:
         ignore line: [d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/]
         ignore line: [d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_69a7a.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
-        ignore line: [Linking C static library libcmTC_69a7a.a]
-        ignore line: ["D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_69a7a.dir\\cmake_clean_target.cmake]
-        ignore line: ["D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_69a7a.dir\\link.txt --verbose=1]
-        ignore line: [arm-none-eabi-ar qc libcmTC_69a7a.a CMakeFiles/cmTC_69a7a.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-ranlib.exe libcmTC_69a7a.a]
-        ignore line: [mingw32-make[1]: Leaving directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5kna09']
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_652f8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
+        ignore line: [Linking C static library libcmTC_652f8.a]
+        ignore line: ["D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_652f8.dir\\cmake_clean_target.cmake]
+        ignore line: ["D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_652f8.dir\\link.txt --verbose=1]
+        ignore line: [arm-none-eabi-ar qc libcmTC_652f8.a CMakeFiles/cmTC_652f8.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [D:\\RA\\CODE\\MSYS2\\mingw64\\bin\\ranlib.exe libcmTC_652f8.a]
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5oov9n']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -274,23 +1460,23 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be6sp8"
-      binary: "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be6sp8"
+      source: "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ae51gm"
+      binary: "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ae51gm"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_FLAGS_DEBUG: ""
       CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be6sp8'
+        Change Dir: 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ae51gm'
         
-        Run Build Command(s): "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_33d94/fast
-        D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_33d94.dir\\build.make CMakeFiles/cmTC_33d94.dir/build
-        mingw32-make[1]: Entering directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be6sp8'
-        Building CXX object CMakeFiles/cmTC_33d94.dir/CMakeCXXCompilerABI.cpp.obj
-        D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-g++.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5e59e/fast
+        D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5e59e.dir\\build.make CMakeFiles/cmTC_5e59e.dir/build
+        mingw32-make[1]: Entering directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ae51gm'
+        Building CXX object CMakeFiles/cmTC_5e59e.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-g++.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-g++.exe
         Target: arm-none-eabi
@@ -298,8 +1484,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
-         d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -iprefix d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj -version -fdiagnostics-color=always -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccGEQ0aZ.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+         d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -iprefix d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj -version -fdiagnostics-color=always -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccbp7DVp.s
         GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
         	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
         
@@ -326,18 +1512,18 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
-         d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccGEQ0aZ.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+         d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccbp7DVp.s
         GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
         COMPILER_PATH=d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
-        Linking CXX static library libcmTC_33d94.a
-        "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_33d94.dir\\cmake_clean_target.cmake
-        "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_33d94.dir\\link.txt --verbose=1
-        arm-none-eabi-ar qc libcmTC_33d94.a CMakeFiles/cmTC_33d94.dir/CMakeCXXCompilerABI.cpp.obj
-        D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-ranlib.exe libcmTC_33d94.a
-        mingw32-make[1]: Leaving directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be6sp8'
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t'
+        Linking CXX static library libcmTC_5e59e.a
+        "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_5e59e.dir\\cmake_clean_target.cmake
+        "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5e59e.dir\\link.txt --verbose=1
+        arm-none-eabi-ar qc libcmTC_5e59e.a CMakeFiles/cmTC_5e59e.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\RA\\CODE\\MSYS2\\mingw64\\bin\\ranlib.exe libcmTC_5e59e.a
+        mingw32-make[1]: Leaving directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ae51gm'
         
       exitCode: 0
   -
@@ -374,14 +1560,14 @@ events:
       - "CMakeLists.txt:17 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(arm-none-eabi-ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be6sp8']
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ae51gm']
         ignore line: []
-        ignore line: [Run Build Command(s): "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 "D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe" -f Makefile cmTC_33d94/fast]
-        ignore line: [D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_33d94.dir\\build.make CMakeFiles/cmTC_33d94.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be6sp8']
-        ignore line: [Building CXX object CMakeFiles/cmTC_33d94.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-g++.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/bin/cmake.exe" -E env VERBOSE=1 D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f Makefile cmTC_5e59e/fast]
+        ignore line: [D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5e59e.dir\\build.make CMakeFiles/cmTC_5e59e.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ae51gm']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5e59e.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-g++.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj -c "D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-g++.exe]
         ignore line: [Target: arm-none-eabi]
@@ -389,8 +1575,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
-        ignore line: [ d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -iprefix d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj -version -fdiagnostics-color=always -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccGEQ0aZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
+        ignore line: [ d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus.exe -quiet -v -iprefix d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../lib/gcc/arm-none-eabi/10.3.1/ -isysroot d:\\ra\\code\\gcc-arm-none-eabi-10.3-2021.10\\bin\\../arm-none-eabi -D__USES_INITFINI__ D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -auxbase-strip CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj -version -fdiagnostics-color=always -o C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccbp7DVp.s]
         ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
         ignore line: []
@@ -417,8 +1603,8 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: f8787892a7c5aa84cea58dce52be7118]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
-        ignore line: [ d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccGEQ0aZ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
+        ignore line: [ d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\ccbp7DVp.s]
         ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
         ignore line: [COMPILER_PATH=d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/]
         ignore line: [d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/]
@@ -427,13 +1613,13 @@ events:
         ignore line: [d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/]
         ignore line: [d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/]
         ignore line: [d:/ra/code/gcc-arm-none-eabi-10.3-2021.10/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_33d94.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
-        ignore line: [Linking CXX static library libcmTC_33d94.a]
-        ignore line: ["D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_33d94.dir\\cmake_clean_target.cmake]
-        ignore line: ["D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_33d94.dir\\link.txt --verbose=1]
-        ignore line: [arm-none-eabi-ar qc libcmTC_33d94.a CMakeFiles/cmTC_33d94.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [D:\\RA\\CODE\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-ranlib.exe libcmTC_33d94.a]
-        ignore line: [mingw32-make[1]: Leaving directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-be6sp8']
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_5e59e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t']
+        ignore line: [Linking CXX static library libcmTC_5e59e.a]
+        ignore line: ["D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -P CMakeFiles\\cmTC_5e59e.dir\\cmake_clean_target.cmake]
+        ignore line: ["D:\\RA\\CODE\\CLion 2024.1.4\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5e59e.dir\\link.txt --verbose=1]
+        ignore line: [arm-none-eabi-ar qc libcmTC_5e59e.a CMakeFiles/cmTC_5e59e.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [D:\\RA\\CODE\\MSYS2\\mingw64\\bin\\ranlib.exe libcmTC_5e59e.a]
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ae51gm']
         ignore line: []
         ignore line: []
         implicit libs: []

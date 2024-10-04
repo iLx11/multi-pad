@@ -11,10 +11,10 @@
 				<Option working_dir="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="leden.elf">
@@ -68,10 +68,10 @@
 					<Add directory="d:\ra\code\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf"/>
-					<CompileFile command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf"/>
+					<CompileFile command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="leden.elf/fast">
@@ -125,30 +125,30 @@
 					<Add directory="d:\ra\code\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf/fast"/>
-					<CompileFile command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 leden.elf/fast"/>
+					<CompileFile command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe -f &quot;D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -165,6 +165,27 @@
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Inc/usart.h">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Src/.idea/.gitignore">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Src/.idea/Src.iml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Src/.idea/editor.xml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Src/.idea/encodings.xml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Src/.idea/modules.xml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Src/.idea/vcs.xml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Src/.idea/workspace.xml">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/Core/Src/gpio.c">
@@ -558,6 +579,24 @@
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/STM32F103VETX_FLASH.ld">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App/.idea/.gitignore">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App/.idea/App.iml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App/.idea/editor.xml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App/.idea/modules.xml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App/.idea/vcs.xml">
+			<Option target="leden.elf"/>
+		</Unit>
+		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App/.idea/workspace.xml">
 			<Option target="leden.elf"/>
 		</Unit>
 		<Unit filename="D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/USB_DEVICE/App/usb_device.c">

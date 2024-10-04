@@ -1,12 +1,12 @@
 #THIS FILE IS AUTO GENERATED FROM THE TEMPLATE! DO NOT CHANGE!
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_VERSION 1)
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.28)
 
 # specify cross-compilers and tools
 set(CMAKE_C_COMPILER arm-none-eabi-gcc)
 set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
-set(CMAKE_ASM_COMPILER arm-none-eabi-gcc)
+set(CMAKE_ASM_COMPILER  arm-none-eabi-gcc)
 set(CMAKE_AR arm-none-eabi-ar)
 set(CMAKE_OBJCOPY arm-none-eabi-objcopy)
 set(CMAKE_OBJDUMP arm-none-eabi-objdump)
@@ -87,7 +87,6 @@ include_directories(
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE)
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "HARDWARE/*.*" "USER/*.*")
-
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103VETX_FLASH.ld)
 
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)

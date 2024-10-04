@@ -128,7 +128,18 @@ static void lcd_gpio_init(void) {
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
+
     HAL_GPIO_Init(LCD_47_RES_GPIO, &GPIO_InitStruct);
+
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    // BLK
+    GPIO_InitStruct.Pin = LCD_47_BLK_PIN;
+    GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+    HAL_GPIO_Init(LCD_47_BLK_GPIO, &GPIO_InitStruct);
+//    HAL_Delay(2000);
+    HAL_GPIO_WritePin(LCD_47_BLK_GPIO, LCD_47_BLK_PIN, GPIO_PIN_RESET);
+
+
 //    HAL_GPIO_WritePin(LCD_47_RES_GPIO, LCD_47_RES_PIN | LCD_47_DC_PIN | LCD_47_CS1_PIN, GPIO_PIN_SET);
 
 #if SOFT_SPI

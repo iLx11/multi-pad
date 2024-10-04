@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.25"
+						"string" : "3.28"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "leden.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-leden.elf-Debug-4637a0faae8eb2239062.json",
+					"jsonFile" : "target-leden.elf-Debug-0f2568a84a91e7ac65c7.json",
 					"name" : "leden.elf",
 					"projectIndex" : 0
 				}

@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-addr2line.exe"
+			"value" : "D:/RA/CODE/MSYS2/mingw64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER_AR",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-g"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_ASM_FLAGS_MINSIZEREL",
@@ -107,7 +107,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Os -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_ASM_FLAGS_RELEASE",
@@ -123,7 +123,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O3 -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_ASM_FLAGS_RELWITHDEBINFO",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O2 -g -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -295,10 +295,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-g++.exe"
 		},
 		{
@@ -363,7 +363,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-g"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_MINSIZEREL",
@@ -379,7 +379,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Os -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_RELEASE",
@@ -395,7 +395,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O3 -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
@@ -411,7 +411,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O2 -g -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_COMPILER",
@@ -423,10 +423,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe"
 		},
 		{
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-g"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_MINSIZEREL",
@@ -507,7 +507,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Os -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_RELEASE",
@@ -523,7 +523,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O3 -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_RELWITHDEBINFO",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-O2 -g -DNDEBUG"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_DLLTOOL",
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/dlltool.exe"
+			"value" : "D:/RA/CODE/MSYS2/mingw64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -567,7 +567,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ELF"
+			"value" : "Unknown"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS",
@@ -807,7 +807,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ld.exe"
+			"value" : "D:/RA/CODE/MSYS2/mingw64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -819,11 +819,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "make program"
+					"value" : "Path to a program."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CODE/CLion 2024.1.4/bin/mingw/bin/mingw32-make.exe"
+			"value" : "D:/RA/CODE/MSYS2/mingw64/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -919,7 +919,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-nm.exe"
+			"value" : "D:/RA/CODE/MSYS2/mingw64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -995,7 +995,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-ranlib.exe"
+			"value" : "D:/RA/CODE/MSYS2/mingw64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -1011,7 +1011,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-readelf.exe"
+			"value" : "D:/RA/CODE/MSYS2/mingw64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1231,7 +1231,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/RA/CODE/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-strip.exe"
+			"value" : "D:/RA/CODE/MSYS2/mingw64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1266,70 +1266,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "ProcessorCount_cmd_getconf",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_getconf-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_lsconf",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_lsconf-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_machinfo",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_machinfo-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_mpsched",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_mpsched-NOTFOUND"
-		},
-		{
 			"name" : "ProcessorCount_cmd_nproc",
 			"properties" : 
 			[
@@ -1343,39 +1279,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_nproc-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_pidin",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_pidin-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_psrinfo",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_psrinfo-NOTFOUND"
+			"value" : "D:/RA/CODE/MSYS2/usr/bin/nproc.exe"
 		},
 		{
 			"name" : "ProcessorCount_cmd_sysctl",
@@ -1392,34 +1296,6 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "ProcessorCount_cmd_sysctl-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_sysinfo",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_sysinfo-NOTFOUND"
-		},
-		{
-			"name" : "ProcessorCount_cmd_uname",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a program."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "ProcessorCount_cmd_uname-NOTFOUND"
 		},
 		{
 			"name" : "leden_BINARY_DIR",
