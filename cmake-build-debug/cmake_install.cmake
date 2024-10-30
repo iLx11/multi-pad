@@ -1,4 +1,4 @@
-# Install script for directory: D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad
+# Install script for directory: D:/Users/Administrator/Desktop/HARDWARE/key-pad-private/multi-pad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Users/Administrator/Desktop/HARDWARE/key-pad-private/multi-pad/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

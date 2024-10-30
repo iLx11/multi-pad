@@ -13,7 +13,9 @@
 #include "stm32f1xx_hal.h"
 
 void spi2_init(void);
-uint8_t spi2_transmit_receive_byte(uint8_t byte_data);
-uint8_t spi2_read_write_byte(uint8_t txdata);
+
+HAL_StatusTypeDef spi2_trans_byte(uint8_t byte);
+
+HAL_StatusTypeDef spi2_trans_data(uint8_t* data, uint16_t size);
 
 #endif //MULTI_SPI2_H

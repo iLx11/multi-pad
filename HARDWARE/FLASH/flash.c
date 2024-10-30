@@ -50,7 +50,7 @@ void flash_init(void) {
             write_flash_state_sr(3, temp);
             SET_FLASH_SPI_CS(0);
             // 使能 4 字节寄存器指令
-            spi1_transmit_receive_byte(ENABLE_4_BYTE_ARRAY_CMD);
+            FLASH_SPI_TRANS_BYTE(ENABLE_4_BYTE_ARRAY_CMD);
             SET_FLASH_SPI_CS(1);
         }
     }
@@ -62,11 +62,11 @@ void flash_init(void) {
 uint16_t read_flash_id(void) {
     uint16_t flash_id;
     SET_FLASH_SPI_CS(0);
-    spi1_transmit_receive_byte(MANUFACTURE_DEVICE_ID_CMD);//发送读取ID命令
-    spi1_transmit_receive_byte(0x00);
-    spi1_transmit_receive_byte(0x00);
-    spi1_transmit_receive_byte(0x00);
-    flash_id |= ((spi1_transmit_receive_byte(0xFF) << 8) | spi1_transmit_receive_byte(0xFF));
+    FLASH_SPI_TRANS_BYTE(MANUFACTURE_DEVICE_ID_CMD);//发送读取ID命令
+    FLASH_SPI_TRANS_BYTE(0x00);
+    FLASH_SPI_TRANS_BYTE(0x00);
+    FLASH_SPI_TRANS_BYTE(0x00);
+    flash_id |= ((FLASH_SPI_TRANS_BYTE(0xFF) << 8) | FLASH_SPI_TRANS_BYTE(0xFF));
     SET_FLASH_SPI_CS(1);
     return flash_id;
 }
@@ -82,11 +82,11 @@ uint16_t read_flash_id(void) {
 void read_flash(uint8_t *read_buff, uint32_t address, uint16_t length) {
     SET_FLASH_SPI_CS(0);
     // 发送读取指令
-    spi1_transmit_receive_byte(READ_FLASH_DATA_CMD);
+    FLASH_SPI_TRANS_BYTE(READ_FLASH_DATA_CMD);
     // 发送地址
     send_flash_address(address);
-    for (uint16_t i = 0; i < length; i++)
-        read_buff[i] = spi1_transmit_receive_byte(0xFF);
+
+    FLASH_SPI_REC_DATA(read_buff, length);
 
     SET_FLASH_SPI_CS(1);
 }
@@ -106,10 +106,11 @@ static void write_flash_page(uint8_t *write_buff, uint32_t address, uint16_t len
 
     SET_FLASH_SPI_CS(0);
     // 发送页写命令
-    spi1_transmit_receive_byte(FLASH_PAGE_PROGRAM_CMD);
+    FLASH_SPI_TRANS_BYTE(FLASH_PAGE_PROGRAM_CMD);
+
     send_flash_address(address);
-    for (uint16_t i = 0; i < length; i++)
-        spi1_transmit_receive_byte(write_buff[i]);
+
+    FLASH_SPI_TRANS_DATA(write_buff, length);
 
     SET_FLASH_SPI_CS(1);
     wait_when_busy();
@@ -220,9 +221,9 @@ static uint8_t read_flash_state_sr(uint8_t sr_index) {
     else if (sr_index == 3)
         cmd = READ_STATUS_REG_3_CMD;
     SET_FLASH_SPI_CS(0);
-    spi1_transmit_receive_byte(cmd);
+    FLASH_SPI_TRANS_BYTE(cmd);
     // 读取一个字节
-    uint8_t result = spi1_transmit_receive_byte(0xFF);
+    uint8_t result = FLASH_SPI_TRANS_BYTE(0xFF);
     SET_FLASH_SPI_CS(1);
     return result;
 }
@@ -237,9 +238,9 @@ static void write_flash_state_sr(uint8_t sr_index, uint8_t state) {
     else if (sr_index == 3)
         cmd = WRITE_STATUS_REG_3_CMD;
     SET_FLASH_SPI_CS(0);
-    spi1_transmit_receive_byte(cmd);
+    FLASH_SPI_TRANS_BYTE(cmd);
     // 写入一个字节
-    spi1_transmit_receive_byte(state);
+    FLASH_SPI_TRANS_BYTE(state);
     SET_FLASH_SPI_CS(1);
 }
 
@@ -249,7 +250,7 @@ static void write_flash_state_sr(uint8_t sr_index, uint8_t state) {
 ********************************************************************************/
 void enable_flash_write(void) {
     SET_FLASH_SPI_CS(0);
-    spi1_transmit_receive_byte(ENABLE_FLASH_WRITE_CMD);
+    FLASH_SPI_TRANS_BYTE(ENABLE_FLASH_WRITE_CMD);
     SET_FLASH_SPI_CS(1);
 }
 
@@ -258,10 +259,10 @@ void enable_flash_write(void) {
  * 根据芯片型号的不同, 发送24ibt / 32bit地址
 ********************************************************************************/
 static void send_flash_address(uint32_t address) {
-    if (flash_type == W25Q256) spi1_transmit_receive_byte((uint8_t) ((address) >> 24));
-    spi1_transmit_receive_byte((uint8_t) ((address) >> 16));
-    spi1_transmit_receive_byte((uint8_t) ((address) >> 8));
-    spi1_transmit_receive_byte((uint8_t) address);
+    if (flash_type == W25Q256) FLASH_SPI_TRANS_BYTE((uint8_t) ((address) >> 24));
+    FLASH_SPI_TRANS_BYTE((uint8_t) ((address) >> 16));
+    FLASH_SPI_TRANS_BYTE((uint8_t) ((address) >> 8));
+    FLASH_SPI_TRANS_BYTE((uint8_t) address);
 }
 
 /********************************************************************************
@@ -278,7 +279,7 @@ void erase_whole_flash(void) {
     enable_flash_write();
     wait_when_busy();
     SET_FLASH_SPI_CS(0);
-    spi1_transmit_receive_byte(ERASE_FLASH_CMD);
+    FLASH_SPI_TRANS_BYTE(ERASE_FLASH_CMD);
     SET_FLASH_SPI_CS(1);
     wait_when_busy();
 }
@@ -291,7 +292,7 @@ void erase_flash_sector(uint32_t sector_index) {
     enable_flash_write();
     wait_when_busy();
     SET_FLASH_SPI_CS(0);
-    spi1_transmit_receive_byte(ERASE_SECTOR_CMD);
+    FLASH_SPI_TRANS_BYTE(ERASE_SECTOR_CMD);
     send_flash_address(sector_index);
     SET_FLASH_SPI_CS(1);
     wait_when_busy();

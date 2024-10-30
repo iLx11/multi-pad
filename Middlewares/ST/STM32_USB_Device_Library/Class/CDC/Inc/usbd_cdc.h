@@ -46,11 +46,11 @@ extern "C" {
 #define CDC_CMD_EP                                  0x82U  /* EP2 for CDC commands */
 
 #ifndef CDC_HS_BINTERVAL
-#define CDC_HS_BINTERVAL                          0x10U
+#define CDC_HS_BINTERVAL                          0x04U
 #endif /* CDC_HS_BINTERVAL */
 
 #ifndef CDC_FS_BINTERVAL
-#define CDC_FS_BINTERVAL                          0x10U
+#define CDC_FS_BINTERVAL                          0x04U
 #endif /* CDC_FS_BINTERVAL */
 
 /* CDC Endpoints parameters: you can fine tune these values depending on the needed baudrates and performance. */

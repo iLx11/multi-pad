@@ -15,6 +15,9 @@
     <file url="file://$PROJECT_DIR$/HARDWARE/SPI/SPI1/spi1.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HARDWARE/SPI/SPI2/spi2.c" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HARDWARE/SPI/SPI3/spi3.c" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/Composite/Src/usbd_composite.c" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.h" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/USB_DEVICE/App/usbd_custom_hid_if.c" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/USER/Encoder/encoder_user.c" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/USER/Encoder/encoder_user.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/USER/Flash/flash_user.c" charset="UTF-8" />

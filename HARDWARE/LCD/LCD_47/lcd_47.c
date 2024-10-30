@@ -8,6 +8,9 @@
 
 
 #include "lcd_47.h"
+
+#include <stdio.h>
+
 #include "spi2.h"
 #include "lcdfont.h"
 
@@ -154,7 +157,7 @@ static void lcd_gpio_init(void) {
 //    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10 | GPIO_PIN_15, GPIO_PIN_SET);
 #else
     // spi2 初始化
-    spi2_init();
+    LCD_SPI_INIT_FUNC();
 #endif
 }
 
@@ -184,7 +187,7 @@ void lcd_wt_byte(uint8_t data, uint8_t cmd, uint8_t index) {
     // 硬件 SPI
     // 发送数据
 //    spi2_transmit_receive_byte(data);
-    spi2_read_write_byte(data);
+    LCD_SPI_TRANS_BYTE_FUNC(data);
 #endif
     // 失能片选
     DISABLE_LCD_47_CS(spi_device_cs_array[index].gpio_port, spi_device_cs_array[index].gpio_pin);
@@ -220,6 +223,22 @@ static void lcd_send_byte(uint8_t data) {
     }
 }
 
+#else
+
+void transmit_image_data(uint8_t* pic, uint32_t len) {
+    uint32_t offset = 0;
+    // 每次传输 4096 字节
+    uint32_t chunk_size = 4096;
+    while (offset < len) {
+        // 计算每次传输的数据大小
+        uint16_t size = chunk_size < (len - offset) ? chunk_size : (len - offset);
+
+        LCD_SPI_TRANS_FUNC(pic + offset, size);
+        // 更新偏移
+        offset += size;
+    }
+}
+
 #endif
 
 /********************************************************************************
@@ -249,10 +268,11 @@ void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t
 /********************************************************************************
 * LCD 显示图片
 ********************************************************************************/
-void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, const uint8_t pic[], uint8_t index) {
+void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, uint8_t* pic, uint8_t index) {
     uint16_t i, j;
     uint32_t k = 0;
     set_lcd_address(x, y, x + sizex - 1, y + sizey - 1, index);
+#if SOFT_SPI
     for (i = 0; i < sizex; i++) {
         for (j = 0; j < sizey; j++) {
             lcd_wt_byte(pic[k * 2], LCD_DATA, index);
@@ -260,6 +280,15 @@ void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, co
             k++;
         }
     }
+#else
+    LCD_47_DC_SET;
+    ENABLE_LCD_47_CS(spi_device_cs_array[index].gpio_port, spi_device_cs_array[index].gpio_pin);
+
+    transmit_image_data((uint8_t *)pic, sizex * sizey * 2);
+
+    DISABLE_LCD_47_CS(spi_device_cs_array[index].gpio_port, spi_device_cs_array[index].gpio_pin);
+
+#endif
 }
 
 /********************************************************************************

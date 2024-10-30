@@ -9,6 +9,9 @@
 
 #include <malloc.h>
 #include "lcd_user.h"
+
+#include <stdio.h>
+
 #include "flash_user.h"
 
 void lcd_init_user(void) {
@@ -40,3 +43,18 @@ void show_menu_color(uint8_t menu_index) {
         }
     }
 }
+
+/*void show_menu_color(uint8_t menu_index) {
+    uint8_t image_arr[5120];
+    for (uint8_t i = 0; i < 22; i++) {
+        if(i != 21) {
+            // 读取图片
+            read_color_screen(menu_index, i * 5120, image_arr, 5120);
+            // 显示图片
+            lcd_show_pic_index(0, i * 16, 320, 16, image_arr, 0);
+        } else {
+            read_color_screen(menu_index, i * 3200, image_arr, 2560);
+            lcd_show_pic_index(0, i * 16, 320, 8, image_arr, 0);
+        }
+    }
+}*/

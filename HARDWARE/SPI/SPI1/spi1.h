@@ -25,8 +25,16 @@
 #define SPI_SPEED_256       7
 
 void spi1_init(void);
+
 HAL_SPI_StateTypeDef spi1_transmit_data(uint8_t* byte_data, uint16_t size);
+
 HAL_SPI_StateTypeDef spi1_receive_data(uint8_t* receive_data, uint16_t size);
+
 uint8_t spi1_transmit_receive_byte(uint8_t transmit_byte);
+
 void spi1_set_speed(uint8_t speed);
+
+HAL_StatusTypeDef spi1_trans_data(uint8_t* data, uint16_t size);
+
+HAL_StatusTypeDef spi1_trans_rec_data(uint8_t *tx_data, uint8_t *rx_data, uint16_t size);
 #endif //MULTI_SPI1_H

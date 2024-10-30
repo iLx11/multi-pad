@@ -1,5 +1,5 @@
 CMakeFiles/leden.elf.dir/Core/Src/syscalls.c.obj: \
- D:\Users\Administrator\Desktop\HARDWARE\multi-pad-hd-private\multi-pad\Core\Src\syscalls.c \
+ D:\Users\Administrator\Desktop\HARDWARE\key-pad-private\multi-pad\Core\Src\syscalls.c \
  d:\ra\code\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\stat.h \
  d:\ra\code\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\_ansi.h \
  d:\ra\code\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\newlib.h \

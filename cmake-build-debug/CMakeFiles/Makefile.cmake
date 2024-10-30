@@ -25,7 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake"
   "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Generic.cmake"
   "D:/RA/CODE/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/ProcessorCount.cmake"
-  "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/CMakeLists.txt"
+  "D:/Users/Administrator/Desktop/HARDWARE/key-pad-private/multi-pad/CMakeLists.txt"
   "CMakeFiles/3.28.1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.28.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.1/CMakeCXXCompiler.cmake"

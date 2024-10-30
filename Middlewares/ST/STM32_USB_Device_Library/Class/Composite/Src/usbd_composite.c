@@ -167,12 +167,12 @@ static uint8_t USBD_COMPOSITE_CfgDesc[USB_COMPOSITE_CONFIG_DESC_SIZ] =
             IAD to associate the two CDC interfaces */
 
   USBD_IAD_DESC_SIZE,       /* bLength */
-  USBD_IAD_DESCRIPTOR_TYPE, /* bDescriptorType IADÃèÊö·ûÀàĞÍ*/
-  0x00,                     /* bFirstInterface ½Ó¿ÚÃèÊö·ûÊÇÒªÔÚ×ÜµÄÅäÖÃÃèÊö·ûÖĞµÄµÚ¼¸¸ö 0¿ªÊ¼Êı*/
-  0x02,                     /* bInterfaceCount ½Ó¿ÚÃèÊö·ûÊıÁ¿*/
-  0x02,                     /* bFunctionClass Éè±¸ÖĞµÄbDeviceClass*/
-  0x02,                     /* bFunctionSubClass Éè±¸·ûÖĞµÄbDeviceSubClass*/
-  0x01,                     /* bFunctionProtocol Éè±¸·ûÖĞµÄbDevicePreotocol*/
+  USBD_IAD_DESCRIPTOR_TYPE, /* bDescriptorType IADæè¿°ç¬¦ç±»å‹*/
+  0x00,                     /* bFirstInterface æ¥å£æè¿°ç¬¦æ˜¯è¦åœ¨æ€»çš„é…ç½®æè¿°ç¬¦ä¸­çš„ç¬¬å‡ ä¸ª 0å¼€å§‹æ•°*/
+  0x02,                     /* bInterfaceCount æ¥å£æè¿°ç¬¦æ•°é‡*/
+  0x02,                     /* bFunctionClass è®¾å¤‡ä¸­çš„bDeviceClass*/
+  0x02,                     /* bFunctionSubClass è®¾å¤‡ç¬¦ä¸­çš„bDeviceSubClass*/
+  0x01,                     /* bFunctionProtocol è®¾å¤‡ç¬¦ä¸­çš„bDevicePreotocol*/
   0x00,                     /* iFunction (Index of string descriptor describing this function) */
   /**/
 

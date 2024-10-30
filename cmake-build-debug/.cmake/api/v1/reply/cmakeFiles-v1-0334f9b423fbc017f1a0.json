@@ -144,8 +144,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug",
-		"source" : "D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad"
+		"build" : "D:/Users/Administrator/Desktop/HARDWARE/key-pad-private/multi-pad/cmake-build-debug",
+		"source" : "D:/Users/Administrator/Desktop/HARDWARE/key-pad-private/multi-pad"
 	},
 	"version" : 
 	{

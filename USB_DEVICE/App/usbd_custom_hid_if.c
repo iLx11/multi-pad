@@ -90,7 +90,7 @@
 /** Usb HID report descriptor. */
 __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[USBD_CUSTOM_HID_REPORT_DESC_SIZE] __ALIGN_END =
     {
-            // º¸≈Ã
+            // ÈîÆÁõò
             0x05, 0x01, // USAGE_PAGE (Generic Desktop) //63
             0x09, 0x06, // USAGE (Keyboard)
             0xa1, 0x01, // COLLECTION (Application)
@@ -126,20 +126,20 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[USBD_CUSTOM_HID_REPORT_DES
 
             0xc0, // END_COLLECTION
 
-            //  Û±Í
+            // Èº†Ê†á
             0x05, 0x01,
-            //  Û
+            // Èº†
             0x09, 0x02,
             0xa1, 0x01,
-            // ±Í
+            // Ê†á
             0x09, 0x01,
-            // ŒÔ¿Ì
+            // Áâ©ÁêÜ
             0xa1, 0x00,
             // ID
             0x85, 0x02,
-            //  Û±Í∞¥º¸
+            // Èº†Ê†áÊåâÈîÆ
             0x05, 0x09,
-            // »˝∏ˆ∞¥º¸
+            // ‰∏â‰∏™ÊåâÈîÆ
             0x19, 0x01,
             0x29, 0x03,
             0x15, 0x00,
@@ -172,7 +172,7 @@ __ALIGN_BEGIN static uint8_t CUSTOM_HID_ReportDesc_FS[USBD_CUSTOM_HID_REPORT_DES
             0xc0,
             0xc0,
 
-            // √ΩÃÂ∞¥º¸
+            // Â™í‰ΩìÊåâÈîÆ
             0x05, 0x0C,        // Usage Page (Consumer)
             0x09, 0x01,        // Usage (Consumer Control)
             0xA1, 0x01,        // Collection (Application)

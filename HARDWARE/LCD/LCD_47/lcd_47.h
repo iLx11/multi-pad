@@ -51,6 +51,14 @@
 #define LCD_SPI_SOFT_SDA_RESET HAL_GPIO_WritePin(LCD_SPI_SOFT_SDA_GPIO, LCD_SPI_SOFT_SDA_PIN, GPIO_PIN_RESET)
 #define LCD_SPI_SOFT_SDA_SET HAL_GPIO_WritePin(LCD_SPI_SOFT_SDA_GPIO, LCD_SPI_SOFT_SDA_PIN, GPIO_PIN_SET)
 
+#else
+// spi 初始化函数
+#define LCD_SPI_INIT_FUNC spi2_init
+// spi 发送单字节函数
+#define LCD_SPI_TRANS_BYTE_FUNC(data) spi2_trans_byte(data)
+// spi 发送数据
+#define LCD_SPI_TRANS_FUNC(data, size) spi2_trans_data(data, size)
+
 #endif
 
 /********************************************************************************
@@ -129,7 +137,7 @@ void lcd_refresh_index(uint8_t index);
 
 void lcd_clear_index(uint8_t index);
 
-void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, const uint8_t pic[], uint8_t index);
+void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, uint8_t* pic, uint8_t index);
 
 void lcd_show_char_index(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode, uint8_t index);
 

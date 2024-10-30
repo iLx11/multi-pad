@@ -49,6 +49,7 @@ void spi1_init(void) {
 HAL_SPI_StateTypeDef spi1_transmit_data(uint8_t* byte_data, uint16_t size) {
     return HAL_SPI_Transmit(&handle_spi1, byte_data, size, 100);
 }
+
 /********************************************************************************
 * SPI 接收数据
 ********************************************************************************/
@@ -73,4 +74,12 @@ void spi1_set_speed(uint8_t speed) {
     handle_spi1.Instance->CR1 &= 0XFFC7;         /* 位3-5清零，用来设置波特率 */
     handle_spi1.Instance->CR1 |= speed << 3;     /* 设置SPI速度 */
     __HAL_SPI_ENABLE(&handle_spi1);              /* 使能SPI */
+}
+
+HAL_StatusTypeDef spi1_trans_data(uint8_t* data, uint16_t size) {
+    return HAL_SPI_Transmit(&handle_spi1, data, size, 1000);
+}
+
+HAL_StatusTypeDef spi1_trans_rec_data(uint8_t *tx_data, uint8_t *rx_data, uint16_t size) {
+    return HAL_SPI_TransmitReceive(&handle_spi1, tx_data, rx_data, size, 1000);
 }

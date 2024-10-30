@@ -1,5 +1,5 @@
 CMakeFiles/leden.elf.dir/Core/Src/sysmem.c.obj: \
- D:\Users\Administrator\Desktop\HARDWARE\multi-pad-hd-private\multi-pad\Core\Src\sysmem.c \
+ D:\Users\Administrator\Desktop\HARDWARE\key-pad-private\multi-pad\Core\Src\sysmem.c \
  d:\ra\code\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\errno.h \
  d:\ra\code\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\errno.h \
  d:\ra\code\gcc-arm-none-eabi-10.3-2021.10\arm-none-eabi\include\sys\reent.h \

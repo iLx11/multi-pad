@@ -1,3 +1,3 @@
-D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/leden.elf.dir
-D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Users/Administrator/Desktop/HARDWARE/multi-pad-hd-private/multi-pad/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Users/Administrator/Desktop/HARDWARE/key-pad-private/multi-pad/cmake-build-debug/CMakeFiles/leden.elf.dir
+D:/Users/Administrator/Desktop/HARDWARE/key-pad-private/multi-pad/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Users/Administrator/Desktop/HARDWARE/key-pad-private/multi-pad/cmake-build-debug/CMakeFiles/rebuild_cache.dir
