@@ -157,7 +157,7 @@ void lcd_fill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16
 
 void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t index);
 
-        typedef struct {
+typedef struct {
     GPIO_TypeDef* gpio_port;
     uint16_t gpio_pin;
 } spi_device_cs;

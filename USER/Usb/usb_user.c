@@ -63,6 +63,10 @@ uint8_t cdc_event_cb(uint8_t *Buf, uint32_t *Len) {
         //         oled_42_show_num(5, 1, 1);
         //     }
         // }
+        // 跳过当前菜单
+        else if (Buf[2] == 0xAA) {
+            set_sign(data_skip, SIGN_SET);
+        }
         // 菜单设置
         else if (Buf[2] == 0xDD) {
             set_sign(menu_config, SIGN_SET);
@@ -198,6 +202,12 @@ static void set_sign(uint8_t shift, uint8_t value) {
 * USB 扫描
 ********************************************************************************/
 void usb_scan_user(void) {
+    if(get_sign(data_skip) == SIGN_SET) {
+        set_sign(data_skip, SIGN_RESET);
+        write_menu++;
+        turn_next_menu();
+        return;
+    }
     // 填充满接收缓冲数组之后写入 FLASH
     if (get_sign(data_rec) == SIGN_SET) {
         set_sign(data_rec, SIGN_RESET);

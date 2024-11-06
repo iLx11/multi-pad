@@ -34,7 +34,9 @@ typedef struct sign_data {
         // 键值数据状态 
         key_state,
         // 彩屏数据模式
-        color_mode
+        color_mode,
+        // 数据跳过
+        data_skip
     } sign_bit;
 }* p_sign_data_t;
 
