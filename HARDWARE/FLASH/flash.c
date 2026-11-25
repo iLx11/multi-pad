@@ -20,7 +20,7 @@ uint8_t flash_data_buff[4096];
 /********************************************************************************
 * FLASH 初始化
 ********************************************************************************/
-void flash_init(void) {
+uint16_t flash_init(void) {
     ENABLE_CS_GPIO_RCC;
     // cs 片选
     GPIO_InitTypeDef GPIO_InitStruct;
@@ -45,8 +45,7 @@ void flash_init(void) {
             // 写使能
             enable_flash_write();
             // 写状态寄存器 3
-            uint8_t temp;
-            temp |= 1 << 1;
+            uint8_t temp = mode | (1u << 1);
             write_flash_state_sr(3, temp);
             SET_FLASH_SPI_CS(0);
             // 使能 4 字节寄存器指令
@@ -54,21 +53,22 @@ void flash_init(void) {
             SET_FLASH_SPI_CS(1);
         }
     }
+    return flash_type;
 }
 
 /********************************************************************************
 * 读取 FLASH ID
 ********************************************************************************/
 uint16_t read_flash_id(void) {
-    uint16_t flash_id;
     SET_FLASH_SPI_CS(0);
     FLASH_SPI_TRANS_BYTE(MANUFACTURE_DEVICE_ID_CMD);//发送读取ID命令
     FLASH_SPI_TRANS_BYTE(0x00);
     FLASH_SPI_TRANS_BYTE(0x00);
     FLASH_SPI_TRANS_BYTE(0x00);
-    flash_id |= ((FLASH_SPI_TRANS_BYTE(0xFF) << 8) | FLASH_SPI_TRANS_BYTE(0xFF));
+    uint16_t manufacturer = FLASH_SPI_TRANS_BYTE(0xFF);
+    uint16_t device = FLASH_SPI_TRANS_BYTE(0xFF);
     SET_FLASH_SPI_CS(1);
-    return flash_id;
+    return (manufacturer << 8) | device;
 }
 
 /********************************************************************************
@@ -100,7 +100,7 @@ void read_flash(uint8_t *read_buff, uint32_t address, uint16_t length) {
  * @param       length : 要写入的字节数(最大256),该数不应该超过该页的剩余字节数!!!
  * @retval      无
 ********************************************************************************/
-static void write_flash_page(uint8_t *write_buff, uint32_t address, uint16_t length) {
+void write_flash_page(uint8_t *write_buff, uint32_t address, uint16_t length) {
     // 写使能
     enable_flash_write();
 

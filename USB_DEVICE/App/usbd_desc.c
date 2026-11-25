@@ -65,8 +65,13 @@
 #define USBD_VID     1999
 #define USBD_LANGID_STRING     1033
 #define USBD_MANUFACTURER_STRING     "ConXiaoJiuGua"
+#ifdef MULTIPAD_BOOTLOADER
+#define USBD_PID_FS     20240
+#define USBD_PRODUCT_STRING_FS "MultiPad USB Updater"
+#else
 #define USBD_PID_FS     20239
 #define USBD_PRODUCT_STRING_FS     "CXJG Composite Device"
+#endif
 #define USBD_CONFIGURATION_STRING_FS     "Composite CDC HID Config"
 #define USBD_INTERFACE_STRING_FS     "Composite CDC HID Interface"
 

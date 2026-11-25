@@ -29,22 +29,40 @@
 #include "key_user.h"
 #include "oled_user.h"
 #include "lcd_user.h"
+#include "pet_mode.h"
+#include "pet_care.h"
 #include "encoder_user.h"
 #include "flash_user.h"
 //#include "usbd_cdc_if.h"
 #include "usb_user.h"
+#include "screen_readback.h"
+#include "usb_update.h"
 
 void SystemClock_Config(void);
 
 int main(void) {
+#ifndef MULTIPAD_BOOTLOADER
     RetargetInit(&huart1);
+#endif
     HAL_Init();
+#ifdef MULTIPAD_BOOTLOADER
+    usb_update_boot();
+    SystemClock_Config();
+    usb_update_reenumerate();
+    MX_USB_DEVICE_Init();
+    while (1) usb_update_poll();
+#else
     SystemClock_Config();
     MX_GPIO_Init();
     MX_USART1_UART_Init();
+#ifdef MULTIPAD_USB_APP
+    usb_update_reenumerate();
+#endif
     MX_USB_DEVICE_Init();
     // flash
-    if(flash_init_user() == 0) return 0;
+    uint16_t flash_id = flash_init_user();
+    if (flash_id == 0) return 0;
+    pet_care_init(flash_id);
     // usb
     usb_init_user();
     // json ½âÎö
@@ -69,7 +87,10 @@ int main(void) {
         encoder_scan_user();
         // usb Êý¾ÝÉ¨Ãè
         usb_scan_user();
+        screen_readback_poll();
+        pet_mode_poll();
     }
+#endif
 }
 
 /**

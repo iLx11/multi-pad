@@ -17,5 +17,6 @@ void lcd_init_user(void);
 void lcd_show_str(uint8_t* str);
 
 void show_menu_color(uint8_t menu_index);
+void restore_menu_color(void);
 
 #endif //MULTI_LCD_USER_H
