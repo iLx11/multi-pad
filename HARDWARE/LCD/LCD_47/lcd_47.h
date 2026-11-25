@@ -137,7 +137,7 @@ void lcd_refresh_index(uint8_t index);
 
 void lcd_clear_index(uint8_t index);
 
-void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, uint8_t* pic, uint8_t index);
+void lcd_show_pic_index(uint16_t x, uint16_t y, uint16_t sizex, uint16_t sizey, uint8_t* pic, uint8_t index);
 
 void lcd_show_char_index(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode, uint8_t index);
 

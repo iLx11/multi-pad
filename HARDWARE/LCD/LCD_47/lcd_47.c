@@ -268,7 +268,7 @@ void set_lcd_address(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t
 /********************************************************************************
 * LCD 显示图片
 ********************************************************************************/
-void lcd_show_pic_index(uint8_t x, uint8_t y, uint16_t sizex, uint16_t sizey, uint8_t* pic, uint8_t index) {
+void lcd_show_pic_index(uint16_t x, uint16_t y, uint16_t sizex, uint16_t sizey, uint8_t* pic, uint8_t index) {
     uint16_t i, j;
     uint32_t k = 0;
     set_lcd_address(x, y, x + sizex - 1, y + sizey - 1, index);

@@ -1,6 +1,7 @@
 #include "key_user.h"
 #include "oled_user.h"
 #include "usbd_cdc_if.h"
+#include "pet_mode.h"
 
 // 键盘初始状态
 static uint16_t state = 0xffff;
@@ -33,6 +34,7 @@ void key_up_callback(uint8_t row, uint8_t col) {
 void key_down_callback(uint8_t row, uint8_t col) {
     uint8_t key_value = (col * ROW_NUM) + row;
 //    printf("key_value -> %d\n\r", key_value << 1);
+    pet_mode_key_down(key_value);
     parse_json_value(key_value << 1);
 }
 

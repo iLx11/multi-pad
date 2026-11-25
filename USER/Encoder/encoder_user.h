@@ -27,7 +27,7 @@ typedef struct menu_sign {
     // 前加载菜单，防止重复加载统一菜单
     uint8_t pre_menu;
     // 防抖阈值时间
-    uint16_t cur_time;
+    uint32_t changed_at;
 }* p_menu_sign_t;
 
 void encoder_init_user(void);
@@ -42,6 +42,5 @@ void set_menu_index(uint8_t index_value);
 
 uint8_t get_menu_index(void);
 
-static void keyboard_menu_change();
 
 #endif //MULTI_ENCODER_USER_H

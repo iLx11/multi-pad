@@ -29,6 +29,7 @@
 #include "key_user.h"
 #include "oled_user.h"
 #include "lcd_user.h"
+#include "pet_mode.h"
 #include "encoder_user.h"
 #include "flash_user.h"
 //#include "usbd_cdc_if.h"
@@ -69,6 +70,7 @@ int main(void) {
         encoder_scan_user();
         // usb Êý¾ÝÉ¨Ãè
         usb_scan_user();
+        pet_mode_poll();
     }
 }
 
