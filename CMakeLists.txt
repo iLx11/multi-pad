@@ -87,6 +87,16 @@ include_directories(
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE)
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "HARDWARE/*.*" "USER/*.*")
+set(MULTIPAD_IMAGE "standalone" CACHE STRING "standalone, bootloader, or usb-app")
+if (MULTIPAD_IMAGE STREQUAL "bootloader")
+    add_compile_definitions(MULTIPAD_BOOTLOADER)
+    add_link_options(-Wl,--defsym=MULTIPAD_ORIGIN=0x08000000,--defsym=MULTIPAD_LENGTH=0x8000,--defsym=MULTIPAD_RAM_RESERVE=8)
+elseif (MULTIPAD_IMAGE STREQUAL "usb-app")
+    add_compile_definitions(MULTIPAD_USB_APP)
+    add_link_options(-Wl,--defsym=MULTIPAD_ORIGIN=0x08008000,--defsym=MULTIPAD_LENGTH=0x38000,--defsym=MULTIPAD_RAM_RESERVE=8)
+elseif (NOT MULTIPAD_IMAGE STREQUAL "standalone")
+    message(FATAL_ERROR "Unknown MULTIPAD_IMAGE: ${MULTIPAD_IMAGE}")
+endif()
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103VETX_FLASH.ld)
 
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)

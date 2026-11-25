@@ -13,6 +13,9 @@
 #include <stdio.h>
 
 #include "flash_user.h"
+#include "pet_mode.h"
+
+static uint8_t color_menu;
 
 void lcd_init_user(void) {
     lcd_47_init();
@@ -30,6 +33,8 @@ void lcd_show_str(uint8_t* str) {
 * 显示单层的图片
 ********************************************************************************/
 void show_menu_color(uint8_t menu_index) {
+    color_menu = menu_index;
+    if (pet_mode_is_active()) return;
     uint8_t image_arr[3200];
     for (uint8_t i = 0; i < 35; i++) {
         if(i != 34) {
@@ -40,6 +45,17 @@ void show_menu_color(uint8_t menu_index) {
         } else {
             read_color_screen(menu_index, i * 3200, image_arr, 1280);
             lcd_show_pic_index(0, i * 5, 320, 2, image_arr, 0);
+        }
+    }
+}
+
+void restore_menu_color(void) {
+    if (color_menu != 0) {
+        show_menu_color(color_menu);
+    } else {
+        static uint8_t blank[LCD_WIDTH * 2];
+        for (uint16_t row = 0; row < LCD_HEIGHT; row++) {
+            lcd_show_pic_index(0, row, LCD_WIDTH, 1, blank, 0);
         }
     }
 }

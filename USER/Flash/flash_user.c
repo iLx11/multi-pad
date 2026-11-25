@@ -12,16 +12,15 @@
 #include "flash_user.h"
 #include "flash.h"
 
-uint8_t flash_init_user(void) {
-    flash_init();
-    uint16_t flash_id = read_flash_id();
+uint16_t flash_init_user(void) {
+    uint16_t flash_id = flash_init();
     if(flash_id == 0 || flash_id == 0xFFFF) {
         printf(" flash_read_id_error !\r\n");
         return 0;
     } else {
         printf("flash_id_read_done -> %d\r\n", flash_id);
     }
-    return 1;
+    return flash_id;
 }
 
 /********************************************************************************
