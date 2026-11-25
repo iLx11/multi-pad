@@ -14,6 +14,7 @@
 #include "oled_user.h"
 #include "oled_42.h"
 #include "lcd_user.h"
+#include "screen_readback.h"
 #include "pet_mode.h"
 
 static struct menu_sign menu_state = {.pre_menu = UINT8_MAX};
@@ -95,7 +96,9 @@ static void keyboard_menu_change(void) {
 ********************************************************************************/
 // 编码器 1
 void encoder1_callback(uint8_t encoder_value) {
-    if (pet_mode_is_active() && (encoder_value == ANTICLOCKWISE || encoder_value == CLOCKWISE)) {
+    if (encoder_value == ENCODER_DOWN || encoder_value == ENCODER_UP) {
+        button_readback_record(8, encoder_value == ENCODER_DOWN);
+    } else if (pet_mode_is_active() && (encoder_value == ANTICLOCKWISE || encoder_value == CLOCKWISE)) {
         pet_mode_adjust_scene(encoder_value == CLOCKWISE ? 1 : -1, false);
         return;
     }
@@ -116,7 +119,17 @@ void encoder1_callback(uint8_t encoder_value) {
 
 // 编码器 2
 void encoder2_callback(uint8_t encoder_value) {
-    if (pet_mode_is_active() && (encoder_value == ANTICLOCKWISE || encoder_value == CLOCKWISE)) {
+    static bool pet_pressed;
+    if (encoder_value == ENCODER_DOWN || encoder_value == ENCODER_UP) {
+        button_readback_record(9, encoder_value == ENCODER_DOWN);
+        if (encoder_value == ENCODER_DOWN) pet_pressed = pet_mode_is_active();
+        const bool claimed = pet_pressed;
+        if (encoder_value == ENCODER_UP) pet_pressed = false;
+        if (claimed) return;
+    } else if (pet_pressed && (encoder_value == DOWN_ANTICLOCKWISE || encoder_value == UP_CLOCKWISE)) {
+        pet_mode_cycle_background(encoder_value == UP_CLOCKWISE ? 1 : -1);
+        return;
+    } else if (pet_mode_is_active() && (encoder_value == ANTICLOCKWISE || encoder_value == CLOCKWISE)) {
         pet_mode_adjust_scene(encoder_value == CLOCKWISE ? 1 : -1, true);
         return;
     }
@@ -127,9 +140,11 @@ void encoder2_callback(uint8_t encoder_value) {
 // 编码器 3
 void encoder3_callback(uint8_t encoder_value) {
     if (encoder_value == ENCODER_DOWN || encoder_value == ENCODER_UP) {
+        button_readback_record(10, encoder_value == ENCODER_DOWN);
         if (pet_mode_encoder_button(encoder_value == ENCODER_DOWN)) return;
-    } else {
-        pet_mode_encoder_rotated();
+    } else if (pet_mode_encoder_rotated(encoder_value == CLOCKWISE || encoder_value == UP_CLOCKWISE,
+                                        encoder_value == DOWN_ANTICLOCKWISE || encoder_value == UP_CLOCKWISE)) {
+        return;
     }
 //    printf("encoder_value -> %d\n\r", (ENCODER_EVENT_NUM * 2) + encoder_value + 16);
     parse_json_value( (ENCODER_EVENT_NUM * 2) + encoder_value + 16);

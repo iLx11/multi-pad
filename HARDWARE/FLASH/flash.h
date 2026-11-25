@@ -73,13 +73,14 @@
 #define FLASH_SPI_TRANS_DATA(data, size) spi1_transmit_data(data, size)
 #define FLASH_SPI_REC_DATA(data, size) spi1_receive_data(data, size)
 
-void flash_init(void);
+uint16_t flash_init(void);
 
 uint16_t read_flash_id(void);
 
 void read_flash(uint8_t *read_buff, uint32_t address, uint16_t length);
 
-static void write_flash_page(uint8_t *write_buff, uint32_t address, uint16_t length);
+/* Program erased bytes within one 256-byte page, without erasing any sector. */
+void write_flash_page(uint8_t *write_buff, uint32_t address, uint16_t length);
 
 void write_to_flash(uint8_t *write_buff, uint32_t address, uint16_t length);
 

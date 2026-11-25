@@ -106,6 +106,7 @@ extern USBD_CDC_ItfTypeDef USBD_Interface_fops_FS;
   */
 
 uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
+uint8_t CDC_TransmitReady_FS(void);
 
 /* USER CODE BEGIN EXPORTED_FUNCTIONS */
 void USB_printf(const char *format,  ...);//USB模拟串口的打印函数
